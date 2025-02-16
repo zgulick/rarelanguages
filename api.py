@@ -40,11 +40,10 @@ def get_entities():
 
 @app.get("/api/entities/{entity_id}")
 def get_entity_details(entity_id: str):
-    """Return hype score, mentions, talk time, and sentiment for a specific entity."""
+    """Fix underscore issue by replacing `_` with spaces before looking up entity."""
     data = load_data()
     
-    # Convert underscores to spaces before looking up in JSON
-    entity_name = entity_id.replace("_", " ")
+    entity_name = entity_id.replace("_", " ")  # Convert URL-friendly names back to original
 
     return {
         "name": entity_id,
@@ -54,14 +53,12 @@ def get_entity_details(entity_id: str):
         "sentiment": data.get("player_sentiment_scores", {}).get(entity_name, [])
     }
 
-
 @app.get("/api/entities/{entity_id}/metrics")
 def get_entity_metrics(entity_id: str):
-    """Return core metrics (mentions, talk time, sentiment) for an entity."""
+    """Fix underscore issue before looking up entity metrics."""
     data = load_data()
     
-    # Convert underscores back to spaces before looking up the entity in JSON
-    entity_name = entity_id.replace("_", " ")
+    entity_name = entity_id.replace("_", " ")  # Convert underscores to spaces
 
     return {
         "mentions": data.get("mention_counts", {}).get(entity_name, 0),
@@ -69,14 +66,12 @@ def get_entity_metrics(entity_id: str):
         "sentiment": data.get("player_sentiment_scores", {}).get(entity_name, [])
     }
 
-
 @app.get("/api/entities/{entity_id}/trending")
 def get_entity_trending(entity_id: str):
-    """Return trending data (Google Trends, Wikipedia, Reddit, News) for an entity."""
+    """Fix underscore issue before looking up trending data."""
     data = load_data()
     
-    # Convert underscores to spaces before lookup
-    entity_name = entity_id.replace("_", " ")
+    entity_name = entity_id.replace("_", " ")  # Convert underscores to spaces
 
     return {
         "google_trends": data.get("google_trends", {}).get(entity_name, 0),
@@ -84,7 +79,6 @@ def get_entity_trending(entity_id: str):
         "reddit_mentions": data.get("reddit_mentions", {}).get(entity_name, 0),
         "google_news_mentions": data.get("google_news_mentions", {}).get(entity_name, 0)
     }
-
 
 @app.get("/api/last_updated")
 def get_last_updated():
