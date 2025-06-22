@@ -1,0 +1,162 @@
+<!-- Enterprise Error Handler Component Template -->
+<div class="error-container" *ngIf="errorInfo" 
+     [ngClass]="'error-' + errorInfo.severity"
+     role="alert"
+     [attr.aria-label]="errorInfo.title">
+
+  <!-- Error Header -->
+  <div class="error-header">
+    <div class="error-icon-wrapper">
+      <mat-icon [color]="errorColors[errorInfo.severity]" 
+                class="error-icon">
+        {{ errorIcons[errorInfo.severity] }}
+      </mat-icon>
+    </div>
+    
+    <div class="error-content">
+      <h3 class="error-title">{{ errorInfo.title }}</h3>
+      <p class="error-message">{{ errorInfo.message }}</p>
+      
+      <!-- Support Reference -->
+      <div class="error-reference" *ngIf="errorInfo.supportReference">
+        <small>
+          <strong>Reference:</strong> 
+          <code>{{ errorInfo.supportReference }}</code>
+          <button mat-icon-button 
+                  (click)="copyErrorDetails()"
+                  matTooltip="Copy error details"
+                  class="copy-button">
+            <mat-icon>content_copy</mat-icon>
+          </button>
+        </small>
+      </div>
+    </div>
+
+    <!-- Dismiss Button -->
+    <button mat-icon-button 
+            (click)="onDismiss()"
+            class="dismiss-button"
+            matTooltip="Dismiss"
+            aria-label="Dismiss error">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <!-- Error Actions -->
+  <div class="error-actions" *ngIf="errorInfo.actionRequired || canRetry()">
+    
+    <!-- Primary Action Button -->
+    <button mat-raised-button 
+            *ngIf="errorInfo.actionRequired"
+            [color]="errorInfo.severity === 'critical' ? 'warn' : 'primary'"
+            (click)="onRetry()"
+            class="action-button">
+      <mat-icon>{{ getActionButtonIcon() }}</mat-icon>
+      {{ getActionButtonText() }}
+    </button>
+
+    <!-- Retry Button with Countdown -->
+    <div class="retry-section" *ngIf="canRetry()">
+      <button mat-stroked-button 
+              [disabled]="!canRetry()"
+              (click)="onRetry()"
+              class="retry-button">
+        <mat-icon>refresh</mat-icon>
+        {{ getRetryButtonText() }}
+      </button>
+
+      <!-- Retry Countdown -->
+      <div class="retry-countdown" *ngIf="retryCountdown$ | async as countdown">
+        <mat-progress-bar mode="determinate" 
+                          [value]="(errorInfo.retryAfter! - countdown * 1000) / errorInfo.retryAfter! * 100">
+        </mat-progress-bar>
+        <small>Next retry available in {{ countdown }}s</small>
+      </div>
+    </div>
+
+    <!-- Secondary Actions -->
+    <div class="secondary-actions">
+      <button mat-button 
+              (click)="onReportIssue()"
+              class="secondary-action">
+        <mat-icon>bug_report</mat-icon>
+        Report Issue
+      </button>
+
+      <button mat-button 
+              (click)="onContactSupport()"
+              class="secondary-action"
+              *ngIf="errorInfo.severity === 'critical' || errorInfo.supportReference">
+        <mat-icon>support_agent</mat-icon>
+        Contact Support
+      </button>
+    </div>
+  </div>
+
+  <!-- Expandable Details Section -->
+  <div class="error-details" *ngIf="showDetails">
+    <mat-expansion-panel class="details-panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon>info</mat-icon>
+          Technical Details
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="technical-details">
+        <!-- Error Code -->
+        <div class="detail-item" *ngIf="errorInfo.code">
+          <strong>Error Code:</strong>
+          <code>{{ errorInfo.code }}</code>
+        </div>
+
+        <!-- Context -->
+        <div class="detail-item">
+          <strong>Context:</strong>
+          <span>{{ context }}</span>
+        </div>
+
+        <!-- Timestamp -->
+        <div class="detail-item">
+          <strong>Time:</strong>
+          <span>{{ new Date().toLocaleString() }}</span>
+        </div>
+
+        <!-- Retry Information -->
+        <div class="detail-item" *ngIf="retryConfig.enabled">
+          <strong>Retry Status:</strong>
+          <span>{{ retryConfig.currentAttempt }} / {{ retryConfig.maxAttempts }} attempts</span>
+        </div>
+
+        <!-- Raw Error Details (Development Mode) -->
+        <div class="detail-item raw-error" *ngIf="errorInfo.details && showDetailedInfo">
+          <strong>Raw Error:</strong>
+          <pre><code>{{ errorInfo.details | json }}</code></pre>
+        </div>
+
+        <!-- Toggle Raw Details -->
+        <button mat-button 
+                (click)="toggleDetails()"
+                class="toggle-details">
+          <mat-icon>{{ showDetailedInfo ? 'expand_less' : 'expand_more' }}</mat-icon>
+          {{ showDetailedInfo ? 'Hide' : 'Show' }} Raw Details
+        </button>
+      </div>
+    </mat-expansion-panel>
+  </div>
+
+  <!-- Performance Impact Notice -->
+  <div class="performance-notice" 
+       *ngIf="errorInfo.severity === 'critical'"
+       class="critical-notice">
+    <mat-icon color="warn">warning</mat-icon>
+    <span>This error may impact application performance. Please contact support if it persists.</span>
+  </div>
+
+</div>
+
+<!-- Loading State for Error Actions -->
+<div class="error-loading" *ngIf="!errorInfo">
+  <mat-progress-spinner diameter="24" mode="indeterminate"></mat-progress-spinner>
+  <span>Processing error information...</span>
+</div>

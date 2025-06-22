@@ -1,0 +1,315 @@
+<div class="asset-view-container">
+  <!-- Main Toolbar -->
+  <mat-toolbar color="primary" class="main-toolbar">
+    <button
+      mat-icon-button
+      (click)="sidenavOpened = !sidenavOpened"
+      [attr.aria-label]="'Toggle navigation'"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    
+    <span class="toolbar-title">Asset View Hub</span>
+    
+    <!-- Asset Search -->
+    <div class="search-container">
+      <mat-form-field appearance="outline" class="search-field">
+        <mat-label>Asset Number</mat-label>
+        <input 
+          matInput 
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="onSearchTermChange($event)"
+          placeholder="e.g., AST-2024-0001"
+        >
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="toolbar-spacer"></div>
+    
+    <!-- Loading indicator -->
+    <mat-spinner *ngIf="isLoading" diameter="24"></mat-spinner>
+  </mat-toolbar>
+
+  <!-- Main Layout -->
+  <mat-sidenav-container class="sidenav-container">
+    <!-- Side Navigation -->
+    <mat-sidenav 
+      #sidenav 
+      [opened]="sidenavOpened"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      class="sidenav"
+    >
+      <div class="sidenav-content">
+        <!-- Image Upload Section -->
+        <div class="image-upload-section" *ngIf="currentAsset">
+          <h3>Property Image</h3>
+          <div class="image-container">
+            <img 
+              *ngIf="currentAsset.imageUrl" 
+              [src]="currentAsset.imageUrl" 
+              [alt]="currentAsset.propertyAddress"
+              class="property-image"
+            >
+            <div *ngIf="!currentAsset.imageUrl" class="no-image-placeholder">
+              <mat-icon>image</mat-icon>
+              <span>No image uploaded</span>
+            </div>
+          </div>
+          
+          <div class="upload-controls">
+            <input 
+              type="file" 
+              accept="image/*" 
+              (change)="onFileSelected($event)"
+              #fileInput
+              style="display: none"
+            >
+            <button 
+              mat-raised-button 
+              color="primary"
+              (click)="fileInput.click()"
+              class="upload-btn"
+            >
+              <mat-icon>upload</mat-icon>
+              Choose Image
+            </button>
+            <button 
+              mat-raised-button 
+              color="accent"
+              (click)="uploadImage()"
+              [disabled]="!selectedFile"
+              class="upload-btn"
+            >
+              <mat-icon>save</mat-icon>
+              Upload
+            </button>
+          </div>
+        </div>
+
+        <!-- Process Navigation -->
+        <div class="process-navigation" *ngIf="processes.length > 0">
+          <h3>Available Processes</h3>
+          <nav class="process-list">
+            <button
+              mat-button
+              *ngFor="let process of processes"
+              (click)="onProcessSelected(process)"
+              [class.active]="selectedProcess?.id === process.id"
+              class="process-nav-item"
+            >
+              <div class="process-nav-content">
+                <mat-icon [style.color]="process.color">{{ process.icon }}</mat-icon>
+                <div class="process-nav-text">
+                  <span class="process-name">{{ process.name }}</span>
+                  <span class="process-status">{{ process.status | titlecase }}</span>
+                </div>
+                <div class="process-progress">
+                  <span class="task-count">{{ process.completedTaskCount }}/{{ process.taskCount }}</span>
+                </div>
+              </div>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </mat-sidenav>
+
+    <!-- Main Content -->
+    <mat-sidenav-content class="main-content">
+      <div class="content-container" *ngIf="currentAsset">
+        <!-- Asset Information Header -->
+        <mat-card class="asset-header-card">
+          <mat-card-header>
+            <mat-card-title>{{ currentAsset.assetNumber }}</mat-card-title>
+            <mat-card-subtitle>{{ currentAsset.propertyAddress }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="asset-details">
+              <div class="detail-item">
+                <strong>Client:</strong> {{ currentAsset.clientName }}
+              </div>
+              <div class="detail-item">
+                <strong>Investor:</strong> {{ currentAsset.investor }}
+              </div>
+              <div class="detail-item">
+                <strong>Property Type:</strong> {{ currentAsset.propertyType }}
+              </div>
+              <div class="detail-item">
+                <strong>Status:</strong> 
+                <mat-chip 
+                  [style.background-color]="getProcessStatusColor(currentAsset.status)"
+                  class="status-chip"
+                >
+                  {{ currentAsset.status | titlecase }}
+                </mat-chip>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+
+        <!-- Process Tiles -->
+        <div class="process-tiles-section" *ngIf="processes.length > 0">
+          <h2>Process Overview</h2>
+          <div class="process-tiles-grid">
+            <mat-card 
+              *ngFor="let process of processes"
+              (click)="onProcessSelected(process)"
+              [class.selected]="selectedProcess?.id === process.id"
+              class="process-tile"
+            >
+              <mat-card-header>
+                <mat-icon 
+                  mat-card-avatar 
+                  [style.color]="process.color"
+                  class="process-icon"
+                >
+                  {{ process.icon }}
+                </mat-icon>
+                <mat-card-title>{{ process.name }}</mat-card-title>
+                <mat-card-subtitle>{{ process.type | titlecase }}</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="process-stats">
+                  <div class="stat-item">
+                    <span class="stat-label">Status:</span>
+                    <mat-chip 
+                      [style.background-color]="getProcessStatusColor(process.status)"
+                      class="status-chip small"
+                    >
+                      {{ process.status | titlecase }}
+                    </mat-chip>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Progress:</span>
+                    <span class="stat-value">{{ process.completedTaskCount }}/{{ process.taskCount }} tasks</span>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+
+        <!-- Selected Process Details -->
+        <div class="process-details-section" *ngIf="selectedProcess">
+          <div class="section-header">
+            <h2>{{ selectedProcess.name }} Details</h2>
+          </div>
+
+          <!-- Process Key Fields -->
+          <mat-card class="key-fields-card" *ngIf="processKeyFields.length > 0">
+            <mat-card-header>
+              <mat-card-title>Key Information</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="key-fields-grid">
+                <div 
+                  *ngFor="let field of processKeyFields"
+                  class="key-field-item"
+                >
+                  <mat-form-field appearance="outline" class="key-field">
+                    <mat-label>{{ field.label }}</mat-label>
+                    <input 
+                      *ngIf="field.type === 'text' || field.type === 'number'"
+                      matInput 
+                      [value]="field.value"
+                      [readonly]="!field.editable"
+                      (blur)="onFieldBlur(field, $event)"
+                    >
+                    <input 
+                      *ngIf="field.type === 'date'"
+                      matInput 
+                      type="date"
+                      [value]="getDateValue(field.value)"
+                      [readonly]="!field.editable"
+                      (change)="onFieldChange(field, $event)"
+                    >
+                    <textarea
+                      *ngIf="field.type === 'textarea'"
+                      matInput
+                      [value]="field.value"
+                      [readonly]="!field.editable"
+                      (blur)="onFieldBlur(field, $event)"
+                    ></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+
+          <!-- Tasks Grid -->
+          <mat-card class="tasks-card">
+            <mat-card-header>
+              <mat-card-title>Tasks</mat-card-title>
+              <div class="task-filters">
+                <!-- Add task filtering controls here -->
+              </div>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="tasks-grid" *ngIf="tasks.length > 0; else noTasks">
+                <div 
+                  *ngFor="let task of tasks"
+                  class="task-item"
+                >
+                  <div class="task-header">
+                    <h4 class="task-name">{{ task.name }}</h4>
+                    <mat-chip 
+                      [style.background-color]="getTaskPriorityColor(task.priority)"
+                      class="priority-chip"
+                    >
+                      {{ task.priority | titlecase }}
+                    </mat-chip>
+                  </div>
+                  
+                  <div class="task-details">
+                    <div class="task-meta">
+                      <span class="task-status">
+                        <mat-icon>{{ task.status === 'completed' ? 'check_circle' : 
+                                     task.status === 'in_progress' ? 'schedule' : 'radio_button_unchecked' }}</mat-icon>
+                        {{ task.status | titlecase }}
+                      </span>
+                      <span class="task-assignee" *ngIf="task.assignedTo">
+                        <mat-icon>person</mat-icon>
+                        {{ task.assignedTo }}
+                      </span>
+                      <span 
+                        class="task-due-date" 
+                        *ngIf="task.dueDate"
+                        [class.overdue]="isTaskOverdue(task.dueDate)"
+                      >
+                        <mat-icon>event</mat-icon>
+                        {{ task.dueDate | date:'short' }}
+                      </span>
+                    </div>
+                    
+                    <div class="task-tags" *ngIf="task.tags.length > 0">
+                      <mat-chip 
+                        *ngFor="let tag of task.tags"
+                        class="tag-chip"
+                      >
+                        {{ tag }}
+                      </mat-chip>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <ng-template #noTasks>
+                <div class="no-tasks-message">
+                  <mat-icon>task_alt</mat-icon>
+                  <p>No tasks found for this process.</p>
+                </div>
+              </ng-template>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      
+      <!-- No Asset Selected State -->
+      <div class="no-asset-state" *ngIf="!currentAsset && !isLoading">
+        <mat-icon>search</mat-icon>
+        <h2>Search for an Asset</h2>
+        <p>Enter an asset number in the search field above to get started.</p>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
