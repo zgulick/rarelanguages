@@ -6,7 +6,7 @@
     "start": "ng serve",
     "dev": "ng serve --port 3000",
     "build": "npx ng build --configuration production",
-    "build:vercel": "npx ng build --configuration production",
+    "vercel-build": "npx ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
