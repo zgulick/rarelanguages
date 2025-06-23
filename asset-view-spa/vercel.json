@@ -5,8 +5,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist/asset-view-spa/browser",
-        "buildCommand": "npm run build:vercel"
+        "distDir": "dist/asset-view-spa/browser"
       }
     }
   ],
