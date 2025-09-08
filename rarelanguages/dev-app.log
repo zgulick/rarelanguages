@@ -1,0 +1,5 @@
+[dotenv@17.2.2] injecting env (17) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+🚀 Enhanced Albanian Learning App (DEV): http://127.0.0.1:3001
+🔄 Hot reload enabled for instant UI changes
+🇦🇱 Ready to learn with 1,017+ phrases!
+Database connection pool initialized
