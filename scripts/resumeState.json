@@ -1,0 +1,1129 @@
+{
+  "startTime": 1757313987883,
+  "phases": {
+    "vocabulary_translation": {
+      "completed": true,
+      "timestamp": 1757314017659
+    }
+  },
+  "completedBatches": [
+    "family_vocabulary",
+    "greetings_basics",
+    "coffee_hospitality",
+    "food_meals",
+    "time_daily",
+    "numbers_ages"
+  ],
+  "translations": [
+    {
+      "english": "This is my father",
+      "albanian": "Ky është baba im",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "This is my mother",
+      "albanian": "Kjo është nëna ime",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "This is my brother",
+      "albanian": "Ky është vëllai im",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "This is my sister",
+      "albanian": "Kjo është motra ime",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "How is your family?",
+      "albanian": "Si është familja jote?",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "I love my family",
+      "albanian": "E dua familjen time",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My father works hard",
+      "albanian": "Baba im punon shumë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My mother cooks well",
+      "albanian": "Nëna ime gatuan mirë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My brother is tall",
+      "albanian": "Vëllai im është i gjatë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My sister is smart",
+      "albanian": "Motra ime është e zgjuar",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "We are having dinner",
+      "albanian": "Ne po ha darkë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "Come meet my parents",
+      "albanian": "Eja takohu me prindërit e mi",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "This is my grandfather",
+      "albanian": "Ky është gjyshi im",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "This is my grandmother",
+      "albanian": "Kjo është gjyshja ime",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My uncle is visiting",
+      "albanian": "Daja im po viziton",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My aunt brought food",
+      "albanian": "Hallëja ime solli ushqim",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "The children are playing",
+      "albanian": "Fëmijët po luajnë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "Our family is close",
+      "albanian": "Familja jonë është e afërt",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "We gather every Sunday",
+      "albanian": "Ne mblidhemi çdo të dielë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "Family comes first",
+      "albanian": "Familja vjen e para",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "I miss my family",
+      "albanian": "Më mungon familja ime",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "When will you visit?",
+      "albanian": "Kur do të vish?",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "Bring your family over",
+      "albanian": "Merr familjen tënde këtu",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "How many children do you have?",
+      "albanian": "Sa fëmijë ke?",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My son is five years old",
+      "albanian": "Djali im ka pesë vjet",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "My daughter goes to school",
+      "albanian": "Vajza ime shkon në shkollë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "We are proud parents",
+      "albanian": "Ne jemi prindër krenarë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "The baby is sleeping",
+      "albanian": "Bebeja është duke fjetur",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "Grandpa tells great stories",
+      "albanian": "Gjyshi tregon histori të mrekullueshme",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "Grandma makes the best food",
+      "albanian": "Gjyshja bën ushqim më të mirë",
+      "timestamp": 1757313999341
+    },
+    {
+      "english": "Hello, how are you?",
+      "albanian": "Tungjatjeta, si je?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Good morning",
+      "albanian": "Mirëmëngjes",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Good afternoon",
+      "albanian": "Mirëdita",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Good evening",
+      "albanian": "Mirëmbrëma",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "How are things?",
+      "albanian": "Si shkojnë punët?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Everything is fine",
+      "albanian": "Gjithçka është në rregull",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Thank you very much",
+      "albanian": "Faleminderit shumë",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "You're welcome",
+      "albanian": "S'ka përse",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Please sit down",
+      "albanian": "Ju lutem uluni",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Make yourself at home",
+      "albanian": "Ndihuni si në shtëpi",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Have a good day",
+      "albanian": "Ditën e mirë",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "See you later",
+      "albanian": "Shihemi më vonë",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Take care",
+      "albanian": "Kujdesu",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Safe travels",
+      "albanian": "Udhë të sigurtë",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Welcome to our home",
+      "albanian": "Mirë se vjeni në shtëpinë tonë",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "How was your trip?",
+      "albanian": "Si ishte udhëtimi yt?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Did you eat yet?",
+      "albanian": "A je ushqyer ende?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Are you tired?",
+      "albanian": "A je i lodhur?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Rest a little",
+      "albanian": "Pusho pak",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "What brings you here?",
+      "albanian": "Ç'ju sjell këtu?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "It's good to see you",
+      "albanian": "Është mirë që të shoh",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "How long can you stay?",
+      "albanian": "Sa kohë mund të qëndrosh?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "We missed you",
+      "albanian": "Na mungove",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "You look well",
+      "albanian": "Je mirë",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "How is your health?",
+      "albanian": "Si është shëndeti yt?",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "God bless you",
+      "albanian": "Zoti të bekofte",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "May you be healthy",
+      "albanian": "Të qëndrosh i shëndetshëm",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Congratulations",
+      "albanian": "Urime",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "I'm happy for you",
+      "albanian": "Jam i lumtur për ty",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Best wishes",
+      "albanian": "Dëshira të mira",
+      "timestamp": 1757314010593
+    },
+    {
+      "english": "Would you like some coffee?",
+      "albanian": "Dua kafe?",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Yes, please",
+      "albanian": "Po, lutem",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "No, thank you",
+      "albanian": "Jo, faleminderit",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "The coffee is ready",
+      "albanian": "Kafeja është gati",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "This coffee is delicious",
+      "albanian": "Kjo kafe është shumë e mirë",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "One more cup?",
+      "albanian": "Edhe një filxhan?",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Let's sit and talk",
+      "albanian": "Le të ulemi dhe bisedojmë",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Bring some sugar",
+      "albanian": "Merr pak sheqer",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Do you want it sweet?",
+      "albanian": "Do të duash të jetë e ëmbël?",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "The coffee is hot",
+      "albanian": "Kafeja është e nxehtë",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Let it cool down",
+      "albanian": "Lërë të ftohet",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "What beautiful weather",
+      "albanian": "Sa mot i bukur",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "How is work going?",
+      "albanian": "Si po shkon puna?",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Are you busy these days?",
+      "albanian": "Je i/e zënë këto ditë?",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Life is good",
+      "albanian": "Jeta është e mirë",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "We should meet more often",
+      "albanian": "Duhet të takohemi më shpesh",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Come by anytime",
+      "albanian": "Vij kurdo që të duash",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Our door is always open",
+      "albanian": "Dera jonë është gjithmonë e hapur",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "You are always welcome",
+      "albanian": "Je gjithmonë i/e mirëpritur",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Don't be a stranger",
+      "albanian": "Mos u bëj i/e huaj",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Stay for dinner",
+      "albanian": "Qëndro për darkë",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "We have plenty of food",
+      "albanian": "Kemi shumë ushqim",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "No need to rush",
+      "albanian": "S'ka nevojë për të shpejtuar",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Sit, relax",
+      "albanian": "Ulehu, qetësohu",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Tell me the news",
+      "albanian": "Më trego lajmet",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "How is everyone?",
+      "albanian": "Si është gjendja e të gjithëve?",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "What's new with you?",
+      "albanian": "Ç'të re ka me ty?",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Time passes so quickly",
+      "albanian": "Koha kalon kaq shpejt",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "It feels like yesterday",
+      "albanian": "Ndihet si dje",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "We need to catch up",
+      "albanian": "Na duhet të bëjmë përditësim",
+      "timestamp": 1757314017658
+    },
+    {
+      "english": "Are you hungry?",
+      "albanian": "A je i uritur?",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Let's eat",
+      "albanian": "Hajde të haqim",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "The food is ready",
+      "albanian": "U gatua ushqimi",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Come to the table",
+      "albanian": "Eja te tavolina",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Wash your hands",
+      "albanian": "Lani duart",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "This is delicious",
+      "albanian": "Kjo është shumë e shijshme",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "More bread please",
+      "albanian": "Më shumë bukë lutem",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Pass the salt",
+      "albanian": "Kalo kripën",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "I'm full",
+      "albanian": "Jam i ngopur",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Thank you for the meal",
+      "albanian": "Faleminderit për ushqimin",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Who cooked this?",
+      "albanian": "Kush gatuan këtë?",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "The recipe is old",
+      "albanian": "Receta është e vjetër",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "My grandmother taught me",
+      "albanian": "Më mësoi gjyshja ime",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Traditional Albanian food",
+      "albanian": "Ushqim tradicional shqiptar",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Made with love",
+      "albanian": "Bërë me dashuri",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Eat more",
+      "albanian": "Ha më shumë",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Don't be shy",
+      "albanian": "Mos u turpëro",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "There's plenty",
+      "albanian": "Ka mjaftueshëm",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Try this dish",
+      "albanian": "Provoni këtë pjatë",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "It's very good",
+      "albanian": "Është shumë e mirë",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "What do you think?",
+      "albanian": "Çfarë mendon?",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "I like it spicy",
+      "albanian": "Më pëlqen pikant",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Not too much pepper",
+      "albanian": "Mos e shtoni shumë piperin",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Fresh vegetables",
+      "albanian": "Perime të freskëta",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "From our garden",
+      "albanian": "Nga kopshti ynë",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Homemade bread",
+      "albanian": "Bukë e bërë në shtëpi",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Still warm",
+      "albanian": "Akoma e ngrohtë",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Have some more",
+      "albanian": "Merrni edhe pak",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Save room for dessert",
+      "albanian": "Ruaj vend për ëmbëlsirë",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "Let's clear the table",
+      "albanian": "Le të pastronim tavolinën",
+      "timestamp": 1757314025032
+    },
+    {
+      "english": "What time is it?",
+      "albanian": "Sa ka ora?",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "It's three o'clock",
+      "albanian": "Tre e ka ora",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "Half past four",
+      "albanian": "Kater e gjysem",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "Quarter to five",
+      "albanian": "Pes e deri ne pese",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "See you tomorrow",
+      "albanian": "Shihemi neser",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "Yesterday was nice",
+      "albanian": "Dje ishte mire",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "Today is beautiful",
+      "albanian": "Sot eshte bukur",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "This morning",
+      "albanian": "Kete mengjes",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "This afternoon",
+      "albanian": "Kete pasdite",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "This evening",
+      "albanian": "Kete mbasdite",
+      "timestamp": 1757314036394
+    },
+    {
+      "english": "Last night",
+      "albanian": "Naten e kaluar",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Next week",
+      "albanian": "Javen tjeter",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "I'm going to work",
+      "albanian": "Po shkoj ne pune",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Coming home late",
+      "albanian": "Duke ardhur von",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "The meeting is at five",
+      "albanian": "Takimi eshte ne pese",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Don't be late",
+      "albanian": "Mos u vono",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "We're running behind",
+      "albanian": "Jemi prapa",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "There's plenty of time",
+      "albanian": "Ka kohe te mjaftueshme",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "What's the hurry?",
+      "albanian": "C'ka shpejtesi?",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Take your time",
+      "albanian": "Merru kohe",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "When do you wake up?",
+      "albanian": "Kur zgjohesh?",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "I sleep early",
+      "albanian": "Fle heret",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Good night",
+      "albanian": "Naten e mire",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Sweet dreams",
+      "albanian": "Endrra te embel",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "See you in the morning",
+      "albanian": "Shihemi ne mengjes",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Have a good rest",
+      "albanian": "Pushim te mire",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Tomorrow is another day",
+      "albanian": "Neser eshte nje dite tjeter",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Time for bed",
+      "albanian": "Koha per shtrat",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Turn off the lights",
+      "albanian": "Fik dritat",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "Lock the door",
+      "albanian": "Mbylle deren",
+      "timestamp": 1757314036395
+    },
+    {
+      "english": "I am twenty years old",
+      "albanian": "Unë jam njëzet vjeç",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "How old are you?",
+      "albanian": "Sa vjeç je?",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "She is fifteen",
+      "albanian": "Ajo ka pesëmbëdhjetë vjeç",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "He is thirty-five",
+      "albanian": "Ai ka tridhjetë e pesë vjeç",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "The baby is six months old",
+      "albanian": "Bebeja ka gjashtë muaj",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "My birthday is next month",
+      "albanian": "Ditëlindja ime është muajin e ardhshëm",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Happy birthday",
+      "albanian": "Urime ditëlindjen",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "How many are there?",
+      "albanian": "Sa ka?",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Count to ten",
+      "albanian": "Numëro deri në dhjetë",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "One, two, three",
+      "albanian": "Një, dy, tre",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "First, second, third",
+      "albanian": "I pari, i dyti, i treti",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Half of this",
+      "albanian": "Një gjysmë e kësaj",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Double that amount",
+      "albanian": "Dyfisho atë shumë",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "A few more",
+      "albanian": "Disa më shumë",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Not many left",
+      "albanian": "Nuk ka shumë të mbetur",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "All of them",
+      "albanian": "Të gjithë ata",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "None remaining",
+      "albanian": "Asnjë tjetër i mbetur",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Most people",
+      "albanian": "Shumica e njerëzve",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Some children",
+      "albanian": "Disa fëmijë",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Every day",
+      "albanian": "Çdo ditë",
+      "timestamp": 1757314043972
+    },
+    {
+      "english": "Once a week",
+      "albanian": "Një herë në javë",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "Twice a month",
+      "albanian": "Dy herë në muaj",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "Three times a year",
+      "albanian": "Tre herë në vit",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "Many years ago",
+      "albanian": "Shumë vite më parë",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "A long time",
+      "albanian": "Një kohë e gjatë",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "Not long ago",
+      "albanian": "Nuk ka shumë kohë",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "Recently",
+      "albanian": "Së fundmi",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "Just now",
+      "albanian": "Tani vetëm",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "Right away",
+      "albanian": "Në të njëjtën kohë",
+      "timestamp": 1757314043973
+    },
+    {
+      "english": "In a moment",
+      "albanian": "Në një çast",
+      "timestamp": 1757314043973
+    }
+  ],
+  "costs": [
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02
+  ],
+  "errors": [],
+  "currentPhase": "lesson_content",
+  "batchResults": {
+    "family_vocabulary": {
+      "translationCount": 30,
+      "timestamp": 1757313999341
+    },
+    "greetings_basics": {
+      "translationCount": 30,
+      "timestamp": 1757314010593
+    },
+    "coffee_hospitality": {
+      "translationCount": 30,
+      "timestamp": 1757314017658
+    },
+    "food_meals": {
+      "translationCount": 30,
+      "timestamp": 1757314025032
+    },
+    "time_daily": {
+      "translationCount": 30,
+      "timestamp": 1757314036394
+    },
+    "numbers_ages": {
+      "translationCount": 30,
+      "timestamp": 1757314043972
+    }
+  }
+}

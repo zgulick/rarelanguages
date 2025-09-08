@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🇦🇱 Albanian Learning Test</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 50px auto; 
+            padding: 20px; 
+            background: #f9fafb;
+        }
+        .container { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { color: #1f2937; text-align: center; }
+        .lesson { 
+            background: #dbeafe; 
+            border-left: 4px solid #3b82f6;
+            padding: 20px; 
+            margin: 20px 0; 
+        }
+        .albanian { 
+            color: #059669; 
+            font-size: 1.4em; 
+            font-weight: bold; 
+            margin: 10px 0;
+        }
+        .english {
+            color: #374151;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .context {
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 15px;
+        }
+        .test-info {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🇦🇱 Albanian Learning App</h1>
+        
+        <div class="test-info">
+            <strong>📊 Database Connection Test</strong><br>
+            Since we can't get the server running, you can test your Albanian content directly in PGAdmin with this query:
+        </div>
+
+        <div style="background: #f9fafb; padding: 15px; border-radius: 5px; font-family: monospace; margin: 20px 0;">
+SELECT english_phrase, target_phrase, cultural_context<br>
+FROM lesson_content<br> 
+WHERE target_phrase IS NOT NULL<br>
+ORDER BY RANDOM()<br>
+LIMIT 5;
+        </div>
+
+        <div class="lesson">
+            <div class="english">English: "This is my father"</div>
+            <div class="albanian">Albanian: "Ky është baba im"</div>
+            <div class="context">Context: Informal family introduction</div>
+        </div>
+
+        <div class="lesson">
+            <div class="english">English: "Good morning"</div>
+            <div class="albanian">Albanian: "Mirëmëngjes"</div>
+            <div class="context">Context: Standard morning greeting</div>
+        </div>
+
+        <div class="lesson">
+            <div class="english">English: "Thank you"</div>
+            <div class="albanian">Albanian: "Faleminderit"</div>
+            <div class="context">Context: Polite expression of gratitude</div>
+        </div>
+
+        <div class="test-info">
+            <strong>🎯 Next Steps:</strong><br>
+            1. Run the query above in PGAdmin to see your real Albanian translations<br>
+            2. Try opening this file directly in your browser: <code>file:///Users/zgulick/Downloads/rarelanguages/albanian-test.html</code><br>
+            3. Let's debug the server connectivity issue separately
+        </div>
+    </div>
+</body>
+</html>
