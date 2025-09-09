@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Language Learning Admin - Dynamic Exercise Generator</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            color: #1e293b;
+        }
+        
+        .admin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #0f172a;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            color: #64748b;
+        }
+        
+        .admin-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .admin-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .admin-card h2 {
+            font-size: 1.4em;
+            color: #0f172a;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.2s ease;
+            background: #f9fafb;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 11px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: #1e40af;
+            color: #ffffff;
+            border: 1px solid #1d4ed8;
+        }
+        
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+        }
+        
+        .btn-success {
+            background: #047857;
+            color: #ffffff;
+            border: 1px solid #059669;
+        }
+        
+        .btn-success:hover {
+            background: #065f46;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(4, 120, 87, 0.25);
+        }
+        
+        .btn-secondary {
+            background: #374151;
+            color: #ffffff;
+            border: 1px solid #4b5563;
+        }
+        
+        .btn-secondary:hover {
+            background: #1f2937;
+            transform: translateY(-1px);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+        
+        .stat-label {
+            color: #64748b;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .topics-list {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .topic-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .topic-item:last-child {
+            border-bottom: none;
+        }
+        
+        .topic-info h4 {
+            color: #0f172a;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        
+        .topic-info p {
+            color: #64748b;
+            font-size: 0.9em;
+        }
+        
+        .topic-badge {
+            background: #f1f5f9;
+            color: #334155;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 0.8em;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .topic-badge-success {
+            background: #dcfce7 !important;
+            color: #14532d !important;
+            border: 1px solid #22c55e !important;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        
+        .message {
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .message.success {
+            background: #f0fdf4;
+            color: #14532d;
+            border: 1px solid #bbf7d0;
+        }
+        
+        .message.error {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+        
+        .message.info {
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #dbeafe;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .spinner {
+            animation: spin 1s linear infinite;
+        }
+
+        @media (max-width: 768px) {
+            .admin-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="header">
+            <h1>🎯 Language Learning Admin</h1>
+            <p>Dynamic Exercise Generator - Create new lessons and topics with AI</p>
+        </div>
+        
+        <!-- Statistics -->
+        <div class="stats-grid" id="statsGrid">
+            <!-- Stats will be loaded here -->
+        </div>
+        
+        <div class="admin-grid">
+            <!-- Create New Lesson Topic -->
+            <div class="admin-card">
+                <h2>📚 Create New Lesson Topic</h2>
+                <p style="color: #666; margin-bottom: 20px;">Create a completely new lesson topic that doesn't exist yet</p>
+                
+                <div id="topicMessage" class="message"></div>
+                
+                <form id="createTopicForm">
+                    <div class="form-group">
+                        <label for="topicName">Topic Name</label>
+                        <input type="text" id="topicName" name="name" placeholder="e.g., Days of the Week, Shopping, Weather" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="topicDescription">Description</label>
+                        <textarea id="topicDescription" name="description" placeholder="Brief description of what students will learn"></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="topicDifficulty">Difficulty</label>
+                            <select id="topicDifficulty" name="difficulty">
+                                <option value="1">1 - Beginner</option>
+                                <option value="2" selected>2 - Elementary</option>
+                                <option value="3">3 - Intermediate</option>
+                                <option value="4">4 - Advanced</option>
+                                <option value="5">5 - Expert</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="topicLanguage">Language</label>
+                            <select id="topicLanguage" name="language">
+                                <option value="gheg-al">Albanian (Gheg)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Create New Topic
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Generate Exercises for Existing Topics -->
+            <div class="admin-card">
+                <h2>⚡ Generate Practice Exercises</h2>
+                <p style="color: #666; margin-bottom: 20px;">Add more exercises to existing lesson topics. Only shows topics that already exist.</p>
+                
+                <div id="exerciseMessage" class="message"></div>
+                
+                <!-- Generation Progress -->
+                <div id="generationProgress" style="display: none; margin-bottom: 20px; padding: 15px; background: #f0fdf4; border-radius: 10px; border: 1px solid #bbf7d0;">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <div class="spinner" style="width: 20px; height: 20px; border: 2px solid #10b981; border-top: 2px solid transparent; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 10px;"></div>
+                        <span id="progressText" style="color: #0f172a; font-weight: 600;">Generating exercises...</span>
+                    </div>
+                    <div style="background: #dcfce7; border-radius: 5px; height: 8px; overflow: hidden;">
+                        <div id="progressBar" style="background: #10b981; height: 100%; width: 0%; transition: width 0.3s ease;"></div>
+                    </div>
+                </div>
+                
+                <!-- Success Message with Action -->
+                <div id="generationSuccess" style="display: none; margin-bottom: 20px; padding: 15px; background: #f0fdf4; border-radius: 10px; border: 1px solid #10b981;">
+                    <div style="color: #14532d; font-weight: 600; margin-bottom: 10px;">
+                        🎉 <span id="successCount">0</span> exercises generated successfully!
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a id="viewInAppLink" href="#" target="_blank" class="btn btn-success" style="text-decoration: none; padding: 8px 16px; font-size: 0.9em;">
+                            👀 Test in Learning App
+                        </a>
+                        <button id="generateMoreBtn" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9em;">
+                            ➕ Generate More
+                        </button>
+                    </div>
+                </div>
+                
+                <form id="generateExercisesForm">
+                    <div class="form-group">
+                        <label for="exerciseTopic">Select Existing Topic</label>
+                        <select id="exerciseTopic" name="topicId" required>
+                            <option value="">Loading existing topics...</option>
+                        </select>
+                        <small style="color: #666; margin-top: 5px; display: block;">Only shows topics that already have been created</small>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="exerciseCount">Number of Exercises</label>
+                            <input type="number" id="exerciseCount" name="count" value="10" min="1" max="50" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exerciseDifficulty">Override Difficulty</label>
+                            <select id="exerciseDifficulty" name="difficulty">
+                                <option value="">Use Topic Default</option>
+                                <option value="1">1 - Beginner</option>
+                                <option value="2">2 - Elementary</option>
+                                <option value="3">3 - Intermediate</option>
+                                <option value="4">4 - Advanced</option>
+                                <option value="5">5 - Expert</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exerciseTypes">Exercise Types (comma-separated)</label>
+                        <input type="text" id="exerciseTypes" name="exerciseTypes" placeholder="translation,conjugation,phrase-complete,multiple-choice" value="translation,conjugation,phrase-complete,multiple-choice">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialInstructions">Special Instructions</label>
+                        <textarea id="specialInstructions" name="specialInstructions" placeholder="Focus on family conversations, include cultural context, etc..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success" style="width: 100%;" id="generateBtn">
+                        🤖 Generate with AI
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Topics List -->
+        <div class="topics-list">
+            <h2 style="margin-bottom: 20px; color: #0f172a; font-weight: 600;">📖 Available Topics</h2>
+            <div id="topicsList">
+                <div class="loading">Loading topics...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Admin Panel JavaScript
+        class AdminPanel {
+            constructor() {
+                this.baseUrl = window.location.origin;
+                this.init();
+            }
+            
+            async init() {
+                await this.loadStats();
+                await this.loadTopics();
+                this.setupEventListeners();
+            }
+            
+            async loadStats() {
+                try {
+                    const response = await fetch(`${this.baseUrl}/api/exercises/stats`);
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        this.renderStats(data.stats);
+                    }
+                } catch (error) {
+                    console.error('Error loading stats:', error);
+                }
+            }
+            
+            renderStats(stats) {
+                const statsGrid = document.getElementById('statsGrid');
+                statsGrid.innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.topics.total}</div>
+                        <div class="stat-label">Topics</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.exercises.total}</div>
+                        <div class="stat-label">Exercises</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.generation.totalRequests}</div>
+                        <div class="stat-label">AI Generations</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$${stats.generation.totalCost.toFixed(3)}</div>
+                        <div class="stat-label">AI Cost</div>
+                    </div>
+                `;
+            }
+            
+            async loadTopics() {
+                try {
+                    const response = await fetch(`${this.baseUrl}/api/exercises/topics`);
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        this.renderTopics(data.topics);
+                        this.populateTopicSelect(data.topics);
+                    }
+                } catch (error) {
+                    console.error('Error loading topics:', error);
+                }
+            }
+            
+            renderTopics(topics) {
+                const topicsList = document.getElementById('topicsList');
+                
+                if (topics.length === 0) {
+                    topicsList.innerHTML = '<p class="loading">No topics found. Create your first topic!</p>';
+                    return;
+                }
+                
+                topicsList.innerHTML = topics.map(topic => {
+                    const hasExercises = topic.exercise_count > 0;
+                    const topicSlug = topic.slug;
+                    
+                    return `
+                    <div class="topic-item">
+                        <div class="topic-info">
+                            <h4>${topic.name}</h4>
+                            <p>${topic.description || 'No description'}</p>
+                            ${hasExercises ? `<small style="color: #10b981; font-weight: 600;">✅ Ready to practice!</small>` : `<small style="color: #666;">⏳ No exercises yet</small>`}
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <span class="topic-badge">Difficulty ${topic.difficulty}/5</span>
+                            <span class="topic-badge ${hasExercises ? 'topic-badge-success' : ''}">${topic.exercise_count} exercises</span>
+                            ${hasExercises ? `
+                                <a href="${this.baseUrl}/" target="_blank" class="btn btn-success" style="text-decoration: none; padding: 8px 16px; font-size: 0.9em;">
+                                    👀 Test in App
+                                </a>
+                            ` : ''}
+                            <button class="btn btn-secondary" onclick="admin.generateForTopic('${topic.id}')" style="font-size: 0.9em;">
+                                ${hasExercises ? 'Generate More' : 'Generate First'}
+                            </button>
+                        </div>
+                    </div>
+                `;}).join('');
+            }
+            
+            populateTopicSelect(topics) {
+                const select = document.getElementById('exerciseTopic');
+                
+                // Only show topics that already exist (all topics exist, but maybe filter by some criteria)
+                const allTopics = topics;
+                
+                if (allTopics.length === 0) {
+                    select.innerHTML = '<option value="">No topics available - create a new topic first</option>';
+                    return;
+                }
+                
+                select.innerHTML = '<option value="">Select a topic to add exercises to...</option>' + 
+                    allTopics.map(topic => `
+                        <option value="${topic.id}">${topic.name} (${topic.exercise_count} exercises)</option>
+                    `).join('');
+            }
+            
+            setupEventListeners() {
+                // Create Topic Form
+                document.getElementById('createTopicForm').addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    await this.createTopic(e.target);
+                });
+                
+                // Generate Exercises Form
+                document.getElementById('generateExercisesForm').addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    await this.generateExercises(e.target);
+                });
+            }
+            
+            async createTopic(form) {
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                
+                // Parse learning objectives from description
+                const learningObjectives = data.description ? 
+                    data.description.split('.').filter(s => s.trim()).map(s => s.trim()) : [];
+                
+                try {
+                    this.showMessage('topicMessage', 'Creating topic...', 'info');
+                    
+                    const response = await fetch(`${this.baseUrl}/api/exercises/topics`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            ...data,
+                            learningObjectives
+                        })
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        this.showMessage('topicMessage', 'Topic created successfully!', 'success');
+                        form.reset();
+                        await this.loadTopics();
+                        await this.loadStats();
+                    } else {
+                        this.showMessage('topicMessage', result.error || 'Failed to create topic', 'error');
+                    }
+                } catch (error) {
+                    this.showMessage('topicMessage', 'Network error: ' + error.message, 'error');
+                }
+            }
+            
+            async generateExercises(form) {
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                
+                // Clean up data
+                if (data.exerciseTypes) {
+                    data.exerciseTypes = data.exerciseTypes.split(',').map(s => s.trim());
+                }
+                if (!data.difficulty) delete data.difficulty;
+                if (!data.specialInstructions) delete data.specialInstructions;
+                
+                // Get topic info for later use
+                const selectedTopic = document.querySelector('#exerciseTopic option:checked');
+                const topicName = selectedTopic ? selectedTopic.textContent.split(' (')[0] : '';
+                
+                try {
+                    // Hide messages, show progress
+                    document.getElementById('exerciseMessage').style.display = 'none';
+                    document.getElementById('generationSuccess').style.display = 'none';
+                    document.getElementById('generationProgress').style.display = 'block';
+                    document.getElementById('generateBtn').disabled = true;
+                    document.getElementById('generateBtn').textContent = '🤖 Generating...';
+                    
+                    // Start progress animation
+                    this.startProgressSimulation(parseInt(data.count));
+                    
+                    const response = await fetch(`${this.baseUrl}/api/exercises/generate`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        // Start polling for completion
+                        this.pollForCompletion(data.topicId, topicName, parseInt(data.count));
+                    } else {
+                        this.showGenerationError(result.error || 'Failed to start generation');
+                    }
+                } catch (error) {
+                    this.showGenerationError('Network error: ' + error.message);
+                }
+            }
+            
+            startProgressSimulation(totalExercises) {
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += Math.random() * 15;
+                    if (progress > 85) progress = 85; // Don't go to 100 until actually done
+                    
+                    document.getElementById('progressBar').style.width = `${progress}%`;
+                    document.getElementById('progressText').textContent = 
+                        `Generating ${totalExercises} exercises with AI... (${Math.round(progress)}%)`;
+                }, 500);
+                
+                // Store interval so we can clear it
+                this.progressInterval = interval;
+            }
+            
+            async pollForCompletion(topicId, topicName, expectedCount) {
+                let attempts = 0;
+                const maxAttempts = 40; // 2 minutes max
+                
+                const checkCompletion = async () => {
+                    try {
+                        // Check if exercises have been generated by counting exercises for this topic
+                        const response = await fetch(`${this.baseUrl}/api/exercises/topics`);
+                        const data = await response.json();
+                        
+                        if (data.success) {
+                            const topic = data.topics.find(t => t.id === topicId);
+                            const currentCount = topic ? topic.exercise_count : 0;
+                            
+                            // Check if we have new exercises (assume generation is done if count increased)
+                            if (currentCount >= expectedCount || attempts >= maxAttempts) {
+                                this.showGenerationSuccess(topicName, currentCount, topic ? topic.slug : '');
+                                return;
+                            }
+                        }
+                        
+                        attempts++;
+                        if (attempts < maxAttempts) {
+                            setTimeout(checkCompletion, 3000); // Check every 3 seconds
+                        } else {
+                            this.showGenerationError('Generation timed out. Please check if exercises were created.');
+                        }
+                    } catch (error) {
+                        this.showGenerationError('Error checking completion: ' + error.message);
+                    }
+                };
+                
+                // Start checking after 5 seconds
+                setTimeout(checkCompletion, 5000);
+            }
+            
+            showGenerationSuccess(topicName, exerciseCount, topicSlug) {
+                // Clear progress interval
+                if (this.progressInterval) {
+                    clearInterval(this.progressInterval);
+                }
+                
+                // Complete progress bar
+                document.getElementById('progressBar').style.width = '100%';
+                document.getElementById('progressText').textContent = 'Generation completed!';
+                
+                setTimeout(() => {
+                    // Hide progress, show success
+                    document.getElementById('generationProgress').style.display = 'none';
+                    document.getElementById('generationSuccess').style.display = 'block';
+                    
+                    // Update success message
+                    document.getElementById('successCount').textContent = exerciseCount;
+                    document.getElementById('viewInAppLink').href = `${this.baseUrl}/`;
+                    
+                    // Reset form
+                    document.getElementById('generateBtn').disabled = false;
+                    document.getElementById('generateBtn').textContent = '🤖 Generate with AI';
+                    
+                    // Add click handler for "Generate More" button
+                    document.getElementById('generateMoreBtn').onclick = () => {
+                        document.getElementById('generationSuccess').style.display = 'none';
+                    };
+                    
+                    // Reload data
+                    this.loadTopics();
+                    this.loadStats();
+                }, 1000);
+            }
+            
+            showGenerationError(message) {
+                // Clear progress interval
+                if (this.progressInterval) {
+                    clearInterval(this.progressInterval);
+                }
+                
+                // Hide progress, show error
+                document.getElementById('generationProgress').style.display = 'none';
+                this.showMessage('exerciseMessage', message, 'error');
+                
+                // Reset button
+                document.getElementById('generateBtn').disabled = false;
+                document.getElementById('generateBtn').textContent = '🤖 Generate with AI';
+            }
+            
+            async generateForTopic(topicId) {
+                // Pre-fill the form with selected topic
+                document.getElementById('exerciseTopic').value = topicId;
+                document.getElementById('exerciseCount').value = '10';
+                
+                // Scroll to form
+                document.getElementById('generateExercisesForm').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            }
+            
+            showMessage(elementId, message, type) {
+                const element = document.getElementById(elementId);
+                element.textContent = message;
+                element.className = `message ${type}`;
+                element.style.display = 'block';
+                
+                if (type === 'success') {
+                    setTimeout(() => {
+                        element.style.display = 'none';
+                    }, 5000);
+                }
+            }
+        }
+        
+        // Initialize admin panel
+        const admin = new AdminPanel();
+    </script>
+</body>
+</html>

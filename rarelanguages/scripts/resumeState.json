@@ -4,6 +4,10 @@
     "vocabulary_translation": {
       "completed": true,
       "timestamp": 1757314017659
+    },
+    "lesson_content": {
+      "completed": true,
+      "timestamp": 1757399446155
     }
   },
   "completedBatches": [
@@ -12,7 +16,9 @@
     "coffee_hospitality",
     "food_meals",
     "time_daily",
-    "numbers_ages"
+    "numbers_ages",
+    "feelings_emotions",
+    "weather_nature"
   ],
   "translations": [
     {
@@ -914,6 +920,306 @@
       "english": "In a moment",
       "albanian": "Në një çast",
       "timestamp": 1757314043973
+    },
+    {
+      "english": "I am happy",
+      "albanian": "Jam i lumtur",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "We are excited",
+      "albanian": "Jemi emocionuar",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "Don't be sad",
+      "albanian": "Mos u trishto",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "Everything will be fine",
+      "albanian": "Do të jetë gjithçka në rregull",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "I understand",
+      "albanian": "Kuptoj",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "Don't worry",
+      "albanian": "Mos u shqetëso",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "Be patient",
+      "albanian": "Bëhu i duruar",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "Stay strong",
+      "albanian": "Qëndro i fortë",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "I'm proud of you",
+      "albanian": "Jam krenar për ty",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "Well done",
+      "albanian": "Mirë e ke bërë",
+      "timestamp": 1757399436542
+    },
+    {
+      "english": "You did great",
+      "albanian": "Ke bërë shumë mirë",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "I believe in you",
+      "albanian": "Besoj në ty",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Don't give up",
+      "albanian": "Mos u dorëzo",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Try again",
+      "albanian": "Provo përsëri",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "It's okay",
+      "albanian": "Është në rregull",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Mistakes happen",
+      "albanian": "Gabimet ndodhin",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Learn from this",
+      "albanian": "Mëso nga kjo",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Tomorrow is better",
+      "albanian": "Nesër është më mirë",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "I love you",
+      "albanian": "Të dua",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "We care about you",
+      "albanian": "Ne kujdesemi për ty",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "You're important",
+      "albanian": "Je i rëndësishëm",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Family supports you",
+      "albanian": "Familja të mbështet",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "We're here for you",
+      "albanian": "Jemi këtu për ty",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Never alone",
+      "albanian": "Kurrë nuk je i/e vetëm/vetme",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Share your worries",
+      "albanian": "Ndaj shqetësimet tua",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Talk to me",
+      "albanian": "Më fol",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "I'm listening",
+      "albanian": "Po dëgjoj",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "What's wrong?",
+      "albanian": "Ç'të ka ndodhur?",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "How can I help?",
+      "albanian": "Si mund të ndihmoj?",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "Everything passes",
+      "albanian": "Gjithçka kalon",
+      "timestamp": 1757399436543
+    },
+    {
+      "english": "It's sunny today",
+      "albanian": "Sot ka diell",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "The weather is nice",
+      "albanian": "Moti është i mirë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "It's raining",
+      "albanian": "Po bie shi",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Very cold outside",
+      "albanian": "Jashtë është shumë ftohtë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Quite warm",
+      "albanian": "Pak e ngrohtë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Beautiful spring day",
+      "albanian": "Ditë e bukur pranvere",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Hot summer",
+      "albanian": "Verë e nxehtë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Cool autumn",
+      "albanian": "Vjeshtë e freskët",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Snow is falling",
+      "albanian": "Bie borë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Strong wind",
+      "albanian": "Era e fortë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Clear sky",
+      "albanian": "Qielli i pastër",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Many clouds",
+      "albanian": "Shumë re",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Thunder and lightning",
+      "albanian": "Tundër dhe rrufe",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "The sun is shining",
+      "albanian": "Dielli po ndrit",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Stars are bright",
+      "albanian": "Yjet janë të ndritshëm",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Full moon tonight",
+      "albanian": "Hëna e plotë sot në mbrëmje",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Fresh air",
+      "albanian": "Aer i freskët",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Birds are singing",
+      "albanian": "Zogj po këndojnë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Flowers blooming",
+      "albanian": "Lule po lulëzojnë",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Trees are green",
+      "albanian": "Pemët janë të gjelbra",
+      "timestamp": 1757399446154
+    },
+    {
+      "english": "Leaves falling",
+      "albanian": "Gjethe po bien",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "First snow",
+      "albanian": "Bora e parë",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Ice on the road",
+      "albanian": "Akull në rrugë",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Be careful driving",
+      "albanian": "Kujdes në drejtim",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Roads are slippery",
+      "albanian": "Rrugët janë të shkëputshme",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Stay inside",
+      "albanian": "Qëndro brenda",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Bundle up warm",
+      "albanian": "Veshu ngrohtë",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Open the windows",
+      "albanian": "Hap dritaret",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Close the shutters",
+      "albanian": "Mbyll shkallet",
+      "timestamp": 1757399446155
+    },
+    {
+      "english": "Beautiful view",
+      "albanian": "Pamje e bukur",
+      "timestamp": 1757399446155
     }
   ],
   "costs": [
@@ -1096,10 +1402,70 @@
     0.02,
     0.02,
     0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
     0.02
   ],
   "errors": [],
-  "currentPhase": "lesson_content",
+  "currentPhase": "exercise_generation",
   "batchResults": {
     "family_vocabulary": {
       "translationCount": 30,
@@ -1124,6 +1490,14 @@
     "numbers_ages": {
       "translationCount": 30,
       "timestamp": 1757314043972
+    },
+    "feelings_emotions": {
+      "translationCount": 30,
+      "timestamp": 1757399436542
+    },
+    "weather_nature": {
+      "translationCount": 30,
+      "timestamp": 1757399446154
     }
   }
 }

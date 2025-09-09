@@ -20,6 +20,7 @@ const path = require('path');
 const { ProgressTracker } = require('./progressTracker');
 const { processBatch, getTranslationBatches } = require('./translationBatches');
 const { populateDatabase } = require('./databasePopulator');
+const { GrammarEngineGenerator } = require('./grammarEngine');
 // const { generatePronunciationGuides } = require('./generatePronunciation');
 // const { generateExerciseVariations } = require('./generateExercises');
 const { testConnection } = require('../lib/database');
@@ -159,11 +160,29 @@ async function generateExerciseVariations(progress) {
 }
 
 /**
- * Generate pronunciation guides (Phase 4)
+ * Generate grammar engine (Phase 4)
+ */
+async function generateGrammarEngine(progress) {
+  progress.setCurrentPhase('grammar_engine');
+  console.log('🔧 Phase 4: Generating grammar engine...');
+
+  await executeWithRetry(
+    async () => {
+      const generator = new GrammarEngineGenerator();
+      await generator.generateGrammarEngine('gheg-al', progress);
+    },
+    'grammar engine generation'
+  );
+
+  console.log('✅ Grammar engine complete');
+}
+
+/**
+ * Generate pronunciation guides (Phase 5)
  */
 async function generatePronunciationGuides(progress) {
   progress.setCurrentPhase('pronunciation_guides');
-  console.log('🗣️  Phase 4: Generating pronunciation guides...');
+  console.log('🗣️  Phase 5: Generating pronunciation guides...');
 
   await executeWithRetry(
     async () => {
@@ -204,7 +223,15 @@ async function executeGenerationPipeline(progress) {
     console.log('✅ Exercise generation already complete - skipping');
   }
   
-  // Phase 4: Generate pronunciation guides (5 minutes)
+  // Phase 4: Generate grammar engine (10 minutes)
+  if (!progress.isCompleted('grammar_engine')) {
+    await generateGrammarEngine(progress);
+    progress.markCompleted('grammar_engine');
+  } else {
+    console.log('✅ Grammar engine already complete - skipping');
+  }
+  
+  // Phase 5: Generate pronunciation guides (5 minutes)
   if (!progress.isCompleted('pronunciation_guides')) {
     await generatePronunciationGuides(progress);
     progress.markCompleted('pronunciation_guides');
@@ -212,7 +239,7 @@ async function executeGenerationPipeline(progress) {
     console.log('✅ Pronunciation guides already complete - skipping');
   }
   
-  // Phase 5: Populate database (2 minutes)
+  // Phase 6: Populate database (2 minutes)
   if (!progress.isCompleted('database_population')) {
     await populateDatabase(progress);
     progress.markCompleted('database_population');
