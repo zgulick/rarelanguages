@@ -1240,7 +1240,7 @@ app.get('/', (req, res) => {
                             {lessonSteps.map((step, index) => (
                                 <div 
                                     key={step}
-                                    className={\\`progress-step \\${index < currentStepIndex ? 'completed' : ''} \\${index === currentStepIndex ? 'active' : ''}\\`}
+                                    className={`progress-step ${index < currentStepIndex ? 'completed' : ''} ${index === currentStepIndex ? 'active' : ''}`}
                                 >
                                     {step.charAt(0).toUpperCase() + step.slice(1)}
                                 </div>
@@ -1455,7 +1455,7 @@ app.get('/', (req, res) => {
             const loadVocabulary = async () => {
                 setLoading(true);
                 try {
-                    const response = await fetch(\\`/api/vocabulary/\\${encodeURIComponent(topic.name)}\\`);
+                    const response = await fetch(`/api/vocabulary/${encodeURIComponent(topic.name)}`);
                     const data = await response.json();
                     
                     // Transform database data to include pronunciation and usage hints
@@ -1463,8 +1463,8 @@ app.get('/', (req, res) => {
                         english: item.english_phrase,
                         albanian: item.target_phrase,
                         pronunciation: generatePronunciation(item.target_phrase),
-                        usage: item.cultural_context || \\`Essential \\${topic.name.toLowerCase()} phrase\\`,
-                        example: \\`\\${item.target_phrase} (\\${item.english_phrase})\\`
+                        usage: item.cultural_context || `Essential ${topic.name.toLowerCase()} phrase`,
+                        example: `${item.target_phrase} (${item.english_phrase})`
                     }));
                     
                     setVocabularyData(transformedData.slice(0, 15)); // Show first 15 words
@@ -1713,27 +1713,27 @@ app.get('/', (req, res) => {
                     conjugations: {
                         'unë': { 
                             form: presentConjugations['unë'] || verb.infinitive, 
-                            english: \\`I \\${verb.english_translation.replace('to ', '')}\\` 
+                            english: `I ${verb.english_translation.replace('to ', '')}` 
                         },
                         'ti': { 
                             form: presentConjugations['ti'] || verb.infinitive, 
-                            english: \\`you \\${verb.english_translation.replace('to ', '')}\\` 
+                            english: `you ${verb.english_translation.replace('to ', '')}` 
                         },
                         'ai/ajo': { 
                             form: presentConjugations['ai/ajo'] || verb.infinitive, 
-                            english: \\`he/she \\${verb.english_translation.replace('to ', '')}s\\` 
+                            english: `he/she ${verb.english_translation.replace('to ', '')}s` 
                         },
                         'ne': { 
                             form: presentConjugations['ne'] || verb.infinitive, 
-                            english: \\`we \\${verb.english_translation.replace('to ', '')}\\` 
+                            english: `we ${verb.english_translation.replace('to ', '')}` 
                         },
                         'ju': { 
                             form: presentConjugations['ju'] || verb.infinitive, 
-                            english: \\`you (plural) \\${verb.english_translation.replace('to ', '')}\\` 
+                            english: `you (plural) ${verb.english_translation.replace('to ', '')}` 
                         },
                         'ata/ato': { 
                             form: presentConjugations['ata/ato'] || verb.infinitive, 
-                            english: \\`they \\${verb.english_translation.replace('to ', '')}\\` 
+                            english: `they ${verb.english_translation.replace('to ', '')}` 
                         }
                     },
                     examples: verb.usage_examples || generateBasicExamples(verb),
@@ -1748,15 +1748,15 @@ app.get('/', (req, res) => {
                 
                 if (presentForms['unë']) {
                     examples.push({
-                        albanian: \\`Unë \\${presentForms['unë']} çdo ditë\\`,
-                        english: \\`I \\${verb.english_translation.replace('to ', '')} every day\\`
+                        albanian: `Unë ${presentForms['unë']} çdo ditë`,
+                        english: `I ${verb.english_translation.replace('to ', '')} every day`
                     });
                 }
                 
                 if (presentForms['ne']) {
                     examples.push({
-                        albanian: \\`Ne \\${presentForms['ne']} bashkë\\`,
-                        english: \\`We \\${verb.english_translation.replace('to ', '')} together\\`
+                        albanian: `Ne ${presentForms['ne']} bashkë`,
+                        english: `We ${verb.english_translation.replace('to ', '')} together`
                     });
                 }
                 
@@ -1804,7 +1804,7 @@ app.get('/', (req, res) => {
                         <div className="section-header">
                             <h3>📖 Albanian Verbs - {topic.name}</h3>
                             <p style={{color: '#e74c3c'}}>
-                                {error ? \\`Error: \\${error}\\` : 'No verbs available for this topic'}
+                                {error ? `Error: ${error}` : 'No verbs available for this topic'}
                             </p>
                         </div>
                         <div className="navigation-buttons">
@@ -1830,7 +1830,7 @@ app.get('/', (req, res) => {
                             {verbData.map((verb, index) => (
                                 <button
                                     key={verb.infinitive}
-                                    className={\\`verb-tab \\${index === activeVerb ? 'active' : ''}\\`}
+                                    className={`verb-tab ${index === activeVerb ? 'active' : ''}`}
                                     onClick={() => setActiveVerb(index)}
                                 >
                                     {verb.infinitive}
@@ -2515,7 +2515,7 @@ app.get('/', (req, res) => {
                                     </div>
                                     <div style={{
                                         background: verb.type.includes('irregular') ? '#fef2f2' : '#f0fdf4',
-                                        border: \\`2px solid \\${verb.type.includes('irregular') ? '#ef4444' : '#10b981'}\\`,
+                                        border: `2px solid ${verb.type.includes('irregular') ? '#ef4444' : '#10b981'}`,
                                         color: verb.type.includes('irregular') ? '#dc2626' : '#166534',
                                         padding: '8px 16px',
                                         borderRadius: '20px',
@@ -3439,10 +3439,10 @@ app.get('/', (req, res) => {
                         const newLearnedCount = parseInt(localStorage.getItem('learnedCount') || '0') + Math.floor(exercises.length / 3);
                         saveProgress({ 
                             learnedCount: newLearnedCount,
-                            [\\`topics.\\${topic.id}\\`]: accuracy 
+                            [`topics.${topic.id}`]: accuracy 
                         });
                         
-                        alert(\`Topic completed! You got \${exerciseScore.correct + (isCorrect ? 1 : 0)} out of \${exerciseScore.total + 1} correct (\${accuracy}%)\`);
+                        alert(`Topic completed! You got ${exerciseScore.correct + (isCorrect ? 1 : 0)} out of ${exerciseScore.total + 1} correct (${accuracy}%)`);
                         onNext();
                     }
                 }, 400);
@@ -3484,7 +3484,7 @@ app.get('/', (req, res) => {
                             <div style={{
                                 background: '#667eea',
                                 height: '100%',
-                                width: \\`\\${(currentExercise / exercises.length) * 100}%\\`,
+                                width: `${(currentExercise / exercises.length) * 100}%`,
                                 transition: 'width 0.3s ease'
                             }}></div>
                         </div>
@@ -3568,7 +3568,7 @@ app.get('/', (req, res) => {
                             {data.options.map((option, index) => (
                                 <button
                                     key={index}
-                                    className={\\`option-button \\${selectedAnswer === option ? 'selected' : ''}\\`}
+                                    className={`option-button ${selectedAnswer === option ? 'selected' : ''}`}
                                     onClick={() => setSelectedAnswer(option)}
                                     disabled={showResult}
                                     style={{
@@ -3590,7 +3590,7 @@ app.get('/', (req, res) => {
                         {showResult && (
                             <div style={{
                                 background: selectedAnswer === data.correct ? '#f0fdf4' : '#fef2f2',
-                                border: \\`2px solid \\${selectedAnswer === data.correct ? '#10b981' : '#ef4444'}\\`,
+                                border: `2px solid ${selectedAnswer === data.correct ? '#10b981' : '#ef4444'}`,
                                 borderRadius: '12px',
                                 padding: '20px',
                                 margin: '30px auto',
@@ -3676,7 +3676,7 @@ app.get('/', (req, res) => {
                             {data.options.map((option, index) => (
                                 <button
                                     key={index}
-                                    className={\\`option-button \\${selectedAnswer === option ? 'selected' : ''}\\`}
+                                    className={`option-button ${selectedAnswer === option ? 'selected' : ''}`}
                                     onClick={() => setSelectedAnswer(option)}
                                     disabled={showResult}
                                     style={{
@@ -3698,7 +3698,7 @@ app.get('/', (req, res) => {
                         {showResult && (
                             <div style={{
                                 background: selectedAnswer === data.correct ? '#f0fdf4' : '#fef2f2',
-                                border: \\`2px solid \\${selectedAnswer === data.correct ? '#10b981' : '#ef4444'}\\`,
+                                border: `2px solid ${selectedAnswer === data.correct ? '#10b981' : '#ef4444'}`,
                                 borderRadius: '12px',
                                 padding: '20px',
                                 margin: '30px auto',
@@ -3786,7 +3786,7 @@ app.get('/', (req, res) => {
                         {showResult && (
                             <div style={{
                                 background: userTranslation.toLowerCase().trim() === data.correct.toLowerCase().trim() ? '#f0fdf4' : '#fef9e7',
-                                border: \\`2px solid \\${userTranslation.toLowerCase().trim() === data.correct.toLowerCase().trim() ? '#10b981' : '#f59e0b'}\\`,
+                                border: `2px solid ${userTranslation.toLowerCase().trim() === data.correct.toLowerCase().trim() ? '#10b981' : '#f59e0b'}`,
                                 borderRadius: '12px',
                                 padding: '25px',
                                 margin: '30px auto',
@@ -3847,7 +3847,7 @@ app.get('/', (req, res) => {
                     
                     <div className="difficulty-stars">
                         {[1,2,3,4,5].map(n => (
-                            <span key={n} className={\\`star \\${n <= difficulty ? '' : 'empty'}\\`}>
+                            <span key={n} className={`star ${n <= difficulty ? '' : 'empty'}`}>
                                 ★
                             </span>
                         ))}
@@ -3934,7 +3934,7 @@ app.get('/', (req, res) => {
                         {data.options.map((option, index) => (
                             <button
                                 key={index}
-                                className={\\`option-button \\${selectedOption === index ? 'selected' : ''}\\`}
+                                className={`option-button ${selectedOption === index ? 'selected' : ''}`}
                                 onClick={() => handleOptionSelect(index)}
                                 disabled={showResult}
                                 style={{
@@ -4029,7 +4029,7 @@ app.get('/', (req, res) => {
                         {visualOptions.map((option, index) => (
                             <div
                                 key={index}
-                                className={\\`visual-option \\${selectedOption === index ? 'selected' : ''}\\`}
+                                className={`visual-option ${selectedOption === index ? 'selected' : ''}`}
                                 onClick={() => handleOptionSelect(index)}
                             >
                                 {option.emoji}
@@ -4043,7 +4043,7 @@ app.get('/', (req, res) => {
                     {showResult && (
                         <div style={{
                             background: selectedOption === correctAnswer ? '#f0fdf4' : '#fef2f2',
-                            border: \\`2px solid \\${selectedOption === correctAnswer ? '#10b981' : '#ef4444'}\\`,
+                            border: `2px solid ${selectedOption === correctAnswer ? '#10b981' : '#ef4444'}`,
                             borderRadius: '12px',
                             padding: '20px',
                             margin: '20px 0'
@@ -4156,7 +4156,6 @@ app.get('/', (req, res) => {
 </body>
 </html>
   `);
-});;
 });
 
 // Existing API endpoints

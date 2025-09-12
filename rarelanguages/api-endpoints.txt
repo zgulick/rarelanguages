@@ -1,0 +1,226 @@
+
+// Existing API endpoints
+app.get('/api/count', async (req, res) => {
+  try {
+    const result = await query('SELECT COUNT(*) as count FROM lesson_content WHERE target_phrase IS NOT NULL');
+    res.json({ count: result.rows[0].count });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/categories', async (req, res) => {
+  try {
+    const result = await query(`
+      SELECT l.name, COUNT(lc.id) as count
+      FROM lesson_content lc 
+      JOIN lessons l ON lc.lesson_id = l.id 
+      WHERE lc.target_phrase IS NOT NULL 
+      GROUP BY l.name 
+      ORDER BY count DESC
+    `);
+    res.json(result.rows);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/lesson', async (req, res) => {
+  try {
+    const result = await query(`
+      SELECT lc.english_phrase, lc.target_phrase, lc.cultural_context, l.name as lesson_name
+      FROM lesson_content lc
+      JOIN lessons l ON lc.lesson_id = l.id 
+      WHERE lc.target_phrase IS NOT NULL 
+      ORDER BY RANDOM() 
+      LIMIT 1
+    `);
+    
+    if (result.rows.length > 0) {
+      res.json(result.rows[0]);
+    } else {
+      res.status(404).json({ error: 'No lessons found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/lesson/:category', async (req, res) => {
+  try {
+    const category = decodeURIComponent(req.params.category);
+    const result = await query(`
+      SELECT lc.english_phrase, lc.target_phrase, lc.cultural_context, l.name as lesson_name
+      FROM lesson_content lc
+      JOIN lessons l ON lc.lesson_id = l.id 
+      WHERE lc.target_phrase IS NOT NULL 
+        AND l.name = $1
+      ORDER BY RANDOM() 
+      LIMIT 1
+    `, [category]);
+    
+    if (result.rows.length > 0) {
+      res.json(result.rows[0]);
+    } else {
+      res.status(404).json({ error: `No lessons found for category: ${category}` });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// New endpoint to get ALL vocabulary for a specific category
+app.get('/api/vocabulary/:category', async (req, res) => {
+  try {
+    const category = decodeURIComponent(req.params.category);
+    const result = await query(`
+      SELECT lc.english_phrase, lc.target_phrase, lc.cultural_context, l.name as lesson_name
+      FROM lesson_content lc
+      JOIN lessons l ON lc.lesson_id = l.id 
+      WHERE lc.target_phrase IS NOT NULL 
+        AND l.name = $1
+      ORDER BY lc.english_phrase
+    `, [category]);
+    
+    if (result.rows.length > 0) {
+      res.json(result.rows);
+    } else {
+      res.status(404).json({ error: `No vocabulary found for category: ${category}` });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Grammar Engine API Endpoints
+app.get('/api/grammar/verbs', async (req, res) => {
+  try {
+    const languageCode = req.query.language || 'gheg-al';
+    const limit = parseInt(req.query.limit || '50');
+    
+    const result = await query(`
+      SELECT v.*, vp.pattern_name, vp.conjugation_rules
+      FROM verbs v
+      JOIN verb_patterns vp ON v.verb_pattern_id = vp.id
+      JOIN languages l ON v.language_id = l.id
+      WHERE l.code = $1
+      ORDER BY v.frequency_rank ASC
+      LIMIT $2
+    `, [languageCode, limit]);
+    
+    res.json({
+      success: true,
+      verbs: result.rows
+    });
+    
+  } catch (error) {
+    console.error('Grammar API error:', error);
+    res.status(500).json({ error: 'Failed to fetch verbs' });
+  }
+});
+
+app.post('/api/grammar/conjugate', async (req, res) => {
+  try {
+    const { verb, person, tense, language = 'gheg-al' } = req.body;
+    
+    if (!verb || !person || !tense) {
+      return res.status(400).json({ error: 'Missing required parameters: verb, person, tense' });
+    }
+    
+    const result = await query(`
+      SELECT v.conjugations, v.english_translation, v.infinitive
+      FROM verbs v
+      JOIN languages l ON v.language_id = l.id
+      WHERE l.code = $1 AND v.infinitive = $2
+    `, [language, verb]);
+    
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: 'Verb not found' });
+    }
+    
+    const verbData = result.rows[0];
+    const conjugations = verbData.conjugations;
+    const conjugatedForm = conjugations[tense]?.[person];
+    
+    if (!conjugatedForm) {
+      return res.status(404).json({ error: 'Conjugation not available for this tense/person combination' });
+    }
+    
+    res.json({
+      success: true,
+      verb: verb,
+      english_translation: verbData.english_translation,
+      person,
+      tense,
+      conjugated_form: conjugatedForm,
+      all_conjugations: conjugations[tense]
+    });
+    
+  } catch (error) {
+    console.error('Conjugation API error:', error);
+    res.status(500).json({ error: 'Failed to conjugate verb' });
+  }
+});
+
+app.get('/api/grammar/patterns', async (req, res) => {
+  try {
+    const languageCode = req.query.language || 'gheg-al';
+    
+    const result = await query(`
+      SELECT vp.*, l.name as language_name
+      FROM verb_patterns vp
+      JOIN languages l ON vp.language_id = l.id
+      WHERE l.code = $1
+      ORDER BY vp.pattern_name
+    `, [languageCode]);
+    
+    res.json({
+      success: true,
+      patterns: result.rows
+    });
+    
+  } catch (error) {
+    console.error('Patterns API error:', error);
+    res.status(500).json({ error: 'Failed to fetch verb patterns' });
+  }
+});
+
+app.get('/api/grammar/rules', async (req, res) => {
+  try {
+    const languageCode = req.query.language || 'gheg-al';
+    const ruleType = req.query.type;
+    
+    let queryText = `
+      SELECT gr.*, l.name as language_name
+      FROM grammar_rules gr
+      JOIN languages l ON gr.language_id = l.id
+      WHERE l.code = $1
+    `;
+    
+    const queryParams = [languageCode];
+    
+    if (ruleType) {
+      queryText += ' AND gr.rule_type = $2';
+      queryParams.push(ruleType);
+    }
+    
+    queryText += ' ORDER BY gr.rule_type, gr.rule_name';
+    
+    const result = await query(queryText, queryParams);
+    
+    res.json({
+      success: true,
+      rules: result.rows
+    });
+    
+  } catch (error) {
+    console.error('Grammar rules API error:', error);
+    res.status(500).json({ error: 'Failed to fetch grammar rules' });
+  }
+});
+
+app.listen(port, '127.0.0.1', () => {
+  console.log(`🚀 Albanian Learning App (React): http://127.0.0.1:${port}`);
+  console.log(`🎯 Full UI/UX system with topic-based learning`);
+  console.log(`🇦🇱 Ready with 1,017+ phrases and cultural context!`);
+});
