@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-const { query, db } = require('../../../../../lib/database');
+const { query, db } = require('../../../../../../lib/database');
 
 /**
  * Course Enrollment API

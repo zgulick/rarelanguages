@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-const { query } = require('../../../lib/database');
+const { query } = require('../../../../lib/database');
 
 /**
  * Courses API
@@ -12,6 +12,10 @@ export async function GET(request) {
         const languageCode = searchParams.get('language');
         const level = searchParams.get('level');
         const userId = searchParams.get('userId');
+        
+        // Handle guest users and invalid UUIDs
+        const isValidUserId = userId && userId !== 'guest' && userId.length === 36;
+        const userIdParam = isValidUserId ? userId : null;
 
         let queryText = `
             SELECT 
@@ -34,7 +38,7 @@ export async function GET(request) {
             WHERE c.is_active = true
         `;
 
-        const params = [userId || null];
+        const params = [userIdParam];
         let paramIndex = 2;
 
         if (languageCode) {

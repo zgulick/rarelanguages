@@ -1,0 +1,3674 @@
+
+> rarelanguages@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.5.2 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.17:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1866ms
+ ○ Compiling / ...
+ ✓ Compiled / in 6.9s
+ GET / 200 in 7525ms
+ ○ Compiling /api/courses ...
+ ✓ Compiled /api/courses in 3.2s
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Database connection pool initialized
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest 500 in 5144ms
+ GET /api/courses 200 in 1284ms
+ GET / 200 in 1258ms
+ ○ Compiling /favicon.ico ...
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest 500 in 1381ms
+ ✓ Compiled /favicon.ico in 2.4s
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 2921ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest 500 in 1768ms
+Database query error: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error creating/authenticating user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/auth/user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/auth/user 500 in 3775ms
+Database query error: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error creating/authenticating user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/auth/user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/auth/user 500 in 4178ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest&level=1 500 in 1540ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest&level=3 500 in 1539ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest 500 in 1680ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest 500 in 1694ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=cy&userId=guest 500 in 1553ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=cy&userId=guest&level=2 500 in 1536ms
+ GET / 200 in 540ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest 500 in 1762ms
+Database query error: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error creating/authenticating user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/auth/user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/auth/user 500 in 2214ms
+Database query error: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error creating/authenticating user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/auth/user: error: column "guest_id" does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.select (lib/database.js:137:20)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:389:32)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '27',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/auth/user 500 in 2821ms
+Database query error: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Failed to fetch courses: error: invalid input syntax for type uuid: "guest"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/route.js:58:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 137,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses?language=gheg-al&userId=guest 500 in 1882ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+Database connection pool initialized
+ GET /api/courses?language=gheg-al 200 in 1566ms
+ GET / 200 in 2670ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Database connection pool initialized
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting user progress: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error creating/authenticating user: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/auth/user: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/auth/user 500 in 7339ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 1540ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 607ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting user progress: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error creating/authenticating user: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/auth/user: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/auth/user 500 in 3774ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting user progress: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error creating/authenticating user: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/auth/user: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getUserProgress (lib/database/queries.js:177:22)
+    at async Object.createOrAuthenticateUser (lib/database/queries.js:411:24)
+    at async POST (src/app/api/auth/user/route.js:20:22)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '81',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/auth/user 500 in 6364ms
+ GET /api/courses?language=gheg-al&userId=guest&level=1 200 in 600ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Database connection pool initialized
+ POST /api/auth/user 200 in 1673ms
+ ✓ Compiled in 1189ms
+ GET /api/courses?language=gheg-al&userId=guest&level=1 200 in 1407ms
+ POST /api/auth/user 200 in 1484ms
+ ✓ Compiled in 328ms
+ ✓ Compiled in 188ms
+ ✓ Compiled in 646ms
+ ✓ Compiled in 642ms
+ ✓ Compiled in 879ms
+ ✓ Compiled in 289ms
+ ✓ Compiled in 488ms
+ ✓ Compiled /api/lessons/next in 409ms
+ GET /api/courses?language=gheg-al&userId=guest&level=1 200 in 543ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=987be4e9-ef3a-4f77-8709-96cb795e54a4 500 in 1562ms
+ POST /api/auth/user 200 in 1502ms
+ ✓ Compiled in 251ms
+ ✓ Compiled in 325ms
+ ✓ Compiled in 232ms
+ ✓ Compiled in 235ms
+ ✓ Compiled in 386ms
+ ✓ Compiled in 225ms
+ ✓ Compiled in 272ms
+ GET / 200 in 2468ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 788ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=d4d0f6aa-6c8a-4a94-ab0b-b902ed46f56e 500 in 1958ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 2053ms
+ POST /api/auth/user 200 in 2171ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=d4d0f6aa-6c8a-4a94-ab0b-b902ed46f56e 500 in 2765ms
+ POST /api/auth/user 200 in 1021ms
+ GET /api/courses?language=gheg-al&userId=guest&level=1 200 in 552ms
+ GET / 200 in 736ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 1575ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=e5ef7fc8-6fa5-49d9-a97d-9bcd8da00c87 500 in 2487ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 1918ms
+ POST /api/auth/user 200 in 2129ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=e5ef7fc8-6fa5-49d9-a97d-9bcd8da00c87 500 in 2657ms
+ POST /api/auth/user 200 in 968ms
+ ○ Compiling /api/courses/[id]/enroll ...
+ ✓ Compiled /api/courses/[id]/enroll in 1410ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+Error: Route "/api/courses/[id]/enroll" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at POST (src/app/api/courses/[id]/enroll/route.js:11:21)
+   9 | export async function POST(request, { params }) {
+  10 |     try {
+> 11 |         const { id: courseId } = params;
+     |                     ^
+  12 |         const { userId } = await request.json();
+  13 |
+  14 |         if (!userId) {
+ POST /api/courses/4dbda421-55b1-48f2-becb-72ec725b0bda/enroll 400 in 3609ms
+ GET /api/courses?language=gheg-al&userId=guest&level=1 200 in 1627ms
+Error: Route "/api/courses/[id]/enroll" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at POST (src/app/api/courses/[id]/enroll/route.js:11:21)
+   9 | export async function POST(request, { params }) {
+  10 |     try {
+> 11 |         const { id: courseId } = params;
+     |                     ^
+  12 |         const { userId } = await request.json();
+  13 |
+  14 |         if (!userId) {
+ POST /api/courses/4dbda421-55b1-48f2-becb-72ec725b0bda/enroll 400 in 719ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ GET / 200 in 855ms
+ GET / 200 in 137ms
+ ✓ Compiled in 798ms
+ GET / 200 in 316ms
+ GET / 200 in 499ms
+ ✓ Compiled in 214ms
+ ✓ Compiled in 722ms
+ GET / 200 in 678ms
+ GET / 200 in 421ms
+ GET / 200 in 1397ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Database connection pool initialized
+ GET /api/courses?language=gheg-al&userId=guest 200 in 1636ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=c0732a53-470d-4350-a174-1676a5a3299b 500 in 2685ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 2002ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=c0732a53-470d-4350-a174-1676a5a3299b 500 in 1561ms
+ POST /api/auth/user 200 in 2556ms
+ POST /api/auth/user 200 in 1697ms
+   Reload env: .env
+ GET / 200 in 351ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+Database connection pool initialized
+ GET /api/courses 200 in 1454ms
+ ○ Compiling /api/courses/generate ...
+ ✓ Compiled /api/courses/generate in 2.2s
+🎯 Course generation request: Gheg Albanian Level 1
+🚀 Starting automated course generation for Gheg Albanian Level 1
+💸 curriculum-planning: $0.0260 (Total: $0.03)
+✅ Generated curriculum plan: 3 skills
+📚 Generating skills and lessons from curriculum plan...
+Database query error: error: duplicate key value violates unique constraint "course_skills_course_id_position_key"
+    at async query (lib/database.js:62:20)
+    at async Object.insert (lib/database.js:152:20)
+    at async CourseGeneration.generateSkillsFromPlan (lib/models/CourseGeneration.js:372:13)
+    at async CourseGeneration.generateFullCourse (lib/models/CourseGeneration.js:36:28)
+    at async POST (src/app/api/courses/generate/route.js:41:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 297,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (course_id, "position")=(4dbda421-55b1-48f2-becb-72ec725b0bda, 1) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'course_skills',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'course_skills_course_id_position_key',
+  file: 'nbtinsert.c',
+  line: '666',
+  routine: '_bt_check_unique'
+}
+❌ Course generation failed: duplicate key value violates unique constraint "course_skills_course_id_position_key"
+❌ Course generation failed: error: duplicate key value violates unique constraint "course_skills_course_id_position_key"
+    at async query (lib/database.js:62:20)
+    at async Object.insert (lib/database.js:152:20)
+    at async CourseGeneration.generateSkillsFromPlan (lib/models/CourseGeneration.js:372:13)
+    at async CourseGeneration.generateFullCourse (lib/models/CourseGeneration.js:36:28)
+    at async POST (src/app/api/courses/generate/route.js:41:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 297,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (course_id, "position")=(4dbda421-55b1-48f2-becb-72ec725b0bda, 1) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'course_skills',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'course_skills_course_id_position_key',
+  file: 'nbtinsert.c',
+  line: '666',
+  routine: '_bt_check_unique'
+}
+ POST /api/courses/generate 500 in 20587ms
+🎯 Course generation request: Gheg Albanian Level 1
+🚀 Starting automated course generation for Gheg Albanian Level 1
+💸 course-details: $0.0085 (Total: $0.01)
+✅ Created course: Gheg Albanian 1: Intensive Academic Introduction (ALB101)
+💸 curriculum-planning: $0.0365 (Total: $0.04)
+❌ Course generation failed: Failed to parse curriculum plan from AI response
+❌ Course generation failed: Error: Failed to parse curriculum plan from AI response
+    at CourseGeneration.generateCurriculumPlan (lib/models/CourseGeneration.js:347:19)
+    at async CourseGeneration.generateFullCourse (lib/models/CourseGeneration.js:33:36)
+    at async POST (src/app/api/courses/generate/route.js:41:24)
+  345 |             curriculumPlan = JSON.parse(cleanContent);
+  346 |         } catch (parseError) {
+> 347 |             throw new Error('Failed to parse curriculum plan from AI response');
+      |                   ^
+  348 |         }
+  349 |
+  350 |         console.log(`✅ Generated curriculum plan: ${curriculumPlan.skills.length} skills`);
+ POST /api/courses/generate 500 in 33457ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+🎯 Course generation request: Gheg Albanian Level 1
+🚀 Starting automated course generation for Gheg Albanian Level 1
+Database connection pool initialized
+💸 curriculum-planning: $0.0365 (Total: $0.04)
+❌ Failed to parse curriculum plan JSON. Raw response:
+```json
+{
+  "skills": [
+    {
+      "name": "Phonological Awareness and Sound-Symbol Correspondence",
+      "description": "Develop students' ability to recognize and produce Gheg Albanian phonemes and understand their orthographic representations. This skill is foundational for all subsequent language learning and follows Krashen's Input Hypothesis by providing comprehensible input at the phonological level.",
+      "position": 1,
+      "cefr_level": "A1",
+      "prerequisites": [],
+      "estimated_hours": 4.5,
+      "learning_phase": "foundation",
+      "sla_focus": "Input Hypothesis",
+      "assessment_method": "Oral phoneme recognition and production tasks",
+      "lessons": [
+        {
+          "name": "Introduction to Gheg Albanian Phonemes",
+          "position": 1,
+          "difficulty_level": 2,
+          "estimated_minutes": 30,
+          "learning_focus": "Recognize and produce basic Gheg Albanian phonemes",
+          "content_areas": ["phonology"],
+          "ppp_framewo...
+Parse error: Expected ',' or ']' after array element in JSON at position 8653 (line 198 column 6)
+❌ Course generation failed: Failed to parse curriculum plan from AI response
+❌ Course generation failed: Error: Failed to parse curriculum plan from AI response
+    at CourseGeneration.generateCurriculumPlan (lib/models/CourseGeneration.js:375:19)
+    at async CourseGeneration.generateFullCourse (lib/models/CourseGeneration.js:33:36)
+    at async POST (src/app/api/courses/generate/route.js:41:24)
+  373 |             console.error(response.content.substring(0, 1000) + '...');
+  374 |             console.error('Parse error:', parseError.message);
+> 375 |             throw new Error('Failed to parse curriculum plan from AI response');
+      |                   ^
+  376 |         }
+  377 |
+  378 |         console.log(`✅ Generated curriculum plan: ${curriculumPlan.skills.length} skills`);
+ POST /api/courses/generate 500 in 32472ms
+   Reload env: .env
+ GET / 200 in 514ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+🎯 Course generation request: Gheg Albanian Level 1
+🚀 Starting automated course generation for Gheg Albanian Level 1
+Database connection pool initialized
+ POST /api/courses/generate 200 in 35945ms
+💸 curriculum-planning: $0.0537 (Total: $0.05)
+✅ Generated curriculum plan: 11 skills
+📚 Generating skills and lessons from curriculum plan...
+   ✅ Phonological Awareness and Sound-Symbol Correspondence - 3 lessons
+   ✅ Core Grammatical Structures - 3 lessons
+   ✅ High-Frequency Lexical Items - 3 lessons
+   ✅ Complex Sentence Structures and Subordination - 3 lessons
+   ✅ Academic Vocabulary and Collocations - 3 lessons
+   ✅ Register Awareness - 3 lessons
+   ✅ Discourse Markers and Cohesive Devices - 3 lessons
+   ✅ Pragmatic Competence in Academic/Professional Contexts - 3 lessons
+   ✅ Advanced Morphosyntactic Structures - 3 lessons
+   ✅ Critical Thinking through Target Language - 3 lessons
+   ✅ Independent Language Use and Self-Monitoring - 3 lessons
+📝 Generating lesson content for 11 skills...
+💸 lesson-content: $0.0272 (Total: $0.08)
+💸 lesson-content: $0.0282 (Total: $0.11)
+💸 lesson-content: $0.0306 (Total: $0.14)
+💸 lesson-content: $0.0300 (Total: $0.17)
+💸 lesson-content: $0.0309 (Total: $0.20)
+💸 lesson-content: $0.0319 (Total: $0.23)
+💸 lesson-content: $0.0288 (Total: $0.26)
+💸 lesson-content: $0.0293 (Total: $0.29)
+💸 lesson-content: $0.0311 (Total: $0.32)
+💸 lesson-content: $0.0364 (Total: $0.36)
+💸 lesson-content: $0.0343 (Total: $0.39)
+💸 lesson-content: $0.0343 (Total: $0.43)
+💸 lesson-content: $0.0290 (Total: $0.46)
+💸 lesson-content: $0.0286 (Total: $0.48)
+💸 lesson-content: $0.0293 (Total: $0.51)
+💸 lesson-content: $0.0290 (Total: $0.54)
+💸 lesson-content: $0.0295 (Total: $0.57)
+💸 lesson-content: $0.0314 (Total: $0.60)
+💸 lesson-content: $0.0306 (Total: $0.63)
+💸 lesson-content: $0.0275 (Total: $0.66)
+💸 lesson-content: $0.0312 (Total: $0.69)
+💸 lesson-content: $0.0303 (Total: $0.72)
+💸 lesson-content: $0.0314 (Total: $0.75)
+💸 lesson-content: $0.0307 (Total: $0.79)
+💸 lesson-content: $0.0320 (Total: $0.82)
+💸 lesson-content: $0.0369 (Total: $0.85)
+💸 lesson-content: $0.0326 (Total: $0.89)
+💸 lesson-content: $0.0302 (Total: $0.92)
+💸 lesson-content: $0.0332 (Total: $0.95)
+💸 lesson-content: $0.0302 (Total: $0.98)
+💸 lesson-content: $0.0316 (Total: $1.01)
+💸 lesson-content: $0.0279 (Total: $1.04)
+💸 lesson-content: $0.0287 (Total: $1.07)
+✅ Generated content for 33 lessons (264 items)
+📋 Generating course assessments...
+✅ Generated 2 course assessments
+✅ Linked 11 skills to course
+🎉 Course generation completed!
+   Course: Gheg Albanian 1: Intensive Academic Introduction
+   Skills: 11, Lessons: 33
+   Content Items: 264
+   Time: 1057s, Cost: $0.5150
+ GET /api/courses 200 in 1647ms
+ ○ Compiling /api/courses/[id]/dashboard ...
+ ✓ Compiled /api/courses/[id]/dashboard in 976ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Error: Route "/api/courses/[id]/dashboard" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (src/app/api/courses/[id]/dashboard/route.js:11:21)
+   9 | export async function GET(request, { params }) {
+  10 |     try {
+> 11 |         const { id: courseId } = params;
+     |                     ^
+  12 |         const { searchParams } = new URL(request.url);
+  13 |         const userId = searchParams.get('userId');
+  14 |
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/dashboard 400 in 3891ms
+Error: Route "/api/courses/[id]/dashboard" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (src/app/api/courses/[id]/dashboard/route.js:11:21)
+   9 | export async function GET(request, { params }) {
+  10 |     try {
+> 11 |         const { id: courseId } = params;
+     |                     ^
+  12 |         const { searchParams } = new URL(request.url);
+  13 |         const userId = searchParams.get('userId');
+  14 |
+Database query error: error: invalid input syntax for type uuid: "test"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/[id]/dashboard/route.js:23:34)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 136,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+❌ Course dashboard failed: error: invalid input syntax for type uuid: "test"
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/[id]/dashboard/route.js:23:34)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 136,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/dashboard?userId=test 500 in 1326ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ ○ Compiling /api/validation/course ...
+ ✓ Compiled /api/validation/course in 510ms
+ ⨯ ./src/app/api/validation/course/route.js:7:1
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m  5 |[39m
+ [90m  6 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  7 |[39m [36mimport[39m { [33mContentValidator[39m } [36mfrom[39m [32m'../../../../lib/validation/ContentValidator'[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  8 |[39m
+ [90m  9 |[39m [90m/**[39m
+ [90m 10 |[39m [90m * POST /api/validation/course[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.7s
+ POST /api/validation/course 500 in 5714ms
+ ⨯ ./src/app/api/validation/course/route.js:7:1
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m  5 |[39m
+ [90m  6 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  7 |[39m [36mimport[39m { [33mContentValidator[39m } [36mfrom[39m [32m'../../../../lib/validation/ContentValidator'[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  8 |[39m
+ [90m  9 |[39m [90m/**[39m
+ [90m 10 |[39m [90m * POST /api/validation/course[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ POST /api/validation/course 500 in 215ms
+ ⨯ ./src/app/api/validation/course/route.js:7:1
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m  5 |[39m
+ [90m  6 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  7 |[39m [36mimport[39m { [33mContentValidator[39m } [36mfrom[39m [32m'../../../../lib/validation/ContentValidator'[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  8 |[39m
+ [90m  9 |[39m [90m/**[39m
+ [90m 10 |[39m [90m * POST /api/validation/course[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ POST /api/validation/course 500 in 153ms
+ ⨯ ./src/app/api/validation/course/route.js:7:30
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m  5 |[39m
+ [90m  6 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  7 |[39m [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  8 |[39m
+ [90m  9 |[39m [90m/**[39m
+ [90m 10 |[39m [90m * POST /api/validation/course[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ POST /api/validation/course 500 in 161ms
+ ⨯ ./src/app/api/validation/course/route.js:7:30
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m  5 |[39m
+ [90m  6 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  7 |[39m [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  8 |[39m
+ [90m  9 |[39m [90m/**[39m
+ [90m 10 |[39m [90m * POST /api/validation/course[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ POST /api/validation/course 500 in 110ms
+ ⚠ ./src/app/api/validation/course/route.js:26:44
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator.js'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Dynamic import for compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m [36mawait[39m [36mimport[39m([32m'../../../../lib/validation/ContentValidator.js'[39m)[33m;[39m
+ [90m    |[39m                                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+🔍 Starting validation for course: b29f6608-a91e-420c-bc0b-22dfb71c846e
+❌ Course validation API error: Error: Cannot find module '../../../../lib/validation/ContentValidator.js'
+    at <unknown> (.next/server/chunks/[root-of-the-server]__c877ca8e._.js:81:23)
+    at POST (.next/server/chunks/[root-of-the-server]__c877ca8e._.js:84:11) {
+  code: 'MODULE_NOT_FOUND'
+}
+ POST /api/validation/course 500 in 808ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+🔍 Starting validation for course: b29f6608-a91e-420c-bc0b-22dfb71c846e
+❌ Course validation API error: Error: Cannot find module '../../../../lib/validation/ContentValidator'
+    at <unknown> (.next/server/chunks/[root-of-the-server]__c877ca8e._.js:81:23)
+    at POST (.next/server/chunks/[root-of-the-server]__c877ca8e._.js:84:11) {
+  code: 'MODULE_NOT_FOUND'
+}
+ POST /api/validation/course 500 in 719ms
+   Reload env: .env
+ GET / 200 in 575ms
+   Reload env: .env
+ GET / 200 in 1090ms
+ ✓ Compiled in 476ms
+ ✓ Compiled in 1078ms
+ ✓ Compiled / in 238ms
+ GET / 200 in 1225ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Database connection pool initialized
+ GET /api/courses?language=gheg-al&userId=guest 200 in 1922ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=61d5e757-6cb3-4a0b-b95d-1b321dd06dee 500 in 2636ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /api/courses?language=gheg-al&userId=guest 200 in 991ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=61d5e757-6cb3-4a0b-b95d-1b321dd06dee 500 in 1043ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ✓ Compiled in 338ms
+ GET /api/courses?language=gheg-al&userId=guest 200 in 1796ms
+ POST /api/auth/user 200 in 2054ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /api/courses?language=gheg-al&userId=guest 200 in 517ms
+ POST /api/auth/user 200 in 1865ms
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=61d5e757-6cb3-4a0b-b95d-1b321dd06dee 500 in 2246ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ POST /api/auth/user 200 in 614ms
+ ✓ Compiled in 412ms
+ ✓ Compiled in 332ms
+ ✓ Compiled in 383ms
+ ✓ Compiled in 313ms
+ ✓ Compiled in 322ms
+ ✓ Compiled in 590ms
+ ✓ Compiled / in 228ms
+ GET / 200 in 730ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=0b829cb6-4940-4ffd-a3aa-c5bb985ddfcd 500 in 1814ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=0b829cb6-4940-4ffd-a3aa-c5bb985ddfcd 500 in 992ms
+ POST /api/auth/user 200 in 1005ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ POST /api/auth/user 200 in 615ms
+ ✓ Compiled in 430ms
+ GET / 200 in 412ms
+ ✓ Compiled in 248ms
+ GET / 200 in 499ms
+ ✓ Compiled in 735ms
+ ✓ Compiled / in 281ms
+ GET / 200 in 821ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=33eb6a75-b4af-4605-9768-af9ba4726a55 500 in 1908ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Database query error: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error getting next lesson: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Error in /api/lessons/next: error: column up.completed does not exist
+    at async query (lib/database.js:62:20)
+    at async Object.getNextLesson (lib/database/queries.js:47:30)
+    at async GET (src/app/api/lessons/next/route.js:17:28)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '42',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/next?userId=33eb6a75-b4af-4605-9768-af9ba4726a55 500 in 2075ms
+ POST /api/auth/user 200 in 2094ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ POST /api/auth/user 200 in 653ms
+ ✓ Compiled in 606ms
+ ✓ Compiled in 551ms
+ ✓ Compiled in 321ms
+ ✓ Compiled in 386ms
+ ✓ Compiled in 211ms
+ ✓ Compiled in 355ms
+ ✓ Compiled in 375ms
+ ✓ Compiled in 413ms
+ ✓ Compiled in 1276ms
+ ✓ Compiled / in 81ms
+ GET / 200 in 1000ms
+ ○ Compiling /api/courses/[id]/simple-dashboard ...
+ ✓ Compiled /api/courses/[id]/simple-dashboard in 756ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+Error: Route "/api/courses/[id]/simple-dashboard" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (src/app/api/courses/[id]/simple-dashboard/route.js:10:33)
+   8 | export async function GET(request, { params }) {
+   9 |     try {
+> 10 |         const courseId = params.id;
+     |                                 ^
+  11 |         const { searchParams } = new URL(request.url);
+  12 |         const userId = searchParams.get('userId');
+  13 |
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/simple-dashboard?userId=guest 200 in 3816ms
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+Error: Route "/api/courses/[id]/simple-dashboard" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GET (src/app/api/courses/[id]/simple-dashboard/route.js:10:33)
+   8 | export async function GET(request, { params }) {
+   9 |     try {
+> 10 |         const courseId = params.id;
+     |                                 ^
+  11 |         const { searchParams } = new URL(request.url);
+  12 |         const userId = searchParams.get('userId');
+  13 |
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/simple-dashboard?userId=guest 200 in 2115ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.m4je1qbwhqr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.m4je1qbwhqr'
+}
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.d4u598lx54'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.d4u598lx54'
+}
+[Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.m4je1qbwhqr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.m4je1qbwhqr'
+}
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.dalq1rh031w'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.dalq1rh031w'
+}
+[Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.e6abt5mxxld'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.e6abt5mxxld'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.m271umtsc5h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.m271umtsc5h'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.i4pq82suk1n'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.i4pq82suk1n'
+}
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.vm41t2pkmtn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.vm41t2pkmtn'
+}
+[Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.i4pq82suk1n'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.i4pq82suk1n'
+}
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.j5lbh8rpb9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.j5lbh8rpb9'
+}
+[Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.hcoti3s4ga7'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.hcoti3s4ga7'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.h0s3s76bgua'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.h0s3s76bgua'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.mqznd91eqdn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.mqznd91eqdn'
+}
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.a6w5t544qs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.a6w5t544qs'
+}
+[Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.mqznd91eqdn'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.mqznd91eqdn'
+}
+ ⚠ ./src/app/api/validation/course/route.js:26:38
+Module not found: Can't resolve '../../../../lib/validation/ContentValidator'
+[0m [90m 24 |[39m
+ [90m 25 |[39m         [90m// Use require for server-side compatibility[39m
+[31m[1m>[22m[39m[90m 26 |[39m         [36mconst[39m { [33mContentValidator[39m } [33m=[39m require([32m'../../../../lib/validation/ContentValidator'[39m)[33m;[39m
+ [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 27 |[39m         [36mconst[39m validator [33m=[39m [36mnew[39m [33mContentValidator[39m()[33m;[39m
+ [90m 28 |[39m         [36mconst[39m validationResults [33m=[39m [36mawait[39m validator[33m.[39mvalidateCourseContent(courseId[33m,[39m options)[33m;[39m
+ [90m 29 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.8q32mjyd7zm'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.8q32mjyd7zm'
+}
+[Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.jmxty6l82x'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.jmxty6l82x'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.45jzwvfb4bv'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/zgulick/Downloads/rarelanguages/.next/static/development/_buildManifest.js.tmp.45jzwvfb4bv'
+}
+[?25h

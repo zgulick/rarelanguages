@@ -374,28 +374,31 @@ const authQueries = {
         
         if (existingUsers.length > 0) {
           user = existingUsers[0];
+          // Update last active
+          await db.update('users', { last_active: new Date() }, { id: user.id });
         } else {
-          // Create new user with email
+          // Create new user with email (using existing schema)
           user = await db.insert('users', {
             email,
-            preferred_name: preferredName,
-            is_guest: false,
+            username: preferredName || email.split('@')[0],
             created_at: new Date(),
             last_active: new Date()
           });
         }
       } else if (guestId) {
-        // Handle guest user
-        const existingGuests = await db.select('users', { guest_id: guestId });
+        // For guest users, create a user with a unique username based on guestId
+        // Check for existing user with this username pattern
+        const guestUsername = `guest_${guestId}`;
+        const existingGuests = await db.select('users', { username: guestUsername });
         
         if (existingGuests.length > 0) {
           user = existingGuests[0];
+          // Update last active
+          await db.update('users', { last_active: new Date() }, { id: user.id });
         } else {
-          // Create new guest user
+          // Create new guest user (using existing schema)
           user = await db.insert('users', {
-            guest_id: guestId,
-            preferred_name: preferredName || 'Guest',
-            is_guest: true,
+            username: guestUsername,
             created_at: new Date(),
             last_active: new Date()
           });
@@ -404,12 +407,8 @@ const authQueries = {
         throw new Error('Email or guestId required');
       }
 
-      // Get user's progress summary
-      const progress = await lessonQueries.getUserProgress(user.id);
-
-      // Get user preferences (with defaults)
-      const preferencesQuery = await db.select('user_preferences', { user_id: user.id });
-      const preferences = preferencesQuery[0] || {
+      // Use existing user preferences field or defaults
+      const preferences = user.preferences || {
         current_language: 'gheg-al',
         pronunciation_shown: true,
         cultural_context_shown: true
@@ -417,18 +416,18 @@ const authQueries = {
 
       return {
         userId: user.id,
-        isGuest: user.is_guest,
+        isGuest: !user.email, // Consider guest if no email
         email: user.email,
-        preferredName: user.preferred_name,
+        username: user.username,
         preferences: {
-          currentLanguage: preferences.current_language,
-          pronunciationShown: preferences.pronunciation_shown,
-          culturalContextShown: preferences.cultural_context_shown
+          currentLanguage: preferences.current_language || 'gheg-al',
+          pronunciationShown: preferences.pronunciation_shown !== false,
+          culturalContextShown: preferences.cultural_context_shown !== false
         },
         progress: {
-          totalLessonsCompleted: progress.completed_lessons,
-          currentStreak: 0, // Could be calculated from session data
-          totalTimeSpent: progress.total_time_spent
+          totalLessonsCompleted: 0, // Simplified for now
+          currentStreak: 0,
+          totalTimeSpent: 0
         }
       };
 

@@ -25,14 +25,15 @@ class CostTracker {
     return Math.ceil(text.length / 4);
   }
 
-  calculateCost(inputTokens, outputTokens, model = 'gpt-3.5-turbo') {
+  calculateCost(inputTokens, outputTokens, model = 'gpt-4o') {
     const rates = {
       'gpt-3.5-turbo': { input: 0.0015, output: 0.002 }, // per 1K tokens (updated rates)
       'gpt-4': { input: 0.03, output: 0.06 },
-      'gpt-4-turbo': { input: 0.01, output: 0.03 }
+      'gpt-4-turbo': { input: 0.01, output: 0.03 },
+      'gpt-4o': { input: 0.005, output: 0.015 } // per 1K tokens for GPT-4o
     };
 
-    const rate = rates[model] || rates['gpt-3.5-turbo'];
+    const rate = rates[model] || rates['gpt-4o'];
     return (inputTokens / 1000 * rate.input) + (outputTokens / 1000 * rate.output);
   }
 
@@ -81,8 +82,8 @@ class OpenAIClient {
     });
 
     this.config = {
-      model: process.env.OPENAI_MODEL || 'gpt-3.5-turbo',
-      max_tokens: parseInt(process.env.OPENAI_MAX_TOKENS) || 2000,
+      model: process.env.OPENAI_MODEL || 'gpt-4o',
+      max_tokens: parseInt(process.env.OPENAI_MAX_TOKENS) || 4000,
       temperature: parseFloat(process.env.OPENAI_TEMPERATURE) || 0.3,
       maxDailyCost: parseFloat(process.env.MAX_DAILY_COST) || 10.00
     };
