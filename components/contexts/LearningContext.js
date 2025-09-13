@@ -24,6 +24,17 @@ const initialState = {
     longestStreak: 0
   },
   
+  // Phase 3 Enhancement: Pedagogical progression tracking
+  pedagogicalProgress: {
+    currentLevel: 'recognition', // recognition, guided_practice, independent_production, cultural_integration
+    microStepsCompleted: 0,
+    totalMicroSteps: 0,
+    levelProgress: 0, // percentage within current level
+    culturalCompetencyLevel: 'awareness', // awareness, knowledge, understanding, integration
+    culturalResponses: [],
+    performanceHistory: []
+  },
+  
   // User preferences
   userPreferences: {
     audioEnabled: true,
@@ -58,7 +69,13 @@ const actionTypes = {
   SET_LOADING: 'SET_LOADING',
   SET_ERROR: 'SET_ERROR',
   TOGGLE_SETTINGS: 'TOGGLE_SETTINGS',
-  RESET_SESSION: 'RESET_SESSION'
+  RESET_SESSION: 'RESET_SESSION',
+  // Phase 3 Enhancement: Pedagogical progression actions
+  UPDATE_PEDAGOGICAL_LEVEL: 'UPDATE_PEDAGOGICAL_LEVEL',
+  ADVANCE_MICRO_STEP: 'ADVANCE_MICRO_STEP',
+  RECORD_CULTURAL_RESPONSE: 'RECORD_CULTURAL_RESPONSE',
+  UPDATE_CULTURAL_COMPETENCY: 'UPDATE_CULTURAL_COMPETENCY',
+  RECORD_PERFORMANCE: 'RECORD_PERFORMANCE'
 };
 
 // Reducer function
@@ -200,6 +217,70 @@ const learningReducer = (state, action) => {
         error: null
       };
       
+    // Phase 3 Enhancement: Pedagogical progression reducers
+    case actionTypes.UPDATE_PEDAGOGICAL_LEVEL:
+      return {
+        ...state,
+        pedagogicalProgress: {
+          ...state.pedagogicalProgress,
+          currentLevel: action.payload.level,
+          levelProgress: action.payload.progress || 0,
+          microStepsCompleted: 0, // Reset micro-steps for new level
+          totalMicroSteps: action.payload.totalMicroSteps || 5
+        }
+      };
+      
+    case actionTypes.ADVANCE_MICRO_STEP:
+      const newMicroStepsCompleted = state.pedagogicalProgress.microStepsCompleted + 1;
+      const newLevelProgress = (newMicroStepsCompleted / state.pedagogicalProgress.totalMicroSteps) * 100;
+      
+      return {
+        ...state,
+        pedagogicalProgress: {
+          ...state.pedagogicalProgress,
+          microStepsCompleted: newMicroStepsCompleted,
+          levelProgress: Math.min(newLevelProgress, 100)
+        }
+      };
+      
+    case actionTypes.RECORD_CULTURAL_RESPONSE:
+      return {
+        ...state,
+        pedagogicalProgress: {
+          ...state.pedagogicalProgress,
+          culturalResponses: [...state.pedagogicalProgress.culturalResponses, {
+            ...action.payload,
+            timestamp: Date.now()
+          }]
+        }
+      };
+      
+    case actionTypes.UPDATE_CULTURAL_COMPETENCY:
+      return {
+        ...state,
+        pedagogicalProgress: {
+          ...state.pedagogicalProgress,
+          culturalCompetencyLevel: action.payload.level
+        }
+      };
+      
+    case actionTypes.RECORD_PERFORMANCE:
+      const updatedPerformanceHistory = [
+        ...state.pedagogicalProgress.performanceHistory,
+        {
+          ...action.payload,
+          timestamp: Date.now()
+        }
+      ].slice(-50); // Keep last 50 performance records
+      
+      return {
+        ...state,
+        pedagogicalProgress: {
+          ...state.pedagogicalProgress,
+          performanceHistory: updatedPerformanceHistory
+        }
+      };
+      
     default:
       return state;
   }
@@ -293,6 +374,39 @@ export const LearningProvider = ({ children }) => {
     
     resetSession: () => {
       dispatch({ type: actionTypes.RESET_SESSION });
+    },
+    
+    // Phase 3 Enhancement: Pedagogical progression actions
+    updatePedagogicalLevel: (level, progress, totalMicroSteps) => {
+      dispatch({
+        type: actionTypes.UPDATE_PEDAGOGICAL_LEVEL,
+        payload: { level, progress, totalMicroSteps }
+      });
+    },
+    
+    advanceMicroStep: () => {
+      dispatch({ type: actionTypes.ADVANCE_MICRO_STEP });
+    },
+    
+    recordCulturalResponse: (response) => {
+      dispatch({
+        type: actionTypes.RECORD_CULTURAL_RESPONSE,
+        payload: response
+      });
+    },
+    
+    updateCulturalCompetency: (level) => {
+      dispatch({
+        type: actionTypes.UPDATE_CULTURAL_COMPETENCY,
+        payload: { level }
+      });
+    },
+    
+    recordPerformance: (performance) => {
+      dispatch({
+        type: actionTypes.RECORD_PERFORMANCE,
+        payload: performance
+      });
     }
   };
   
@@ -312,7 +426,35 @@ export const LearningProvider = ({ children }) => {
     
     sessionTimeMinutes: state.sessionProgress.totalTimeSpent 
       ? Math.floor(state.sessionProgress.totalTimeSpent / 60000)
-      : 0
+      : 0,
+    
+    // Phase 3 Enhancement: Pedagogical progression computed values
+    currentPedagogicalLevel: state.pedagogicalProgress.currentLevel,
+    
+    pedagogicalProgress: state.pedagogicalProgress.levelProgress,
+    
+    culturalCompetencyLevel: state.pedagogicalProgress.culturalCompetencyLevel,
+    
+    recentPerformance: state.pedagogicalProgress.performanceHistory.slice(-10),
+    
+    culturalResponseCount: state.pedagogicalProgress.culturalResponses.length,
+    
+    averagePerformanceScore: state.pedagogicalProgress.performanceHistory.length > 0
+      ? state.pedagogicalProgress.performanceHistory
+          .filter(p => p.score !== undefined)
+          .reduce((sum, p) => sum + p.score, 0) / 
+          state.pedagogicalProgress.performanceHistory.filter(p => p.score !== undefined).length
+      : 0,
+    
+    isReadyForNextLevel: state.pedagogicalProgress.levelProgress >= 85 && 
+                        state.pedagogicalProgress.microStepsCompleted >= Math.floor(state.pedagogicalProgress.totalMicroSteps * 0.8),
+    
+    culturalCompetencyProgress: {
+      awareness: state.pedagogicalProgress.culturalResponses.filter(r => r.recognizedCulturalElement).length,
+      knowledge: state.pedagogicalProgress.culturalResponses.filter(r => r.appliedCulturalKnowledge).length,
+      understanding: state.pedagogicalProgress.culturalResponses.filter(r => r.explainedCulturalReasoning).length,
+      integration: state.pedagogicalProgress.culturalResponses.filter(r => r.adaptedBehaviorNaturally).length
+    }
   };
   
   const value = {

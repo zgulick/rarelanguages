@@ -1,6 +1,7 @@
 /**
  * FlashcardExercise Component - Anki-style Spaced Repetition
  * Mobile-first flashcard learning with cultural context
+ * Phase 3 Enhanced: Pedagogical progression and cultural competency integration
  */
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -10,6 +11,7 @@ import AudioButton from '../shared/AudioButton';
 import DifficultyButtons from '../shared/DifficultyButtons';
 import CulturalNote from '../shared/CulturalNote';
 import { gestureUtils, CardAnimationUtils } from '../../lib/gestureUtils';
+import { PedagogicalLevels, CulturalCompetencyFramework } from '../../lib/pedagogicalProgression';
 
 const FlashcardExercise = ({ 
   content = [], 
@@ -17,7 +19,15 @@ const FlashcardExercise = ({
   onResponse, 
   showPronunciation = true,
   showCultural = true,
-  autoAdvance = false
+  autoAdvance = false,
+  // Phase 3 Enhancement: Pedagogical progression props
+  pedagogicalLevel = PedagogicalLevels.RECOGNITION,
+  culturalCompetencyLevel = CulturalCompetencyFramework.AWARENESS,
+  microProgression = null,
+  currentMicroStep = 0,
+  culturalThemes = {},
+  onMicroStepAdvance = () => {},
+  onCulturalResponse = () => {}
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -25,8 +35,19 @@ const FlashcardExercise = ({
   const cardRef = useRef(null);
   const cleanupRef = useRef(null);
   
+  // Phase 3 Enhancement: Pedagogical progression state
+  const [culturalInsightShown, setCulturalInsightShown] = useState(false);
+  const [currentMicroStepLocal, setCurrentMicroStepLocal] = useState(currentMicroStep);
+  const [recognitionAttempts, setRecognitionAttempts] = useState(0);
+  const [cardStartTime, setCardStartTime] = useState(Date.now());
+  
   const currentCard = content[currentIndex];
   const isComplete = currentIndex >= content.length;
+  
+  // Phase 3: Adapt exercise behavior based on pedagogical level
+  const shouldShowCulturalInsight = pedagogicalLevel.order >= 2 && culturalCompetencyLevel.level >= 2;
+  const isAdvancedLevel = pedagogicalLevel.order >= 3;
+  const requiresCulturalResponse = pedagogicalLevel.order >= 3 && culturalCompetencyLevel.level >= 3;
   
   useEffect(() => {
     // Set up gesture detection
@@ -115,12 +136,24 @@ const FlashcardExercise = ({
       if (!isFlipped) {
         // Just flipped to show answer - show difficulty buttons
         setShowDifficultyButtons(true);
+        
+        // Phase 3 Enhancement: Track recognition attempt
+        setRecognitionAttempts(prev => prev + 1);
+        
+        // Show cultural insight if appropriate
+        if (shouldShowCulturalInsight && !culturalInsightShown) {
+          setCulturalInsightShown(true);
+        }
       }
     } catch (error) {
       console.error('Card flip animation failed:', error);
       setIsFlipped(!isFlipped);
       if (!isFlipped) {
         setShowDifficultyButtons(true);
+        setRecognitionAttempts(prev => prev + 1);
+        if (shouldShowCulturalInsight && !culturalInsightShown) {
+          setCulturalInsightShown(true);
+        }
       }
     }
   };
@@ -128,14 +161,48 @@ const FlashcardExercise = ({
   const handleDifficultySelect = (difficulty) => {
     if (!currentCard || !onResponse) return;
     
-    // Record response
-    onResponse({
+    const timeSpent = Date.now() - cardStartTime;
+    const isCorrect = difficulty >= 2; // Difficulty 2+ means they knew it
+    
+    // Phase 3 Enhancement: Track pedagogical progress
+    const pedagogicalResponse = {
       contentId: currentCard.id,
       exerciseType: 'flashcard',
       difficulty: difficulty,
-      timeSpent: Date.now(),
-      correct: difficulty >= 2 // Difficulty 2+ means they knew it
-    });
+      timeSpent: timeSpent,
+      correct: isCorrect,
+      pedagogicalLevel: pedagogicalLevel.name,
+      culturalCompetencyLevel: culturalCompetencyLevel.name,
+      recognitionAttempts: recognitionAttempts + 1,
+      currentMicroStep: currentMicroStepLocal
+    };
+    
+    // Add cultural response if applicable
+    if (requiresCulturalResponse && culturalInsightShown) {
+      pedagogicalResponse.culturalResponses = [{
+        scenarioId: `flashcard_${currentCard.id}`,
+        recognizedCulturalElement: shouldShowCulturalInsight,
+        appliedCulturalKnowledge: isCorrect && isAdvancedLevel,
+        explainedCulturalReasoning: false, // Not applicable for flashcards
+        adaptedBehaviorNaturally: difficulty >= 3 && culturalCompetencyLevel.level >= 3,
+        timestamp: Date.now()
+      }];
+      
+      // Trigger cultural response callback
+      if (onCulturalResponse) {
+        onCulturalResponse(pedagogicalResponse.culturalResponses[0]);
+      }
+    }
+    
+    // Advance micro-step if appropriate
+    if (isCorrect && currentMicroStepLocal < 4) { // Assuming 5 micro-steps max
+      const newMicroStep = currentMicroStepLocal + 1;
+      setCurrentMicroStepLocal(newMicroStep);
+      onMicroStepAdvance(newMicroStep);
+    }
+    
+    // Record enhanced response
+    onResponse(pedagogicalResponse);
     
     // Move to next card
     nextCard();
@@ -158,6 +225,9 @@ const FlashcardExercise = ({
   const resetCardState = () => {
     setIsFlipped(false);
     setShowDifficultyButtons(false);
+    setCulturalInsightShown(false);
+    setRecognitionAttempts(0);
+    setCardStartTime(Date.now());
     if (cardRef.current) {
       CardAnimationUtils.resetCard(cardRef.current);
     }
@@ -302,14 +372,53 @@ const FlashcardExercise = ({
         )}
       </div>
       
-      {/* Cultural Context */}
+      {/* Phase 3 Enhancement: Cultural Context with Competency Tracking */}
       {showCultural && currentCard.cultural_context && isFlipped && (
-        <CulturalNote 
-          content={currentCard.cultural_context}
-          variant="default"
-          collapsible={true}
-          defaultExpanded={false}
-        />
+        <div className="space-y-3">
+          <CulturalNote 
+            content={currentCard.cultural_context}
+            variant="default"
+            collapsible={true}
+            defaultExpanded={culturalInsightShown}
+          />
+          
+          {/* Cultural Competency Indicator */}
+          {shouldShowCulturalInsight && (
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
+              <div className="flex items-center space-x-2 mb-2">
+                <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
+                <span className="text-sm font-medium text-amber-800">
+                  Cultural Context: {culturalCompetencyLevel.name}
+                </span>
+              </div>
+              <p className="text-xs text-amber-700">
+                {culturalCompetencyLevel.description}
+              </p>
+              {requiresCulturalResponse && (
+                <div className="mt-2 text-xs text-amber-600">
+                  💡 Consider how this phrase shows respect in Albanian family settings
+                </div>
+              )}
+            </div>
+          )}
+          
+          {/* Pedagogical Level Indicator */}
+          {isAdvancedLevel && (
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+              <div className="flex items-center space-x-2">
+                <div className={`w-2 h-2 rounded-full ${
+                  pedagogicalLevel.name === 'Independent Production' ? 'bg-orange-500' : 'bg-purple-500'
+                }`}></div>
+                <span className="text-sm font-medium text-blue-800">
+                  {pedagogicalLevel.name} Level
+                </span>
+                <span className="text-xs text-blue-600">
+                  ({pedagogicalLevel.cognitiveLoad} challenge)
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
       )}
       
       {/* Difficulty Rating */}
@@ -345,7 +454,15 @@ FlashcardExercise.propTypes = {
   onResponse: PropTypes.func.isRequired,
   showPronunciation: PropTypes.bool,
   showCultural: PropTypes.bool,
-  autoAdvance: PropTypes.bool
+  autoAdvance: PropTypes.bool,
+  // Phase 3 Enhancement: Pedagogical progression props
+  pedagogicalLevel: PropTypes.object,
+  culturalCompetencyLevel: PropTypes.object,
+  microProgression: PropTypes.object,
+  currentMicroStep: PropTypes.number,
+  culturalThemes: PropTypes.object,
+  onMicroStepAdvance: PropTypes.func,
+  onCulturalResponse: PropTypes.func
 };
 
 export default FlashcardExercise;

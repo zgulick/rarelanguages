@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-const CourseGeneration = require('../../../../lib/models/CourseGeneration');
+const CourseGeneration = require('../../../../../lib/models/CourseGeneration');
 
 /**
  * Automated Course Generation API
