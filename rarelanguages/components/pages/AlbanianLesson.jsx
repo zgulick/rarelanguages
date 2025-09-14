@@ -126,7 +126,7 @@ const AlbanianLesson = ({ lessonId, courseId, onComplete, onExit }) => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-red-50 to-blue-50">
-            <div className="max-w-5xl mx-auto px-6 py-8">
+            <div className="w-full px-8 py-8">
                 
                 {/* Lesson Header */}
                 <motion.div
@@ -258,7 +258,7 @@ const IntroductionPhase = ({ phrases, onComplete }) => {
                 </div>
             </div>
 
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={currentPhraseIndex}
@@ -389,7 +389,7 @@ const PracticePhase = ({ phrases, onComplete }) => {
                 </p>
             </div>
 
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 {currentExerciseType.type === 'translation' && (
                     <TranslationExercise 
                         phrases={phrases} 
@@ -509,7 +509,7 @@ const MasteryPhase = ({ phrases, onComplete }) => {
                 </p>
             </div>
 
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <div className="text-xl text-gray-900 mb-8 text-center">
                     {currentQ.question}
                 </div>
