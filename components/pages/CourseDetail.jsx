@@ -133,7 +133,7 @@ const CourseDetail = ({ courseId, currentUser, onEnroll, onContinue, onBack }) =
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-            <div className="max-w-4xl mx-auto px-4 py-8">
+            <div className="w-full px-8 py-8">
                 
                 {/* Header with Back Button */}
                 <div className="flex items-center mb-6">

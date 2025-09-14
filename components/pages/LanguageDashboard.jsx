@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 /**
- * Albanian Learning Dashboard - Main learning hub with progress and motivation
+ * Language Learning Dashboard - Main learning hub with progress and motivation
+ * Generic dashboard component that works for any language course
  * Provides smooth user journey with clear next steps and achievements
  */
-const AlbanianDashboard = ({ courseId, currentUser, onStartLesson, onBack }) => {
+const LanguageDashboard = ({ courseId, currentUser, onStartLesson, onBack }) => {
     const [course, setCourse] = useState(null);
     const [skills, setSkills] = useState([]);
     const [userProgress, setUserProgress] = useState(null);
@@ -95,18 +96,18 @@ const AlbanianDashboard = ({ courseId, currentUser, onStartLesson, onBack }) => 
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-gradient-to-br from-red-50 to-blue-50 flex items-center justify-center">
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto mb-4"></div>
-                    <p className="text-gray-600">Loading your Albanian journey...</p>
+                    <div className="w-16 h-16 border-4 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                    <p className="text-gray-600">Loading your language learning journey...</p>
                 </div>
             </div>
         );
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-red-50 to-blue-50">
-            <div className="max-w-7xl mx-auto px-6 py-8">
+        <div className="min-h-screen bg-gray-50">
+            <div className="container mx-auto px-4 py-8">
                 
                 {/* Header with greeting and progress */}
                 <motion.div
@@ -116,44 +117,46 @@ const AlbanianDashboard = ({ courseId, currentUser, onStartLesson, onBack }) => 
                 >
                     <div className="flex items-center justify-between mb-6">
                         <div>
-                            <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                                🇦🇱 Gheg Albanian Learning Journey
+                            <h1 className="heading-1 text-3xl mb-2">
+                                {course?.language?.flag || '🌍'} {course?.language?.name || 'Language'} Learning Journey
                             </h1>
-                            <p className="text-xl text-gray-600">
-                                Mirë se erdhe! Welcome back to your Albanian studies
+                            <p className="body-text text-lg">
+                                {course?.language?.welcomeMessage || 'Welcome back to your language studies'}
                             </p>
                         </div>
                         
                         {onBack && (
                             <button
                                 onClick={onBack}
-                                className="text-gray-600 hover:text-gray-800 flex items-center space-x-2 px-4 py-2 rounded-lg hover:bg-white"
+                                className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 px-4 py-2 rounded-lg hover:bg-white"
                             >
-                                <span>←</span>
-                                <span>Course Catalog</span>
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                                </svg>
+                                <span>Back to Catalog</span>
                             </button>
                         )}
                     </div>
 
                     {/* Progress Overview */}
-                    <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+                    <div className="card mb-8">
                         <div className="flex items-center justify-between mb-4">
-                            <h2 className="text-xl font-semibold text-gray-900">Your Progress</h2>
-                            <div className="text-3xl font-bold text-red-600">
+                            <h2 className="heading-2">Your Progress</h2>
+                            <div className="text-3xl font-bold text-primary-600">
                                 {getProgressPercentage()}%
                             </div>
                         </div>
                         
-                        <div className="w-full bg-gray-200 rounded-full h-4 mb-6">
+                        <div className="progress-bar mb-6">
                             <motion.div
                                 initial={{ width: 0 }}
                                 animate={{ width: `${getProgressPercentage()}%` }}
                                 transition={{ duration: 1, ease: "easeOut" }}
-                                className="bg-gradient-to-r from-red-500 to-red-600 h-4 rounded-full"
+                                className="progress-fill"
                             />
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-gray-900">
                                     {skills.filter(s => s.isCompleted).length} / {skills.length}
@@ -162,13 +165,13 @@ const AlbanianDashboard = ({ courseId, currentUser, onStartLesson, onBack }) => 
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-gray-900">
-                                    {getTotalPhrasesLearned()} / 264
+                                    {getTotalPhrasesLearned()} / {course?.totalPhrases || 0}
                                 </div>
                                 <div className="text-sm text-gray-600">Phrases Learned</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-gray-900 flex items-center justify-center">
-                                    {getStreakDays()} <span className="text-orange-500 ml-1">🔥</span>
+                                    {getStreakDays()} <span className="text-accent-600 ml-1">🔥</span>
                                 </div>
                                 <div className="text-sm text-gray-600">Day Streak</div>
                             </div>
@@ -190,25 +193,25 @@ const AlbanianDashboard = ({ courseId, currentUser, onStartLesson, onBack }) => 
                         transition={{ delay: 0.2 }}
                         className="mb-8"
                     >
-                        <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-xl shadow-lg p-8 text-white">
-                            <div className="flex items-center justify-between">
+                        <div className="card">
+                            <h2 className="heading-2 mb-4">📚 Continue Learning</h2>
+                            <div className="flex items-center justify-between p-4 bg-primary-50 rounded-lg">
                                 <div className="flex-1">
-                                    <h2 className="text-2xl font-bold mb-2">📚 Continue Learning</h2>
-                                    <h3 className="text-xl mb-2">{nextLesson.name}</h3>
-                                    <p className="text-red-100 mb-4">
-                                        {nextLesson.description || `Ready for your next Albanian lesson? Let's learn some new phrases!`}
+                                    <h3 className="font-semibold text-gray-900 mb-1">{nextLesson.name}</h3>
+                                    <p className="text-sm text-gray-600 mb-2">
+                                        {nextLesson.description || `Ready for your next ${course?.language?.name || 'language'} lesson? Let's learn some new phrases!`}
                                     </p>
-                                    <div className="flex items-center text-red-100 text-sm mb-6">
-                                        <span className="mr-4">⏱️ ~{nextLesson.estimatedMinutes || 15} minutes</span>
-                                        <span className="mr-4">📈 Level {nextLesson.difficultyLevel || 3}/10</span>
+                                    <div className="flex items-center text-xs text-gray-500 space-x-4">
+                                        <span>⏱️ ~{nextLesson.estimatedMinutes || 15} minutes</span>
+                                        <span>📈 Level {nextLesson.difficultyLevel || 3}/10</span>
                                         <span>🎯 {nextLesson.contentAreas?.join(', ') || 'Vocabulary, Grammar'}</span>
                                     </div>
                                 </div>
                                 
-                                <div className="ml-8">
+                                <div className="ml-6">
                                     <button
                                         onClick={handleContinueLearning}
-                                        className="bg-white text-red-600 font-bold text-lg px-8 py-4 rounded-xl hover:bg-red-50 transition-all transform hover:scale-105 shadow-lg"
+                                        className="btn bg-primary-500 text-white"
                                     >
                                         ▶️ Start Lesson
                                     </button>
@@ -226,7 +229,7 @@ const AlbanianDashboard = ({ courseId, currentUser, onStartLesson, onBack }) => 
                     className="mb-8"
                 >
                     <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        🏆 Your Albanian Skills
+                        🏆 Your {course?.language?.name || 'Language'} Skills
                     </h2>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -384,7 +387,7 @@ const PhraseCard = ({ phrase }) => {
                             exit={{ opacity: 0, rotateY: -90 }}
                             className="text-center"
                         >
-                            <div className="text-lg font-semibold text-red-600 mb-2">
+                            <div className="text-lg font-semibold text-primary-600 mb-2">
                                 {phrase.targetPhrase}
                             </div>
                             <div className="text-xs text-gray-500">Click to see English</div>
@@ -400,7 +403,7 @@ const PhraseCard = ({ phrase }) => {
                             <div className="text-lg font-semibold text-gray-900 mb-2">
                                 {phrase.englishPhrase}
                             </div>
-                            <div className="text-xs text-blue-600">
+                            <div className="text-xs text-primary-600">
                                 {phrase.pronunciationGuide}
                             </div>
                         </motion.div>
@@ -452,21 +455,21 @@ const LessonCompletionCelebration = ({ completionData, onClose }) => {
                     transition={{ delay: 0.6 }}
                     className="text-lg text-gray-600 mb-6"
                 >
-                    You completed your Albanian lesson!
+                    You completed your language lesson!
                 </motion.p>
                 <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.8 }}
-                    className="bg-gradient-to-r from-red-50 to-blue-50 rounded-xl p-6 mb-6"
+                    className="bg-primary-50 rounded-xl p-6 mb-6"
                 >
                     <div className="grid grid-cols-2 gap-4 text-center">
                         <div>
-                            <div className="text-2xl font-bold text-red-600">{totalScore}%</div>
+                            <div className="text-2xl font-bold text-primary-600">{totalScore}%</div>
                             <div className="text-sm text-gray-600">Final Score</div>
                         </div>
                         <div>
-                            <div className="text-2xl font-bold text-blue-600">
+                            <div className="text-2xl font-bold text-success-600">
                                 {progress?.phrasesLearned?.length || 5}
                             </div>
                             <div className="text-sm text-gray-600">Phrases Learned</div>
@@ -480,14 +483,14 @@ const LessonCompletionCelebration = ({ completionData, onClose }) => {
                     className="text-center"
                 >
                     <div className="text-gray-600 mb-4">
-                        {totalScore >= 90 ? 'Outstanding work! You\'re mastering Albanian!' :
+                        {totalScore >= 90 ? 'Outstanding work! You\'re mastering this language!' :
                          totalScore >= 80 ? 'Excellent progress! Keep it up!' :
                          totalScore >= 70 ? 'Good job! You\'re learning well!' :
                          'Great effort! Every lesson makes you stronger!'}
                     </div>
                     <button
                         onClick={onClose}
-                        className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors"
+                        className="btn bg-primary-500 text-white"
                     >
                         Continue Learning →
                     </button>
@@ -523,4 +526,4 @@ const LessonCompletionCelebration = ({ completionData, onClose }) => {
     );
 };
 
-export default AlbanianDashboard;
+export default LanguageDashboard;

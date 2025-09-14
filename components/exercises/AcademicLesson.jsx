@@ -414,7 +414,7 @@ const AcademicLesson = ({ lesson, courseId, currentUser, onComplete, onExit }) =
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-            <div className="max-w-4xl mx-auto px-4 py-6">
+            <div className="w-full px-8 py-6">
                 
                 {/* Lesson Header */}
                 <AcademicLessonHeader 
