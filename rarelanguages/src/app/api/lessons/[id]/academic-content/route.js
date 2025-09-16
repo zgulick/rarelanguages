@@ -27,10 +27,51 @@ export async function GET(request, { params }) {
             }
         }
         
-        // Validate UUID format - if not UUID, return demo content
+        // For real lesson UUIDs, try to load comprehensive content first
         const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-        if (!uuidRegex.test(lessonId)) {
-            console.log(`Invalid UUID format: ${lessonId}, checking for comprehensive lessons or returning demo content`);
+        if (uuidRegex.test(lessonId)) {
+            console.log(`Loading comprehensive content for UUID lesson: ${lessonId}`);
+            
+            // Get lesson name to determine topic
+            const lessonResult = await query(`
+                SELECT l.name, l.description, s.name as skill_name
+                FROM lessons l
+                JOIN skills s ON l.skill_id = s.id
+                WHERE l.id = $1
+            `, [lessonId]);
+            
+            if (lessonResult.rows.length > 0) {
+                const lessonInfo = lessonResult.rows[0];
+                const lessonName = lessonInfo.name.toLowerCase();
+                
+                // Map lesson names to comprehensive topics
+                let topic = 'family'; // default
+                if (lessonName.includes('sound') || lessonName.includes('phoneme')) {
+                    topic = 'sounds';
+                } else if (lessonName.includes('grammar') || lessonName.includes('structure')) {
+                    topic = 'grammar';
+                } else if (lessonName.includes('vocabulary') || lessonName.includes('lexical')) {
+                    topic = 'vocabulary';
+                } else if (lessonName.includes('family')) {
+                    topic = 'family';
+                }
+                
+                try {
+                    const comprehensiveResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/lessons/comprehensive/${topic}`, {
+                        method: 'GET'
+                    });
+                    
+                    if (comprehensiveResponse.ok) {
+                        const comprehensiveData = await comprehensiveResponse.json();
+                        console.log(`✅ Loaded comprehensive ${topic} lesson for ${lessonInfo.name}`);
+                        return NextResponse.json(comprehensiveData);
+                    }
+                } catch (error) {
+                    console.log(`Failed to load comprehensive ${topic} lesson, falling back...`);
+                }
+            }
+        } else {
+            console.log(`Non-UUID lesson ID: ${lessonId}, checking for comprehensive lessons...`);
             
             // Try to match with comprehensive lessons by lesson ID
             const comprehensiveTopics = {
