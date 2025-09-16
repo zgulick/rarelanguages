@@ -22,7 +22,12 @@ const CourseSyllabus = ({ course, language, onLessonSelect, onBack }) => {
       const response = await fetch(`/api/courses/${course.id}/dashboard?userId=${currentUser.id}`);
       if (response.ok) {
         const data = await response.json();
-        setCourseContent(data);
+        // If API returns empty units, use fallback syllabus
+        if (!data.units || data.units.length === 0) {
+          setCourseContent(generateFallbackSyllabus());
+        } else {
+          setCourseContent(data);
+        }
       } else {
         // Generate fallback syllabus structure
         setCourseContent(generateFallbackSyllabus());
@@ -514,9 +519,9 @@ const CourseSyllabus = ({ course, language, onLessonSelect, onBack }) => {
                             unitIndex === 0 ? 'from-emerald-300' : unitIndex === 1 ? 'from-blue-300' : unitIndex === 2 ? 'from-purple-300' : 'from-pink-300',
                             unitIndex === 0 ? 'to-blue-300' : unitIndex === 1 ? 'to-purple-300' : unitIndex === 2 ? 'to-pink-300' : 'to-orange-300'
                           ])}`}>
-                            Unit {unit.id}
+                            Unit {unit.position || unitIndex + 1}
                           </span>
-                          {!unit.unlocked && (
+                          {!(unit.unlocked !== false) && (
                             <div className="p-2 bg-amber-400/20 border border-amber-300/30 rounded-lg">
                               <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
@@ -525,13 +530,13 @@ const CourseSyllabus = ({ course, language, onLessonSelect, onBack }) => {
                           )}
                         </div>
                         
-                        <h3 className="text-2xl font-bold mb-3" style={{ color: designSystem.colors.text.primary }}>{unit.title}</h3>
-                        <p className="font-semibold italic mb-3" style={{ color: designSystem.colors.text.secondary }}>{unit.subtitle}</p>
+                        <h3 className="text-2xl font-bold mb-3" style={{ color: designSystem.colors.text.primary }}>{unit.name || unit.title}</h3>
+                        <p className="font-semibold italic mb-3" style={{ color: designSystem.colors.text.secondary }}>{unit.subtitle || ''}</p>
                         <p className="mb-6 leading-relaxed" style={{ color: designSystem.colors.text.secondary }}>{unit.description}</p>
                         
                         <div className="flex items-center justify-between">
-                          <span className="font-medium" style={{ color: designSystem.colors.text.tertiary }}>{unit.duration}</span>
-                          <span className="font-medium" style={{ color: designSystem.colors.text.tertiary }}>Progress: {unit.progress}%</span>
+                          <span className="font-medium" style={{ color: designSystem.colors.text.tertiary }}>{unit.duration || `${unit.estimated_hours} hours`}</span>
+                          <span className="font-medium" style={{ color: designSystem.colors.text.tertiary }}>Progress: {unit.progress || 0}%</span>
                         </div>
                       </div>
                       
