@@ -34,7 +34,7 @@ export async function GET(request, { params }) {
             
             // Get lesson name to determine topic
             const lessonResult = await query(`
-                SELECT l.name, l.description, s.name as skill_name
+                SELECT l.name, s.name as skill_name
                 FROM lessons l
                 JOIN skills s ON l.skill_id = s.id
                 WHERE l.id = $1
