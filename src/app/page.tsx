@@ -1,28 +1,22 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-
-// Dynamically import our React App component to avoid SSR issues
-const App = dynamic(() => import('../../components/App'), { ssr: false });
-
 export default function Home() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading Albanian Learning Platform...</p>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          Albanian Learning Platform
+        </h1>
+        <p className="text-gray-600 mb-8">
+          Welcome to your language learning journey
+        </p>
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <p className="text-green-600 font-semibold">
+            ✅ Deployment successful!
+          </p>
+          <p className="text-sm text-gray-500 mt-2">
+            Build completed successfully
+          </p>
         </div>
       </div>
-    );
-  }
-
-  return <App />;
+    </div>
+  );
 }
