@@ -10,6 +10,9 @@ export async function GET(request) {
     try {
         const { searchParams } = new URL(request.url);
         const userId = searchParams.get('userId');
+        
+        // Skip user-specific queries for guest users
+        const isGuestUser = userId && userId.startsWith('guest-user-');
 
         // Get all active languages
         const languagesResult = await query(`
@@ -52,8 +55,8 @@ export async function GET(request) {
         let whereClause = `WHERE c.is_active = true`;
         let params = [];
 
-        // Add user enrollment status if userId provided
-        if (userId) {
+        // Add user enrollment status if userId provided (but not for guest users)
+        if (userId && !isGuestUser) {
             coursesQuery += `, 
                 COALESCE(cp.status, 'not_started') as enrollment_status,
                 cp.completion_date,
@@ -62,36 +65,32 @@ export async function GET(request) {
                 cp.total_hours_spent
             `;
             
-            fromClause += ` LEFT JOIN course_progress cp ON c.id = cp.course_id AND cp.user_id = $1`;
+            fromClause += ` LEFT JOIN course_progress cp ON c.id = cp.course_id AND cp.user_id = $1 `;
             params.push(userId);
         }
 
-        const groupByClause = `
+        let groupByClause = `
             GROUP BY c.id, c.name, c.code, c.description, c.level, c.cefr_level, 
                      c.estimated_hours, c.learning_objectives, c.prerequisites,
                      l.name, l.code, l.native_name
         `;
 
-        const orderByClause = `ORDER BY l.name, c.level`;
-
-        // Add user enrollment fields to GROUP BY if needed
-        if (userId) {
-            const fullQuery = coursesQuery + fromClause + whereClause + 
-                            groupByClause + `, cp.status, cp.completion_date, cp.overall_score, cp.skills_completed, cp.total_hours_spent` + 
-                            orderByClause;
-            
-            var coursesResult = await query(fullQuery, params);
-        } else {
-            const fullQuery = coursesQuery + fromClause + whereClause + groupByClause + orderByClause;
-            var coursesResult = await query(fullQuery, params);
+        // Add user enrollment fields to GROUP BY if needed (but not for guest users)
+        if (userId && !isGuestUser) {
+            groupByClause += `, cp.status, cp.completion_date, cp.overall_score, cp.skills_completed, cp.total_hours_spent`;
         }
+
+        const orderByClause = ` ORDER BY l.name, c.level`;
+
+        const fullQuery = coursesQuery + fromClause + whereClause + groupByClause + orderByClause;
+        var coursesResult = await query(fullQuery, params);
 
         // Process courses to check prerequisites
         const courses = await Promise.all(coursesResult.rows.map(async (course) => {
             // Check if prerequisites are met
             let prerequisitesMet = true;
             
-            if (course.prerequisites && course.prerequisites.length > 0 && userId) {
+            if (course.prerequisites && course.prerequisites.length > 0 && userId && !isGuestUser) {
                 const prerequisiteIds = course.prerequisites;
                 
                 const prereqResult = await query(`

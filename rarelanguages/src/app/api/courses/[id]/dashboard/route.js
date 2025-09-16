@@ -19,19 +19,25 @@ export async function GET(request, { params }) {
             );
         }
 
-        // Check if user is enrolled in course
-        const enrollmentResult = await query(`
-            SELECT cp.*, c.name as course_name 
-            FROM course_progress cp
-            JOIN courses c ON cp.course_id = c.id
-            WHERE cp.user_id = $1 AND cp.course_id = $2
-        `, [userId, courseId]);
+        // Check if this is a guest user
+        const isGuestUser = userId.startsWith('guest-user-');
+        let enrollmentResult = { rows: [] };
+        
+        // Check if user is enrolled in course (skip for guest users)
+        if (!isGuestUser) {
+            enrollmentResult = await query(`
+                SELECT cp.*, c.name as course_name 
+                FROM course_progress cp
+                JOIN courses c ON cp.course_id = c.id
+                WHERE cp.user_id = $1 AND cp.course_id = $2
+            `, [userId, courseId]);
 
-        if (enrollmentResult.rows.length === 0) {
-            return NextResponse.json(
-                { error: 'User not enrolled in this course', success: false },
-                { status: 403 }
-            );
+            if (enrollmentResult.rows.length === 0) {
+                return NextResponse.json(
+                    { error: 'User not enrolled in this course', success: false },
+                    { status: 403 }
+                );
+            }
         }
 
         // Get comprehensive course information
@@ -54,84 +60,158 @@ export async function GET(request, { params }) {
         `, [courseId]);
 
         const course = courseResult.rows[0];
-        const progress = enrollmentResult.rows[0];
+        const progress = enrollmentResult.rows[0] || {
+            status: 'not_started',
+            enrollment_date: new Date().toISOString(),
+            last_accessed: null,
+            overall_score: 0,
+            skills_completed: 0,
+            total_hours_spent: 0
+        };
 
-        // Get user's detailed progress
-        const progressDetailResult = await query(`
-            SELECT 
-                COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN up.skill_id END) as skills_completed,
-                COUNT(DISTINCT up.lesson_id) as lessons_attempted,
-                COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN up.lesson_id END) as lessons_completed,
-                AVG(CASE WHEN up.success_rate > 0 THEN up.success_rate * 100 END) as avg_score,
-                SUM(up.time_spent_minutes) / 60.0 as total_hours
-            FROM user_progress up
-            JOIN course_skills cs ON up.skill_id = cs.skill_id
-            WHERE up.user_id = $1 AND cs.course_id = $2
-        `, [userId, courseId]);
+        // Get user's detailed progress (skip for guest users)
+        let progressDetailResult = { rows: [{}] };
+        if (!isGuestUser) {
+            progressDetailResult = await query(`
+                SELECT 
+                    COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN up.skill_id END) as skills_completed,
+                    COUNT(DISTINCT up.lesson_id) as lessons_attempted,
+                    COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN up.lesson_id END) as lessons_completed,
+                    AVG(CASE WHEN up.success_rate > 0 THEN up.success_rate * 100 END) as avg_score,
+                    SUM(up.time_spent_minutes) / 60.0 as total_hours
+                FROM user_progress up
+                JOIN course_skills cs ON up.skill_id = cs.skill_id
+                WHERE up.user_id = $1 AND cs.course_id = $2
+            `, [userId, courseId]);
+        }
 
         const progressDetails = progressDetailResult.rows[0] || {};
 
         // Get next recommended lesson
-        const nextLessonResult = await query(`
-            SELECT DISTINCT
-                l.id,
-                l.name,
-                l.difficulty_level,
-                l.estimated_minutes,
-                s.name as skill_name,
-                s.position as skill_position,
-                COALESCE(up.status, 'not_started') as progress_status
-            FROM lessons l
-            JOIN skills s ON l.skill_id = s.id
-            JOIN course_skills cs ON s.id = cs.skill_id
-            LEFT JOIN user_progress up ON l.id = up.lesson_id AND up.user_id = $1
-            WHERE cs.course_id = $2 
-              AND s.is_active = true 
-              AND l.is_active = true
-              AND (up.status IS NULL OR up.status != 'completed')
-            ORDER BY s.position ASC, l.position ASC
-            LIMIT 1
-        `, [userId, courseId]);
+        let nextLessonResult;
+        if (!isGuestUser) {
+            nextLessonResult = await query(`
+                SELECT DISTINCT
+                    l.id,
+                    l.name,
+                    l.difficulty_level,
+                    l.estimated_minutes,
+                    l.position as lesson_position,
+                    s.name as skill_name,
+                    s.position as skill_position,
+                    COALESCE(up.status, 'not_started') as progress_status
+                FROM lessons l
+                JOIN skills s ON l.skill_id = s.id
+                JOIN course_skills cs ON s.id = cs.skill_id
+                LEFT JOIN user_progress up ON l.id = up.lesson_id AND up.user_id = $1
+                WHERE cs.course_id = $2 
+                  AND s.is_active = true 
+                  AND l.is_active = true
+                  AND (up.status IS NULL OR up.status != 'completed')
+                ORDER BY s.position ASC, l.position ASC
+                LIMIT 1
+            `, [userId, courseId]);
+        } else {
+            // For guest users, get the first lesson
+            nextLessonResult = await query(`
+                SELECT DISTINCT
+                    l.id,
+                    l.name,
+                    l.difficulty_level,
+                    l.estimated_minutes,
+                    l.position as lesson_position,
+                    s.name as skill_name,
+                    s.position as skill_position,
+                    'not_started' as progress_status
+                FROM lessons l
+                JOIN skills s ON l.skill_id = s.id
+                JOIN course_skills cs ON s.id = cs.skill_id
+                WHERE cs.course_id = $1 
+                  AND s.is_active = true 
+                  AND l.is_active = true
+                ORDER BY s.position ASC, l.position ASC
+                LIMIT 1
+            `, [courseId]);
+        }
 
         const nextLesson = nextLessonResult.rows[0] || null;
 
         // Get upcoming assessments
-        const assessmentsResult = await query(`
-            SELECT 
-                a.id,
-                a.name,
-                a.assessment_type,
-                a.max_score,
-                a.passing_score,
-                a.time_limit_minutes,
-                COALESCE(ua.passed, false) as already_passed
-            FROM assessments a
-            LEFT JOIN user_assessments ua ON a.id = ua.assessment_id AND ua.user_id = $1
-            WHERE a.course_id = $2 
-              AND a.is_active = true 
-              AND (ua.passed IS NULL OR ua.passed = false)
-            ORDER BY a.created_at
-        `, [userId, courseId]);
+        let assessmentsResult;
+        if (!isGuestUser) {
+            assessmentsResult = await query(`
+                SELECT 
+                    a.id,
+                    a.name,
+                    a.assessment_type,
+                    a.max_score,
+                    a.passing_score,
+                    a.time_limit_minutes,
+                    COALESCE(ua.passed, false) as already_passed
+                FROM assessments a
+                LEFT JOIN user_assessments ua ON a.id = ua.assessment_id AND ua.user_id = $1
+                WHERE a.course_id = $2 
+                  AND a.is_active = true 
+                  AND (ua.passed IS NULL OR ua.passed = false)
+                ORDER BY a.created_at
+            `, [userId, courseId]);
+        } else {
+            // For guest users, show all active assessments as not completed
+            assessmentsResult = await query(`
+                SELECT 
+                    a.id,
+                    a.name,
+                    a.assessment_type,
+                    a.max_score,
+                    a.passing_score,
+                    a.time_limit_minutes,
+                    false as already_passed
+                FROM assessments a
+                WHERE a.course_id = $1 
+                  AND a.is_active = true
+                ORDER BY a.created_at
+            `, [courseId]);
+        }
 
         const upcomingAssessments = assessmentsResult.rows;
 
         // Get course units with progress
-        const unitsResult = await query(`
-            SELECT 
-                cu.id,
-                cu.name,
-                cu.description,
-                cu.position,
-                cu.estimated_hours,
-                COUNT(DISTINCT us.skill_id) as total_skills,
-                COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN us.skill_id END) as skills_completed
-            FROM course_units cu
-            LEFT JOIN unit_skills us ON cu.id = us.unit_id
-            LEFT JOIN user_progress up ON us.skill_id = up.skill_id AND up.user_id = $1
-            WHERE cu.course_id = $2 AND cu.is_active = true
-            GROUP BY cu.id, cu.name, cu.description, cu.position, cu.estimated_hours
-            ORDER BY cu.position
-        `, [userId, courseId]);
+        let unitsResult;
+        if (!isGuestUser) {
+            unitsResult = await query(`
+                SELECT 
+                    cu.id,
+                    cu.name,
+                    cu.description,
+                    cu.position,
+                    cu.estimated_hours,
+                    COUNT(DISTINCT us.skill_id) as total_skills,
+                    COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN us.skill_id END) as skills_completed
+                FROM course_units cu
+                LEFT JOIN unit_skills us ON cu.id = us.unit_id
+                LEFT JOIN user_progress up ON us.skill_id = up.skill_id AND up.user_id = $1
+                WHERE cu.course_id = $2 AND cu.is_active = true
+                GROUP BY cu.id, cu.name, cu.description, cu.position, cu.estimated_hours
+                ORDER BY cu.position
+            `, [userId, courseId]);
+        } else {
+            // For guest users, show units without progress data
+            unitsResult = await query(`
+                SELECT 
+                    cu.id,
+                    cu.name,
+                    cu.description,
+                    cu.position,
+                    cu.estimated_hours,
+                    COUNT(DISTINCT us.skill_id) as total_skills,
+                    0 as skills_completed
+                FROM course_units cu
+                LEFT JOIN unit_skills us ON cu.id = us.unit_id
+                WHERE cu.course_id = $1 AND cu.is_active = true
+                GROUP BY cu.id, cu.name, cu.description, cu.position, cu.estimated_hours
+                ORDER BY cu.position
+            `, [courseId]);
+        }
 
         const units = unitsResult.rows;
 

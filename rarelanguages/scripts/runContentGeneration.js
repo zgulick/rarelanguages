@@ -150,8 +150,20 @@ async function generateExerciseVariations(progress) {
   // This integrates with your existing generateExercises.js
   await executeWithRetry(
     async () => {
-      const { generateExercises } = require('./generateExercises');
-      await generateExercises();
+      const { ExerciseGenerator } = require('./generateExercises');
+      const generator = new ExerciseGenerator();
+      
+      // Get some Albanian topics to generate exercises for
+      const topicsResult = await require('../lib/database').query(`
+        SELECT id FROM topics 
+        WHERE language_id = (SELECT id FROM languages WHERE code = 'gheg-al') 
+        AND is_active = true 
+        LIMIT 3
+      `);
+      
+      for (const topic of topicsResult.rows) {
+        await generator.generateExercisesForTopic(topic.id, 5); // Generate 5 exercises per topic
+      }
     },
     'exercise generation'
   );
