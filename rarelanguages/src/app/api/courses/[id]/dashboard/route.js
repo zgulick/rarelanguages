@@ -175,45 +175,69 @@ export async function GET(request, { params }) {
 
         const upcomingAssessments = assessmentsResult.rows;
 
-        // Get course units with progress
-        let unitsResult;
+        // Get course skills (the real AI-generated content) with lessons
+        let skillsResult;
         if (!isGuestUser) {
-            unitsResult = await query(`
+            skillsResult = await query(`
                 SELECT 
-                    cu.id,
-                    cu.name,
-                    cu.description,
-                    cu.position,
-                    cu.estimated_hours,
-                    COUNT(DISTINCT us.skill_id) as total_skills,
-                    COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN us.skill_id END) as skills_completed
-                FROM course_units cu
-                LEFT JOIN unit_skills us ON cu.id = us.unit_id
-                LEFT JOIN user_progress up ON us.skill_id = up.skill_id AND up.user_id = $1
-                WHERE cu.course_id = $2 AND cu.is_active = true
-                GROUP BY cu.id, cu.name, cu.description, cu.position, cu.estimated_hours
-                ORDER BY cu.position
+                    s.id,
+                    s.name,
+                    s.description,
+                    s.position,
+                    s.estimated_hours,
+                    s.cefr_level,
+                    COUNT(DISTINCT l.id) as total_lessons,
+                    COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN l.id END) as lessons_completed,
+                    JSON_AGG(
+                        JSON_BUILD_OBJECT(
+                            'id', l.id,
+                            'name', l.name,
+                            'position', l.position,
+                            'estimated_minutes', l.estimated_minutes,
+                            'difficulty_level', l.difficulty_level,
+                            'status', COALESCE(up.status, 'not_started')
+                        ) ORDER BY l.position
+                    ) FILTER (WHERE l.id IS NOT NULL) as lessons
+                FROM course_skills cs
+                JOIN skills s ON cs.skill_id = s.id
+                LEFT JOIN lessons l ON s.id = l.skill_id AND l.is_active = true
+                LEFT JOIN user_progress up ON l.id = up.lesson_id AND up.user_id = $1
+                WHERE cs.course_id = $2 AND s.is_active = true
+                GROUP BY s.id, s.name, s.description, s.position, s.estimated_hours, s.cefr_level
+                ORDER BY s.position
             `, [userId, courseId]);
         } else {
-            // For guest users, show units without progress data
-            unitsResult = await query(`
+            // For guest users, show skills without progress data
+            skillsResult = await query(`
                 SELECT 
-                    cu.id,
-                    cu.name,
-                    cu.description,
-                    cu.position,
-                    cu.estimated_hours,
-                    COUNT(DISTINCT us.skill_id) as total_skills,
-                    0 as skills_completed
-                FROM course_units cu
-                LEFT JOIN unit_skills us ON cu.id = us.unit_id
-                WHERE cu.course_id = $1 AND cu.is_active = true
-                GROUP BY cu.id, cu.name, cu.description, cu.position, cu.estimated_hours
-                ORDER BY cu.position
+                    s.id,
+                    s.name,
+                    s.description,
+                    s.position,
+                    s.estimated_hours,
+                    s.cefr_level,
+                    COUNT(DISTINCT l.id) as total_lessons,
+                    0 as lessons_completed,
+                    JSON_AGG(
+                        JSON_BUILD_OBJECT(
+                            'id', l.id,
+                            'name', l.name,
+                            'position', l.position,
+                            'estimated_minutes', l.estimated_minutes,
+                            'difficulty_level', l.difficulty_level,
+                            'status', 'not_started'
+                        ) ORDER BY l.position
+                    ) FILTER (WHERE l.id IS NOT NULL) as lessons
+                FROM course_skills cs
+                JOIN skills s ON cs.skill_id = s.id
+                LEFT JOIN lessons l ON s.id = l.skill_id AND l.is_active = true
+                WHERE cs.course_id = $1 AND s.is_active = true
+                GROUP BY s.id, s.name, s.description, s.position, s.estimated_hours, s.cefr_level
+                ORDER BY s.position
             `, [courseId]);
         }
 
-        const units = unitsResult.rows;
+        const units = skillsResult.rows;
 
         // Calculate study streak (mock implementation - would need actual tracking)
         const studyStreak = 7; // Mock value
@@ -244,10 +268,13 @@ export async function GET(request, { params }) {
                 ...assessment,
                 timeLimit: assessment.time_limit_minutes
             })),
-            units: units.map(unit => ({
-                ...unit,
-                skillsCompleted: parseInt(unit.skills_completed) || 0,
-                totalSkills: parseInt(unit.total_skills) || 0
+            units: units.map(skill => ({
+                ...skill,
+                skillsCompleted: parseInt(skill.lessons_completed) || 0,
+                totalSkills: parseInt(skill.total_lessons) || 0,
+                lessonsCompleted: parseInt(skill.lessons_completed) || 0,
+                totalLessons: parseInt(skill.total_lessons) || 0,
+                lessons: skill.lessons || []
             })),
             success: true
         };
