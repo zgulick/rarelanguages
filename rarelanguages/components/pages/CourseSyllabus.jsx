@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { designSystem, getButtonClass, getCardClass, getTextGradient } from '../../styles/designSystem';
+import { useApp } from '../../contexts/AppContext';
 
 const CourseSyllabus = ({ course, language, onLessonSelect, onBack }) => {
+  const { currentUser } = useApp();
   const [courseContent, setCourseContent] = useState(null);
   const [selectedUnit, setSelectedUnit] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -17,7 +19,7 @@ const CourseSyllabus = ({ course, language, onLessonSelect, onBack }) => {
       setLoading(true);
       
       // Try to fetch course content from API
-      const response = await fetch(`/api/courses/${course.id}/dashboard`);
+      const response = await fetch(`/api/courses/${course.id}/dashboard?userId=${currentUser.id}`);
       if (response.ok) {
         const data = await response.json();
         setCourseContent(data);
