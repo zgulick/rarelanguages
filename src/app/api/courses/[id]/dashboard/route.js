@@ -184,7 +184,7 @@ export async function GET(request, { params }) {
                     s.name,
                     s.description,
                     s.position,
-                    s.estimated_hours,
+                    cs.estimated_hours,
                     s.cefr_level,
                     COUNT(DISTINCT l.id) as total_lessons,
                     COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN l.id END) as lessons_completed,
@@ -203,7 +203,7 @@ export async function GET(request, { params }) {
                 LEFT JOIN lessons l ON s.id = l.skill_id AND l.is_active = true
                 LEFT JOIN user_progress up ON l.id = up.lesson_id AND up.user_id = $1
                 WHERE cs.course_id = $2 AND s.is_active = true
-                GROUP BY s.id, s.name, s.description, s.position, s.estimated_hours, s.cefr_level
+                GROUP BY s.id, s.name, s.description, s.position, cs.estimated_hours, s.cefr_level
                 ORDER BY s.position
             `, [userId, courseId]);
         } else {
@@ -214,7 +214,7 @@ export async function GET(request, { params }) {
                     s.name,
                     s.description,
                     s.position,
-                    s.estimated_hours,
+                    cs.estimated_hours,
                     s.cefr_level,
                     COUNT(DISTINCT l.id) as total_lessons,
                     0 as lessons_completed,
@@ -232,7 +232,7 @@ export async function GET(request, { params }) {
                 JOIN skills s ON cs.skill_id = s.id
                 LEFT JOIN lessons l ON s.id = l.skill_id AND l.is_active = true
                 WHERE cs.course_id = $1 AND s.is_active = true
-                GROUP BY s.id, s.name, s.description, s.position, s.estimated_hours, s.cefr_level
+                GROUP BY s.id, s.name, s.description, s.position, cs.estimated_hours, s.cefr_level
                 ORDER BY s.position
             `, [courseId]);
         }
