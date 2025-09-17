@@ -1,5 +1,5 @@
 // File: src/app/api/lessons/[lessonId]/comprehensive-cards/route.js
-import { query } from '../../../../../../../lib/database';
+import { query } from '../../../../../../lib/database';
 
 export async function GET(request, { params }) {
   try {

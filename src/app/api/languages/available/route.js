@@ -10,8 +10,7 @@ export async function GET() {
         COUNT(les.id) as lesson_count,
         '🌍' as flag
       FROM languages l
-      LEFT JOIN courses c ON l.id = c.language_id
-      LEFT JOIN skills s ON c.id = s.course_id  
+      LEFT JOIN skills s ON l.id = s.language_id  
       LEFT JOIN lessons les ON s.id = les.skill_id
       WHERE l.active = true
       GROUP BY l.id, l.code, l.name, l.native_name
