@@ -37,7 +37,7 @@ export async function GET(request, { params }) {
     // Check if we have comprehensive lesson data
     const comprehensiveResult = await query(`
       SELECT 
-        cl.*,
+        lv.*,
         lv.albanian_term,
         lv.english_term,
         lv.pronunciation,
@@ -45,9 +45,8 @@ export async function GET(request, { params }) {
         lv.example_sentence,
         lv.english_translation,
         lv.difficulty_level
-      FROM comprehensive_lessons cl
-      LEFT JOIN lesson_vocabulary lv ON cl.id = lv.lesson_id
-      WHERE cl.lesson_id = $1
+      FROM lesson_vocabulary lv
+      WHERE lv.lesson_id = $1
       ORDER BY lv.difficulty_level, lv.id
     `, [lessonId]);
 
@@ -68,8 +67,7 @@ export async function GET(request, { params }) {
       const verbsResult = await query(`
         SELECT * FROM verbs 
         WHERE language_id = (
-          SELECT language_id FROM courses c
-          JOIN skills s ON c.id = s.course_id
+          SELECT language_id FROM skills s
           WHERE s.id = $1
         )
         AND infinitive IN (${placeholders})
