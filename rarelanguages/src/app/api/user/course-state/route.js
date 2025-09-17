@@ -31,7 +31,7 @@ export async function GET(request) {
         COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN s.id END) as completed_skills,
         COUNT(DISTINCT CASE WHEN up.status = 'completed' THEN s.id END)::float / NULLIF(COUNT(DISTINCT s.id), 0) * 100 as completion_percentage
       FROM courses c
-      LEFT JOIN skills s ON c.id = s.course_id
+      LEFT JOIN skills s ON c.language_id = s.language_id
       LEFT JOIN lessons les ON s.id = les.skill_id
       LEFT JOIN user_progress up ON les.id = up.lesson_id AND up.user_id = $1
       WHERE c.language_id = $2

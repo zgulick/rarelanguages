@@ -76,3 +76,713 @@ Database connection pool initialized
  ○ Compiling / ...
  ✓ Compiled / in 4.6s
  GET / 200 in 5198ms
+ GET / 200 in 862ms
+ ○ Compiling /favicon.ico ...
+ GET /api/languages/available 200 in 595ms
+ ✓ Compiled /favicon.ico in 1394ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 1863ms
+ GET /api/languages/available 200 in 754ms
+ ✓ Compiled /api/user/create in 385ms
+Database query error: error: column s.course_id does not exist
+    at async query (lib/database.js:62:20)
+    at async POST (src/app/api/user/create/route.js:21:26)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '415',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+Failed to create user: error: column s.course_id does not exist
+    at async query (lib/database.js:62:20)
+    at async POST (src/app/api/user/create/route.js:21:26)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 110,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '415',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ POST /api/user/create 500 in 1323ms
+ GET /api/languages/available 200 in 1541ms
+ GET /api/languages/available 200 in 796ms
+Database query error: error: duplicate key value violates unique constraint "users_email_key"
+    at async query (lib/database.js:62:20)
+    at async POST (src/app/api/user/create/route.js:8:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 209,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(guest@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '666',
+  routine: '_bt_check_unique'
+}
+Failed to create user: error: duplicate key value violates unique constraint "users_email_key"
+    at async query (lib/database.js:62:20)
+    at async POST (src/app/api/user/create/route.js:8:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 209,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(guest@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '666',
+  routine: '_bt_check_unique'
+}
+ POST /api/user/create 500 in 786ms
+ GET /api/languages/available 200 in 1368ms
+ GET /api/languages/available 200 in 540ms
+Database query error: error: duplicate key value violates unique constraint "users_email_key"
+    at async query (lib/database.js:62:20)
+    at async POST (src/app/api/user/create/route.js:8:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 209,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(guest@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '666',
+  routine: '_bt_check_unique'
+}
+Failed to create user: error: duplicate key value violates unique constraint "users_email_key"
+    at async query (lib/database.js:62:20)
+    at async POST (src/app/api/user/create/route.js:8:24)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 209,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(guest@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '666',
+  routine: '_bt_check_unique'
+}
+ POST /api/user/create 500 in 1180ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+Database connection pool initialized
+ POST /api/user/create 200 in 2060ms
+ GET / 200 in 1562ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 583ms
+ GET /api/languages/available 200 in 2126ms
+ GET /api/languages/available 200 in 785ms
+ POST /api/user/create 200 in 31687ms
+ ○ Compiling /api/courses/[id]/skills ...
+ ✓ Compiled /api/courses/[id]/skills in 1554ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+Database query error: error: column s.course_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/[id]/skills/route.js:9:20)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "up.course_id".',
+  position: '1626',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load skills: error: column s.course_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/[id]/skills/route.js:9:20)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "up.course_id".',
+  position: '1626',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 500 in 6295ms
+ ○ Compiling /api/lessons/next ...
+ ✓ Compiled /api/lessons/next in 1351ms
+Database query error: error: column s.course_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/[id]/skills/route.js:9:20)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "up.course_id".',
+  position: '1626',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load skills: error: column s.course_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/courses/[id]/skills/route.js:9:20)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "up.course_id".',
+  position: '1626',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 500 in 3175ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+ GET /api/lessons/next 200 in 4311ms
+ GET /api/lessons/next 200 in 732ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Database connection pool initialized
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 2809ms
+ GET / 200 in 1071ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 655ms
+ ○ Compiling /api/user/course-state ...
+ ✓ Compiled /api/user/course-state in 909ms
+ GET /api/user/course-state 200 in 1784ms
+ GET /api/user/course-state 200 in 1195ms
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 1897ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+ GET /api/lessons/next 200 in 1065ms
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 1062ms
+ GET /api/lessons/next 200 in 958ms
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 1035ms
+ GET /api/lessons/next 200 in 820ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+ ✓ Compiled /api/lessons/[id] in 246ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+ GET /api/lessons/dedb7543-38f8-4b9d-98f6-f5df5ecfac6c 200 in 2860ms
+ ✓ Compiled /api/lessons/[id]/comprehensive-cards in 272ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+Database query error: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load comprehensive cards: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/dedb7543-38f8-4b9d-98f6-f5df5ecfac6c/comprehensive-cards 500 in 2660ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Database query error: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load comprehensive cards: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/dedb7543-38f8-4b9d-98f6-f5df5ecfac6c/comprehensive-cards 500 in 1732ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 1424ms
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 566ms
+ GET /api/lessons/next 200 in 587ms
+ GET /api/lessons/next 200 in 522ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+ GET /api/lessons/dedb7543-38f8-4b9d-98f6-f5df5ecfac6c 200 in 1233ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+Database query error: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load comprehensive cards: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/dedb7543-38f8-4b9d-98f6-f5df5ecfac6c/comprehensive-cards 500 in 1464ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Database query error: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load comprehensive cards: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/dedb7543-38f8-4b9d-98f6-f5df5ecfac6c/comprehensive-cards 500 in 2235ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 1372ms
+ GET /api/lessons/next 200 in 638ms
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 657ms
+ GET /api/lessons/next 200 in 547ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+ GET /api/lessons/a6ce1867-d7b7-498f-ae7a-8e4cb631ff39 200 in 1418ms
+Database query error: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load comprehensive cards: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/a6ce1867-d7b7-498f-ae7a-8e4cb631ff39/comprehensive-cards 500 in 1101ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Database query error: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+Failed to load comprehensive cards: error: column cl.lesson_id does not exist
+    at async query (lib/database.js:62:20)
+    at async GET (src/app/api/lessons/[id]/comprehensive-cards/route.js:38:33)
+  60 |   
+  61 |   try {
+> 62 |     const result = await pool.query(text, params);
+     |                    ^
+  63 |     return result;
+  64 |   } catch (err) {
+  65 |     console.error('Database query error:', err); {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "lv.lesson_id".',
+  position: '324',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/lessons/a6ce1867-d7b7-498f-ae7a-8e4cb631ff39/comprehensive-cards 500 in 4758ms
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 1941ms
+ GET /api/lessons/next 200 in 561ms
+ GET /api/courses/b29f6608-a91e-420c-bc0b-22dfb71c846e/skills 200 in 636ms
+ GET /api/lessons/next 200 in 596ms
+[dotenv@17.2.2] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Unexpected error on idle client [Error: read ENETDOWN] {
+  errno: -50,
+  code: 'ENETDOWN',
+  syscall: 'read',
+  client: [Client]
+}
+[?25h
