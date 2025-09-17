@@ -4,42 +4,35 @@ export async function POST(request) {
   try {
     const { languageCode } = await request.json();
 
-    // Create new user
+    // Create new user with unique email using timestamp
     const userResult = await query(`
       INSERT INTO users (email, preferences, current_language)
       VALUES (
-        'guest@example.com',
+        $1,
         '{"audio_enabled": true, "show_cultural_context": true}',
-        (SELECT id FROM languages WHERE code = $1)
+        (SELECT id FROM languages WHERE code = $2)
       )
       RETURNING id, preferences, current_language
-    `, [languageCode]);
+    `, [`guest${Date.now()}@example.com`, languageCode]);
 
     const user = userResult.rows[0];
 
-    // Get the course for this language
+    // Get the course for this language (simplified since skills link directly to language)
     const courseResult = await query(`
       SELECT 
         c.*,
         l.name as language_name,
         l.native_name,
         COUNT(DISTINCT s.id) as total_skills,
-        COALESCE(completed_skills.count, 0) as completed_skills,
-        COALESCE(completed_skills.count, 0)::float / NULLIF(COUNT(DISTINCT s.id), 0) * 100 as completion_percentage
+        0 as completed_skills,
+        0 as completion_percentage
       FROM courses c
       JOIN languages l ON c.language_id = l.id
-      LEFT JOIN skills s ON c.id = s.course_id
-      LEFT JOIN (
-        SELECT s.course_id, COUNT(*) as count
-        FROM skills s
-        JOIN lessons les ON s.id = les.skill_id
-        JOIN user_progress up ON les.id = up.lesson_id
-        WHERE up.user_id = $1 AND up.status = 'completed'
-        GROUP BY s.course_id
-      ) completed_skills ON c.id = completed_skills.course_id
-      WHERE l.code = $2
-      GROUP BY c.id, l.name, l.native_name, completed_skills.count
-    `, [user.id, languageCode]);
+      LEFT JOIN skills s ON l.id = s.language_id
+      WHERE l.code = $1
+      GROUP BY c.id, l.name, l.native_name
+      LIMIT 1
+    `, [languageCode]);
 
     const course = courseResult.rows[0];
 

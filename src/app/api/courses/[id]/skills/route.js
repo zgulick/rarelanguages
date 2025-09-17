@@ -43,7 +43,7 @@ export async function GET(request, { params }) {
       FROM skills s
       LEFT JOIN lessons l ON s.id = l.skill_id
       LEFT JOIN user_progress up ON l.id = up.lesson_id AND up.user_id = $2
-      WHERE s.course_id = $1 AND s.is_active = true
+      WHERE s.language_id = (SELECT language_id FROM courses WHERE id = $1) AND s.is_active = true
       GROUP BY s.id, s.name, s.description, s.position, s.prerequisites, s.cefr_level
       ORDER BY s.position
     `, [courseId, userId]);
