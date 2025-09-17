@@ -1,7 +1,7 @@
 // File: src/app/api/lessons/[id]/textbook-content/route.js
 // API endpoint that provides structured content for textbook-style learning
 
-import { query } from '../../../../../../../lib/database';
+import { query } from '../../../../../../lib/database';
 
 export async function GET(request, { params }) {
   try {
