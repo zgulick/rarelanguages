@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import ComprehensiveLearningCards from './ComprehensiveLearningCards';
+import TextbookLearningCards from '../TextbookLearningCards';
 
 // ==============================================
 // 1. CLEAN APP CONTEXT - Database Only
@@ -448,11 +449,12 @@ const CourseDashboard = () => {
 
 const LessonPage = () => {
   const { user, currentLesson, completeExercise, goBack } = useApp();
-  const [learningMode, setLearningMode] = useState(null); // 'comprehensive' or 'exercises'
+  const [learningMode, setLearningMode] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Let user choose learning mode when lesson loads
+    // Auto-select textbook mode - this is what you want!
+    setLearningMode('textbook');
     setLoading(false);
   }, [currentLesson]);
 
@@ -464,7 +466,7 @@ const LessonPage = () => {
     return <LoadingScreen />;
   }
 
-  // Mode selection screen
+  // Mode selection screen (optional - you can skip this)
   if (!learningMode) {
     return (
       <div className="min-h-screen bg-gray-50">
@@ -488,10 +490,30 @@ const LessonPage = () => {
 
         <div className="max-w-2xl mx-auto px-4 py-12">
           <div className="space-y-6">
+            {/* Textbook Style (Recommended) */}
+            <div 
+              onClick={() => setLearningMode('textbook')}
+              className="bg-white rounded-xl shadow-lg p-8 cursor-pointer hover:shadow-xl transition-shadow border-2 border-indigo-200"
+            >
+              <div className="text-center">
+                <div className="text-4xl mb-4">📚</div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                  Textbook Learning (Recommended)
+                </h2>
+                <p className="text-gray-600 mb-4">
+                  Learn like in school: <strong>Teach → Practice → Test</strong>. 
+                  We'll show you new words first, then practice together, then test what you learned.
+                </p>
+                <div className="text-sm text-indigo-600 font-medium bg-indigo-50 rounded-lg p-3">
+                  ✓ Learn before testing ✓ Guided practice ✓ Cultural context ✓ Proper progression
+                </div>
+              </div>
+            </div>
+
             {/* Comprehensive Cards Option */}
             <div 
               onClick={() => setLearningMode('comprehensive')}
-              className="bg-white rounded-xl shadow-lg p-8 cursor-pointer hover:shadow-xl transition-shadow border-2 border-transparent hover:border-indigo-200"
+              className="bg-white rounded-xl shadow-lg p-8 cursor-pointer hover:shadow-xl transition-shadow border-2 border-transparent hover:border-gray-200"
             >
               <div className="text-center">
                 <div className="text-4xl mb-4">🎓</div>
@@ -500,30 +522,10 @@ const LessonPage = () => {
                 </h2>
                 <p className="text-gray-600 mb-4">
                   Rich, comprehensive cards with pronunciation, grammar, cultural context, and variations. 
-                  Perfect for really understanding each word and phrase.
-                </p>
-                <div className="text-sm text-indigo-600 font-medium">
-                  ✓ Pronunciation guides ✓ Gender & variations ✓ Cultural context ✓ Verb conjugations
-                </div>
-              </div>
-            </div>
-
-            {/* Quick Exercises Option */}
-            <div 
-              onClick={() => setLearningMode('exercises')}
-              className="bg-white rounded-xl shadow-lg p-8 cursor-pointer hover:shadow-xl transition-shadow border-2 border-transparent hover:border-gray-200"
-            >
-              <div className="text-center">
-                <div className="text-4xl mb-4">⚡</div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  Quick Practice
-                </h2>
-                <p className="text-gray-600 mb-4">
-                  Fast-paced exercises for review and reinforcement. 
-                  Great for practicing what you've already learned.
+                  For when you want to dive deep into each word.
                 </p>
                 <div className="text-sm text-gray-600 font-medium">
-                  ✓ Multiple choice ✓ Translation practice ✓ Quick feedback
+                  ✓ Pronunciation guides ✓ Gender & variations ✓ Cultural context ✓ Verb conjugations
                 </div>
               </div>
             </div>
@@ -534,6 +536,16 @@ const LessonPage = () => {
   }
 
   // Render the selected learning mode
+  if (learningMode === 'textbook') {
+    return (
+      <TextbookLearningCards 
+        lesson={currentLesson}
+        onComplete={completeExercise}
+        onExit={goBack}
+      />
+    );
+  }
+
   if (learningMode === 'comprehensive') {
     return (
       <ComprehensiveLearningCards 
@@ -544,7 +556,7 @@ const LessonPage = () => {
     );
   }
 
-  // Quick exercises mode (original implementation)
+  // Fallback to quick exercises mode
   return <QuickExercisesMode lesson={currentLesson} onComplete={completeExercise} onExit={goBack} />;
 };
 
