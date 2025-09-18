@@ -48,11 +48,28 @@ export default function SkillLearningPage() {
     const fetchSkillLessons = async () => {
       try {
         // First, get all lessons for this skill
-        // For now, we'll get the first lesson and its content
-        // TODO: Create API endpoint to get all lessons for a skill
+        const skillResponse = await fetch(`/api/skills/${skillId}/lessons`);
         
-        // Temporarily use a lesson ID - in real implementation, this should fetch lessons for the skill
-        const lessonResponse = await fetch(`/api/lessons/${skillId}/content`);
+        if (!skillResponse.ok) {
+          throw new Error(`Failed to fetch skill lessons: ${skillResponse.status}`);
+        }
+
+        const skillData = await skillResponse.json();
+        
+        if (!skillData.success) {
+          throw new Error(`Skill API error: ${skillData.error}`);
+        }
+
+        if (!skillData.lessons || skillData.lessons.length === 0) {
+          throw new Error(`No lessons found for skill: ${skillId}`);
+        }
+
+        setSkillName(skillData.skill.name);
+        setLessons(skillData.lessons);
+
+        // Get content for the first lesson
+        const firstLesson = skillData.lessons[0];
+        const lessonResponse = await fetch(`/api/lessons/${firstLesson.id}/content`);
         
         if (!lessonResponse.ok) {
           throw new Error(`Failed to fetch lesson content: ${lessonResponse.status}`);
@@ -61,10 +78,9 @@ export default function SkillLearningPage() {
         const lessonData = await lessonResponse.json();
         
         if (!lessonData.success) {
-          throw new Error(`Lesson API error: ${lessonData.error}`);
+          throw new Error(`Lesson content API error: ${lessonData.error}`);
         }
 
-        setSkillName(lessonData.lesson.skill_name);
         setCurrentContent(lessonData.content);
         setLoading(false);
 
