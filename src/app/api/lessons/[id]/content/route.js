@@ -30,7 +30,7 @@ export async function GET(request, { params }) {
 
         const lesson = lessonResult.rows[0];
 
-        // Get lesson content (phrases) with all necessary fields
+        // Get lesson content (phrases) with all necessary fields including new grammar fields
         const contentResult = await query(`
             SELECT 
                 lc.id,
@@ -41,7 +41,15 @@ export async function GET(request, { params }) {
                 lc.content_type,
                 lc.cultural_context,
                 lc.grammar_notes,
-                lc.position
+                lc.position,
+                lc.word_type,
+                lc.verb_type,
+                lc.gender,
+                lc.stress_pattern,
+                lc.conjugation_data,
+                lc.grammar_category,
+                lc.difficulty_notes,
+                lc.usage_examples
             FROM lesson_content lc
             WHERE lc.lesson_id = $1
             ORDER BY lc.position ASC, lc.id ASC
@@ -56,7 +64,16 @@ export async function GET(request, { params }) {
             content_type: item.content_type || 'phrase',
             cultural_context: item.cultural_context || null,
             grammar_notes: item.grammar_notes || null,
-            position: item.position || 1
+            position: item.position || 1,
+            // New grammar and linguistic fields
+            word_type: item.word_type || null,
+            verb_type: item.verb_type || null,
+            gender: item.gender || null,
+            stress_pattern: item.stress_pattern || null,
+            conjugation_data: item.conjugation_data || null,
+            grammar_category: item.grammar_category || null,
+            difficulty_notes: item.difficulty_notes || null,
+            usage_examples: item.usage_examples || null
         }));
 
         // If no content found, return sample Albanian phrases for demo
