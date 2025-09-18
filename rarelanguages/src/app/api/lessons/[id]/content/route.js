@@ -184,7 +184,7 @@ export async function GET(request, { params }) {
     } catch (error) {
         console.error('Lesson content API error:', error);
         return NextResponse.json(
-            { success: false, error: 'Failed to load lesson content' },
+            { success: false, error: `Failed to load lesson content: ${error.message}` },
             { status: 500 }
         );
     }
