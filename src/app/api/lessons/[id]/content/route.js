@@ -55,7 +55,7 @@ export async function GET(request, { params }) {
             id: item.id,
             english_phrase: item.english_phrase,
             target_phrase: item.target_phrase,
-            pronunciation_guide: item.pronunciation_guide || 'Pronunciation guide available',
+            pronunciation_guide: item.pronunciation_guide,
             difficulty_level: 1, // Default value since column doesn't exist
             content_type: 'phrase', // Default value since column doesn't exist
             cultural_context: item.cultural_context || null,
