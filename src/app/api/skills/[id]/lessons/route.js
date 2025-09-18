@@ -26,7 +26,6 @@ export async function GET(request, { params }) {
       SELECT 
         l.id,
         l.name,
-        l.description,
         l.position,
         l.difficulty_level,
         l.estimated_minutes,
@@ -34,14 +33,13 @@ export async function GET(request, { params }) {
       FROM lessons l
       LEFT JOIN lesson_content lc ON l.id = lc.lesson_id
       WHERE l.skill_id = $1 AND l.is_active = true
-      GROUP BY l.id, l.name, l.description, l.position, l.difficulty_level, l.estimated_minutes
+      GROUP BY l.id, l.name, l.position, l.difficulty_level, l.estimated_minutes
       ORDER BY l.position ASC
     `, [skillId]);
 
     const lessons = lessonsResult.rows.map(row => ({
       id: row.id,
       name: row.name,
-      description: row.description,
       position: row.position,
       difficulty_level: row.difficulty_level,
       estimated_minutes: row.estimated_minutes,
