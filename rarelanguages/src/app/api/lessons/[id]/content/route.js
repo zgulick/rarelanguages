@@ -38,7 +38,6 @@ export async function GET(request, { params }) {
                 lc.target_phrase,
                 lc.pronunciation_guide,
                 lc.cultural_context,
-                lc.grammar_notes,
                 lc.position,
                 lc.word_type,
                 lc.verb_type,
@@ -61,7 +60,7 @@ export async function GET(request, { params }) {
             difficulty_level: 1, // Default value since column doesn't exist
             content_type: 'phrase', // Default value since column doesn't exist
             cultural_context: item.cultural_context || null,
-            grammar_notes: item.grammar_notes || null,
+            grammar_notes: null, // Default value since column doesn't exist
             position: item.position || 1,
             // New grammar and linguistic fields
             word_type: item.word_type || null,
