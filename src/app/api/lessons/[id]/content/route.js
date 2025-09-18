@@ -37,7 +37,6 @@ export async function GET(request, { params }) {
                 lc.english_phrase,
                 lc.target_phrase,
                 lc.pronunciation_guide,
-                lc.content_type,
                 lc.cultural_context,
                 lc.grammar_notes,
                 lc.position,
@@ -60,7 +59,7 @@ export async function GET(request, { params }) {
             target_phrase: item.target_phrase,
             pronunciation_guide: item.pronunciation_guide || 'Pronunciation guide available',
             difficulty_level: 1, // Default value since column doesn't exist
-            content_type: item.content_type || 'phrase',
+            content_type: 'phrase', // Default value since column doesn't exist
             cultural_context: item.cultural_context || null,
             grammar_notes: item.grammar_notes || null,
             position: item.position || 1,
