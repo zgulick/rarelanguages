@@ -240,16 +240,18 @@ const VocabularyCard = ({ content }: { content: LessonContent }) => (
         <p className="text-2xl text-gray-600">{content.english_phrase}</p>
         
         {/* Pronunciation */}
-        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-          <div className="text-emerald-800 font-medium text-lg">
-            {content.stress_pattern || content.pronunciation_guide}
-          </div>
-          {content.stress_pattern && content.pronunciation_guide !== content.stress_pattern && (
-            <div className="text-emerald-700 text-sm mt-1">
-              {content.pronunciation_guide}
+        {(content.stress_pattern || content.pronunciation_guide) && (
+          <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+            <div className="text-emerald-800 font-medium text-lg">
+              {content.stress_pattern || content.pronunciation_guide || 'No pronunciation available'}
             </div>
-          )}
-        </div>
+            {content.stress_pattern && content.pronunciation_guide !== content.stress_pattern && (
+              <div className="text-emerald-700 text-sm mt-1">
+                {content.pronunciation_guide}
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Gender (for nouns) */}
@@ -324,11 +326,13 @@ const VerbCard = ({ content }: { content: LessonContent }) => (
         <p className="text-2xl text-gray-600">{content.english_phrase}</p>
         
         {/* Pronunciation */}
-        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-          <div className="text-emerald-800 font-medium text-lg">
-            {content.stress_pattern || content.pronunciation_guide}
+        {(content.stress_pattern || content.pronunciation_guide) && (
+          <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+            <div className="text-emerald-800 font-medium text-lg">
+              {content.stress_pattern || content.pronunciation_guide || 'No pronunciation available'}
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       {/* Conjugation Table */}
@@ -397,11 +401,13 @@ const NounCard = ({ content }: { content: LessonContent }) => (
         <p className="text-2xl text-gray-600">{content.english_phrase}</p>
         
         {/* Pronunciation */}
-        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-          <div className="text-emerald-800 font-medium text-lg">
-            {content.stress_pattern || content.pronunciation_guide}
+        {(content.stress_pattern || content.pronunciation_guide) && (
+          <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+            <div className="text-emerald-800 font-medium text-lg">
+              {content.stress_pattern || content.pronunciation_guide || 'No pronunciation available'}
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       {/* Gender Information */}
@@ -463,11 +469,13 @@ const AdjectiveCard = ({ content }: { content: LessonContent }) => (
         <p className="text-2xl text-gray-600">{content.english_phrase}</p>
         
         {/* Pronunciation */}
-        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-          <div className="text-emerald-800 font-medium text-lg">
-            {content.stress_pattern || content.pronunciation_guide}
+        {(content.stress_pattern || content.pronunciation_guide) && (
+          <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+            <div className="text-emerald-800 font-medium text-lg">
+              {content.stress_pattern || content.pronunciation_guide || 'No pronunciation available'}
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       {/* Grammar Notes */}
