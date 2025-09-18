@@ -11,17 +11,8 @@ interface Skill {
   position: number;
   totalLessons: number;
   estimatedHours: number;
-}
-
-interface Course {
-  id: string;
-  name: string;
-  description: string;
-  level: number;
-  language: {
-    code: string;
-    name: string;
-  };
+  courseName: string;
+  courseId: string;
 }
 
 export default function LevelPage() {
@@ -29,76 +20,46 @@ export default function LevelPage() {
   const languageCode = params.code as string;
   const level = parseInt(params.level as string);
   const [skills, setSkills] = useState<Skill[]>([]);
-  const [courses, setCourses] = useState<Course[]>([]);
   const [loading, setLoading] = useState(true);
   const [languageName, setLanguageName] = useState('');
 
   useEffect(() => {
-    const fetchSkillsForLevel = async () => {
+    const fetchSkills = async () => {
       try {
-        // First get all courses for this language and level
-        const coursesResponse = await fetch(`/api/courses?language=${languageCode}`);
+        // Use the new dedicated API endpoint
+        const response = await fetch(`/api/languages/${languageCode}/level/${level}/skills`);
         
-        if (!coursesResponse.ok) {
-          throw new Error(`Courses API failed with status ${coursesResponse.status}`);
+        if (!response.ok) {
+          throw new Error(`Skills API failed with status ${response.status}: ${response.statusText}`);
         }
 
-        const coursesData = await coursesResponse.json();
+        const data = await response.json();
         
-        if (!coursesData.success) {
-          throw new Error(`Courses API error: ${coursesData.error}`);
+        if (!data.success) {
+          throw new Error(`Skills API error: ${data.error}`);
         }
 
-        // Filter courses for this specific level
-        const levelCourses = coursesData.courses.filter((course: Course) => course.level === level);
-        
-        if (!levelCourses || levelCourses.length === 0) {
-          throw new Error(`No courses found for ${languageCode} level ${level}`);
-        }
-
-        setCourses(levelCourses);
-        setLanguageName(levelCourses[0].language.name);
-
-        // Now fetch skills for each course at this level
-        const allSkills: Skill[] = [];
-        
-        for (const course of levelCourses) {
-          const skillsResponse = await fetch(`/api/courses/${course.id}/simple-dashboard`);
-          
-          if (!skillsResponse.ok) {
-            throw new Error(`Skills API failed for course ${course.id} with status ${skillsResponse.status}`);
-          }
-
-          const skillsData = await skillsResponse.json();
-          
-          if (!skillsData.success) {
-            throw new Error(`Skills API error for course ${course.id}: ${skillsData.error}`);
-          }
-
-          // Add skills from this course
-          if (skillsData.skills && skillsData.skills.length > 0) {
-            allSkills.push(...skillsData.skills);
-          }
-        }
-
-        if (allSkills.length === 0) {
+        if (!data.skills || data.skills.length === 0) {
           throw new Error(`No skills found for ${languageCode} level ${level}`);
         }
 
-        // Sort skills by position
-        allSkills.sort((a, b) => a.position - b.position);
+        // Set language name (extract from first skill's course or use code)
+        setLanguageName(languageCode.charAt(0).toUpperCase() + languageCode.slice(1));
+
+        // Skills should already be ordered by position from the API
+        console.log('Skills from API:', data.skills.map(s => ({ name: s.name, position: s.position })));
         
-        setSkills(allSkills);
+        setSkills(data.skills);
         setLoading(false);
 
       } catch (error) {
-        console.error('Failed to fetch skills for level:', error);
+        console.error('Failed to fetch skills:', error);
         throw error; // Re-throw to crash the page
       }
     };
 
     if (languageCode && !isNaN(level)) {
-      fetchSkillsForLevel();
+      fetchSkills();
     }
   }, [languageCode, level]);
 
@@ -153,7 +114,15 @@ export default function LevelPage() {
             {languageName} Level {level}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Choose a skill to start learning.
+            Choose a skill to start learning. ({skills.length} skills available)
+          </p>
+        </div>
+
+        {/* Debug Info */}
+        <div className="mb-8 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+          <p className="text-sm text-yellow-800">
+            <strong>Debug:</strong> Found {skills.length} skills with positions: {' '}
+            {skills.map(s => s.position).join(', ')}
           </p>
         </div>
 
@@ -184,6 +153,11 @@ export default function LevelPage() {
                 {/* Skill Description */}
                 <p className="text-gray-600 mb-6 line-clamp-3">
                   {skill.description}
+                </p>
+                
+                {/* Course Name */}
+                <p className="text-sm text-gray-500 mb-4">
+                  From: {skill.courseName}
                 </p>
                 
                 {/* Stats */}
