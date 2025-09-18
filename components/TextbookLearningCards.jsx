@@ -9,6 +9,9 @@ const TextbookLearningCards = ({ lesson, onComplete, onExit }) => {
   const [currentPhase, setCurrentPhase] = useState('teaching');
   const [phaseProgress, setPhaseProgress] = useState({});
   const [loading, setLoading] = useState(true);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [showResult, setShowResult] = useState(false);
+  const [isAnswering, setIsAnswering] = useState(false);
 
   // Lesson phases with clear expectations
   const phases = {
@@ -125,6 +128,10 @@ const TextbookLearningCards = ({ lesson, onComplete, onExit }) => {
 
   const createBasicTextbookFlow = (basicContent) => {
     const cards = [];
+    if (!basicContent || !Array.isArray(basicContent)) {
+      console.error('Invalid basicContent provided to createBasicTextbookFlow:', basicContent);
+      return cards;
+    }
     const vocabulary = basicContent.slice(0, 8); // First 8 items
     
     // Teaching phase
@@ -247,6 +254,11 @@ const TextbookLearningCards = ({ lesson, onComplete, onExit }) => {
   const getCurrentCard = () => cards[currentCardIndex];
   
   const nextCard = () => {
+    // Clear any component-level state to prevent auto-answer bugs
+    setSelectedAnswer(null);
+    setShowResult(false);
+    setIsAnswering(false);
+    
     if (currentCardIndex < cards.length - 1) {
       const newIndex = currentCardIndex + 1;
       setCurrentCardIndex(newIndex);
@@ -367,11 +379,19 @@ const TextbookLearningCards = ({ lesson, onComplete, onExit }) => {
       case 'phase_transition':
         return <PhaseTransitionCard content={card.content} />;
       case 'recognition':
-        return <RecognitionPracticeCard content={card.content} onAnswer={nextCard} />;
+        return <RecognitionPracticeCard content={card.content} onAnswer={nextCard} resetKey={currentCardIndex} />;
       case 'recall':
-        return <RecallTestCard content={card.content} onAnswer={nextCard} />;
+        return <RecallTestCard content={card.content} onAnswer={nextCard} resetKey={currentCardIndex} />;
       case 'review':
         return <ReviewCard content={card.content} />;
+      case 'examples_showcase':
+        return <ExamplesShowcaseCard content={card.content} />;
+      case 'pattern_practice':
+        return <PatternPracticeCard content={card.content} />;
+      case 'audio_practice':
+        return <AudioPracticeCard content={card.content} />;
+      case 'conversation':
+        return <ConversationTestCard content={card.content} />;
       default:
         return <div>Unknown card type: {card.type}</div>;
     }
@@ -534,15 +554,27 @@ const PhaseTransitionCard = ({ content }) => (
   </div>
 );
 
-const RecognitionPracticeCard = ({ content, onAnswer }) => {
+const RecognitionPracticeCard = ({ content, onAnswer, resetKey }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
+
+  // Reset state when card changes
+  useEffect(() => {
+    setSelectedAnswer(null);
+    setShowResult(false);
+    setIsProcessing(false);
+  }, [resetKey, content?.question]);
 
   const handleAnswer = (answer) => {
+    if (isProcessing || showResult) return; // Prevent double-clicking
+    
+    setIsProcessing(true);
     setSelectedAnswer(answer);
     setShowResult(true);
     
     setTimeout(() => {
+      setIsProcessing(false);
       onAnswer();
     }, 2000);
   };
@@ -559,8 +591,8 @@ const RecognitionPracticeCard = ({ content, onAnswer }) => {
         {content.options.map((option, index) => (
           <button
             key={index}
-            onClick={() => !showResult && handleAnswer(option)}
-            disabled={showResult}
+            onClick={() => !showResult && !isProcessing && handleAnswer(option)}
+            disabled={showResult || isProcessing}
             className={`p-4 text-left rounded-lg border-2 transition-all ${
               showResult
                 ? option === content.correct
@@ -597,17 +629,30 @@ const RecognitionPracticeCard = ({ content, onAnswer }) => {
   );
 };
 
-const RecallTestCard = ({ content, onAnswer }) => {
+const RecallTestCard = ({ content, onAnswer, resetKey }) => {
   const [userAnswer, setUserAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
+
+  // Reset state when card changes
+  useEffect(() => {
+    setUserAnswer('');
+    setShowResult(false);
+    setIsCorrect(false);
+    setIsProcessing(false);
+  }, [resetKey, content?.question]);
 
   const handleSubmit = () => {
+    if (isProcessing || showResult || !userAnswer.trim()) return; // Prevent multiple submissions
+    
+    setIsProcessing(true);
     const correct = userAnswer.toLowerCase().trim() === content.correct.toLowerCase().trim();
     setIsCorrect(correct);
     setShowResult(true);
     
     setTimeout(() => {
+      setIsProcessing(false);
       onAnswer();
     }, 3000);
   };
@@ -640,7 +685,7 @@ const RecallTestCard = ({ content, onAnswer }) => {
         {!showResult && (
           <button
             onClick={handleSubmit}
-            disabled={!userAnswer.trim()}
+            disabled={!userAnswer.trim() || isProcessing || showResult}
             className="w-full mt-4 bg-purple-600 text-white py-3 rounded-lg font-bold hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
           >
             Check Answer
@@ -794,7 +839,7 @@ const createRecognitionPracticeCard = (word, allVocabulary) => ({
   content: {
     question: `Which word means "${word.english || word.english_phrase}"?`,
     correct: word.albanian || word.target_phrase,
-    options: generateMultipleChoiceOptions(word.albanian || word.target_phrase, allVocabulary),
+    options: generateMultipleChoiceOptions(word.albanian || word.target_phrase, allVocabulary || []),
     pronunciation: word.pronunciation || word.pronunciation_guide
   }
 });
@@ -823,6 +868,29 @@ const createAudioPracticeCard = (vocabulary) => ({
     }))
   }
 });
+
+// Helper function to generate multiple choice options
+const generateMultipleChoiceOptions = (correct, allVocabulary) => {
+  if (!correct || !Array.isArray(allVocabulary)) {
+    return [correct || 'Unknown'].filter(Boolean);
+  }
+  
+  const options = [correct];
+  const otherWords = allVocabulary
+    .map(item => item.albanian || item.target_phrase)
+    .filter(word => word && word !== correct)
+    .slice(0, 3);
+  
+  options.push(...otherWords);
+  
+  // Shuffle options
+  for (let i = options.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [options[i], options[j]] = [options[j], options[i]];
+  }
+  
+  return options.slice(0, 4); // Ensure we have max 4 options
+};
 
 const createRecallTestCard = (word) => ({
   id: `test-${word.id || Math.random()}`,
@@ -863,5 +931,88 @@ const createLessonReviewCard = (content) => ({
     nextSteps: content.nextSteps || 'Practice these words throughout the day!'
   }
 });
+
+// Missing card components
+const ExamplesShowcaseCard = ({ content }) => (
+  <div className="text-center space-y-6">
+    <h3 className="text-2xl font-bold text-gray-900 mb-6">{content.title || 'Examples'}</h3>
+    <div className="space-y-4 max-w-lg mx-auto">
+      {(content.examples || []).map((example, index) => (
+        <div key={index} className="bg-gray-50 rounded-lg p-4">
+          <div className="font-medium text-gray-800">{example.albanian || example.phrase}</div>
+          <div className="text-gray-600 text-sm">{example.english || example.translation}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const PatternPracticeCard = ({ content }) => (
+  <div className="text-center space-y-6">
+    <h3 className="text-2xl font-bold text-gray-900 mb-6">Grammar Practice</h3>
+    <div className="bg-blue-50 rounded-lg p-4 max-w-md mx-auto">
+      <div className="font-medium text-blue-800">{content.pattern || 'Grammar Pattern'}</div>
+    </div>
+    <div className="space-y-3">
+      {(content.examples || []).map((example, index) => (
+        <div key={index} className="text-gray-700">{example}</div>
+      ))}
+    </div>
+  </div>
+);
+
+const AudioPracticeCard = ({ content }) => (
+  <div className="text-center space-y-6">
+    <h3 className="text-2xl font-bold text-gray-900 mb-6">Pronunciation Practice</h3>
+    <div className="space-y-4 max-w-md mx-auto">
+      {(content.words || []).map((word, index) => (
+        <div key={index} className="bg-gray-50 rounded-lg p-4">
+          <div className="font-medium text-lg">{word.albanian}</div>
+          <div className="text-gray-600 text-sm">{word.pronunciation}</div>
+          <button 
+            onClick={() => {
+              if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(word.albanian);
+                utterance.lang = 'sq';
+                speechSynthesis.speak(utterance);
+              }
+            }}
+            className="mt-2 text-blue-600 hover:text-blue-700"
+          >
+            🔊 Play
+          </button>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const ConversationTestCard = ({ content }) => (
+  <div className="text-center space-y-6">
+    <h3 className="text-2xl font-bold text-gray-900 mb-6">Conversation Practice</h3>
+    <div className="bg-purple-50 rounded-lg p-4 max-w-md mx-auto">
+      <div className="text-purple-800">Scenario: {content.scenario || 'Practice conversation'}</div>
+    </div>
+    <div className="space-y-3">
+      {(content.dialogue || []).map((line, index) => (
+        <div key={index} className="text-gray-700">{line}</div>
+      ))}
+    </div>
+  </div>
+);
+
+const GrammarTeachingCard = ({ content }) => (
+  <div className="text-center space-y-6">
+    <h3 className="text-2xl font-bold text-gray-900 mb-6">{content.concept || 'Grammar'}</h3>
+    <div className="bg-green-50 rounded-lg p-4 max-w-md mx-auto">
+      <div className="text-green-800">{content.explanation || 'Grammar explanation'}</div>
+    </div>
+    <div className="space-y-3">
+      {(content.examples || []).map((example, index) => (
+        <div key={index} className="text-gray-700">{example}</div>
+      ))}
+    </div>
+  </div>
+);
 
 export default TextbookLearningCards;
