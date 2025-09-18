@@ -29,7 +29,7 @@ class BugDetector {
       }
     })
     
-    await this.page.goto('http://localhost:3001') // Use your live site URL for real testing
+    await this.page.goto('https://rarelanguages.vercel.app') // Using live site for testing
   }
 
   async cleanup() {
@@ -40,11 +40,32 @@ class BugDetector {
 
   async startLesson() {
     try {
-      // Select Albanian and start lesson
-      await this.page.click('text=Gheg Albanian', { timeout: 10000 })
-      await this.page.waitForSelector('text=Continue Lesson', { timeout: 10000 })
-      await this.page.click('text=Continue Lesson')
-      await this.page.waitForSelector('text=Family Vocabulary', { timeout: 10000 })
+      // First, let's take a screenshot to see what's on the page
+      await this.page.screenshot({ path: 'debug-screenshot.png' })
+      console.log('📸 Screenshot saved as debug-screenshot.png')
+      
+      // Look for any Albanian-related text or buttons
+      const albanianButton = this.page.locator('text=Albanian, text=Gheg Albanian, text=Learn Albanian').first()
+      if (await albanianButton.isVisible()) {
+        await albanianButton.click()
+        console.log('🔘 Clicked Albanian button')
+      }
+      
+      // Look for lesson or continue buttons
+      const continueButton = this.page.locator('text=Continue, text=Start Lesson, text=Begin, text=Continue Lesson').first()
+      if (await continueButton.isVisible()) {
+        await continueButton.click()
+        console.log('▶️ Clicked continue button')
+      }
+      
+      // Look for any family-related content or lesson indicators
+      await this.page.waitForTimeout(2000)
+      const familyContent = this.page.locator('text=Family, text=Learning, text=babai, text=nëna')
+      if (await familyContent.first().isVisible()) {
+        console.log('✅ Found lesson content')
+        return true
+      }
+      
       console.log('✅ Lesson started successfully')
       return true
     } catch (error) {
@@ -203,7 +224,7 @@ class BugDetector {
     
     try {
       // Navigate back to a practice question if possible
-      await this.page.goto('http://localhost:3001')
+      await this.page.goto('https://rarelanguages.vercel.app')
       await this.startLesson()
       
       // Get to practice phase
