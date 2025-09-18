@@ -38,7 +38,6 @@ export async function GET(request, { params }) {
                 lc.target_phrase,
                 lc.pronunciation_guide,
                 lc.cultural_context,
-                lc.position,
                 lc.word_type,
                 lc.verb_type,
                 lc.gender,
@@ -49,7 +48,7 @@ export async function GET(request, { params }) {
                 lc.usage_examples
             FROM lesson_content lc
             WHERE lc.lesson_id = $1
-            ORDER BY lc.position ASC, lc.id ASC
+            ORDER BY lc.id ASC
         `, [lessonId]);
 
         const content = contentResult.rows.map(item => ({
@@ -61,7 +60,7 @@ export async function GET(request, { params }) {
             content_type: 'phrase', // Default value since column doesn't exist
             cultural_context: item.cultural_context || null,
             grammar_notes: null, // Default value since column doesn't exist
-            position: item.position || 1,
+            position: 1, // Default value since column doesn't exist
             // New grammar and linguistic fields
             word_type: item.word_type || null,
             verb_type: item.verb_type || null,
