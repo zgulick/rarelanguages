@@ -810,7 +810,7 @@ const createExamplesShowcase = (examples) => ({
   type: 'examples_showcase',
   title: 'See It In Action',
   content: {
-    examples: examples.slice(0, 4),
+    examples: (examples || []).slice(0, 4),
     title: 'Common Phrases'
   }
 });
@@ -937,12 +937,23 @@ const ExamplesShowcaseCard = ({ content }) => (
   <div className="text-center space-y-6">
     <h3 className="text-2xl font-bold text-gray-900 mb-6">{content.title || 'Examples'}</h3>
     <div className="space-y-4 max-w-lg mx-auto">
-      {(content.examples || []).map((example, index) => (
-        <div key={index} className="bg-gray-50 rounded-lg p-4">
-          <div className="font-medium text-gray-800">{example.albanian || example.phrase}</div>
-          <div className="text-gray-600 text-sm">{example.english || example.translation}</div>
-        </div>
-      ))}
+      {(content.examples || []).map((example, index) => {
+        // Handle both string and object examples
+        if (typeof example === 'string') {
+          return (
+            <div key={index} className="bg-gray-50 rounded-lg p-4">
+              <div className="font-medium text-gray-800">{example}</div>
+            </div>
+          );
+        }
+        
+        return (
+          <div key={index} className="bg-gray-50 rounded-lg p-4">
+            <div className="font-medium text-gray-800">{example.albanian || example.phrase || 'Example'}</div>
+            <div className="text-gray-600 text-sm">{example.english || example.translation || ''}</div>
+          </div>
+        );
+      })}
     </div>
   </div>
 );
@@ -955,7 +966,9 @@ const PatternPracticeCard = ({ content }) => (
     </div>
     <div className="space-y-3">
       {(content.examples || []).map((example, index) => (
-        <div key={index} className="text-gray-700">{example}</div>
+        <div key={index} className="text-gray-700">
+          {typeof example === 'string' ? example : example.text || example.albanian || 'Example'}
+        </div>
       ))}
     </div>
   </div>
@@ -995,7 +1008,9 @@ const ConversationTestCard = ({ content }) => (
     </div>
     <div className="space-y-3">
       {(content.dialogue || []).map((line, index) => (
-        <div key={index} className="text-gray-700">{line}</div>
+        <div key={index} className="text-gray-700">
+          {typeof line === 'string' ? line : line.text || line.speaker + ': ' + line.message || 'Dialogue line'}
+        </div>
       ))}
     </div>
   </div>
@@ -1009,7 +1024,9 @@ const GrammarTeachingCard = ({ content }) => (
     </div>
     <div className="space-y-3">
       {(content.examples || []).map((example, index) => (
-        <div key={index} className="text-gray-700">{example}</div>
+        <div key={index} className="text-gray-700">
+          {typeof example === 'string' ? example : example.text || example.sentence || 'Example'}
+        </div>
       ))}
     </div>
   </div>
