@@ -70,6 +70,77 @@ interface Navigation {
   } | null;
 }
 
+interface Section {
+  section_id: string;
+  section_type: string;
+  section_order: number;
+  title: string;
+  description: string;
+  estimated_minutes: number;
+  content: LessonContent[];
+}
+
+// Create structured pedagogical flow from sections
+function createPedagogicalFlow(sections: Section[], fallbackContent: LessonContent[]): LessonContent[] {
+  if (!sections || sections.length === 0) {
+    console.log('No sections found, using fallback content');
+    return fallbackContent || [];
+  }
+
+  const structuredFlow: LessonContent[] = [];
+
+  // Sort sections by pedagogical order
+  const sortedSections = [...sections].sort((a, b) => {
+    const order = {
+      'introduction': 1,
+      'vocabulary': 2,
+      'pronunciation': 3,
+      'grammar': 4,
+      'sentences': 5,
+      'practice': 6
+    };
+    return (order[a.section_type] || 7) - (order[b.section_type] || 7);
+  });
+
+  for (const section of sortedSections) {
+    if (section.content && section.content.length > 0) {
+      // Add section header card
+      structuredFlow.push({
+        id: `section-header-${section.section_id}`,
+        english_phrase: `📚 ${section.title}`,
+        target_phrase: section.description,
+        pronunciation_guide: '',
+        difficulty_level: 1,
+        content_type: 'section_header',
+        cultural_context: null,
+        grammar_notes: null,
+        position: structuredFlow.length + 1,
+        word_type: 'section',
+        verb_type: null,
+        gender: null,
+        stress_pattern: null,
+        conjugation_data: null,
+        grammar_category: section.section_type,
+        difficulty_notes: null,
+        usage_examples: null
+      });
+
+      // Add section content in order
+      const sortedContent = [...section.content].sort((a, b) => (a.content_order || 0) - (b.content_order || 0));
+      for (const content of sortedContent) {
+        structuredFlow.push({
+          ...content,
+          position: structuredFlow.length + 1,
+          grammar_category: content.grammar_category || section.section_type
+        });
+      }
+    }
+  }
+
+  console.log(`Created pedagogical flow: ${structuredFlow.length} cards from ${sections.length} sections`);
+  return structuredFlow;
+}
+
 export default function SkillLearningPage() {
   const params = useParams();
   const skillId = params.id as string;
@@ -103,7 +174,11 @@ export default function SkillLearningPage() {
       }
 
       setCurrentLessonInfo(lessonData.lesson);
-      setCurrentContent(lessonData.content);
+
+      // Create structured pedagogical flow from sections
+      const structuredContent = createPedagogicalFlow(lessonData.sections, lessonData.content);
+      setCurrentContent(structuredContent);
+
       setNavigation(lessonData.navigation);
       setCurrentCardIndex(0);
 

@@ -5,6 +5,55 @@
 import { NextResponse } from 'next/server';
 const { query } = require('../../../../../../lib/database');
 
+// Helper functions for pedagogical section organization
+function getSectionOrder(sectionType) {
+    const order = {
+        'introduction': 1,
+        'vocabulary': 2,
+        'pronunciation': 3,
+        'grammar': 4,
+        'sentences': 5,
+        'practice': 6
+    };
+    return order[sectionType] || 7;
+}
+
+function getSectionTitle(sectionType) {
+    const titles = {
+        'introduction': 'Lesson Introduction',
+        'vocabulary': 'Core Vocabulary',
+        'pronunciation': 'Pronunciation Practice',
+        'grammar': 'Grammar Basics',
+        'sentences': 'Example Sentences',
+        'practice': 'Practice & Review'
+    };
+    return titles[sectionType] || 'Additional Content';
+}
+
+function getSectionDescription(sectionType) {
+    const descriptions = {
+        'introduction': 'Overview of what you\'ll learn in this lesson',
+        'vocabulary': 'Essential words and phrases for this lesson',
+        'pronunciation': 'Learn correct Albanian pronunciation',
+        'grammar': 'Simple grammar patterns and rules',
+        'sentences': 'See vocabulary used in real contexts',
+        'practice': 'Reinforce what you\'ve learned'
+    };
+    return descriptions[sectionType] || 'Additional learning content';
+}
+
+function getSectionMinutes(sectionType) {
+    const minutes = {
+        'introduction': 2,
+        'vocabulary': 8,
+        'pronunciation': 5,
+        'grammar': 6,
+        'sentences': 7,
+        'practice': 8
+    };
+    return minutes[sectionType] || 5;
+}
+
 export async function GET(request, { params }) {
     try {
         const resolvedParams = await params;
@@ -76,53 +125,106 @@ export async function GET(request, { params }) {
             FROM lesson_sections ls
             LEFT JOIN lesson_content lc ON ls.id = lc.section_id
             WHERE ls.lesson_id = $1
-            ORDER BY ls.section_order, lc.content_order, lc.id
+            UNION ALL
+            -- Include content without section association (legacy content)
+            SELECT
+                null as section_id,
+                CASE
+                    WHEN lc2.grammar_category = 'introduction' THEN 'introduction'
+                    WHEN lc2.grammar_category IN ('numbers', 'time_expressions') THEN 'vocabulary'
+                    ELSE 'vocabulary'
+                END as section_type,
+                CASE
+                    WHEN lc2.grammar_category = 'introduction' THEN 1
+                    WHEN lc2.grammar_category IN ('numbers', 'time_expressions') THEN 2
+                    ELSE 3
+                END as section_order,
+                CASE
+                    WHEN lc2.grammar_category = 'introduction' THEN 'Lesson Introduction'
+                    WHEN lc2.grammar_category IN ('numbers', 'time_expressions') THEN 'Core Vocabulary'
+                    ELSE 'Additional Content'
+                END as section_title,
+                CASE
+                    WHEN lc2.grammar_category = 'introduction' THEN 'Overview of what you''ll learn'
+                    WHEN lc2.grammar_category IN ('numbers', 'time_expressions') THEN 'Essential numbers and time expressions'
+                    ELSE 'Additional vocabulary and phrases'
+                END as section_description,
+                5 as section_minutes,
+                lc2.id as content_id,
+                lc2.english_phrase,
+                lc2.target_phrase,
+                lc2.pronunciation_guide,
+                lc2.cultural_context,
+                lc2.content_order,
+                lc2.content_section_type,
+                lc2.difficulty_progression,
+                lc2.is_key_concept,
+                lc2.learning_objective,
+                lc2.word_type,
+                lc2.verb_type,
+                lc2.gender,
+                lc2.stress_pattern,
+                lc2.conjugation_data,
+                lc2.grammar_category,
+                lc2.difficulty_notes,
+                lc2.usage_examples
+            FROM lesson_content lc2
+            WHERE lc2.lesson_id = $1 AND lc2.section_id IS NULL
+            ORDER BY section_order, content_order, content_id
         `, [lessonId]);
 
-        // Group content by sections for structured learning flow
-        const sectionsMap = new Map();
+        // Group content by sections and consolidate for clean pedagogical structure
+        const cleanSectionsMap = new Map();
 
         contentResult.rows.forEach(row => {
-            const sectionId = row.section_id;
+            if (!row.content_id) return; // Skip empty content
 
-            if (!sectionsMap.has(sectionId)) {
-                sectionsMap.set(sectionId, {
-                    section_id: sectionId,
-                    section_type: row.section_type,
-                    section_order: row.section_order,
-                    title: row.section_title,
-                    description: row.section_description,
-                    estimated_minutes: row.section_minutes,
+            const sectionType = row.section_type;
+            const sectionKey = sectionType; // Consolidate by type, not individual section_id
+
+            if (!cleanSectionsMap.has(sectionKey)) {
+                cleanSectionsMap.set(sectionKey, {
+                    section_id: `consolidated-${sectionType}`,
+                    section_type: sectionType,
+                    section_order: getSectionOrder(sectionType),
+                    title: getSectionTitle(sectionType),
+                    description: getSectionDescription(sectionType),
+                    estimated_minutes: getSectionMinutes(sectionType),
                     content: []
                 });
             }
 
-            // Only add content if it exists (some sections might not have content yet)
-            if (row.content_id) {
-                sectionsMap.get(sectionId).content.push({
-                    id: row.content_id,
-                    english_phrase: row.english_phrase,
-                    target_phrase: row.target_phrase,
-                    pronunciation_guide: row.pronunciation_guide,
-                    cultural_context: row.cultural_context || null,
-                    content_order: row.content_order,
-                    difficulty_progression: row.difficulty_progression || 1,
-                    is_key_concept: row.is_key_concept || false,
-                    learning_objective: row.learning_objective,
-                    word_type: row.word_type || null,
-                    verb_type: row.verb_type || null,
-                    gender: row.gender || null,
-                    stress_pattern: row.stress_pattern || null,
-                    conjugation_data: row.conjugation_data || null,
-                    grammar_category: row.grammar_category || null,
-                    difficulty_notes: row.difficulty_notes || null,
-                    usage_examples: row.usage_examples || null
-                });
-            }
+            // Add content to consolidated section
+            cleanSectionsMap.get(sectionKey).content.push({
+                id: row.content_id,
+                english_phrase: row.english_phrase,
+                target_phrase: row.target_phrase,
+                pronunciation_guide: row.pronunciation_guide,
+                cultural_context: row.cultural_context || null,
+                content_order: row.content_order,
+                difficulty_progression: row.difficulty_progression || 1,
+                is_key_concept: row.is_key_concept || false,
+                learning_objective: row.learning_objective,
+                word_type: row.word_type || null,
+                verb_type: row.verb_type || null,
+                gender: row.gender || null,
+                stress_pattern: row.stress_pattern || null,
+                conjugation_data: row.conjugation_data || null,
+                grammar_category: row.grammar_category || null,
+                difficulty_notes: row.difficulty_notes || null,
+                usage_examples: row.usage_examples || null
+            });
         });
 
-        // Convert to array and sort by section order
-        const sections = Array.from(sectionsMap.values()).sort((a, b) => a.section_order - b.section_order);
+        // Convert to array and sort by pedagogical order
+        const sections = Array.from(cleanSectionsMap.values())
+            .filter(section => section.content.length > 0) // Only include sections with content
+            .sort((a, b) => a.section_order - b.section_order);
+
+        // Sort content within each section
+        sections.forEach(section => {
+            section.content.sort((a, b) => a.content_order - b.content_order);
+        });
 
         // If no sections found, return sample structured content for demo
         if (sections.length === 0) {
