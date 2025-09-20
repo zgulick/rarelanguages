@@ -1,0 +1,2540 @@
+{
+  "timestamp": "2025-09-20T09:29:45.801Z",
+  "processing_stats": {
+    "totalProcessed": 360,
+    "wordTypePopulated": 360,
+    "grammarCategoryPopulated": 360,
+    "genderPopulated": 54,
+    "verbTypePopulated": 85,
+    "updates": [
+      {
+        "id": "01468a29-227d-42a3-af7d-c67c93bcfb50",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "018f4d46-64c1-4c39-b6bd-a6d87f5bda26",
+        "word_type": "phrase",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "019646c7-134e-4da7-8de3-350ead343ee4",
+        "word_type": "verb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "026c9d27-4073-4327-b5a3-ea2a5a9812ef",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "02895524-6d3c-470b-94bc-8846ebf54009",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "03595410-4482-487c-86f2-2672e5d017f2",
+        "word_type": "phrase",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "04bedce4-9c20-4e59-85bc-5ca8034b57d2",
+        "word_type": "adverb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "04bfa8f9-780e-45c8-8847-3b58fe12329c",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "050f2864-6af0-44f3-9827-e31cff4532a9",
+        "word_type": "adverb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "05654b54-decb-4630-b1d1-5ff2d76b459c",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "0695c8e3-3013-4674-9ea9-f1bfbe4ee43f",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "07568f54-020c-42df-97d8-1673a77e1f31",
+        "word_type": "preposition",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "07bdd44b-7912-489c-a378-1b2b67180fc9",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "08a250d5-c9fb-4507-9669-a6e89d351129",
+        "word_type": "verb",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "0a2947f1-2964-4c5d-b4b5-56fa443452fd",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "0acc06fa-9482-4959-bd4f-7f713a7b262a",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "0b883629-8079-4c2c-82a0-9145552c50bf",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "0c0a63d4-4b92-434b-9934-bf578b1794fd",
+        "word_type": "pronoun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "0cc3f3cf-aa9b-4f71-8cf1-36da589759c9",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "0ce56c42-e2fe-43e5-8f04-dd9468123482",
+        "word_type": "phrase",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "0dbe6a85-3630-40f2-95bb-43ff0f091944",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "0e1bd879-e982-47e1-af93-942559fabe0c",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "0f2cb45c-011f-40b4-b6c6-8986e0a85926",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "102a12d5-9fee-45fe-ba40-08beffb45da4",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "10eee389-5078-460a-8c12-61612268d430",
+        "word_type": "phrase",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "111d4630-97d2-4dfd-93aa-e53ff05c4b99",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "118bc9d4-cbb3-4da1-b6a1-0b08ae355ad7",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "12b9175a-d3ff-49a8-a4ab-72561780c2c9",
+        "word_type": "pronoun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "130d77fa-c038-4381-9e2b-d70f074c238f",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "1344bf88-5419-4664-85da-c08726b970a6",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "13d0bade-4707-4c72-979e-4041ef256d5e",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "146b1d62-4eb9-4e6a-afe8-09b017d37ac5",
+        "word_type": "verb",
+        "grammar_category": "basic_adjectives",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "153db4d9-42e7-4f4f-bc07-f74b37c0735a",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "16354a4c-454d-465f-aff7-360e58f0d426",
+        "word_type": "adverb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "1684a512-e411-4224-9ac2-de017c3f9bad",
+        "word_type": "noun",
+        "grammar_category": "basic_adjectives",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "183bfde6-cde1-48fc-89b5-250d1bfaac7b",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "192eb8c5-46da-4ada-a340-b0a1c1e6608b",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "1ab55e81-e870-4902-a260-f956b4e6b32e",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "1b274b38-2537-4c28-9029-108b964b62e9",
+        "word_type": "adverb",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "1bbd36a0-4a93-405b-9b45-45a915855ba9",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "1ce575f5-9f94-4a8c-9818-b1e67808c49c",
+        "word_type": "phrase",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "1deff7c1-6818-41fe-b2a9-a1c795a36a5f",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "1df7cf67-4f84-49af-9e93-6712b61618e9",
+        "word_type": "adverb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "1e018700-2591-4954-8aad-14b26d006645",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "1ecbd2a0-9de1-48a5-a3be-fdb29190f6b7",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "1f073cc5-a7d7-49fb-ad27-2f447e8c691e",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "202911c0-2919-414d-ae86-444ecf8f78aa",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "20b53807-f8da-4e14-8a92-4734b02561ee",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "20ecf7c7-01d2-4c4c-b615-5e72905cd3ad",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "21705bb8-88ad-4490-8461-a66229fc7c31",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "2252b50b-d1f0-4ea2-903f-504f4bdc829c",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "22f19f3a-2104-41b7-b4d0-5184b8facd8b",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "23da81f7-f726-4a51-9d3e-d9fae89b74bc",
+        "word_type": "verb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "23fb0de4-603a-4a04-bc89-395124925245",
+        "word_type": "pronoun",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "248f98ca-7095-4fd1-8879-cbf7a8ed7bef",
+        "word_type": "verb",
+        "grammar_category": "family_vocab",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "261b0b09-1bf3-415c-8deb-226fcdeebb5e",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "2645d7d1-3f3a-47e3-864d-546db9861123",
+        "word_type": "phrase",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "26667af9-fefa-4550-8be9-c1888ee060b9",
+        "word_type": "phrase",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "288c3ba9-3840-49a1-b6b0-bb5628dfa847",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "28c46553-eaae-4608-b6fc-3c798cc66633",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "28ff484d-351f-4d24-90bf-0bba6a2873ae",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "29352ef3-7719-4aff-95ee-c7b2386c5857",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "2949fda7-5fc8-494a-a178-8eb92a622c15",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "2b36e308-2b29-4a22-9433-665f7a3d5800",
+        "word_type": "phrase",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "2b95c40a-e902-41ef-bf0b-25c514d2986a",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "2ca5cfe8-5760-42f5-be2f-c11490e069b7",
+        "word_type": "preposition",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "2d5cefd5-5988-46e5-a28d-7d76df25c6d5",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "2e729516-5244-4dce-9634-1d375ac216a6",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "2eec289f-c1a7-4197-984a-06095fb87099",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "2f32e63d-54bb-414a-8f63-392b4d82d1c0",
+        "word_type": "noun",
+        "grammar_category": "colors",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "2f995ef8-ff84-4d1f-b335-8ff9a38a3723",
+        "word_type": "phrase",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "30144a88-b1a1-4eea-bea1-186f5346013a",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "30324e25-cdae-49f9-bbbb-c93b28fc3a17",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "31db98d3-1441-4616-9d8d-c7511265b696",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "322f4f5f-2b59-4342-add9-1aac1d16213c",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "3267823e-a445-420e-8f73-703bd1e0cfef",
+        "word_type": "adverb",
+        "grammar_category": "basic_adjectives",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "331d1d7e-49b8-4c7e-bc6f-4919a22c8c7c",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "332721ca-73c9-4cd1-8758-ff8af3183deb",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "3379b7e8-2728-49e0-bd7d-293bcf592983",
+        "word_type": "adverb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "34d93ba1-eacf-4425-8795-1448694eb3d2",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "34ff8e29-df6a-4ebd-b3ea-bfc77f749441",
+        "word_type": "verb",
+        "grammar_category": "family_vocab",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "3531c5be-4428-419e-a493-015233dda6ac",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "368249c5-3802-403c-a7eb-fdd2414db1b7",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "neuter",
+        "verb_type": null
+      },
+      {
+        "id": "3724a265-2417-428a-8c56-bed28da7e403",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "391e6059-65d7-48da-bfd9-cbf089395b4d",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "39e2f9e3-2d58-4e22-afa0-3873b2c46ea2",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "39f34f2c-311a-4f3a-9fc3-9977b091059b",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "3a285bac-6e89-4b5e-97b9-2f55b662eae5",
+        "word_type": "adjective",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "3a64e2a9-6871-4232-97ec-5b8d740617ed",
+        "word_type": "verb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "3afc2840-505d-4e2f-94a4-3bcbcd3f2129",
+        "word_type": "phrase",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "3c03414a-0e2f-42a3-b849-fc4fbc9a3754",
+        "word_type": "pronoun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "3e32b3fd-362f-40fd-bb1b-4466b70d24af",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "401a4523-5cd1-40a7-a8e6-81cea043a049",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "40b706f5-d05c-46ac-9e52-fcb07588b882",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "419755e5-f1f6-4565-a515-ff3f2ba67427",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "4215c23b-eb7a-4d1a-b887-e0fd9d520530",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "42cf4f52-17f9-48eb-82b9-bbf6b587e08c",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "449d29fe-4799-4dee-b844-967c8790e744",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "44df143c-ab68-4ab8-8ef9-8ae421065238",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "45039523-017d-4167-bcbb-242d4b2b0c8d",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "45243593-daaf-43db-9c56-98e74210c747",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "467aec2d-a1cf-4baf-bc84-e7a05dcc45a9",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "472d6105-d7f7-48ed-af9b-8991468d7437",
+        "word_type": "phrase",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "48a86746-5f61-472d-b3b6-9b4d48d9defc",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "48b013fb-b696-4362-a677-df7472c14d1c",
+        "word_type": "verb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "493949fc-694e-456c-99ec-94f64c702017",
+        "word_type": "verb",
+        "grammar_category": "basic_verbs",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "49b2fd7d-a031-4bec-83e4-4f0bfcf7397d",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "4a2ab63b-e94c-4f3a-9017-61949b28faae",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "4ac20423-20dc-4872-a1df-4f74fa981417",
+        "word_type": "pronoun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "4acb2d17-3d58-4c47-80f1-5c36404fe115",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "4af1083d-869f-4db3-8023-b692a0e11a87",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "4b0a0e6a-eaf8-468e-b72b-d417e64e4d13",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "4b132025-99e1-43e7-8d44-7eb1b177cf6c",
+        "word_type": "noun",
+        "grammar_category": "basic_adjectives",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "4b94c690-0709-40c2-9679-7a708fdf82fd",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "4bf70344-bf3f-46b0-acdb-52f00435a854",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "508739e4-a33a-43e3-b27d-aa6d88c5e2c7",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "50e8a391-1a2f-41b2-bcda-5a95b9c552dc",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "54d1499d-834b-4e48-859c-87bb25fb6bb7",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "54e3c737-b9b3-4e87-8f87-2bd6670d7106",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "55c7fffb-1990-405c-9d45-4618703bb8d5",
+        "word_type": "preposition",
+        "grammar_category": "basic_verbs",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "56333401-0541-47f6-b54d-4b8707d677b6",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5725ee96-4c4e-4589-b802-5090666adc02",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "neuter",
+        "verb_type": null
+      },
+      {
+        "id": "59125ed8-ac68-4aa9-8a5f-b5cd107d1151",
+        "word_type": "verb",
+        "grammar_category": "food_drink",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "5924e378-8181-4a3d-9f3c-86c61a0a8e01",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "59684da5-e6ff-4d68-90df-0b7bc185e654",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5a0534fc-4829-4435-9a77-e1eaef9d50cd",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5a6b9016-1c94-44b2-82e2-b16ba7a53ca8",
+        "word_type": "noun",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5b95581c-7c72-4fc8-98ab-5078d173fa2d",
+        "word_type": "verb",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "5bfff848-b71d-4344-a747-1c7d57551ed1",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "5c1a0df0-1009-456b-8e4d-1ed75c0048a4",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "5c285512-04a7-4b74-bcba-af3ef074b063",
+        "word_type": "noun",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5c4022cf-0cb2-402e-8eaf-e96ca0ee1019",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "5c719a46-fa6f-4c07-9728-f7bf791bcb4e",
+        "word_type": "verb",
+        "grammar_category": "colors",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "5cd090e9-c447-43cc-91bb-78cfd4139e1e",
+        "word_type": "adverb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5ce65c38-f6be-4705-9c6b-c432a45d44a2",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5ea492e3-f1c8-4781-a635-661b18dccdd4",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "5eb9ddb3-367b-46f0-a6c3-79a8835f5139",
+        "word_type": "noun",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "5f9efcd8-147c-43e3-9cfc-f42cf5b79640",
+        "word_type": "adverb",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "600617ad-107a-4716-9837-eede9d0f45c0",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "616c0074-a99d-4839-8701-8b1a581a394d",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "61de21d3-1b11-4605-a8e3-cbd2569987a8",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "6235059f-f427-4d4c-822a-7075d4d453bb",
+        "word_type": "adjective",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "624606e1-2583-4569-851e-b872484729c5",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6277a0ee-0d68-4a01-83b5-c91c4ea46fa2",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "633dcfe5-f8a1-4c7d-b66c-b046a649fe7c",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "635ab858-5466-49ec-a98b-07fa3d84fc4b",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "635ca378-acf8-4fcc-bc16-ea1ed885cd39",
+        "word_type": "adjective",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "63bfb8b2-210f-4651-888b-29d5d9d76549",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "6444f4f9-91f4-4c8f-b5b6-a2d6b7248f09",
+        "word_type": "phrase",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "647acdb9-9c4c-4b47-af81-65ee7f9d32b3",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "655891fc-ad45-4185-8d8d-fa8ae3833c8e",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "656d6313-5a79-4da3-8214-5da198109a83",
+        "word_type": "pronoun",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6581eea8-1e46-4644-8194-e02f5e22dacf",
+        "word_type": "phrase",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "66f8d21c-8275-4c72-9b16-2bd793f18273",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "67bd6525-f582-4117-a316-0125e501a4d5",
+        "word_type": "pronoun",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "68d9580c-269a-4679-bd64-554751fa00c9",
+        "word_type": "adjective",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "68e846fc-0cab-4cc1-af81-89dd57d595f0",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "69e0df06-ddd9-4ada-95f3-1c012da1dd8f",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "6a20247b-cf63-4357-a480-26198ee28a02",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6a7db403-cf74-4637-8ec7-a340c3a12df3",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6b0f8f2c-11e4-4ccb-9aa1-f2ba0e5de1a0",
+        "word_type": "phrase",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6b265cbe-c5a1-4b1d-92ac-3fb91009e68e",
+        "word_type": "preposition",
+        "grammar_category": "family_vocab",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6cc236e5-2ccf-489b-98fe-8676ab3e2c42",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6d090a6a-9e29-4c74-9ad6-d13503f43dbf",
+        "word_type": "noun",
+        "grammar_category": "body_parts",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "6de5866f-4aea-4158-a1a7-f729533ab16a",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6ee14471-9a41-45f5-84c2-d7e2cec3c078",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "6efa045c-0fb0-4cd6-8e7d-2fb9e3faee8e",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "6f25ddeb-ef4e-488f-b920-48ef1642fc5d",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "6f424399-1f70-4846-a457-21bab1b4b21e",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "6f55e1dd-feed-4bd1-a60d-7e201c3afd9d",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "70715f02-e170-46c7-8405-0c4a5f969846",
+        "word_type": "noun",
+        "grammar_category": "food_drink",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "715f381d-82ac-4b3a-ae3a-e83dc02eaa06",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "717c5c5e-76d6-4412-b49c-3592b3c62ec8",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "71a55d27-a6ac-449f-b3d2-d5780c0d354a",
+        "word_type": "adjective",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "727e0af5-3492-448c-a202-67016efd8d66",
+        "word_type": "phrase",
+        "grammar_category": "colors",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "729542fd-2b8e-4065-984b-f7046b462d10",
+        "word_type": "phrase",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7345e577-a660-4b52-82ae-77d0fc43a6fe",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "73b3102a-dbc0-4911-b0f6-e58d21521943",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "74226699-8aa0-4c8c-9cea-0ff25883fa8d",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "7430188a-8fe1-4595-91bd-380371ae6cb0",
+        "word_type": "adverb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "76a2d9ec-4596-4022-a733-9b22e37dcb78",
+        "word_type": "noun",
+        "grammar_category": "family_vocab",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "76d00df7-21c2-4592-807a-e3894ad2d61e",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "76fad273-993f-476d-b34f-2f444ad83228",
+        "word_type": "adjective",
+        "grammar_category": "basic_adjectives",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "77dc7fcd-81ec-434f-b156-3f977fb39a93",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "799f9f0a-8456-41d3-ad4c-48d1616321fc",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7b7c67f4-7101-45b4-87d8-62d8672b7e1f",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7c07d866-413e-4014-bd3c-c1e6dd0703f6",
+        "word_type": "adjective",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7d700ac1-6b8b-4fdc-a5a2-458000e63c01",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7e71f254-4049-4bd6-bfff-044653a71b73",
+        "word_type": "adjective",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7ed8890b-413e-4fd3-b85c-b655250c74b4",
+        "word_type": "preposition",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7efd0a07-689a-4097-a969-56596df4b972",
+        "word_type": "pronoun",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "7fe072fc-f719-4def-bbae-b8686e065852",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "808c91e4-dd3a-4ae5-b7a0-fff82267d71c",
+        "word_type": "verb",
+        "grammar_category": "family_vocab",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "80c14161-03e9-4d2f-a3b4-e0dbc605c6ad",
+        "word_type": "phrase",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "820c4c33-2b19-4426-a211-614a017b4917",
+        "word_type": "verb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "83254ef2-437a-481f-9d75-a9bc85e59a77",
+        "word_type": "adjective",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "83953c1f-91f5-49ab-a216-0a3526420544",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "83d8b820-9abc-44d4-9933-c5612c053b4d",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "84239ca6-3877-475a-8ba4-c3b05e8849cc",
+        "word_type": "verb",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "845cfeb2-ffda-4641-b64f-341a50146f82",
+        "word_type": "adverb",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "84fe880b-991b-400b-a3df-8c5b2d28d667",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "85ca1c7d-6870-4926-b84f-6d04b693ae22",
+        "word_type": "verb",
+        "grammar_category": "food_drink",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "865581dc-a5ae-409f-bc88-20039151f30d",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "868ff378-a73b-48ae-b2a0-cb7994bd9cbc",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "874f8e3d-60ca-4281-ae94-ce526e757fdb",
+        "word_type": "verb",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "888e3fc0-736d-45c2-abac-912651e51f3f",
+        "word_type": "verb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "889655c4-cb6b-4fb9-99aa-1fcd257fa33c",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "88c10b97-34f0-4643-af3c-07bf056e3bd8",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "8939acb1-29e8-47d0-9f42-0bdf9819a246",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "8b019bbd-fd0d-4d13-a49f-d46f999c9433",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "8d5204a1-2568-4c50-974b-20722ce2c919",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "8dd87c53-2c50-4f3a-9b10-574f1fcd484b",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "8e60628c-40ac-4a94-bd4b-b77b29e45986",
+        "word_type": "adverb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "8eb0d87a-a8d7-46f2-b67a-bac4ffa4d8e7",
+        "word_type": "noun",
+        "grammar_category": "body_parts",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "91daf1e0-921f-4ce0-8b4e-a13046e9f3e1",
+        "word_type": "verb",
+        "grammar_category": "basic_adjectives",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "92b3a87a-29a6-4f6b-b507-59b7598f8f20",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "94ba9a51-7edc-4f27-8809-9ecac1b0f9ac",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "94c59b82-63a7-43e1-bdbe-010760abac3a",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9607b09f-349f-485c-99e6-992294502b37",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "96b8d1c7-1c89-4b02-8e5a-80cbdb9d685b",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "970d87da-66b1-4cb6-9239-250509e1feb0",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "97217b7f-9cfc-447d-968e-1c448b25d430",
+        "word_type": "preposition",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "982aba11-7639-4a8c-8b21-c48dc39ff414",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "98b00824-7f81-40c3-817c-df7dd00eaca6",
+        "word_type": "phrase",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9aa4aaa0-a868-4b34-998a-b105e54034eb",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9ba7dbc7-d70e-4ffa-bf97-6326fc1493fe",
+        "word_type": "adverb",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9c6710ed-3df2-4542-837e-978066d6543c",
+        "word_type": "phrase",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9d682079-dcc8-4811-9cb2-46dbc1a1805c",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "9dce21d6-c45a-4ac2-b60a-28a6fa104275",
+        "word_type": "adjective",
+        "grammar_category": "basic_adjectives",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9e308141-5525-49ca-8c33-6c9a6ec22a2a",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "9e44bc97-4966-4865-8967-74cbdf33813a",
+        "word_type": "pronoun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9ebe16ae-ad81-46b9-9569-57ecc1bd309b",
+        "word_type": "noun",
+        "grammar_category": "food_drink",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "9f16d106-7c89-47a2-8516-af69ac25929c",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "9f75b659-ba7b-4cac-88dd-f6607a6c99c3",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "9fc16094-c500-46d8-b273-c9d410fedfd0",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a1b55019-7ce0-4ded-88bd-fb037c800532",
+        "word_type": "preposition",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a1bbfbbd-7a8d-4acc-bafd-697bc8202114",
+        "word_type": "phrase",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a2fc46bd-7882-49b5-bc91-3075eb7d9d62",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a37fbb31-4369-4507-87df-16be56024ac8",
+        "word_type": "pronoun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a3f43c09-e323-4bd4-8068-a24661ec0c5e",
+        "word_type": "pronoun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a3f67ed0-08ca-4214-970d-033984aefdaa",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a41621a9-1a09-4cf6-a613-d8d588e910a9",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "a4caf804-59c3-4ba8-b7e3-ddded5b4286c",
+        "word_type": "phrase",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a4ccd640-2149-466a-948a-cf08c4ed9560",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "a4d39586-9ff6-4e17-9e15-1693d0ed7883",
+        "word_type": "pronoun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a4e003cf-9505-4b1a-b9b8-5e29cfd56d36",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "a50504f0-778c-4f98-afd9-62dd28286ab5",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "a55e4040-cfcc-46e9-93ce-a5e80c1fe174",
+        "word_type": "phrase",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a6562d3b-1de3-45ac-95e3-13d8730bb228",
+        "word_type": "adverb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a6c3db6c-9102-4f87-8c3a-f915ac77f3a3",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "a6d3bece-5568-4ebf-ae44-5bae76c3f4a6",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "a7d67f1d-f0e2-40df-bc20-50725c32cbf6",
+        "word_type": "verb",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "a8bc58b5-b5f1-4e2c-8f42-590e80785e6e",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "a8ed47ad-1f91-4820-8cb5-6dcd0e8d30c5",
+        "word_type": "phrase",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "aa136ec9-68e4-4484-bf4e-3afbc2305d41",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "ab348c97-ec9e-4564-bce9-f72b73f14b73",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "acc8cde2-d915-49b7-8b26-97f8d2477753",
+        "word_type": "adverb",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "ad2e4d2e-2d5a-4e33-a436-6ff4b02bbf22",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "ad9def99-9a4a-457d-8420-21b54ca0b6b1",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "ae7bb01e-fdfa-47c7-9f9b-117587fd7d69",
+        "word_type": "preposition",
+        "grammar_category": "family_vocab",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b0c25285-5f1f-4a55-aea1-3d72670d46d0",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "b1275969-0800-4970-8298-61fb7a6433a5",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b172db36-fcb3-49bd-bef7-18227b17869d",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b214dbcc-0016-4695-9bb6-28a839a57a30",
+        "word_type": "pronoun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b26c2886-04f0-4be1-968a-3c709434e6d5",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "b3445a00-fc46-4a09-9465-99de7bd18453",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b56ce2a5-7583-4651-9d45-79257235e9cb",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b5e67ce0-95dc-492d-8cee-3dbbf28c22e0",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b6e32b6c-250e-4861-bb25-4eb3079e4795",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b6ec375b-8139-4d61-b09c-6233b6bde36f",
+        "word_type": "adverb",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "b8650d85-f9a3-4cdd-9b2b-5dc6d2b0fdb4",
+        "word_type": "preposition",
+        "grammar_category": "basic_adjectives",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "baac3c7d-db52-4fd7-8259-b33d04791563",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "bc4b6a0d-298c-4253-b411-2e9247aa6b47",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "bd7e290a-64f9-4200-a307-9e3afc2b7da2",
+        "word_type": "verb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "bdbfa47f-36eb-4091-b87d-24d74f7dfa80",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "be124d3a-e183-4ffc-9061-18be04d8efef",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "be557a76-cfa3-413e-a5f9-f8af87d9317d",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "bf02a490-fc2e-48eb-b64b-9437f67c1bbc",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "bf2b9d85-d7f0-4ccd-9c9b-5235c1cb9678",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "c03ab118-7bf3-4fb7-b52b-c186f0b17ecb",
+        "word_type": "adjective",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "c395f557-f940-46f7-a19c-983b680388d8",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "c3b049d3-a61a-4686-bebc-9776fa7fab98",
+        "word_type": "adverb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "c41c39ed-0e8b-408c-ad7e-f973581fb75a",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "c509fd16-ccb3-4d8e-8028-0e2169d26063",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "c52b64bf-3778-44cf-a7a1-d069c95233ae",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "c6d88c16-470f-4c59-b5c8-3aa2027c9741",
+        "word_type": "preposition",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "c9054392-8852-4634-9dd1-76d22acf424f",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "ca1807fa-15e4-4833-b5f2-71dc2b2d36f8",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "ca402026-9eb6-4a85-b3f5-996a93321c83",
+        "word_type": "preposition",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "ca6c70ad-957c-4fbb-b6ec-b3213b118700",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "cb5e1465-7a99-46ca-a7c8-aaf31b00b1cc",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "cbd914d0-e9eb-4d42-afdc-3ec9de32ab34",
+        "word_type": "adverb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "cbef1acc-b3a2-4d78-bccf-21e621d3f325",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "cd454005-1fb3-44f9-b182-961970559ee5",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "cefffa2f-feea-4673-a857-6bbbb90584c3",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "cf17956e-086d-4d95-beaa-f0af08253e07",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "cf84c687-cf0e-4b4b-abd3-a1f8eadc753e",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "cfe2e8f7-9485-4f99-86e2-b785f30e0829",
+        "word_type": "verb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "d0454aa7-eab2-445f-8b73-db9ec6f71c71",
+        "word_type": "noun",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d05660a3-dc4f-4249-91de-66b28bcf10ab",
+        "word_type": "verb",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "d0ba901d-d19f-4d71-a0f9-894c9dbb1951",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d12025c9-08a9-4d78-99f2-7e2a8b71a05d",
+        "word_type": "preposition",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d2f3124c-6499-4175-a8ff-97662dc3f67b",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "d2f6d3ef-ec9f-4f07-9aaf-f714f05a9706",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "d3083474-8a2f-4851-88e6-3db7bf598067",
+        "word_type": "pronoun",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d5510108-a279-47d7-b55d-b6e58745aee8",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "d5533301-5ae0-4a85-ab68-d520c7cdc50f",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "modal"
+      },
+      {
+        "id": "d6f08b91-dd92-470f-9eae-881723b6a4fb",
+        "word_type": "phrase",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d757a6c4-2e9f-4467-ba1e-bfa2b710120d",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d8327f28-16a8-4080-937b-8ee1fd551e4f",
+        "word_type": "phrase",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d84c9dfe-9cf5-483c-babe-7b04f29faba1",
+        "word_type": "adverb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "d8884755-80d5-46df-bcd4-1fdc2ab5121e",
+        "word_type": "adverb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "da335c41-9140-4681-b8e8-ae606a0e88dd",
+        "word_type": "verb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "db0b2177-adff-4909-90c6-d21148afcdb5",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "dd2a7fb3-c963-4ab9-ac77-7b69aa9de598",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "dd955f9f-0f68-4b02-bbaf-09024589280f",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "de3411b3-1fe5-443f-9e94-129c00db2e4a",
+        "word_type": "preposition",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "df87b757-00eb-4084-84a4-e6eaf96fecaa",
+        "word_type": "verb",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "dfc7189d-f3ad-42d2-bd31-bd270917c7db",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e06b1472-26ee-4f00-82c9-83a0fb3e1942",
+        "word_type": "noun",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e07d91f0-38cf-4560-8d5f-6ad0265c838f",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e0d06577-8ee0-48e2-9729-ea74fa6cd911",
+        "word_type": "adjective",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e17f91c3-19ba-4857-b588-c2883c334297",
+        "word_type": "pronoun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e1bce85c-15cb-4d5a-9f60-e105bc9dc7d2",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "e3cb9c3d-5b0a-4bc6-b153-21fbbd865399",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e47c5263-99ee-4b78-acea-f4a889256033",
+        "word_type": "adverb",
+        "grammar_category": "time_expressions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e489a113-0532-4efc-9bf1-a9d2f9cb192f",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "e59b29b5-f4cd-45ee-9203-07412a75074b",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "e68d602b-866f-4334-be10-c2c917c9f6ad",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e6ae639e-751f-477a-a9e5-104eb7402e54",
+        "word_type": "adjective",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "e6beb05d-8bbe-4756-8f8c-fca1824751fd",
+        "word_type": "adverb",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "ea02e186-7dd8-4697-b69d-2e9617980444",
+        "word_type": "verb",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "ea5fef47-dffd-410c-8bec-4525782090e1",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "eaaafd5f-50d5-40c4-97e9-54770d859b6b",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "eb143d7b-afcd-42b4-9a54-b79e41395efc",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "eb2dcfc5-83e0-4edf-b9b5-c7e86b136b90",
+        "word_type": "noun",
+        "grammar_category": "body_parts",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "eb68b218-0d8b-469e-90fa-b309eac87699",
+        "word_type": "noun",
+        "grammar_category": "greetings",
+        "gender": "feminine",
+        "verb_type": null
+      },
+      {
+        "id": "ec888165-4802-4958-b2b9-97f89a7e6639",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "eca02c6f-f25b-4f1e-b3e8-210aeabff57b",
+        "word_type": "preposition",
+        "grammar_category": "courtesy",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f0244235-3de9-4c3d-839b-f14f246f57d3",
+        "word_type": "adverb",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f205b211-4516-4ada-97c6-4078cb023f68",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "f2c447b5-070c-4942-a013-7fc6738489cb",
+        "word_type": "phrase",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f3bd3326-b64b-4d43-92ac-12dfe3db7fa4",
+        "word_type": "verb",
+        "grammar_category": "food_drink",
+        "gender": null,
+        "verb_type": "irregular"
+      },
+      {
+        "id": "f3ce0c65-bd6c-45fd-8347-ea53f624a05a",
+        "word_type": "adjective",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f3db913a-6126-41c3-ac82-bb326b5cd23c",
+        "word_type": "preposition",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f4cf6257-860f-4cf4-a6bb-9825a166dcea",
+        "word_type": "adverb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f564264e-e7d0-4b22-b457-629eaeaf1833",
+        "word_type": "preposition",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f60caaa3-f6e7-467d-8682-0c5317b965fd",
+        "word_type": "pronoun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f6561fef-fc04-4536-af95-03092ac725ae",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": "masculine",
+        "verb_type": null
+      },
+      {
+        "id": "f7236c07-f9ee-4b85-ab9c-5db11a6d67f9",
+        "word_type": "adverb",
+        "grammar_category": "family_vocab",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f7817a4e-75fe-4478-af24-b1a3aab96d93",
+        "word_type": "phrase",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "f9ad3cc8-cc8b-4af9-a8ae-3d8a14e4144d",
+        "word_type": "noun",
+        "grammar_category": "body_parts",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "fbe74b36-6524-4e27-ade4-f4ee33dd7534",
+        "word_type": "pronoun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "fc317710-e8ff-444c-b756-6f7faa61efc3",
+        "word_type": "noun",
+        "grammar_category": "questions",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "fd64b7ef-0c72-4c47-8ce6-0a21d20ec229",
+        "word_type": "noun",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "feb86185-881d-4a6d-b1a8-5729d7ca7730",
+        "word_type": "verb",
+        "grammar_category": "basic_adjectives",
+        "gender": null,
+        "verb_type": "auxiliary"
+      },
+      {
+        "id": "feeb3d31-56a1-4a33-96ca-d7f09f9c9103",
+        "word_type": "noun",
+        "grammar_category": "numbers",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "ff72c65d-f3a5-4f46-a054-a62ab6dcbd4f",
+        "word_type": "verb",
+        "grammar_category": "general_vocabulary",
+        "gender": null,
+        "verb_type": "regular"
+      },
+      {
+        "id": "ff73375f-74ee-4f54-9af3-42d6c2a274ff",
+        "word_type": "adverb",
+        "grammar_category": "colors",
+        "gender": null,
+        "verb_type": null
+      },
+      {
+        "id": "fff437bc-f70c-41b4-ad65-a7c4110d4b9c",
+        "word_type": "phrase",
+        "grammar_category": "greetings",
+        "gender": null,
+        "verb_type": null
+      }
+    ],
+    "errors": []
+  },
+  "verification": {
+    "total_items": 360,
+    "word_type_coverage": "360/360 (100.0%)",
+    "grammar_category_coverage": "360/360 (100.0%)",
+    "gender_coverage": "54/360 (15.0%)",
+    "verb_type_coverage": "85/360 (23.6%)"
+  }
+}

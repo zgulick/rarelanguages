@@ -1,0 +1,914 @@
+{
+  "totalContent": 360,
+  "grammarFieldsStatus": {
+    "word_type": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    },
+    "verb_type": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    },
+    "gender": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    },
+    "stress_pattern": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    },
+    "conjugation_data": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    },
+    "grammar_category": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    },
+    "difficulty_notes": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    },
+    "usage_examples": {
+      "total": 360,
+      "populated": 0,
+      "empty": 360,
+      "percentage": 0
+    }
+  },
+  "contentPatterns": {
+    "greetings": 6,
+    "family": 5,
+    "numbers": 2,
+    "questions": 9,
+    "verbs": 2,
+    "adjectives": 0,
+    "courtesy": 20
+  },
+  "englishPhraseCategories": {
+    "sentence": [
+      {
+        "phrase": "I apologize for the inconvenience.",
+        "frequency": 3,
+        "length": 34
+      },
+      {
+        "phrase": "I am a student.",
+        "frequency": 2,
+        "length": 15
+      },
+      {
+        "phrase": "I don't understand.",
+        "frequency": 2,
+        "length": 19
+      },
+      {
+        "phrase": "I apologize for the misunderstanding.",
+        "frequency": 2,
+        "length": 37
+      },
+      {
+        "phrase": "I love you",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "I understand",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "We missed you",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "I sleep early",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "You look well",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "She is fifteen",
+        "frequency": 1,
+        "length": 14
+      },
+      {
+        "phrase": "We are excited",
+        "frequency": 1,
+        "length": 14
+      }
+    ],
+    "greeting": [
+      {
+        "phrase": "Good evening",
+        "frequency": 2,
+        "length": 12
+      },
+      {
+        "phrase": "Hello, how are you?",
+        "frequency": 2,
+        "length": 19
+      },
+      {
+        "phrase": "Hello",
+        "frequency": 1,
+        "length": 5
+      },
+      {
+        "phrase": "Good morning",
+        "frequency": 1,
+        "length": 12
+      }
+    ],
+    "other": [
+      {
+        "phrase": "Good afternoon",
+        "frequency": 2,
+        "length": 14
+      },
+      {
+        "phrase": "While the theory is interesting, it lacks empirical support.",
+        "frequency": 2,
+        "length": 60
+      },
+      {
+        "phrase": "If the hypothesis is correct, the experiment will confirm it.",
+        "frequency": 2,
+        "length": 61
+      },
+      {
+        "phrase": "However",
+        "frequency": 1,
+        "length": 7
+      },
+      {
+        "phrase": "Recently",
+        "frequency": 1,
+        "length": 8
+      },
+      {
+        "phrase": "Just now",
+        "frequency": 1,
+        "length": 8
+      },
+      {
+        "phrase": "I'm full",
+        "frequency": 1,
+        "length": 8
+      },
+      {
+        "phrase": "Every day",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "Take care",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "Try again",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "Clear sky",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "Fresh air",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "Well done",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "Therefore",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "It's okay",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "Next week",
+        "frequency": 1,
+        "length": 9
+      },
+      {
+        "phrase": "First snow",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Talk to me",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Right away",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Good night",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Still warm",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Last night",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Hot summer",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Sit, relax",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Be patient",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Quite warm",
+        "frequency": 1,
+        "length": 10
+      },
+      {
+        "phrase": "Stay strong",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Best wishes",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Yes, please",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "In addition",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Most people",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Don't worry",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "In a moment",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Never alone",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Once a week",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Strong wind",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "As a result",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "All of them",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Many clouds",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Stay inside",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "In contrast",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "For example",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Cool autumn",
+        "frequency": 1,
+        "length": 11
+      },
+      {
+        "phrase": "Safe travels",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Sweet dreams",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Half of this",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Don't be shy",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Not long ago",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "It's raining",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Count to ten",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "This morning",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Don't be sad",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Life is good",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "This evening",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "Twice a month",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "In conclusion",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Rest a little",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Lock the door",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "I'm listening",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Thanks a lot!",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Pass the salt",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "God bless you",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Don't give up",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Try this dish",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Don't be late",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Not many left",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "See you later",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Bundle up warm",
+        "frequency": 1,
+        "length": 14
+      },
+      {
+        "phrase": "This afternoon",
+        "frequency": 1,
+        "length": 14
+      },
+      {
+        "phrase": "There's plenty",
+        "frequency": 1,
+        "length": 14
+      },
+      {
+        "phrase": "Have some more",
+        "frequency": 1,
+        "length": 14
+      },
+      {
+        "phrase": "None remaining",
+        "frequency": 1,
+        "length": 14
+      },
+      {
+        "phrase": "Half past four",
+        "frequency": 1,
+        "length": 14
+      },
+      {
+        "phrase": "Homemade bread",
+        "frequency": 1,
+        "length": 14
+      }
+    ],
+    "question": [
+      {
+        "phrase": "What time is it?",
+        "frequency": 2,
+        "length": 16
+      },
+      {
+        "phrase": "Can you help me?",
+        "frequency": 2,
+        "length": 16
+      },
+      {
+        "phrase": "Where is the library?",
+        "frequency": 2,
+        "length": 21
+      },
+      {
+        "phrase": "How are you?",
+        "frequency": 1,
+        "length": 12
+      },
+      {
+        "phrase": "What's wrong?",
+        "frequency": 1,
+        "length": 13
+      },
+      {
+        "phrase": "Are you tired?",
+        "frequency": 1,
+        "length": 14
+      }
+    ],
+    "courtesy": [
+      {
+        "phrase": "Thank you very much.",
+        "frequency": 2,
+        "length": 20
+      },
+      {
+        "phrase": "Thank you for your assistance.",
+        "frequency": 2,
+        "length": 30
+      }
+    ],
+    "noun_phrase": [
+      {
+        "phrase": "A few more",
+        "frequency": 1,
+        "length": 10
+      }
+    ],
+    "number": [
+      {
+        "phrase": "One more cup?",
+        "frequency": 1,
+        "length": 13
+      }
+    ],
+    "family": [
+      {
+        "phrase": "Some children",
+        "frequency": 1,
+        "length": 13
+      }
+    ]
+  },
+  "targetPhrasePatterns": {
+    "has_te_particle": [
+      {
+        "albanian": "Për sa kohë që variablat kontrollohen, eksperimenti duhet të jetë i vlefshëm.",
+        "english": "As long as the variables are controlled, the experiment should be valid.",
+        "length": 77
+      },
+      {
+        "albanian": "Sepse të dhënat ishin të pamjaftueshme, nuk mundëm të nxjerrim përfundim.",
+        "english": "Because the data was insufficient, we could not draw a conclusion.",
+        "length": 73
+      },
+      {
+        "albanian": "Përveç nëse të dhënat verifikohen, përfundimet do të mbeten të pasigurta.",
+        "english": "Unless the data is verified, the conclusions will remain uncertain.",
+        "length": 73
+      },
+      {
+        "albanian": "Të dhënat u analizuan për të identifikuar tendencat me kalimin e kohës.",
+        "english": "The data was analyzed to identify trends over time.",
+        "length": 71
+      },
+      {
+        "albanian": "Edhe pse metodologjia ishte e qëndrueshme, gjetjet ishin të papritura.",
+        "english": "Even though the methodology was sound, the findings were unexpected.",
+        "length": 70
+      },
+      {
+        "albanian": "Për shkak se të dhënat ishin të paqarta, nevojitet kërkim i mëtejshëm.",
+        "english": "Because the data was inconclusive, further research is needed.",
+        "length": 70
+      },
+      {
+        "albanian": "Ndërsa teoria është gjerësisht e pranuar, disa studiues nuk pajtohen.",
+        "english": "While the theory is widely accepted, some scholars disagree.",
+        "length": 69
+      },
+      {
+        "albanian": "Kuptimi i nuancave kulturore është thelbësor për komunikim efektiv.",
+        "english": "Understanding cultural nuances is essential for effective communication.",
+        "length": 67
+      },
+      {
+        "albanian": "Hipoteza u testua duke përdorur një qasje të metodave të përziera.",
+        "english": "The hypothesis was tested using a mixed-methods approach.",
+        "length": 66
+      },
+      {
+        "albanian": "Edhe pse metodologjia ishte e saktë, rezultatet ishin të paqarta.",
+        "english": "Even though the methodology was sound, the results were inconclusive.",
+        "length": 65
+      },
+      {
+        "albanian": "Edhe pse rezultatet ishin të papritura, studimi ishte një sukses.",
+        "english": "Although the results were unexpected, the study was a success.",
+        "length": 65
+      },
+      {
+        "albanian": "Nëse variablat kontrollohen, rezultatet do të jenë të besueshme.",
+        "english": "If the variables are controlled, the results will be reliable.",
+        "length": 64
+      },
+      {
+        "albanian": "Gjetjet e hulumtimit sugjerojnë një korrelacion të rëndësishëm.",
+        "english": "The research findings suggest a significant correlation.",
+        "length": 63
+      },
+      {
+        "albanian": "Përveç nëse rezultatet përmirësohen, projekti do të ndërpritet.",
+        "english": "Unless the results improve, the project will be terminated.",
+        "length": 63
+      },
+      {
+        "albanian": "Nëse hipoteza është e saktë, eksperimenti do ta konfirmojë atë.",
+        "english": "If the hypothesis is correct, the experiment will confirm it.",
+        "length": 63
+      },
+      {
+        "albanian": "Nëse hipoteza është e saktë, eksperimenti do ta konfirmojë atë.",
+        "english": "If the hypothesis is correct, the experiment will confirm it.",
+        "length": 63
+      },
+      {
+        "albanian": "Sepse të dhënat ishin të paplota, kërkohej analizë e mëtejshme.",
+        "english": "Because the data was incomplete, further analysis was required.",
+        "length": 63
+      },
+      {
+        "albanian": "Ndërsa teoria është interesante, i mungon mbështetja empirike.",
+        "english": "While the theory is interesting, it lacks empirical support.",
+        "length": 62
+      },
+      {
+        "albanian": "Edhe pse hulumtimi ishte i plotë, rezultatet ishin të paqarta.",
+        "english": "Although the research was thorough, the results were inconclusive.",
+        "length": 62
+      },
+      {
+        "albanian": "Ndërsa teoria është interesante, i mungon mbështetja empirike.",
+        "english": "While the theory is interesting, it lacks empirical support.",
+        "length": 62
+      },
+      {
+        "albanian": "Nëse hipoteza është e saktë, eksperimenti do të ketë sukses.",
+        "english": "If the hypothesis is correct, the experiment will succeed.",
+        "length": 60
+      },
+      {
+        "albanian": "Edhe pse kërkimi ishte i gjanë, rezultatet ishin të paqarta.",
+        "english": "Although the research was extensive, the results were inconclusive.",
+        "length": 60
+      },
+      {
+        "albanian": "Që kur afati u shty, kemi më shumë kohë për të rishikuar.",
+        "english": "Since the deadline was extended, we have more time to revise.",
+        "length": 57
+      },
+      {
+        "albanian": "Përveç nëse marrim fonde, projekti nuk mund të vazhdojë.",
+        "english": "Unless we receive funding, the project cannot continue.",
+        "length": 56
+      },
+      {
+        "albanian": "Sapo të dhënat të verifikohen, raporti do të publikohet.",
+        "english": "As soon as the data is verified, the report will be published.",
+        "length": 56
+      },
+      {
+        "albanian": "Që kur afati po afrohet, duhet të përfundojmë raportin.",
+        "english": "Since the deadline is approaching, we must finalize the report.",
+        "length": 55
+      },
+      {
+        "albanian": "Hajde të takohemi për me diskutu detajet e projektit.",
+        "english": "Let's meet to discuss the project details.",
+        "length": 53
+      },
+      {
+        "albanian": "Kufizimet e studimit duhet të pranohen në përfundim.",
+        "english": "The study's limitations must be acknowledged in the conclusion.",
+        "length": 52
+      },
+      {
+        "albanian": "Rezultatet tregojnë një përmirësim të rëndësishëm.",
+        "english": "The results indicate a significant improvement.",
+        "length": 50
+      },
+      {
+        "albanian": "A mundesh me shpjegu këtë me fjalë ma të thjeshta?",
+        "english": "Can you explain this in simpler terms?",
+        "length": 50
+      },
+      {
+        "albanian": "Kam nevojë me përmirësu aftësitë e mia gjuhësore.",
+        "english": "I need to improve my language skills.",
+        "length": 49
+      },
+      {
+        "albanian": "A mundesh me dhanë ma shumë detaje mbi këtë temë?",
+        "english": "Could you provide more details on this topic?",
+        "length": 49
+      },
+      {
+        "albanian": "Le të caktojmë një takim për të diskutuar më tej.",
+        "english": "Let's schedule a meeting to discuss further.",
+        "length": 49
+      },
+      {
+        "albanian": "Sapo të publikohen rezultatet, do t'i analizojmë.",
+        "english": "As soon as the results are published, we will analyze them.",
+        "length": 49
+      },
+      {
+        "albanian": "Është e rëndësishme me vendosë qëllime mësimore.",
+        "english": "It's important to set learning goals.",
+        "length": 48
+      },
+      {
+        "albanian": "Le të diskutojmë për pasojat e këtij studimi.",
+        "english": "Let's discuss the implications of this study.",
+        "length": 45
+      },
+      {
+        "albanian": "Kjo teori është pranuar gjerësisht në fushë.",
+        "english": "This theory is widely accepted in the field.",
+        "length": 44
+      },
+      {
+        "albanian": "Interpreto të dhënat e paraqitura në grafik.",
+        "english": "Interpret the data presented in the chart.",
+        "length": 44
+      },
+      {
+        "albanian": "A mundesh me shpjegu këtë koncept ma shumë?",
+        "english": "Can you explain this concept further?",
+        "length": 43
+      },
+      {
+        "albanian": "Dëshiroj të diskutojmë detajet e projektit.",
+        "english": "I would like to discuss the project details.",
+        "length": 43
+      },
+      {
+        "albanian": "A mundesh me më ndihmu me kuptu këtë tekst?",
+        "english": "Can you help me understand this text?",
+        "length": 43
+      },
+      {
+        "albanian": "A mundesh me dhanë të dhënat për raportin?",
+        "english": "Could you please provide the data for the report?",
+        "length": 42
+      }
+    ],
+    "capitalized": [
+      {
+        "albanian": "Që kur afati u shty, kemi më shumë kohë për t'u përgatitur.",
+        "english": "Since the deadline was extended, we have more time to prepare.",
+        "length": 59
+      },
+      {
+        "albanian": "Edhe pse detyra ishte sfiduese, e përfunduam në kohë.",
+        "english": "Even though the task was challenging, we completed it on time.",
+        "length": 53
+      },
+      {
+        "albanian": "Përkundër sfidave, projekti u përfundua me sukses.",
+        "english": "Despite the challenges, the project was completed successfully.",
+        "length": 50
+      },
+      {
+        "albanian": "Planifikoj kohën e studimit në mënyrë efektive.",
+        "english": "I plan my study time effectively.",
+        "length": 47
+      },
+      {
+        "albanian": "Ju lutem, më njoftoni nëse keni ndonjë pyetje.",
+        "english": "Please let me know if you have any questions.",
+        "length": 46
+      },
+      {
+        "albanian": "Analizimi i strukturave morfologjike komplekse",
+        "english": "Analyzing complex morphological structures",
+        "length": 46
+      },
+      {
+        "albanian": "Shpesh i rishikoj shënimet e mia mbas klase.",
+        "english": "I often review my notes after class.",
+        "length": 44
+      },
+      {
+        "albanian": "Komiteti rekomandoi rishikimin e politikës.",
+        "english": "The committee recommended revising the policy.",
+        "length": 43
+      }
+    ]
+  },
+  "pronunciationCoverage": {
+    "totalItems": 360,
+    "hasPronunciation": 173,
+    "hasStressPattern": 0,
+    "pronunciationPercentage": 48.1,
+    "stressPatternPercentage": 0,
+    "avgPronunciationLength": 58.72254335260116
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "word_type",
+      "message": "word_type is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "verb_type",
+      "message": "verb_type is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "gender",
+      "message": "gender is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "stress_pattern",
+      "message": "stress_pattern is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "conjugation_data",
+      "message": "conjugation_data is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "grammar_category",
+      "message": "grammar_category is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "difficulty_notes",
+      "message": "difficulty_notes is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "high",
+      "category": "grammar_fields",
+      "field": "usage_examples",
+      "message": "usage_examples is only 0% populated (0/360). Should be prioritized for population.",
+      "estimatedWork": "high"
+    },
+    {
+      "priority": "medium",
+      "category": "content_classification",
+      "message": "Found 8 distinct content categories. Auto-classification can populate grammar_category field efficiently.",
+      "estimatedWork": "medium"
+    }
+  ],
+  "totalLessons": 34,
+  "totalSkills": 9,
+  "avgEnglishLength": 25.2,
+  "avgTargetLength": 25.65277777777778,
+  "generatedAt": "2025-09-20T09:26:10.843Z",
+  "version": "1.0.0"
+}

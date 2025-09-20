@@ -9,15 +9,30 @@ export async function GET(request, { params }) {
     try {
         const lessonId = params.id;
 
-        // Get lesson basic info with skill details
+        // Get lesson basic info with skill details and sub-lesson navigation
         const lessonResult = await query(`
-            SELECT 
+            SELECT
                 l.*,
                 s.name as skill_name,
                 s.description as skill_description,
-                s.cefr_level
+                s.cefr_level,
+                -- Parent lesson info (if this is a sub-lesson)
+                parent.id as parent_lesson_id,
+                parent.name as parent_lesson_name,
+                parent.total_sub_lessons,
+                -- Sub-lesson navigation
+                CASE
+                    WHEN l.is_sub_lesson = TRUE THEN l.sequence_number
+                    ELSE 1
+                END as current_sub_lesson,
+                CASE
+                    WHEN l.is_sub_lesson = TRUE THEN parent.total_sub_lessons
+                    WHEN l.total_sub_lessons > 1 THEN l.total_sub_lessons
+                    ELSE 1
+                END as total_sub_lessons_actual
             FROM lessons l
             JOIN skills s ON l.skill_id = s.id
+            LEFT JOIN lessons parent ON l.parent_lesson_id = parent.id
             WHERE l.id = $1 AND l.is_active = true
         `, [lessonId]);
 
@@ -152,7 +167,45 @@ export async function GET(request, { params }) {
             });
         }
 
-        // Return actual lesson data
+        // Get navigation info for sub-lessons
+        let navigation = null;
+        if (lesson.is_sub_lesson || lesson.total_sub_lessons > 1) {
+            const navigationResult = await query(`
+                SELECT
+                    prev_lesson.id as prev_lesson_id,
+                    prev_lesson.name as prev_lesson_name,
+                    next_lesson.id as next_lesson_id,
+                    next_lesson.name as next_lesson_name
+                FROM lessons current_lesson
+                LEFT JOIN lessons prev_lesson ON (
+                    prev_lesson.parent_lesson_id = current_lesson.parent_lesson_id
+                    AND prev_lesson.sequence_number = current_lesson.sequence_number - 1
+                    AND prev_lesson.is_active = true
+                )
+                LEFT JOIN lessons next_lesson ON (
+                    next_lesson.parent_lesson_id = current_lesson.parent_lesson_id
+                    AND next_lesson.sequence_number = current_lesson.sequence_number + 1
+                    AND next_lesson.is_active = true
+                )
+                WHERE current_lesson.id = $1
+            `, [lessonId]);
+
+            if (navigationResult.rows.length > 0) {
+                const nav = navigationResult.rows[0];
+                navigation = {
+                    previous_lesson: nav.prev_lesson_id ? {
+                        id: nav.prev_lesson_id,
+                        name: nav.prev_lesson_name
+                    } : null,
+                    next_lesson: nav.next_lesson_id ? {
+                        id: nav.next_lesson_id,
+                        name: nav.next_lesson_name
+                    } : null
+                };
+            }
+        }
+
+        // Return actual lesson data with navigation
         return NextResponse.json({
             success: true,
             lesson: {
@@ -165,15 +218,29 @@ export async function GET(request, { params }) {
                 difficulty_level: lesson.difficulty_level,
                 estimated_minutes: lesson.estimated_minutes,
                 cefr_level: lesson.cefr_level,
-                content_areas: ['vocabulary', 'pronunciation', 'grammar']
+                content_areas: ['vocabulary', 'pronunciation', 'grammar'],
+                // Sub-lesson navigation info
+                is_sub_lesson: lesson.is_sub_lesson,
+                parent_lesson_id: lesson.parent_lesson_id,
+                parent_lesson_name: lesson.parent_lesson_name,
+                current_sub_lesson: lesson.current_sub_lesson,
+                total_sub_lessons: lesson.total_sub_lessons_actual,
+                lesson_type: lesson.is_sub_lesson ? 'sub_lesson' : (lesson.total_sub_lessons > 1 ? 'parent' : 'single')
             },
             content: content,
+            navigation: navigation,
             metadata: {
                 totalPhrases: content.length,
                 averageDifficulty: content.reduce((sum, item) => sum + item.difficulty_level, 0) / content.length,
                 estimatedTime: lesson.estimated_minutes || 15,
                 hasAudio: false, // Will be true when audio is implemented
-                hasCulturalContext: content.some(item => item.cultural_context)
+                hasCulturalContext: content.some(item => item.cultural_context),
+                // Sub-lesson progress info
+                sub_lesson_progress: lesson.is_sub_lesson ? {
+                    current: lesson.current_sub_lesson,
+                    total: lesson.total_sub_lessons_actual,
+                    percentage: Math.round((lesson.current_sub_lesson / lesson.total_sub_lessons_actual) * 100)
+                } : null
             }
         });
 

@@ -1,0 +1,156 @@
+{
+  "version": "1.0.0",
+  "description": "Grammar classification rules for Albanian language learning content",
+  "lastUpdated": "2025-01-18",
+
+  "word_type_rules": {
+    "verb": {
+      "english_patterns": [
+        "^to [a-z]+",
+        "^(I|you|he|she|it|we|they) (am|is|are|was|were|have|has|had|will|would|can|could|should|must|may|might|do|does|did|go|come|get|make|take|give|see|know|think|say|tell|work|play|run|walk|eat|drink|sleep|speak|learn|teach|read|write|listen|hear|look|watch|find|help|need|want|like|love|feel|remember|forget|understand|believe|hope|start|stop|finish|open|close|buy|sell|pay|cost)",
+        "(run|walk|eat|drink|speak|learn|teach|read|write|listen|hear|look|watch|help|work|play|sleep|go|come|get|make|take|give|see|know|think|say|tell|find|need|want|like|love|feel|remember|forget|understand|believe|hope|start|stop|finish|open|close|buy|sell|pay|travel|visit|live|stay|move|sit|stand|dance|sing|cook|clean|wash|dress|study)$"
+      ],
+      "albanian_patterns": [
+        "^të [a-z]+",
+        "\\b(jam|je|është|jemi|jeni|janë)\\b",
+        "\\b(kam|ke|ka|kemi|keni|kanë)\\b",
+        "\\b(do|dua|don|duhet)\\b"
+      ]
+    },
+    "noun": {
+      "english_patterns": [
+        "^(the|a|an) [a-z]+",
+        "\\b(house|home|family|mother|father|brother|sister|child|children|man|woman|person|people|friend|teacher|student|doctor|book|table|chair|car|food|water|money|time|day|week|month|year|city|country|language|name|place|thing|way|world|school|work|job|life|hand|eye|head|face|body|heart|mind|idea|problem|question|answer|story|word|number|letter|phone|computer|music|song|movie|game|sport|color|animal|dog|cat|bird|tree|flower|mountain|river|sea|weather|sun|moon|star|morning|afternoon|evening|night)$"
+      ],
+      "albanian_patterns": [
+        "\\b(shtëpi|familj|nënë|atë|vëlla|motër|fëmij|njeri|person|mik|mësues|nxënës|doktor|libër|tavolinë|karrig|makinë|ushqim|ujë|para|kohë|ditë|javë|muaj|vit|qytet|vend|gjuhë|emër|vend|gjë|rrugë|botë|shkollë|punë|jetë|dorë|sy|kokë|fytyrë|trup|zemër|mend|ide|problem|pyetje|përgjigje|histori|fjalë|numër|shkronjë|telefon|kompjuter|muzikë|këngë|film|lojë|sport|ngjyrë|kafshë|qen|mace|zog|pemë|lule|mal|lumë|det|mot|diell|hënë|yll|mëngjes|pasdite|mbrëmje|natë)\\b"
+      ]
+    },
+    "adjective": {
+      "english_patterns": [
+        "\\b(big|small|large|little|great|good|bad|new|old|young|high|low|long|short|hot|cold|warm|cool|fast|slow|easy|hard|difficult|simple|beautiful|ugly|nice|pretty|clean|dirty|rich|poor|happy|sad|angry|tired|hungry|thirsty|sick|healthy|strong|weak|smart|stupid|funny|serious|interesting|boring|important|special|normal|strange|different|same|right|wrong|true|false|free|busy|quiet|loud|dark|light|heavy|empty|full|open|closed|safe|dangerous|expensive|cheap|kind|mean|polite|rude|patient|impatient)$"
+      ],
+      "albanian_patterns": [
+        "\\b(i madh|e madhe|i vogël|e vogël|i ri|e re|i vjetër|e vjetër|i lartë|e lartë|i ulët|e ulët|i gjatë|e gjatë|i shkurtër|e shkurtër|i nxehtë|e nxehtë|i ftohtë|e ftohtë|i shpejtë|e shpejtë|i ngadaltë|e ngadaltë|i lehtë|e lehtë|i vështirë|e vështirë|i bukur|e bukur|i shëmtuar|e shëmtuar|i pastër|e pastër|i pistë|e pistë|i pasur|e pasur|i varfër|e varfër|i lumtur|e lumtur|i trishtuar|e trishtuar|i zemëruar|e zemëruar|i lodhur|e lodhur|i uritur|e uritur|i etur|e etur|i sëmurë|e sëmurë|i shëndetshëm|e shëndetshme|i fortë|e fortë|i dobët|e dobët|i zgjuar|e zgjuar|qesharak|i seriozshëm|e seriozshme|interesant|i mërzitshëm|e mërzitshme|i rëndësishëm|e rëndësishme|i veçantë|e veçantë|normal|i çuditshëm|e çuditshme|i ndryshëm|e ndryshme|i njëjtë|e njëjtë|i saktë|e saktë|i gabuar|e gabuar|i vërtetë|e vërtetë|i rremë|e rremë|i lirë|e lirë|i zënë|e zënë|i qetë|e qetë|zhurmshëm|i errët|e errët|i ndriçuar|e ndriçuar|i rëndë|e rëndë|i zbrazët|e zbrazët|i plotë|e plotë|i hapur|e hapur|i mbyllur|e mbyllur|i sigurt|e sigurt|i rrezikshëm|e rrezikshme|i shtrenjtë|e shtrenjtë|i lirë|e lirë|i sjellshëm|e sjellshme|i keq|e keq|i sjellshëm|e sjellshme|i pacipë|e pacipë|i durueshëm|e durueshme|i padurueshëm|e padurueshme)\\b"
+      ]
+    },
+    "adverb": {
+      "english_patterns": [
+        "\\b(very|really|quite|too|so|more|most|less|much|many|often|sometimes|always|never|usually|frequently|rarely|here|there|everywhere|somewhere|nowhere|today|yesterday|tomorrow|now|then|later|early|late|quickly|slowly|carefully|easily|hard|well|badly|together|alone|again|still|already|yet|almost|completely|probably|maybe|perhaps|certainly|definitely|absolutely|exactly|approximately|especially|particularly|generally|usually|normally|actually|really|truly|clearly|obviously|suddenly|immediately|finally|eventually|recently|soon|far|near|inside|outside|above|below|before|after|during|while|until|since|because|however|therefore|although|unless|instead|besides|except|including|without|within|beyond|through|across)$"
+      ],
+      "albanian_patterns": [
+        "\\b(shumë|tepër|më|pak|shpesh|ndonjëherë|gjithmonë|kurrë|zakonisht|rrallë|këtu|atje|kudo|diku|askund|sot|dje|nesër|tani|pastaj|më vonë|herët|vonë|shpejt|ngadalë|me kujdes|lehtë|mirë|keq|së bashku|vetëm|përsëri|ende|tashmë|gati|plotësisht|ndoshta|sigurisht|pikërisht|afërsisht|veçanërisht|përgjithësisht|zakonisht|në të vërtetë|qartë|papritur|menjëherë|në fund|së fundmi|së shpejti|larg|afër|brenda|jashtë|mbi|nën|përpara|pas|gjatë|derisa|që|megjithatë|prandaj|megjithëse|përveç|përfshirë|pa|brenda|përtej|nëpërmjet|përgjatë)\\b"
+      ]
+    },
+    "pronoun": {
+      "english_patterns": [
+        "^(I|you|he|she|it|we|they|me|him|her|us|them|my|your|his|her|its|our|their|mine|yours|hers|ours|theirs|myself|yourself|himself|herself|itself|ourselves|yourselves|themselves|this|that|these|those|who|whom|whose|which|what|where|when|why|how|everyone|someone|anyone|no one|nothing|something|anything|everything)$"
+      ],
+      "albanian_patterns": [
+        "\\b(unë|ti|ai|ajo|ne|ju|ata|ato|mua|ty|atij|asaj|neve|juve|atyre|im|yt|i tij|i saj|ynë|juaj|i tyre|ime|jote|e tija|e saj|jona|juaja|e tyre|vetë|kjo|kjo|këto|ato|kush|kë|i kujt|cili|çka|ku|kur|pse|si|të gjithë|dikush|askush|asgjë|diçka|çdo gjë)\\b"
+      ]
+    },
+    "preposition": {
+      "english_patterns": [
+        "^(in|on|at|by|for|with|without|to|from|of|about|under|over|above|below|between|among|through|across|around|near|far|inside|outside|before|after|during|while|until|since|because|despite|except|including|like|unlike|regarding|concerning|according)$"
+      ],
+      "albanian_patterns": [
+        "\\b(në|mbi|te|nga|për|me|pa|nën|mbi|ndërmjet|mes|nëpër|përreth|afër|larg|brenda|jashtë|përpara|pas|gjatë|derisa|që|pavarësisht|përveç|përfshirë|si|ndryshe nga|në lidhje me|sipas)\\b"
+      ]
+    },
+    "phrase": {
+      "english_patterns": [
+        "^(hello|hi|good morning|good afternoon|good evening|good night|goodbye|bye|see you|thank you|thanks|please|excuse me|sorry|pardon|yes|no|ok|okay|how are you|what is your name|nice to meet you|you're welcome|I don't understand|can you help me|where is|how much|what time|excuse me)$"
+      ],
+      "albanian_patterns": [
+        "\\b(përshëndetje|ditën e mirë|mbrëmjen e mirë|natën e mirë|mirupafshim|faleminderit|ju lutem|më falni|po|jo|në rregull|si jeni|si quheni|gëzohem që u takova|s'ka përse|nuk kuptoj|mund të më ndihmoni|ku është|sa kushton|sa është ora|më falni)\\b"
+      ]
+    }
+  },
+
+  "grammar_category_rules": {
+    "greetings": {
+      "english_keywords": ["hello", "hi", "good morning", "good afternoon", "good evening", "good night", "goodbye", "bye", "see you"],
+      "albanian_keywords": ["përshëndetje", "ditën e mirë", "mbrëmjen e mirë", "natën e mirë", "mirupafshim"]
+    },
+    "courtesy": {
+      "english_keywords": ["thank you", "thanks", "please", "excuse me", "sorry", "pardon", "you're welcome"],
+      "albanian_keywords": ["faleminderit", "ju lutem", "më falni", "s'ka përse"]
+    },
+    "family_vocab": {
+      "english_keywords": ["mother", "father", "brother", "sister", "family", "parent", "child", "children", "grandmother", "grandfather"],
+      "albanian_keywords": ["nënë", "atë", "vëlla", "motër", "familj", "prind", "fëmij", "gjyshe", "gjysh"]
+    },
+    "basic_verbs": {
+      "english_keywords": ["to be", "to have", "to go", "to come", "to eat", "to drink", "to speak", "to learn", "to see", "to hear", "to do", "to make", "to take", "to give"],
+      "albanian_keywords": ["të jem", "të kem", "të shkoj", "të vij", "të ha", "të pi", "të flas", "të mësoj", "të shoh", "të dëgjoj", "të bëj", "të marr", "të jap"]
+    },
+    "numbers": {
+      "english_keywords": ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"],
+      "albanian_keywords": ["një", "dy", "tre", "katër", "pesë", "gjashtë", "shtatë", "tetë", "nëntë", "dhjetë", "njëmbëdhjetë", "dymbëdhjetë", "trembëdhjetë", "katërmbëdhjetë", "pesëmbëdhjetë", "gjashtëmbëdhjetë", "shtatëmbëdhjetë", "tetëmbëdhjetë", "nëntëmbëdhjetë", "njëzet"]
+    },
+    "colors": {
+      "english_keywords": ["red", "blue", "green", "yellow", "black", "white", "brown", "gray", "pink", "purple", "orange"],
+      "albanian_keywords": ["i kuq", "e kuqe", "blu", "i gjelbër", "e gjelbër", "i verdhë", "e verdhë", "i zi", "e zezë", "i bardhë", "e bardhë", "kafe", "gri", "rozë", "vjollcë", "portokalli"]
+    },
+    "body_parts": {
+      "english_keywords": ["head", "face", "eye", "nose", "mouth", "ear", "hand", "arm", "leg", "foot", "body"],
+      "albanian_keywords": ["kokë", "fytyrë", "sy", "hundë", "gojë", "vesh", "dorë", "krah", "këmbë", "trup"]
+    },
+    "food_drink": {
+      "english_keywords": ["food", "water", "bread", "meat", "fish", "fruit", "vegetable", "milk", "coffee", "tea", "wine", "beer"],
+      "albanian_keywords": ["ushqim", "ujë", "bukë", "mish", "peshk", "frut", "perime", "qumësht", "kafe", "çaj", "verë", "birrë"]
+    },
+    "time_expressions": {
+      "english_keywords": ["today", "yesterday", "tomorrow", "morning", "afternoon", "evening", "night", "time", "hour", "minute", "day", "week", "month", "year"],
+      "albanian_keywords": ["sot", "dje", "nesër", "mëngjes", "pasdite", "mbrëmje", "natë", "kohë", "orë", "minutë", "ditë", "javë", "muaj", "vit"]
+    },
+    "questions": {
+      "english_keywords": ["what", "where", "when", "why", "how", "who", "which", "whose"],
+      "albanian_keywords": ["çka", "ku", "kur", "pse", "si", "kush", "cili", "i kujt"]
+    },
+    "basic_adjectives": {
+      "english_keywords": ["big", "small", "good", "bad", "beautiful", "new", "old", "hot", "cold", "easy", "difficult"],
+      "albanian_keywords": ["i madh", "e madhe", "i vogël", "e vogël", "i mirë", "e mirë", "i keq", "e keq", "i bukur", "e bukur", "i ri", "e re", "i vjetër", "e vjetër", "i nxehtë", "e nxehtë", "i ftohtë", "e ftohtë", "i lehtë", "e lehtë", "i vështirë", "e vështirë"]
+    }
+  },
+
+  "albanian_gender_rules": {
+    "masculine_endings": ["i", "u", "ë"],
+    "feminine_endings": ["a", "e"],
+    "masculine_indicators": ["i mirë", "i madh", "i ri", "i vjetër"],
+    "feminine_indicators": ["e mirë", "e madhe", "e re", "e vjetër"],
+    "irregular_genders": {
+      "nënë": "feminine",
+      "atë": "masculine",
+      "vëlla": "masculine",
+      "motër": "feminine",
+      "fëmij": "neuter",
+      "sy": "masculine",
+      "dorë": "feminine",
+      "kokë": "feminine",
+      "trup": "masculine"
+    }
+  },
+
+  "verb_classification": {
+    "regular_verbs": ["flas", "mësoj", "punoj", "luaj", "këndoj", "vallëzoj"],
+    "irregular_verbs": ["jam", "kam", "shkoj", "vij", "ha", "pi", "them", "jap", "marr"],
+    "modal_verbs": ["dua", "mund", "duhet", "guxoj"],
+    "auxiliary_verbs": ["jam", "kam", "do"]
+  },
+
+  "stress_pattern_rules": {
+    "default_stress": "penultimate",
+    "exceptions": {
+      "monosyllabic": "only_syllable",
+      "compounds": "first_part",
+      "borrowed_words": "varies"
+    },
+    "stress_markers": {
+      "primary": "CAPS",
+      "secondary": "caps",
+      "unstressed": "lowercase"
+    }
+  }
+}

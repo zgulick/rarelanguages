@@ -21,19 +21,37 @@ export async function GET(request, { params }) {
 
     const skill = skillResult.rows[0];
 
-    // Get all lessons for this skill
+    // Get parent lessons for this skill (not sub-lessons)
     const lessonsResult = await query(`
-      SELECT 
+      SELECT
         l.id,
         l.name,
         l.position,
         l.difficulty_level,
         l.estimated_minutes,
-        COUNT(lc.id) as content_count
+        l.is_sub_lesson,
+        l.total_sub_lessons,
+        l.lesson_group_name,
+        CASE
+          WHEN l.is_sub_lesson = FALSE AND l.total_sub_lessons > 1 THEN
+            (SELECT COUNT(*) FROM lesson_content lc
+             WHERE lc.lesson_id IN (
+               SELECT sub.id FROM lessons sub
+               WHERE sub.parent_lesson_id = l.id AND sub.is_active = true
+             ))
+          ELSE
+            (SELECT COUNT(*) FROM lesson_content lc WHERE lc.lesson_id = l.id)
+        END as content_count,
+        CASE
+          WHEN l.is_sub_lesson = FALSE AND l.total_sub_lessons > 1 THEN
+            (SELECT COUNT(*) FROM lessons sub
+             WHERE sub.parent_lesson_id = l.id AND sub.is_active = true)
+          ELSE 1
+        END as sub_lesson_count
       FROM lessons l
-      LEFT JOIN lesson_content lc ON l.id = lc.lesson_id
-      WHERE l.skill_id = $1 AND l.is_active = true
-      GROUP BY l.id, l.name, l.position, l.difficulty_level, l.estimated_minutes
+      WHERE l.skill_id = $1
+        AND l.is_active = true
+        AND l.is_sub_lesson = FALSE
       ORDER BY l.position ASC
     `, [skillId]);
 
@@ -43,7 +61,11 @@ export async function GET(request, { params }) {
       position: row.position,
       difficulty_level: row.difficulty_level,
       estimated_minutes: row.estimated_minutes,
-      content_count: parseInt(row.content_count) || 0
+      content_count: parseInt(row.content_count) || 0,
+      is_split_lesson: row.total_sub_lessons > 1,
+      sub_lesson_count: parseInt(row.sub_lesson_count) || 1,
+      total_sub_lessons: parseInt(row.total_sub_lessons) || 1,
+      lesson_type: row.total_sub_lessons > 1 ? 'split' : 'single'
     }));
 
     return Response.json({

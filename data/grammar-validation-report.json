@@ -1,0 +1,176 @@
+{
+  "summary": {
+    "completeness": {
+      "word_type": {
+        "count": 360,
+        "percentage": "100.0"
+      },
+      "grammar_category": {
+        "count": 360,
+        "percentage": "100.0"
+      },
+      "gender": {
+        "count": 54,
+        "percentage": "15.0"
+      },
+      "verb_type": {
+        "count": 85,
+        "percentage": "23.6"
+      },
+      "stress_pattern": {
+        "count": 160,
+        "percentage": "44.4"
+      },
+      "pronunciation_guide": {
+        "count": 333,
+        "percentage": "92.5"
+      },
+      "conjugation_data": {
+        "count": 28,
+        "percentage": "7.8"
+      },
+      "usage_examples": {
+        "count": 151,
+        "percentage": "41.9"
+      },
+      "difficulty_notes": {
+        "count": 343,
+        "percentage": "95.3"
+      },
+      "cultural_context": {
+        "count": 173,
+        "percentage": "48.1"
+      }
+    },
+    "total_items": 360,
+    "consistency": {
+      "verb_type_coverage": 100,
+      "noun_gender_coverage": 54.5,
+      "grammar_categories": 12
+    },
+    "quality": {
+      "valid_items": 360,
+      "total_items": 360,
+      "quality_percentage": 100,
+      "quality_issues": {
+        "valid": 360
+      }
+    },
+    "relationships": {
+      "pronunciation_stress_coverage": 44.4,
+      "word_type_coverage": [
+        {
+          "word_type": "noun",
+          "total": "99",
+          "verb_conjugations": "0",
+          "noun_genders": "54",
+          "has_examples": "41",
+          "has_notes": "96"
+        },
+        {
+          "word_type": "verb",
+          "total": "85",
+          "verb_conjugations": "28",
+          "noun_genders": "0",
+          "has_examples": "35",
+          "has_notes": "85"
+        },
+        {
+          "word_type": "pronoun",
+          "total": "51",
+          "verb_conjugations": "0",
+          "noun_genders": "0",
+          "has_examples": "25",
+          "has_notes": "50"
+        },
+        {
+          "word_type": "phrase",
+          "total": "45",
+          "verb_conjugations": "0",
+          "noun_genders": "0",
+          "has_examples": "20",
+          "has_notes": "41"
+        },
+        {
+          "word_type": "adverb",
+          "total": "36",
+          "verb_conjugations": "0",
+          "noun_genders": "0",
+          "has_examples": "16",
+          "has_notes": "29"
+        },
+        {
+          "word_type": "preposition",
+          "total": "30",
+          "verb_conjugations": "0",
+          "noun_genders": "0",
+          "has_examples": "12",
+          "has_notes": "28"
+        },
+        {
+          "word_type": "adjective",
+          "total": "14",
+          "verb_conjugations": "0",
+          "noun_genders": "0",
+          "has_examples": "2",
+          "has_notes": "14"
+        }
+      ]
+    }
+  },
+  "issues": [
+    {
+      "type": "consistency",
+      "severity": "medium",
+      "field": "gender",
+      "message": "Only 54.5% of nouns have gender specified"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "completeness",
+      "field": "gender",
+      "message": "gender coverage is 15.0% (54 items)",
+      "action": "Populate gender for remaining items to improve coverage"
+    },
+    {
+      "priority": "high",
+      "category": "completeness",
+      "field": "verb_type",
+      "message": "verb_type coverage is 23.6% (85 items)",
+      "action": "Populate verb_type for remaining items to improve coverage"
+    },
+    {
+      "priority": "high",
+      "category": "completeness",
+      "field": "stress_pattern",
+      "message": "stress_pattern coverage is 44.4% (160 items)",
+      "action": "Populate stress_pattern for remaining items to improve coverage"
+    },
+    {
+      "priority": "high",
+      "category": "completeness",
+      "field": "conjugation_data",
+      "message": "conjugation_data coverage is 7.8% (28 items)",
+      "action": "Populate conjugation_data for remaining items to improve coverage"
+    },
+    {
+      "priority": "high",
+      "category": "completeness",
+      "field": "usage_examples",
+      "message": "usage_examples coverage is 41.9% (151 items)",
+      "action": "Populate usage_examples for remaining items to improve coverage"
+    },
+    {
+      "priority": "high",
+      "category": "completeness",
+      "field": "cultural_context",
+      "message": "cultural_context coverage is 48.1% (173 items)",
+      "action": "Populate cultural_context for remaining items to improve coverage"
+    }
+  ],
+  "qualityScore": 89,
+  "generatedAt": "2025-09-20T09:36:43.678Z",
+  "version": "1.0.0"
+}
