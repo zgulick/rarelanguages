@@ -3,7 +3,7 @@
  * GET /api/lessons/[id]/sub-lessons - Get all sub-lessons for a parent lesson
  */
 import { NextResponse } from 'next/server';
-const { query } = require('../../../../../../../lib/database');
+const { query } = require('../../../../../../lib/database');
 
 export async function GET(request, { params }) {
     try {

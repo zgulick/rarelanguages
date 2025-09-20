@@ -211,7 +211,7 @@ export default function SkillLearningPage() {
 
           if (nextParentLesson.is_split_lesson) {
             // Load sub-lessons for the next parent lesson
-            const subLessonsResponse = await fetch(\`/api/lessons/\${nextParentLesson.id}/sub-lessons\`);
+            const subLessonsResponse = await fetch(`/api/lessons/${nextParentLesson.id}/sub-lessons`);
             const subLessonsData = await subLessonsResponse.json();
 
             if (subLessonsData.success) {
@@ -233,7 +233,7 @@ export default function SkillLearningPage() {
       }
     } catch (error) {
       console.error('Failed to navigate to next lesson:', error);
-      alert(\`Failed to load next lesson: \${error.message}\`);
+      alert(`Failed to load next lesson: ${error.message}`);
     } finally {
       setIsLoadingNextLesson(false);
     }
