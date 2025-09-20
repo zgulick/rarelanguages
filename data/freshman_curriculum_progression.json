@@ -1,0 +1,490 @@
+{
+  "version": "1.0.0",
+  "title": "Freshman Albanian Curriculum Progression",
+  "description": "Complete learning progression for high school freshman (ages 14-16) learning Albanian as a foreign language",
+  "target_audience": {
+    "age_range": "14-16 years",
+    "education_level": "High school freshman",
+    "prior_knowledge": "No Albanian experience",
+    "cultural_context": "American students"
+  },
+
+  "curriculum_structure": {
+    "total_units": 8,
+    "lessons_per_unit": "4-6",
+    "estimated_duration": "Full academic year (36 weeks)",
+    "weekly_schedule": "3-4 lessons per week",
+    "assessment_frequency": "End of each unit"
+  },
+
+  "learning_objectives": {
+    "communication": [
+      "Introduce yourself and ask about others",
+      "Talk about family and friends",
+      "Describe your daily routine",
+      "Express basic needs and preferences",
+      "Give and ask for simple directions",
+      "Order food and drinks",
+      "Talk about weather and seasons",
+      "Express simple opinions and feelings"
+    ],
+    "grammar": [
+      "Use present tense verbs",
+      "Form basic questions",
+      "Use possessive pronouns",
+      "Apply adjective agreement",
+      "Use numbers 1-100",
+      "Express time and dates",
+      "Use basic past tense",
+      "Form simple future statements"
+    ],
+    "vocabulary": [
+      "Family relationships",
+      "School vocabulary",
+      "Home and furniture",
+      "Food and drinks",
+      "Colors and descriptions",
+      "Time expressions",
+      "Weather terms",
+      "Basic emotions"
+    ]
+  },
+
+  "unit_progression": {
+    "unit_1": {
+      "title": "Greetings & Self-Introduction",
+      "duration": "4 weeks",
+      "lessons": 5,
+      "cefr_level": "A1",
+      "learning_goals": [
+        "Basic greetings and farewells",
+        "Introducing yourself (name, age, nationality)",
+        "Asking 'How are you?' and responding",
+        "Numbers 1-20",
+        "Basic politeness phrases"
+      ],
+      "key_vocabulary": [
+        "përshëndetje (hello)",
+        "mirëdita (good day)",
+        "si jeni? (how are you?)",
+        "unë quhem... (my name is...)",
+        "faleminderit (thank you)",
+        "ju lutem (please)",
+        "mirë (good/well)",
+        "shqiptar/shqiptare (Albanian)"
+      ],
+      "grammar_focus": [
+        "Subject pronouns (unë, ti, ai/ajo)",
+        "Verb 'to be' (jam, je, është)",
+        "Basic word order",
+        "Question formation with 'si'"
+      ],
+      "cultural_contexts": [
+        "Meeting someone for the first time",
+        "Greeting classmates at school",
+        "Introducing yourself to a friend's family",
+        "Being polite in Albanian culture"
+      ],
+      "sample_phrases": [
+        "Përshëndetje! Unë quhem Maria. (Hello! My name is Maria.)",
+        "Si jeni? (How are you?)",
+        "Mirë, faleminderit. (Good, thank you.)",
+        "Unë jam pesëmbëdhjetë vjeç. (I am fifteen years old.)"
+      ]
+    },
+
+    "unit_2": {
+      "title": "Family & Relationships",
+      "duration": "4 weeks",
+      "lessons": 5,
+      "cefr_level": "A1",
+      "learning_goals": [
+        "Family member vocabulary",
+        "Describing family relationships",
+        "Talking about age and appearance",
+        "Possessive pronouns",
+        "Basic adjectives"
+      ],
+      "key_vocabulary": [
+        "familja (family)",
+        "babai (father)",
+        "nëna (mother)",
+        "vëllai (brother)",
+        "motra (sister)",
+        "gjyshi/gjyshja (grandfather/grandmother)",
+        "i madh/e madhe (big)",
+        "i vogël/e vogël (small)"
+      ],
+      "grammar_focus": [
+        "Possessive pronouns (im/ime, yt/yte)",
+        "Adjective agreement (masculine/feminine)",
+        "Demonstratives (ky/kjo - this)",
+        "Simple descriptions"
+      ],
+      "cultural_contexts": [
+        "Describing family photos",
+        "Meeting extended family",
+        "Talking about siblings",
+        "Family gatherings and traditions"
+      ],
+      "sample_phrases": [
+        "Kjo është familja ime. (This is my family.)",
+        "Babai im është i lartë. (My father is tall.)",
+        "Motra ime ka pesë vjeç. (My sister is five years old.)",
+        "Gjyshja ime është shumë e mirë. (My grandmother is very nice.)"
+      ]
+    },
+
+    "unit_3": {
+      "title": "School Life",
+      "duration": "4 weeks",
+      "lessons": 5,
+      "cefr_level": "A1",
+      "learning_goals": [
+        "School vocabulary and subjects",
+        "Classroom objects",
+        "Talking about schedule",
+        "Days of the week",
+        "Time expressions"
+      ],
+      "key_vocabulary": [
+        "shkolla (school)",
+        "mësuesi/mesuesja (teacher)",
+        "nxënësi/nxënësja (student)",
+        "libri (book)",
+        "lapsi (pencil)",
+        "matematika (mathematics)",
+        "gjuha (language)",
+        "historia (history)"
+      ],
+      "grammar_focus": [
+        "Present tense regular verbs",
+        "Time expressions",
+        "Days of the week",
+        "Prepositions (në, me, për)"
+      ],
+      "cultural_contexts": [
+        "First day at a new school",
+        "Talking about favorite subjects",
+        "Describing your classroom",
+        "Planning study time"
+      ],
+      "sample_phrases": [
+        "Unë shkoj në shkollë. (I go to school.)",
+        "Mësuesi im është i mirë. (My teacher is good.)",
+        "Matematika është e vështirë. (Mathematics is difficult.)",
+        "Unë kam libra në çantë. (I have books in my bag.)"
+      ]
+    },
+
+    "unit_4": {
+      "title": "Home & Daily Life",
+      "duration": "5 weeks",
+      "lessons": 6,
+      "cefr_level": "A1",
+      "learning_goals": [
+        "Rooms and furniture",
+        "Daily routines",
+        "Household activities",
+        "Time expressions",
+        "Present tense mastery"
+      ],
+      "key_vocabulary": [
+        "shtëpia (house)",
+        "dhoma (room)",
+        "kuzina (kitchen)",
+        "banjo (bathroom)",
+        "krevati (bed)",
+        "tavolina (table)",
+        "karrige (chair)",
+        "televizori (television)"
+      ],
+      "grammar_focus": [
+        "Present tense irregular verbs",
+        "Time expressions (morning, evening)",
+        "Frequency adverbs (gjithmonë, ndonjëherë)",
+        "Object pronouns"
+      ],
+      "cultural_contexts": [
+        "Describing your bedroom",
+        "Help with household chores",
+        "Family dinner time",
+        "Weekend activities at home"
+      ],
+      "sample_phrases": [
+        "Dhoma ime është e bukur. (My room is beautiful.)",
+        "Unë ha mëngjes në kuzinë. (I eat breakfast in the kitchen.)",
+        "Familja shikon televizor. (The family watches television.)",
+        "Nëna gatuan në mbrëmje. (Mom cooks in the evening.)"
+      ]
+    },
+
+    "unit_5": {
+      "title": "Food & Eating",
+      "duration": "5 weeks",
+      "lessons": 6,
+      "cefr_level": "A1+",
+      "learning_goals": [
+        "Food and drink vocabulary",
+        "Meal times and eating habits",
+        "Expressing preferences",
+        "Ordering food",
+        "Quantities and portions"
+      ],
+      "key_vocabulary": [
+        "ushqimi (food)",
+        "buka (bread)",
+        "mishi (meat)",
+        "perime (vegetables)",
+        "fruta (fruits)",
+        "ujë (water)",
+        "qumësht (milk)",
+        "kafe (coffee)"
+      ],
+      "grammar_focus": [
+        "Like/dislike expressions",
+        "Quantity expressions",
+        "Imperative mood (basic)",
+        "Modal verbs (dua - want)"
+      ],
+      "cultural_contexts": [
+        "Family meals together",
+        "Shopping for groceries",
+        "Trying new Albanian foods",
+        "Restaurant ordering"
+      ],
+      "sample_phrases": [
+        "Mua më pëlqen buka. (I like bread.)",
+        "Unë dua ujë, ju lutem. (I want water, please.)",
+        "Ne hamë mëngjes së bashku. (We eat breakfast together.)",
+        "Nana blen fruta në market. (Mom buys fruits at the market.)"
+      ]
+    },
+
+    "unit_6": {
+      "title": "Weather & Seasons",
+      "duration": "4 weeks",
+      "lessons": 5,
+      "cefr_level": "A1+",
+      "learning_goals": [
+        "Weather descriptions",
+        "Seasons and months",
+        "Clothing for weather",
+        "Future plans",
+        "Simple past tense"
+      ],
+      "key_vocabulary": [
+        "moti (weather)",
+        "dielli (sun)",
+        "shi (rain)",
+        "borë (snow)",
+        "ere (wind)",
+        "pranvera (spring)",
+        "vera (summer)",
+        "vjeshtë (autumn)",
+        "dimër (winter)"
+      ],
+      "grammar_focus": [
+        "Weather expressions",
+        "Simple future (do + verb)",
+        "Past tense introduction",
+        "Seasonal activities"
+      ],
+      "cultural_contexts": [
+        "Planning outdoor activities",
+        "Choosing appropriate clothes",
+        "Talking about favorite seasons",
+        "Weather in Albania vs. America"
+      ],
+      "sample_phrases": [
+        "Sot bën diell. (Today it's sunny.)",
+        "Nesër do të bjerë shi. (Tomorrow it will rain.)",
+        "Në dimër bie borë. (In winter it snows.)",
+        "Mua më pëlqen vera. (I like summer.)"
+      ]
+    },
+
+    "unit_7": {
+      "title": "Free Time & Hobbies",
+      "duration": "5 weeks",
+      "lessons": 6,
+      "cefr_level": "A2",
+      "learning_goals": [
+        "Hobby and activity vocabulary",
+        "Expressing preferences",
+        "Weekend plans",
+        "Sports and games",
+        "Past tense expansion"
+      ],
+      "key_vocabulary": [
+        "koha e lirë (free time)",
+        "sporti (sport)",
+        "futbolli (football)",
+        "muzika (music)",
+        "leximi (reading)",
+        "filmi (movie)",
+        "loja (game)",
+        "miku/mikja (friend)"
+      ],
+      "grammar_focus": [
+        "Past tense regular verbs",
+        "Frequency expressions",
+        "Connecting words (dhe, por)",
+        "Time expressions (past)"
+      ],
+      "cultural_contexts": [
+        "Weekend activities with friends",
+        "School sports teams",
+        "Family entertainment",
+        "Cultural activities"
+      ],
+      "sample_phrases": [
+        "Unë luaj futboll çdo javë. (I play football every week.)",
+        "Dje ne pamë një film. (Yesterday we watched a movie.)",
+        "Mua më pëlqen të lexoj libra. (I like to read books.)",
+        "Miqtë e mi dëgjojnë muzikë. (My friends listen to music.)"
+      ]
+    },
+
+    "unit_8": {
+      "title": "Future Plans & Dreams",
+      "duration": "5 weeks",
+      "lessons": 6,
+      "cefr_level": "A2",
+      "learning_goals": [
+        "Talking about future plans",
+        "Career vocabulary",
+        "Dreams and aspirations",
+        "Conditional statements",
+        "Review and integration"
+      ],
+      "key_vocabulary": [
+        "e ardhmja (future)",
+        "plani (plan)",
+        "ëndrra (dream)",
+        "punë (work/job)",
+        "mjek (doctor)",
+        "mësues (teacher)",
+        "universitet (university)",
+        "udhëtimi (travel)"
+      ],
+      "grammar_focus": [
+        "Future tense mastery",
+        "Conditional mood (basic)",
+        "Review of all tenses",
+        "Complex sentence formation"
+      ],
+      "cultural_contexts": [
+        "Career aspirations",
+        "Planning summer vacation",
+        "College and education goals",
+        "Cultural exchange and travel"
+      ],
+      "sample_phrases": [
+        "Unë dua të bëhem mjek. (I want to become a doctor.)",
+        "Ne do të udhëtojmë në Shqipëri. (We will travel to Albania.)",
+        "Nëse studioj shumë, do të kem sukses. (If I study a lot, I will succeed.)",
+        "Ëndrra ime është të mësoj shqip mirë. (My dream is to learn Albanian well.)"
+      ]
+    }
+  },
+
+  "assessment_framework": {
+    "unit_assessments": {
+      "vocabulary_quiz": "15-20 words per unit",
+      "grammar_exercises": "5-7 structures per unit",
+      "speaking_tasks": "2-3 minute conversations",
+      "listening_comprehension": "Simple dialogues and descriptions",
+      "cultural_competency": "Basic cultural awareness questions"
+    },
+    "final_assessment": {
+      "comprehensive_vocabulary": "120-150 words total",
+      "grammar_mastery": "All 8 units structures",
+      "oral_interview": "5-minute conversation",
+      "cultural_project": "Presentation on Albanian culture",
+      "portfolio": "Collection of unit work"
+    }
+  },
+
+  "differentiation_strategies": {
+    "visual_learners": [
+      "Picture vocabulary cards",
+      "Graphic organizers for grammar",
+      "Color-coded sentence patterns",
+      "Video content and animations"
+    ],
+    "auditory_learners": [
+      "Pronunciation practice",
+      "Songs and chants",
+      "Dialogue repetition",
+      "Audio recordings"
+    ],
+    "kinesthetic_learners": [
+      "Role-play activities",
+      "Physical response games",
+      "Hands-on cultural projects",
+      "Movement-based learning"
+    ],
+    "struggling_learners": [
+      "Extra practice materials",
+      "Simplified vocabulary lists",
+      "Additional visual supports",
+      "Peer tutoring opportunities"
+    ],
+    "advanced_learners": [
+      "Extension vocabulary",
+      "Cultural research projects",
+      "Independent reading",
+      "Conversation partnerships"
+    ]
+  },
+
+  "technology_integration": {
+    "digital_tools": [
+      "Interactive flashcards",
+      "Pronunciation apps",
+      "Virtual cultural tours",
+      "Online practice games"
+    ],
+    "multimedia_resources": [
+      "Albanian music and videos",
+      "Virtual reality cultural experiences",
+      "Online pen pal programs",
+      "Digital storytelling projects"
+    ]
+  },
+
+  "cultural_learning_outcomes": {
+    "unit_1": "Basic Albanian etiquette and greetings",
+    "unit_2": "Albanian family structures and relationships",
+    "unit_3": "Education system in Albania",
+    "unit_4": "Traditional Albanian home life",
+    "unit_5": "Albanian cuisine and meal customs",
+    "unit_6": "Albanian geography and climate",
+    "unit_7": "Popular sports and entertainment in Albania",
+    "unit_8": "Albanian values and aspirations"
+  },
+
+  "vocabulary_progression": {
+    "unit_1": 25,
+    "unit_2": 35,
+    "unit_3": 40,
+    "unit_4": 45,
+    "unit_5": 50,
+    "unit_6": 35,
+    "unit_7": 45,
+    "unit_8": 40,
+    "total_target": 315
+  },
+
+  "pacing_guide": {
+    "week_1_4": "Unit 1 - Foundation building",
+    "week_5_8": "Unit 2 - Family connections",
+    "week_9_12": "Unit 3 - School integration",
+    "week_13_17": "Unit 4 - Daily routines",
+    "week_18_22": "Unit 5 - Food culture",
+    "week_23_26": "Unit 6 - Environmental awareness",
+    "week_27_31": "Unit 7 - Personal interests",
+    "week_32_36": "Unit 8 - Future planning and review"
+  }
+}

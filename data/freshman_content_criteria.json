@@ -1,0 +1,304 @@
+{
+  "version": "1.0.0",
+  "title": "Freshman-Level Albanian Content Quality Criteria",
+  "target_audience": {
+    "age_range": "14-16 years",
+    "education_level": "High school freshman",
+    "language_level": "Absolute beginner to A1",
+    "prior_knowledge": "No Albanian language experience",
+    "cultural_context": "American high school students learning Albanian as foreign language"
+  },
+
+  "content_guidelines": {
+    "vocabulary_criteria": {
+      "max_unique_words_per_phrase": 8,
+      "max_syllables_per_word": 4,
+      "max_phrase_length_characters": 40,
+      "complexity_level": "Everyday, concrete vocabulary only",
+
+      "allowed_vocabulary_categories": [
+        "family_members",
+        "basic_greetings",
+        "numbers_1_to_100",
+        "colors",
+        "basic_adjectives",
+        "home_objects",
+        "school_items",
+        "food_basics",
+        "clothing_basics",
+        "time_expressions_simple",
+        "weather_basic",
+        "body_parts_basic",
+        "common_verbs_present_tense"
+      ],
+
+      "forbidden_vocabulary_categories": [
+        "academic_terminology",
+        "scientific_concepts",
+        "abstract_philosophy",
+        "complex_emotions",
+        "advanced_technology",
+        "business_terms",
+        "political_concepts",
+        "complex_social_issues",
+        "advanced_medical_terms",
+        "legal_terminology",
+        "complex_cultural_concepts"
+      ],
+
+      "forbidden_words_english": [
+        "hypothesis", "experiment", "research", "analysis", "theory", "methodology",
+        "investigation", "phenomenon", "statistical", "correlation", "significant",
+        "evidence", "empirical", "theoretical", "abstract", "philosophical",
+        "psychological", "sociological", "consciousness", "existence", "reality",
+        "metaphor", "symbolism", "ideology", "civilization", "evolution",
+        "development", "progress", "traditional", "contemporary", "sophisticated",
+        "complex", "advanced", "professional", "academic", "intellectual"
+      ],
+
+      "forbidden_words_albanian": [
+        "hipotez", "eksperiment", "studim", "analizë", "teori", "metodologji",
+        "hetim", "dukuri", "statistik", "korrelacion", "i rëndësishëm",
+        "dëshmi", "empirik", "teoretik", "abstrakt", "filozofik",
+        "psikologjik", "sociologjik", "vetëdijesimi", "ekzistenca", "realiteti",
+        "metaforë", "simbolizëm", "ideologji", "qytetërim", "evolucioni",
+        "zhvillimi", "përparimi", "tradicional", "bashkëkohor", "i sofistikuar",
+        "kompleks", "i avancuar", "profesional", "akademik", "intelektual"
+      ]
+    },
+
+    "grammar_criteria": {
+      "allowed_tenses": [
+        "simple_present",
+        "simple_past_basic",
+        "simple_future_basic"
+      ],
+
+      "forbidden_tenses": [
+        "perfect_tenses",
+        "conditional_complex",
+        "subjunctive",
+        "complex_past_forms"
+      ],
+
+      "allowed_sentence_structures": [
+        "subject_verb_object",
+        "subject_verb_adjective",
+        "this_is_that_is",
+        "simple_questions_who_what_where",
+        "basic_imperatives"
+      ],
+
+      "forbidden_sentence_structures": [
+        "complex_conditional_sentences",
+        "multiple_subordinate_clauses",
+        "passive_voice_complex",
+        "abstract_subjunctive_expressions",
+        "complex_relative_clauses"
+      ],
+
+      "max_clauses_per_sentence": 1,
+      "max_conjunctions_per_phrase": 1,
+      "allowed_conjunctions": ["dhe", "por", "ose"],
+      "forbidden_conjunctions": [
+        "megjithëse", "pavarësisht", "meqenëse", "përderisa", "nëse...atëherë",
+        "duke qenë se", "me kusht që", "ashtu siç"
+      ]
+    },
+
+    "cultural_criteria": {
+      "contexts": [
+        "family_gatherings",
+        "school_environment",
+        "home_daily_life",
+        "basic_shopping",
+        "simple_introductions",
+        "playground_activities",
+        "meal_times",
+        "getting_dressed",
+        "basic_weather_talk"
+      ],
+
+      "forbidden_contexts": [
+        "academic_conferences",
+        "business_meetings",
+        "political_discussions",
+        "complex_social_issues",
+        "adult_relationship_dynamics",
+        "advanced_cultural_analysis",
+        "historical_complexity",
+        "religious_complexity",
+        "economic_discussions"
+      ],
+
+      "appropriate_scenarios": [
+        "Meeting a friend's family",
+        "First day at school",
+        "Shopping for school supplies",
+        "Playing with friends",
+        "Helping with chores",
+        "Talking about homework",
+        "Describing family photos",
+        "Planning weekend activities"
+      ]
+    }
+  },
+
+  "unit_progression": {
+    "unit_1_greetings_basics": {
+      "max_new_vocabulary": 15,
+      "focus": "Basic greetings and self-introduction",
+      "examples": [
+        "Përshëndetje (Hello)",
+        "Si jeni? (How are you?)",
+        "Unë quhem... (My name is...)",
+        "Faleminderit (Thank you)",
+        "Ju lutem (Please)"
+      ],
+      "forbidden_concepts": ["complex emotions", "abstract ideas", "academic topics"]
+    },
+
+    "unit_2_family": {
+      "max_new_vocabulary": 20,
+      "focus": "Family members and simple descriptions",
+      "examples": [
+        "Kjo është nëna ime (This is my mother)",
+        "Ky është babai im (This is my father)",
+        "Vëllai im është i ri (My brother is young)",
+        "Motër e vogël (Little sister)"
+      ],
+      "forbidden_concepts": ["complex family dynamics", "family problems", "adult relationships"]
+    },
+
+    "unit_3_numbers_time": {
+      "max_new_vocabulary": 25,
+      "focus": "Numbers 1-20 and basic time expressions",
+      "examples": [
+        "Një, dy, tre (One, two, three)",
+        "Sa vjeç jeni? (How old are you?)",
+        "Unë jam pesëmbëdhjetë vjeç (I am fifteen years old)",
+        "Çfarë ore është? (What time is it?)"
+      ],
+      "forbidden_concepts": ["complex mathematical concepts", "abstract time concepts", "scientific measurements"]
+    },
+
+    "unit_4_colors_adjectives": {
+      "max_new_vocabulary": 20,
+      "focus": "Basic colors and simple adjectives",
+      "examples": [
+        "I kuq (Red)",
+        "I madh (Big)",
+        "E bukur (Beautiful/Pretty)",
+        "Ngjyra e preferuar (Favorite color)"
+      ],
+      "forbidden_concepts": ["complex color theory", "abstract beauty concepts", "artistic analysis"]
+    },
+
+    "unit_5_home_places": {
+      "max_new_vocabulary": 25,
+      "focus": "Home, rooms, and basic furniture",
+      "examples": [
+        "Shtëpia ime (My house)",
+        "Dhoma ime (My room)",
+        "Tavolinë (Table)",
+        "Krevat (Bed)"
+      ],
+      "forbidden_concepts": ["architectural complexity", "real estate concepts", "interior design theory"]
+    }
+  },
+
+  "validation_rules": {
+    "automatic_rejection_criteria": [
+      "Contains forbidden vocabulary",
+      "Uses complex grammar structures",
+      "Exceeds length limits",
+      "Contains abstract concepts",
+      "References inappropriate contexts",
+      "Uses academic or scientific language",
+      "Requires advanced cultural knowledge"
+    ],
+
+    "warning_criteria": [
+      "Approaches maximum word count",
+      "Uses vocabulary not in approved list",
+      "Contains concepts that might need explanation",
+      "Uses less common sentence structures"
+    ],
+
+    "approval_criteria": [
+      "Uses only approved vocabulary categories",
+      "Follows simple sentence structures",
+      "Relates to age-appropriate contexts",
+      "Can be understood by 14-year-old",
+      "Represents realistic freshman learning progression",
+      "Builds on previously learned concepts",
+      "Has clear cultural relevance for American teens"
+    ]
+  },
+
+  "quality_metrics": {
+    "readability": {
+      "target_grade_level": "6-8",
+      "max_flesch_kincaid_grade": 8,
+      "target_flesch_reading_ease": "70-80"
+    },
+
+    "learning_effectiveness": {
+      "concepts_per_phrase": 1,
+      "repetition_of_key_vocabulary": "encouraged",
+      "progressive_difficulty": "gentle_increase",
+      "cultural_relevance": "high"
+    }
+  },
+
+  "examples": {
+    "excellent_freshman_content": [
+      {
+        "english": "This is my mother",
+        "albanian": "Kjo është nëna ime",
+        "why_good": "Simple structure, family vocabulary, age-appropriate context"
+      },
+      {
+        "english": "I am fifteen years old",
+        "albanian": "Unë jam pesëmbëdhjetë vjeç",
+        "why_good": "Basic number, self-description, typical for age group"
+      },
+      {
+        "english": "My room is small",
+        "albanian": "Dhoma ime është e vogël",
+        "why_good": "Home context, basic adjective, simple grammar"
+      },
+      {
+        "english": "Good morning, teacher",
+        "albanian": "Mirëmëngjes, mësues",
+        "why_good": "School context, polite greeting, realistic scenario"
+      }
+    ],
+
+    "inappropriate_content_examples": [
+      {
+        "english": "The research findings suggest a significant correlation",
+        "albanian": "Gjetjet e studimit sugjerojnë një korrelacion të rëndësishëm",
+        "why_bad": "Academic vocabulary, complex concepts, inappropriate for age"
+      },
+      {
+        "english": "This theory challenges existing beliefs",
+        "albanian": "Kjo teori sfidon besimet ekzistuese",
+        "why_bad": "Abstract concepts, philosophical content, too advanced"
+      },
+      {
+        "english": "The methodology requires careful analysis",
+        "albanian": "Metodologjia kërkon analizë të kujdesshme",
+        "why_bad": "Scientific terminology, complex academic concepts"
+      }
+    ]
+  },
+
+  "implementation_notes": {
+    "content_review_process": "All content must pass automated validation before human review",
+    "cultural_sensitivity": "Content should be appropriate for diverse American student backgrounds",
+    "progression_testing": "Each unit should be tested with target age group",
+    "feedback_integration": "Regular teacher and student feedback should inform criteria updates",
+    "localization_notes": "Consider American school culture and teenage interests"
+  }
+}
