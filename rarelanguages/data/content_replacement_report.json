@@ -1,0 +1,1545 @@
+{
+  "generated_at": "2025-09-20T10:55:41.130Z",
+  "summary": {
+    "total_replacements": 60,
+    "total_errors": 0,
+    "success_rate": 100
+  },
+  "replacements_by_unit": {
+    "1": 39,
+    "3": 4,
+    "4": 8,
+    "5": 7,
+    "8": 2
+  },
+  "replacement_log": [
+    {
+      "id": "d3083474-8a2f-4851-88e6-3db7bf598067",
+      "lesson_id": "310bffb8-222f-46dc-aefa-940e5282e256",
+      "lesson_info": {
+        "lesson_name": "Places in Town",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Although the research was thorough, the results were inconclusive.",
+        "albanian": "Edhe pse hulumtimi ishte i plotë, rezultatet ishin të paqarta.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 66 characters, max is 40",
+          "Albanian has 62 characters, max is 40",
+          "Contains forbidden English word: research",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Hello, my name is John",
+        "albanian": "Përshëndetje, unë quhem John",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:15.791Z"
+    },
+    {
+      "id": "fff437bc-f70c-41b4-ad65-a7c4110d4b9c",
+      "lesson_id": "310bffb8-222f-46dc-aefa-940e5282e256",
+      "lesson_info": {
+        "lesson_name": "Places in Town",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "While the theory is interesting, it lacks empirical support.",
+        "albanian": "Ndërsa teoria është interesante, i mungon mbështetja empirike.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "English has 60 characters, max is 40",
+          "Albanian has 62 characters, max is 40",
+          "Contains forbidden English word: theory",
+          "Contains forbidden English word: empirical",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Please",
+        "albanian": "Ju lutem",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:16.270Z"
+    },
+    {
+      "id": "0cc3f3cf-aa9b-4f71-8cf1-36da589759c9",
+      "lesson_id": "312c215e-bd00-477e-9a00-c6cdba3b065b",
+      "lesson_info": {
+        "lesson_name": "Past Tense",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "I would like to discuss the project details.",
+        "albanian": "Dëshiroj të diskutojmë detajet e projektit.",
+        "issues": [
+          "English has 44 characters, max is 40",
+          "Albanian has 43 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I am fifteen years old",
+        "albanian": "Unë jam pesëmbëdhjetë vjeç",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:16.678Z"
+    },
+    {
+      "id": "b6ec375b-8139-4d61-b09c-6233b6bde36f",
+      "lesson_id": "312c215e-bd00-477e-9a00-c6cdba3b065b",
+      "lesson_info": {
+        "lesson_name": "Past Tense",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Could you please provide me with the report by tomorrow?",
+        "albanian": "A mundesh me ma dhanë raportin deri nesër?",
+        "issues": [
+          "English has 10 words, max is 8",
+          "English has 56 characters, max is 40",
+          "Albanian has 42 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I am fifteen years old",
+        "albanian": "Unë jam pesëmbëdhjetë vjeç",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:17.097Z"
+    },
+    {
+      "id": "248f98ca-7095-4fd1-8879-cbf7a8ed7bef",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "If the hypothesis is correct, the experiment will confirm it.",
+        "albanian": "Nëse hipoteza është e saktë, eksperimenti do ta konfirmojë atë.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 61 characters, max is 40",
+          "Albanian has 63 characters, max is 40",
+          "Contains forbidden English word: hypothesis",
+          "Contains forbidden English word: experiment",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I help at home",
+        "albanian": "Unë ndihmoj në shtëpi",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:17.513Z"
+    },
+    {
+      "id": "633dcfe5-f8a1-4c7d-b66c-b046a649fe7c",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "Even though the methodology was sound, the results were inconclusive.",
+        "albanian": "Edhe pse metodologjia ishte e saktë, rezultatet ishin të paqarta.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 69 characters, max is 40",
+          "Albanian has 65 characters, max is 40",
+          "Contains forbidden English word: methodology",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I watch television",
+        "albanian": "Unë shikoj televizor",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:17.981Z"
+    },
+    {
+      "id": "845cfeb2-ffda-4641-b64f-341a50146f82",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "Because the data was inconclusive, further research is needed.",
+        "albanian": "Për shkak se të dhënat ishin të paqarta, nevojitet kërkim i mëtejshëm.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "Albanian has 12 words, max is 8",
+          "English has 62 characters, max is 40",
+          "Albanian has 70 characters, max is 40",
+          "Contains forbidden English word: research",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "This is our kitchen",
+        "albanian": "Kjo është kuzina jonë",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:18.391Z"
+    },
+    {
+      "id": "85ca1c7d-6870-4926-b84f-6d04b693ae22",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "As long as the variables are controlled, the experiment should be valid.",
+        "albanian": "Për sa kohë që variablat kontrollohen, eksperimenti duhet të jetë i vlefshëm.",
+        "issues": [
+          "English has 12 words, max is 8",
+          "Albanian has 12 words, max is 8",
+          "English has 72 characters, max is 40",
+          "Albanian has 77 characters, max is 40",
+          "Contains forbidden English word: experiment"
+        ]
+      },
+      "replacement": {
+        "english": "I sleep in my bed",
+        "albanian": "Unë fle në kreatin tim",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:18.798Z"
+    },
+    {
+      "id": "a3f43c09-e323-4bd4-8068-a24661ec0c5e",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "Although the results were unexpected, the study was a success.",
+        "albanian": "Edhe pse rezultatet ishin të papritura, studimi ishte një sukses.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 62 characters, max is 40",
+          "Albanian has 65 characters, max is 40",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "We eat breakfast",
+        "albanian": "Ne hamë mëngjes",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:19.204Z"
+    },
+    {
+      "id": "a4e003cf-9505-4b1a-b9b8-5e29cfd56d36",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "Unless the data is verified, the conclusions will remain uncertain.",
+        "albanian": "Përveç nëse të dhënat verifikohen, përfundimet do të mbeten të pasigurta.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 11 words, max is 8",
+          "English has 67 characters, max is 40",
+          "Albanian has 73 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I help at home",
+        "albanian": "Unë ndihmoj në shtëpi",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:19.629Z"
+    },
+    {
+      "id": "d5533301-5ae0-4a85-ab68-d520c7cdc50f",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "Since the deadline is approaching, we must finalize the report.",
+        "albanian": "Që kur afati po afrohet, duhet të përfundojmë raportin.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 9 words, max is 8",
+          "English has 63 characters, max is 40",
+          "Albanian has 55 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I sleep in my bed",
+        "albanian": "Unë fle në kreatin tim",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:20.040Z"
+    },
+    {
+      "id": "d6f08b91-dd92-470f-9eae-881723b6a4fb",
+      "lesson_id": "3d32a821-fad2-4a51-b2cf-f7cd79b8fd3a",
+      "lesson_info": {
+        "lesson_name": "Home Vocabulary",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 4,
+      "original": {
+        "english": "While the theory is widely accepted, some scholars disagree.",
+        "albanian": "Ndërsa teoria është gjerësisht e pranuar, disa studiues nuk pajtohen.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 60 characters, max is 40",
+          "Albanian has 69 characters, max is 40",
+          "Contains forbidden English word: theory",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "The house is beautiful",
+        "albanian": "Shtëpia është e bukur",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:20.448Z"
+    },
+    {
+      "id": "34d93ba1-eacf-4425-8795-1448694eb3d2",
+      "lesson_id": "41fd35bd-31b1-4bf7-b543-fe0f4d8e933d",
+      "lesson_info": {
+        "lesson_name": "Asking for Help",
+        "skill_name": "Albanian 1: Unit 8 - Travel & Directions",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "I need to improve my language skills.",
+        "albanian": "Kam nevojë me përmirësu aftësitë e mia gjuhësore.",
+        "issues": [
+          "Albanian has 49 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I am Albanian",
+        "albanian": "Unë jam shqiptar",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:20.945Z"
+    },
+    {
+      "id": "6235059f-f427-4d4c-822a-7075d4d453bb",
+      "lesson_id": "41fd35bd-31b1-4bf7-b543-fe0f4d8e933d",
+      "lesson_info": {
+        "lesson_name": "Asking for Help",
+        "skill_name": "Albanian 1: Unit 8 - Travel & Directions",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "It's important to set learning goals.",
+        "albanian": "Është e rëndësishme me vendosë qëllime mësimore.",
+        "issues": [
+          "Albanian has 48 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I am fifteen years old",
+        "albanian": "Unë jam pesëmbëdhjetë vjeç",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:21.357Z"
+    },
+    {
+      "id": "76d00df7-21c2-4592-807a-e3894ad2d61e",
+      "lesson_id": "41fd35bd-31b1-4bf7-b543-fe0f4d8e933d",
+      "lesson_info": {
+        "lesson_name": "Asking for Help",
+        "skill_name": "Albanian 1: Unit 8 - Travel & Directions",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Can you help me understand this text?",
+        "albanian": "A mundesh me më ndihmu me kuptu këtë tekst?",
+        "issues": [
+          "Albanian has 9 words, max is 8",
+          "Albanian has 43 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Please",
+        "albanian": "Ju lutem",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:21.766Z"
+    },
+    {
+      "id": "a55e4040-cfcc-46e9-93ce-a5e80c1fe174",
+      "lesson_id": "41fd35bd-31b1-4bf7-b543-fe0f4d8e933d",
+      "lesson_info": {
+        "lesson_name": "Asking for Help",
+        "skill_name": "Albanian 1: Unit 8 - Travel & Directions",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "I track my progress regularly.",
+        "albanian": "Unë e ndjek progresin tim rregullisht.",
+        "issues": [
+          "Contains forbidden English word: progress"
+        ]
+      },
+      "replacement": {
+        "english": "Hello, my name is John",
+        "albanian": "Përshëndetje, unë quhem John",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:22.175Z"
+    },
+    {
+      "id": "dfc7189d-f3ad-42d2-bd31-bd270917c7db",
+      "lesson_id": "41fd35bd-31b1-4bf7-b543-fe0f4d8e933d",
+      "lesson_info": {
+        "lesson_name": "Asking for Help",
+        "skill_name": "Albanian 1: Unit 8 - Travel & Directions",
+        "cefr_level": "A1"
+      },
+      "target_unit": 3,
+      "original": {
+        "english": "I plan my study time effectively.",
+        "albanian": "Planifikoj kohën e studimit në mënyrë efektive.",
+        "issues": [
+          "Albanian has 47 characters, max is 40",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "This is my book",
+        "albanian": "Ky është libri im",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:22.583Z"
+    },
+    {
+      "id": "f0244235-3de9-4c3d-839b-f14f246f57d3",
+      "lesson_id": "41fd35bd-31b1-4bf7-b543-fe0f4d8e933d",
+      "lesson_info": {
+        "lesson_name": "Asking for Help",
+        "skill_name": "Albanian 1: Unit 8 - Travel & Directions",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "I often review my notes after class.",
+        "albanian": "Shpesh i rishikoj shënimet e mia mbas klase.",
+        "issues": [
+          "Albanian has 44 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Good morning",
+        "albanian": "Mirëmëngjes",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:22.990Z"
+    },
+    {
+      "id": "3a64e2a9-6871-4232-97ec-5b8d740617ed",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "The data was analyzed to identify trends over time.",
+        "albanian": "Të dhënat u analizuan për të identifikuar tendencat me kalimin e kohës.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "Albanian has 12 words, max is 8",
+          "English has 51 characters, max is 40",
+          "Albanian has 71 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Good morning",
+        "albanian": "Mirëmëngjes",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:23.435Z"
+    },
+    {
+      "id": "44df143c-ab68-4ab8-8ef9-8ae421065238",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 3,
+      "original": {
+        "english": "The study's limitations must be acknowledged in the conclusion.",
+        "albanian": "Kufizimet e studimit duhet të pranohen në përfundim.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "English has 63 characters, max is 40",
+          "Albanian has 52 characters, max is 40",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I like mathematics",
+        "albanian": "Mua më pëlqen matematika",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:23.842Z"
+    },
+    {
+      "id": "4b132025-99e1-43e7-8d44-7eb1b177cf6c",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "The committee recommended revising the policy.",
+        "albanian": "Komiteti rekomandoi rishikimin e politikës.",
+        "issues": [
+          "English has 46 characters, max is 40",
+          "Albanian has 43 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Nice to meet you",
+        "albanian": "Gëzohem që ju njoh",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:24.252Z"
+    },
+    {
+      "id": "624606e1-2583-4569-851e-b872484729c5",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Despite the challenges, the project was completed successfully.",
+        "albanian": "Përkundër sfidave, projekti u përfundua me sukses.",
+        "issues": [
+          "English has 63 characters, max is 40",
+          "Albanian has 50 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Nice to meet you",
+        "albanian": "Gëzohem që ju njoh",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:24.765Z"
+    },
+    {
+      "id": "6cc236e5-2ccf-489b-98fe-8676ab3e2c42",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Understanding cultural nuances is essential for effective communication.",
+        "albanian": "Kuptimi i nuancave kulturore është thelbësor për komunikim efektiv.",
+        "issues": [
+          "Albanian has 9 words, max is 8",
+          "English has 72 characters, max is 40",
+          "Albanian has 67 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "How are you?",
+        "albanian": "Si jeni?",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:25.278Z"
+    },
+    {
+      "id": "9f75b659-ba7b-4cac-88dd-f6607a6c99c3",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "If the variables are controlled, the results will be reliable.",
+        "albanian": "Nëse variablat kontrollohen, rezultatet do të jenë të besueshme.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 9 words, max is 8",
+          "English has 62 characters, max is 40",
+          "Albanian has 64 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Hello, my name is John",
+        "albanian": "Përshëndetje, unë quhem John",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:25.695Z"
+    },
+    {
+      "id": "e68d602b-866f-4334-be10-c2c917c9f6ad",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "The hypothesis was tested using a mixed-methods approach.",
+        "albanian": "Hipoteza u testua duke përdorur një qasje të metodave të përziera.",
+        "issues": [
+          "Albanian has 11 words, max is 8",
+          "English has 57 characters, max is 40",
+          "Albanian has 66 characters, max is 40",
+          "Contains forbidden English word: hypothesis",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I am Albanian",
+        "albanian": "Unë jam shqiptar",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:26.115Z"
+    },
+    {
+      "id": "feeb3d31-56a1-4a33-96ca-d7f09f9c9103",
+      "lesson_id": "4626a9fd-2c08-4929-a425-b80151d12b37",
+      "lesson_info": {
+        "lesson_name": "Days of the Week",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "The research findings suggest a significant correlation.",
+        "albanian": "Gjetjet e hulumtimit sugjerojnë një korrelacion të rëndësishëm.",
+        "issues": [
+          "English has 56 characters, max is 40",
+          "Albanian has 63 characters, max is 40",
+          "Contains forbidden English word: research",
+          "Contains forbidden English word: significant",
+          "Contains forbidden Albanian word: korrelacion",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I am fourteen years old",
+        "albanian": "Unë jam katërmbëdhjetë vjeç",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:26.612Z"
+    },
+    {
+      "id": "cbef1acc-b3a2-4d78-bccf-21e621d3f325",
+      "lesson_id": "5154a6fc-dd06-4aab-80f6-41d81e66423f",
+      "lesson_info": {
+        "lesson_name": "Reflective Language Learning",
+        "skill_name": "Albanian 1: Unit 8 - Travel & Directions",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Monitor your progress",
+        "albanian": "Monitoro progresin tond",
+        "issues": [
+          "Contains forbidden English word: progress"
+        ]
+      },
+      "replacement": {
+        "english": "I am fourteen years old",
+        "albanian": "Unë jam katërmbëdhjetë vjeç",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:27.020Z"
+    },
+    {
+      "id": "12b9175a-d3ff-49a8-a4ab-72561780c2c9",
+      "lesson_id": "57c483a4-7609-414b-bd51-5cc5e2993b3c",
+      "lesson_info": {
+        "lesson_name": "Critical Discussions",
+        "skill_name": "Albanian 1: Unit 7 - Opinions & Feelings",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Expressing agreement in academic discussions",
+        "albanian": "Unë pajtohem me këtë mendim",
+        "issues": [
+          "English has 44 characters, max is 40",
+          "Contains forbidden English word: academic",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Please",
+        "albanian": "Ju lutem",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:27.513Z"
+    },
+    {
+      "id": "9607b09f-349f-485c-99e6-992294502b37",
+      "lesson_id": "719edf02-4666-4a58-8823-25d2e7f1667c",
+      "lesson_info": {
+        "lesson_name": "Making Plans",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 8,
+      "original": {
+        "english": "Evaluating morphological complexity",
+        "albanian": "Vlerësimi i kompleksitetit morfologjik",
+        "issues": [
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I will succeed",
+        "albanian": "Unë do të kem sukses",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:27.922Z"
+    },
+    {
+      "id": "cf17956e-086d-4d95-beaa-f0af08253e07",
+      "lesson_id": "719edf02-4666-4a58-8823-25d2e7f1667c",
+      "lesson_info": {
+        "lesson_name": "Making Plans",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 8,
+      "original": {
+        "english": "Analyzing complex morphological structures",
+        "albanian": "Analizimi i strukturave morfologjike komplekse",
+        "issues": [
+          "English has 42 characters, max is 40",
+          "Albanian has 46 characters, max is 40",
+          "Contains forbidden English word: complex",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I have plans",
+        "albanian": "Unë kam plane",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:28.349Z"
+    },
+    {
+      "id": "874f8e3d-60ca-4281-ae94-ce526e757fdb",
+      "lesson_id": "796d6775-aa8a-4ac6-b0f8-1fb7038a2879",
+      "lesson_info": {
+        "lesson_name": "Ordering Food",
+        "skill_name": "Albanian 1: Unit 3 - Food & Drinks",
+        "cefr_level": "A1"
+      },
+      "target_unit": 5,
+      "original": {
+        "english": "Please let me know if you have any questions.",
+        "albanian": "Ju lutem, më njoftoni nëse keni ndonjë pyetje.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "English has 45 characters, max is 40",
+          "Albanian has 46 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I want water",
+        "albanian": "Unë dua ujë",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:28.755Z"
+    },
+    {
+      "id": "c3b049d3-a61a-4686-bebc-9776fa7fab98",
+      "lesson_id": "796d6775-aa8a-4ac6-b0f8-1fb7038a2879",
+      "lesson_info": {
+        "lesson_name": "Ordering Food",
+        "skill_name": "Albanian 1: Unit 3 - Food & Drinks",
+        "cefr_level": "A1"
+      },
+      "target_unit": 5,
+      "original": {
+        "english": "Could you provide more details on this topic?",
+        "albanian": "A mundesh me dhanë ma shumë detaje mbi këtë temë?",
+        "issues": [
+          "Albanian has 10 words, max is 8",
+          "English has 45 characters, max is 40",
+          "Albanian has 49 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I drink coffee",
+        "albanian": "Unë pi kafe",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:29.167Z"
+    },
+    {
+      "id": "f3db913a-6126-41c3-ac82-bb326b5cd23c",
+      "lesson_id": "796d6775-aa8a-4ac6-b0f8-1fb7038a2879",
+      "lesson_info": {
+        "lesson_name": "Ordering Food",
+        "skill_name": "Albanian 1: Unit 3 - Food & Drinks",
+        "cefr_level": "A1"
+      },
+      "target_unit": 5,
+      "original": {
+        "english": "Let's schedule a meeting to discuss further.",
+        "albanian": "Le të caktojmë një takim për të diskutuar më tej.",
+        "issues": [
+          "Albanian has 10 words, max is 8",
+          "English has 44 characters, max is 40",
+          "Albanian has 49 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I like bread",
+        "albanian": "Mua më pëlqen buka",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:29.579Z"
+    },
+    {
+      "id": "10eee389-5078-460a-8c12-61612268d430",
+      "lesson_id": "a99a3501-1447-40a3-93d5-28ef09113e06",
+      "lesson_info": {
+        "lesson_name": "Storytelling",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "What are the main challenges we face?",
+        "albanian": "Cilat janë sfidat kryesore që përballemi?",
+        "issues": [
+          "Albanian has 41 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I am Albanian",
+        "albanian": "Unë jam shqiptar",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:29.987Z"
+    },
+    {
+      "id": "130d77fa-c038-4381-9e2b-d70f074c238f",
+      "lesson_id": "a99a3501-1447-40a3-93d5-28ef09113e06",
+      "lesson_info": {
+        "lesson_name": "Storytelling",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "The results indicate a significant improvement.",
+        "albanian": "Rezultatet tregojnë një përmirësim të rëndësishëm.",
+        "issues": [
+          "English has 47 characters, max is 40",
+          "Albanian has 50 characters, max is 40",
+          "Contains forbidden English word: significant",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "How are you?",
+        "albanian": "Si jeni?",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:30.394Z"
+    },
+    {
+      "id": "449d29fe-4799-4dee-b844-967c8790e744",
+      "lesson_id": "a99a3501-1447-40a3-93d5-28ef09113e06",
+      "lesson_info": {
+        "lesson_name": "Storytelling",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Can you explain this in simpler terms?",
+        "albanian": "A mundesh me shpjegu këtë me fjalë ma të thjeshta?",
+        "issues": [
+          "Albanian has 10 words, max is 8",
+          "Albanian has 50 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Thank you very much",
+        "albanian": "Faleminderit shumë",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:30.804Z"
+    },
+    {
+      "id": "4b94c690-0709-40c2-9679-7a708fdf82fd",
+      "lesson_id": "a99a3501-1447-40a3-93d5-28ef09113e06",
+      "lesson_info": {
+        "lesson_name": "Storytelling",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Let's meet to discuss the project details.",
+        "albanian": "Hajde të takohemi për me diskutu detajet e projektit.",
+        "issues": [
+          "Albanian has 9 words, max is 8",
+          "English has 42 characters, max is 40",
+          "Albanian has 53 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Thank you very much",
+        "albanian": "Faleminderit shumë",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:31.237Z"
+    },
+    {
+      "id": "a1b55019-7ce0-4ded-88bd-fb037c800532",
+      "lesson_id": "a99a3501-1447-40a3-93d5-28ef09113e06",
+      "lesson_info": {
+        "lesson_name": "Storytelling",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Could you please provide the data for the report?",
+        "albanian": "A mundesh me dhanë të dhënat për raportin?",
+        "issues": [
+          "English has 9 words, max is 8",
+          "English has 49 characters, max is 40",
+          "Albanian has 42 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Please",
+        "albanian": "Ju lutem",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:31.643Z"
+    },
+    {
+      "id": "be557a76-cfa3-413e-a5f9-f8af87d9317d",
+      "lesson_id": "a99a3501-1447-40a3-93d5-28ef09113e06",
+      "lesson_info": {
+        "lesson_name": "Storytelling",
+        "skill_name": "Albanian 1: Unit 6 - Past & Future",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "This theory is widely accepted in the field.",
+        "albanian": "Kjo teori është pranuar gjerësisht në fushë.",
+        "issues": [
+          "English has 44 characters, max is 40",
+          "Albanian has 44 characters, max is 40",
+          "Contains forbidden English word: theory",
+          "Contains forbidden Albanian word: teori",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Please",
+        "albanian": "Ju lutem",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:32.055Z"
+    },
+    {
+      "id": "3e32b3fd-362f-40fd-bb1b-4466b70d24af",
+      "lesson_id": "b2c8bef2-c7cf-4262-8439-00d6bde46494",
+      "lesson_info": {
+        "lesson_name": "Numbers 1-10",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "The hypothesis was confirmed.",
+        "albanian": "Hipoteza u konfirmua.",
+        "issues": [
+          "Contains forbidden English word: hypothesis",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Nice to meet you",
+        "albanian": "Gëzohem që ju njoh",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:32.469Z"
+    },
+    {
+      "id": "5924e378-8181-4a3d-9f3c-86c61a0a8e01",
+      "lesson_id": "b2c8bef2-c7cf-4262-8439-00d6bde46494",
+      "lesson_info": {
+        "lesson_name": "Numbers 1-10",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Can you explain this concept further?",
+        "albanian": "A mundesh me shpjegu këtë koncept ma shumë?",
+        "issues": [
+          "Albanian has 43 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "How are you?",
+        "albanian": "Si jeni?",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:32.876Z"
+    },
+    {
+      "id": "5cd090e9-c447-43cc-91bb-78cfd4139e1e",
+      "lesson_id": "b2c8bef2-c7cf-4262-8439-00d6bde46494",
+      "lesson_info": {
+        "lesson_name": "Numbers 1-10",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "How does this relate to previous research?",
+        "albanian": "Si lidhet kjo me hulumtimet e mëparshme?",
+        "issues": [
+          "English has 42 characters, max is 40",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I am fifteen years old",
+        "albanian": "Unë jam pesëmbëdhjetë vjeç",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:33.285Z"
+    },
+    {
+      "id": "715f381d-82ac-4b3a-ae3a-e83dc02eaa06",
+      "lesson_id": "b2c8bef2-c7cf-4262-8439-00d6bde46494",
+      "lesson_info": {
+        "lesson_name": "Numbers 1-10",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "This theory challenges existing beliefs.",
+        "albanian": "Kjo teori sfidon besimet ekzistuese.",
+        "issues": [
+          "Contains forbidden English word: theory",
+          "Contains forbidden Albanian word: teori",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Hello, my name is David",
+        "albanian": "Përshëndetje, unë quhem David",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:33.693Z"
+    },
+    {
+      "id": "88c10b97-34f0-4643-af3c-07bf056e3bd8",
+      "lesson_id": "b2c8bef2-c7cf-4262-8439-00d6bde46494",
+      "lesson_info": {
+        "lesson_name": "Numbers 1-10",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 3,
+      "original": {
+        "english": "What methodology was used in this study?",
+        "albanian": "Cila metodologji u përdor në këtë studim?",
+        "issues": [
+          "Albanian has 41 characters, max is 40",
+          "Contains forbidden English word: methodology",
+          "Contains forbidden Albanian word: metodologji",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I go to school",
+        "albanian": "Unë shkoj në shkollë",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:34.105Z"
+    },
+    {
+      "id": "dd955f9f-0f68-4b02-bbaf-09024589280f",
+      "lesson_id": "b2c8bef2-c7cf-4262-8439-00d6bde46494",
+      "lesson_info": {
+        "lesson_name": "Numbers 1-10",
+        "skill_name": "Albanian 1: Unit 2 - Numbers & Time",
+        "cefr_level": "A1"
+      },
+      "target_unit": 3,
+      "original": {
+        "english": "What are the implications of this study?",
+        "albanian": "Cilat janë implikimet e këtij studimi?",
+        "issues": [
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "The classroom is big",
+        "albanian": "Klasa është e madhe",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:34.517Z"
+    },
+    {
+      "id": "03595410-4482-487c-86f2-2672e5d017f2",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "While the theory is interesting, it lacks empirical support.",
+        "albanian": "Ndërsa teoria është interesante, i mungon mbështetja empirike.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "English has 60 characters, max is 40",
+          "Albanian has 62 characters, max is 40",
+          "Contains forbidden English word: theory",
+          "Contains forbidden English word: empirical",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Hello, my name is Mark",
+        "albanian": "Përshëndetje, unë quhem Mark",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:34.931Z"
+    },
+    {
+      "id": "3c03414a-0e2f-42a3-b849-fc4fbc9a3754",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Although the research was extensive, the results were inconclusive.",
+        "albanian": "Edhe pse kërkimi ishte i gjanë, rezultatet ishin të paqarta.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 67 characters, max is 40",
+          "Albanian has 60 characters, max is 40",
+          "Contains forbidden English word: research",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "How are you?",
+        "albanian": "Si jeni?",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:35.341Z"
+    },
+    {
+      "id": "808c91e4-dd3a-4ae5-b7a0-fff82267d71c",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "If the hypothesis is correct, the experiment will confirm it.",
+        "albanian": "Nëse hipoteza është e saktë, eksperimenti do ta konfirmojë atë.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 61 characters, max is 40",
+          "Albanian has 63 characters, max is 40",
+          "Contains forbidden English word: hypothesis",
+          "Contains forbidden English word: experiment",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Good morning",
+        "albanian": "Mirëmëngjes",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:35.815Z"
+    },
+    {
+      "id": "b0c25285-5f1f-4a55-aea1-3d72670d46d0",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "As soon as the data is verified, the report will be published.",
+        "albanian": "Sapo të dhënat të verifikohen, raporti do të publikohet.",
+        "issues": [
+          "English has 12 words, max is 8",
+          "Albanian has 9 words, max is 8",
+          "English has 62 characters, max is 40",
+          "Albanian has 56 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Please",
+        "albanian": "Ju lutem",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:36.273Z"
+    },
+    {
+      "id": "baac3c7d-db52-4fd7-8259-b33d04791563",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Since the deadline was extended, we have more time to revise.",
+        "albanian": "Që kur afati u shty, kemi më shumë kohë për të rishikuar.",
+        "issues": [
+          "English has 11 words, max is 8",
+          "Albanian has 12 words, max is 8",
+          "English has 61 characters, max is 40",
+          "Albanian has 57 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "I am Albanian",
+        "albanian": "Unë jam shqiptar",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:36.681Z"
+    },
+    {
+      "id": "d8884755-80d5-46df-bcd4-1fdc2ab5121e",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Even though the methodology was sound, the findings were unexpected.",
+        "albanian": "Edhe pse metodologjia ishte e qëndrueshme, gjetjet ishin të papritura.",
+        "issues": [
+          "English has 10 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 68 characters, max is 40",
+          "Albanian has 70 characters, max is 40",
+          "Contains forbidden English word: methodology",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "How are you?",
+        "albanian": "Si jeni?",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:37.088Z"
+    },
+    {
+      "id": "feb86185-881d-4a6d-b1a8-5729d7ca7730",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Unless the results improve, the project will be terminated.",
+        "albanian": "Përveç nëse rezultatet përmirësohen, projekti do të ndërpritet.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "English has 59 characters, max is 40",
+          "Albanian has 63 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Good morning",
+        "albanian": "Mirëmëngjes",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:37.504Z"
+    },
+    {
+      "id": "ff73375f-74ee-4f54-9af3-42d6c2a274ff",
+      "lesson_id": "b34f221c-b84f-4d5d-9f91-c50cff3827b6",
+      "lesson_info": {
+        "lesson_name": "Giving Directions",
+        "skill_name": "Albanian 1: Unit 5 - Home & Places",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Because the data was incomplete, further analysis was required.",
+        "albanian": "Sepse të dhënat ishin të paplota, kërkohej analizë e mëtejshme.",
+        "issues": [
+          "English has 9 words, max is 8",
+          "Albanian has 10 words, max is 8",
+          "English has 63 characters, max is 40",
+          "Albanian has 63 characters, max is 40",
+          "Contains forbidden English word: analysis",
+          "Contains forbidden Albanian word: analizë",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Please",
+        "albanian": "Ju lutem",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:37.910Z"
+    },
+    {
+      "id": "018f4d46-64c1-4c39-b6bd-a6d87f5bda26",
+      "lesson_id": "b9eb960c-1392-499c-91b2-c21e387bf8f3",
+      "lesson_info": {
+        "lesson_name": "Food Vocabulary",
+        "skill_name": "Albanian 1: Unit 3 - Food & Drinks",
+        "cefr_level": "A1"
+      },
+      "target_unit": 5,
+      "original": {
+        "english": "This research contributes significantly to the field.",
+        "albanian": "Ky hulumtim kontribuon ndjeshëm në fushën.",
+        "issues": [
+          "English has 53 characters, max is 40",
+          "Albanian has 42 characters, max is 40",
+          "Contains forbidden English word: research",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "This is good food",
+        "albanian": "Ky është ushqim i mirë",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:38.320Z"
+    },
+    {
+      "id": "192eb8c5-46da-4ada-a340-b0a1c1e6608b",
+      "lesson_id": "b9eb960c-1392-499c-91b2-c21e387bf8f3",
+      "lesson_info": {
+        "lesson_name": "Food Vocabulary",
+        "skill_name": "Albanian 1: Unit 3 - Food & Drinks",
+        "cefr_level": "A1"
+      },
+      "target_unit": 5,
+      "original": {
+        "english": "How does this theory apply in practice?",
+        "albanian": "Si aplikohet kjo teori në praktikë?",
+        "issues": [
+          "Contains forbidden English word: theory",
+          "Contains forbidden Albanian word: teori",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "This is good food",
+        "albanian": "Ky është ushqim i mirë",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:38.734Z"
+    },
+    {
+      "id": "2e729516-5244-4dce-9634-1d375ac216a6",
+      "lesson_id": "b9eb960c-1392-499c-91b2-c21e387bf8f3",
+      "lesson_info": {
+        "lesson_name": "Food Vocabulary",
+        "skill_name": "Albanian 1: Unit 3 - Food & Drinks",
+        "cefr_level": "A1"
+      },
+      "target_unit": 5,
+      "original": {
+        "english": "What are the limitations of this approach?",
+        "albanian": "Cilat janë kufizimet e këtij qasje?",
+        "issues": [
+          "English has 42 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Vegetables are important",
+        "albanian": "Perimet janë të rëndësishme",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:39.143Z"
+    },
+    {
+      "id": "42cf4f52-17f9-48eb-82b9-bbf6b587e08c",
+      "lesson_id": "b9eb960c-1392-499c-91b2-c21e387bf8f3",
+      "lesson_info": {
+        "lesson_name": "Food Vocabulary",
+        "skill_name": "Albanian 1: Unit 3 - Food & Drinks",
+        "cefr_level": "A1"
+      },
+      "target_unit": 5,
+      "original": {
+        "english": "Let's discuss the implications of this study.",
+        "albanian": "Le të diskutojmë për pasojat e këtij studimi.",
+        "issues": [
+          "English has 45 characters, max is 40",
+          "Albanian has 45 characters, max is 40",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "I drink coffee",
+        "albanian": "Unë pi kafe",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:39.906Z"
+    },
+    {
+      "id": "472d6105-d7f7-48ed-af9b-8991468d7437",
+      "lesson_id": "d946b238-0162-4fb8-8aa7-c167c71a65e8",
+      "lesson_info": {
+        "lesson_name": "Expressing Opinions",
+        "skill_name": "Albanian 1: Unit 7 - Opinions & Feelings",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Discuss the implications of the findings.",
+        "albanian": "Diskuto implikimet e gjetjeve.",
+        "issues": [
+          "English has 41 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Nice to meet you",
+        "albanian": "Gëzohem që ju njoh",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:40.315Z"
+    },
+    {
+      "id": "a4caf804-59c3-4ba8-b7e3-ddded5b4286c",
+      "lesson_id": "d946b238-0162-4fb8-8aa7-c167c71a65e8",
+      "lesson_info": {
+        "lesson_name": "Expressing Opinions",
+        "skill_name": "Albanian 1: Unit 7 - Opinions & Feelings",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Formulate a hypothesis based on the evidence.",
+        "albanian": "Formulo një hipotezë bazuar në provat.",
+        "issues": [
+          "English has 45 characters, max is 40",
+          "Contains forbidden English word: hypothesis",
+          "Contains abstract or academic concepts"
+        ]
+      },
+      "replacement": {
+        "english": "Good morning",
+        "albanian": "Mirëmëngjes",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:40.721Z"
+    },
+    {
+      "id": "e3cb9c3d-5b0a-4bc6-b153-21fbbd865399",
+      "lesson_id": "d946b238-0162-4fb8-8aa7-c167c71a65e8",
+      "lesson_info": {
+        "lesson_name": "Expressing Opinions",
+        "skill_name": "Albanian 1: Unit 7 - Opinions & Feelings",
+        "cefr_level": "A1"
+      },
+      "target_unit": 1,
+      "original": {
+        "english": "Interpret the data presented in the chart.",
+        "albanian": "Interpreto të dhënat e paraqitura në grafik.",
+        "issues": [
+          "English has 42 characters, max is 40",
+          "Albanian has 44 characters, max is 40"
+        ]
+      },
+      "replacement": {
+        "english": "Hello, my name is David",
+        "albanian": "Përshëndetje, unë quhem David",
+        "validation_score": 100
+      },
+      "timestamp": "2025-09-20T10:55:41.129Z"
+    }
+  ],
+  "errors": []
+}
