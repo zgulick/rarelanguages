@@ -7,7 +7,8 @@ const { query } = require('../../../../../../lib/database');
 
 export async function GET(request, { params }) {
     try {
-        const lessonId = params.id;
+        const resolvedParams = await params;
+        const lessonId = resolvedParams.id;
 
         // Get lesson basic info with skill details and sub-lesson navigation
         const lessonResult = await query(`
@@ -185,11 +186,16 @@ export async function GET(request, { params }) {
                     structure_version: 2
                 },
                 sections: sampleSections,
+                content: sampleSections.reduce((all, s) => all.concat(s.content.map(c => ({...c, difficulty_level: 1, content_type: 'phrase', position: all.length + 1, grammar_notes: null}))), []),
                 metadata: {
                     totalSections: sampleSections.length,
                     totalContent: sampleSections.reduce((sum, s) => sum + s.content.length, 0),
+                    totalPhrases: sampleSections.reduce((sum, s) => sum + s.content.length, 0),
+                    averageDifficulty: 1.0,
                     estimatedTime: sampleSections.reduce((sum, s) => sum + s.estimated_minutes, 0),
                     hasStructuredFlow: true,
+                    hasAudio: false,
+                    hasCulturalContext: false,
                     pedagogicalApproach: 'introduction_vocab_practice'
                 }
             });
@@ -242,7 +248,23 @@ export async function GET(request, { params }) {
                     contentSum + (item.difficulty_progression || 1), 0), 0
             ) / totalContent : 1;
 
-        // Return structured lesson data with sections
+        // Flatten sections into single content array for backward compatibility
+        const flattenedContent = sections.reduce((allContent, section) => {
+            return allContent.concat(section.content.map(item => ({
+                ...item,
+                difficulty_level: item.difficulty_progression || 1,
+                content_type: 'phrase',
+                position: allContent.length + 1,
+                grammar_notes: null,
+                section_info: {
+                    section_type: section.section_type,
+                    section_title: section.title,
+                    section_order: section.section_order
+                }
+            })));
+        }, []);
+
+        // Return structured lesson data with both sections (new) and content (backward compatibility)
         return NextResponse.json({
             success: true,
             lesson: {
@@ -267,10 +289,12 @@ export async function GET(request, { params }) {
                 lesson_type: lesson.is_sub_lesson ? 'sub_lesson' : (lesson.total_sub_lessons > 1 ? 'parent' : 'single')
             },
             sections: sections,
+            content: flattenedContent, // Backward compatibility
             navigation: navigation,
             metadata: {
                 totalSections: sections.length,
-                totalContent: totalContent,
+                totalContent: flattenedContent.length,
+                totalPhrases: flattenedContent.length, // Backward compatibility
                 averageDifficulty: averageDifficulty,
                 estimatedTime: totalEstimatedTime || lesson.estimated_minutes || 15,
                 hasStructuredFlow: true,
@@ -279,6 +303,8 @@ export async function GET(request, { params }) {
                 hasPronunciation: sections.some(s => s.section_type === 'pronunciation'),
                 hasGrammar: sections.some(s => s.section_type === 'grammar'),
                 hasPractice: sections.some(s => s.section_type === 'practice'),
+                hasAudio: false, // Backward compatibility
+                hasCulturalContext: flattenedContent.some(item => item.cultural_context), // Backward compatibility
                 // Sub-lesson progress info
                 sub_lesson_progress: lesson.is_sub_lesson ? {
                     current: lesson.current_sub_lesson,
