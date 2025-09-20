@@ -656,13 +656,17 @@ const NounCard = ({ content }: { content: LessonContent }) => (
         )}
       </div>
 
-      {/* Gender Information */}
-      {content.gender && (
+      {/* Gender Information - Only show for advanced vocabulary, not basic greetings/numbers */}
+      {content.gender &&
+       content.grammar_category &&
+       !['greetings', 'courtesy', 'numbers', 'time_expressions'].includes(content.grammar_category) &&
+       content.english_phrase &&
+       !['Hello', 'Thank you', 'Please', 'Good morning', 'Good afternoon', 'Good evening', 'Goodbye', 'How are you?'].includes(content.english_phrase) && (
         <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
           <div className="text-center">
             <div className="font-medium text-purple-800 mb-2">Gender: {content.gender}</div>
             <div className="text-purple-700 text-sm">
-              Remember to use appropriate articles and adjective agreements
+              This noun is {content.gender} in Albanian
             </div>
           </div>
         </div>
