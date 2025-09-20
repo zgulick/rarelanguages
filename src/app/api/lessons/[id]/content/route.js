@@ -45,14 +45,25 @@ export async function GET(request, { params }) {
 
         const lesson = lessonResult.rows[0];
 
-        // Get lesson content (phrases) with all necessary fields including new grammar fields
+        // Get structured lesson content organized by sections
         const contentResult = await query(`
-            SELECT 
-                lc.id,
+            SELECT
+                ls.id as section_id,
+                ls.section_type,
+                ls.section_order,
+                ls.title as section_title,
+                ls.description as section_description,
+                ls.estimated_minutes as section_minutes,
+                lc.id as content_id,
                 lc.english_phrase,
                 lc.target_phrase,
                 lc.pronunciation_guide,
                 lc.cultural_context,
+                lc.content_order,
+                lc.content_section_type,
+                lc.difficulty_progression,
+                lc.is_key_concept,
+                lc.learning_objective,
                 lc.word_type,
                 lc.verb_type,
                 lc.gender,
@@ -61,87 +72,103 @@ export async function GET(request, { params }) {
                 lc.grammar_category,
                 lc.difficulty_notes,
                 lc.usage_examples
-            FROM lesson_content lc
-            WHERE lc.lesson_id = $1
-            ORDER BY lc.id ASC
+            FROM lesson_sections ls
+            LEFT JOIN lesson_content lc ON ls.id = lc.section_id
+            WHERE ls.lesson_id = $1
+            ORDER BY ls.section_order, lc.content_order, lc.id
         `, [lessonId]);
 
-        const content = contentResult.rows.map(item => ({
-            id: item.id,
-            english_phrase: item.english_phrase,
-            target_phrase: item.target_phrase,
-            pronunciation_guide: item.pronunciation_guide,
-            difficulty_level: 1, // Default value since column doesn't exist
-            content_type: 'phrase', // Default value since column doesn't exist
-            cultural_context: item.cultural_context || null,
-            grammar_notes: null, // Default value since column doesn't exist
-            position: 1, // Default value since column doesn't exist
-            // New grammar and linguistic fields
-            word_type: item.word_type || null,
-            verb_type: item.verb_type || null,
-            gender: item.gender || null,
-            stress_pattern: item.stress_pattern || null,
-            conjugation_data: item.conjugation_data || null,
-            grammar_category: item.grammar_category || null,
-            difficulty_notes: item.difficulty_notes || null,
-            usage_examples: item.usage_examples || null
-        }));
+        // Group content by sections for structured learning flow
+        const sectionsMap = new Map();
 
-        // If no content found, return sample Albanian phrases for demo
-        if (content.length === 0) {
-            const sampleContent = [
+        contentResult.rows.forEach(row => {
+            const sectionId = row.section_id;
+
+            if (!sectionsMap.has(sectionId)) {
+                sectionsMap.set(sectionId, {
+                    section_id: sectionId,
+                    section_type: row.section_type,
+                    section_order: row.section_order,
+                    title: row.section_title,
+                    description: row.section_description,
+                    estimated_minutes: row.section_minutes,
+                    content: []
+                });
+            }
+
+            // Only add content if it exists (some sections might not have content yet)
+            if (row.content_id) {
+                sectionsMap.get(sectionId).content.push({
+                    id: row.content_id,
+                    english_phrase: row.english_phrase,
+                    target_phrase: row.target_phrase,
+                    pronunciation_guide: row.pronunciation_guide,
+                    cultural_context: row.cultural_context || null,
+                    content_order: row.content_order,
+                    difficulty_progression: row.difficulty_progression || 1,
+                    is_key_concept: row.is_key_concept || false,
+                    learning_objective: row.learning_objective,
+                    word_type: row.word_type || null,
+                    verb_type: row.verb_type || null,
+                    gender: row.gender || null,
+                    stress_pattern: row.stress_pattern || null,
+                    conjugation_data: row.conjugation_data || null,
+                    grammar_category: row.grammar_category || null,
+                    difficulty_notes: row.difficulty_notes || null,
+                    usage_examples: row.usage_examples || null
+                });
+            }
+        });
+
+        // Convert to array and sort by section order
+        const sections = Array.from(sectionsMap.values()).sort((a, b) => a.section_order - b.section_order);
+
+        // If no sections found, return sample structured content for demo
+        if (sections.length === 0) {
+            const sampleSections = [
                 {
-                    id: 'sample-1',
-                    english_phrase: 'Hello',
-                    target_phrase: 'Përshëndetje',
-                    pronunciation_guide: 'Per-shuhn-det-yeh',
-                    cultural_context: 'Standard greeting used in both formal and informal situations',
-                    difficulty_level: 1,
-                    content_type: 'phrase',
-                    position: 1
+                    section_id: 'sample-intro',
+                    section_type: 'introduction',
+                    section_order: 1,
+                    title: 'Lesson Introduction',
+                    description: 'Welcome to your Albanian lesson!',
+                    estimated_minutes: 2,
+                    content: [{
+                        id: 'intro-1',
+                        english_phrase: 'Welcome to Albanian!',
+                        target_phrase: 'Mirë se vini në shqip!',
+                        pronunciation_guide: 'Mee-ruh seh vee-nee nuh shkeep!',
+                        learning_objective: 'Start your Albanian learning journey'
+                    }]
                 },
                 {
-                    id: 'sample-2', 
-                    english_phrase: 'Thank you',
-                    target_phrase: 'Faleminderit',
-                    pronunciation_guide: 'Fah-leh-meen-deh-reet',
-                    cultural_context: 'Formal way to express gratitude, very important in Albanian culture',
-                    difficulty_level: 1,
-                    content_type: 'phrase',
-                    position: 2
-                },
-                {
-                    id: 'sample-3',
-                    english_phrase: 'How are you?',
-                    target_phrase: 'Si jeni?',
-                    pronunciation_guide: 'See yeh-nee?',
-                    cultural_context: 'Formal greeting, shows respect for the person you\'re addressing',
-                    difficulty_level: 2,
-                    content_type: 'phrase',
-                    position: 3
-                },
-                {
-                    id: 'sample-4',
-                    english_phrase: 'My name is...',
-                    target_phrase: 'Unë quhem...',
-                    pronunciation_guide: 'Oo-nuh choo-hem...',
-                    cultural_context: 'Standard way to introduce yourself in Albanian',
-                    difficulty_level: 2,
-                    content_type: 'phrase',
-                    position: 4
-                },
-                {
-                    id: 'sample-5',
-                    english_phrase: 'Please',
-                    target_phrase: 'Ju lutem',
-                    pronunciation_guide: 'Yoo loo-tem',
-                    cultural_context: 'Polite way to make requests, essential for courteous conversation',
-                    difficulty_level: 1,
-                    content_type: 'phrase',
-                    position: 5
+                    section_id: 'sample-vocab',
+                    section_type: 'vocabulary',
+                    section_order: 2,
+                    title: 'Core Vocabulary',
+                    description: 'Essential words and phrases',
+                    estimated_minutes: 5,
+                    content: [
+                        {
+                            id: 'vocab-1',
+                            english_phrase: 'Hello',
+                            target_phrase: 'Përshëndetje',
+                            pronunciation_guide: 'Per-shen-det-yeh',
+                            is_key_concept: true,
+                            learning_objective: 'Learn essential Albanian greetings'
+                        },
+                        {
+                            id: 'vocab-2',
+                            english_phrase: 'Thank you',
+                            target_phrase: 'Faleminderit',
+                            pronunciation_guide: 'Fah-leh-min-deh-rit',
+                            is_key_concept: true,
+                            learning_objective: 'Express gratitude politely'
+                        }
+                    ]
                 }
             ];
-            
+
             return NextResponse.json({
                 success: true,
                 lesson: {
@@ -154,15 +181,16 @@ export async function GET(request, { params }) {
                     difficulty_level: lesson.difficulty_level,
                     estimated_minutes: lesson.estimated_minutes,
                     cefr_level: lesson.cefr_level,
-                    content_areas: ['vocabulary', 'pronunciation', 'cultural_context']
+                    content_areas: ['introduction', 'vocabulary', 'pronunciation'],
+                    structure_version: 2
                 },
-                content: sampleContent,
+                sections: sampleSections,
                 metadata: {
-                    totalPhrases: sampleContent.length,
-                    averageDifficulty: 1.4,
-                    estimatedTime: lesson.estimated_minutes || 15,
-                    hasAudio: false, // Will be true when audio is implemented
-                    hasCulturalContext: true
+                    totalSections: sampleSections.length,
+                    totalContent: sampleSections.reduce((sum, s) => sum + s.content.length, 0),
+                    estimatedTime: sampleSections.reduce((sum, s) => sum + s.estimated_minutes, 0),
+                    hasStructuredFlow: true,
+                    pedagogicalApproach: 'introduction_vocab_practice'
                 }
             });
         }
@@ -205,7 +233,16 @@ export async function GET(request, { params }) {
             }
         }
 
-        // Return actual lesson data with navigation
+        // Calculate metadata from sections
+        const totalContent = sections.reduce((sum, section) => sum + section.content.length, 0);
+        const totalEstimatedTime = sections.reduce((sum, section) => sum + (section.estimated_minutes || 0), 0);
+        const averageDifficulty = totalContent > 0 ?
+            sections.reduce((sum, section) =>
+                sum + section.content.reduce((contentSum, item) =>
+                    contentSum + (item.difficulty_progression || 1), 0), 0
+            ) / totalContent : 1;
+
+        // Return structured lesson data with sections
         return NextResponse.json({
             success: true,
             lesson: {
@@ -218,7 +255,9 @@ export async function GET(request, { params }) {
                 difficulty_level: lesson.difficulty_level,
                 estimated_minutes: lesson.estimated_minutes,
                 cefr_level: lesson.cefr_level,
-                content_areas: ['vocabulary', 'pronunciation', 'grammar'],
+                content_areas: sections.map(s => s.section_type),
+                structure_version: 2,
+                pedagogical_approach: 'structured_progression',
                 // Sub-lesson navigation info
                 is_sub_lesson: lesson.is_sub_lesson,
                 parent_lesson_id: lesson.parent_lesson_id,
@@ -227,14 +266,19 @@ export async function GET(request, { params }) {
                 total_sub_lessons: lesson.total_sub_lessons_actual,
                 lesson_type: lesson.is_sub_lesson ? 'sub_lesson' : (lesson.total_sub_lessons > 1 ? 'parent' : 'single')
             },
-            content: content,
+            sections: sections,
             navigation: navigation,
             metadata: {
-                totalPhrases: content.length,
-                averageDifficulty: content.reduce((sum, item) => sum + item.difficulty_level, 0) / content.length,
-                estimatedTime: lesson.estimated_minutes || 15,
-                hasAudio: false, // Will be true when audio is implemented
-                hasCulturalContext: content.some(item => item.cultural_context),
+                totalSections: sections.length,
+                totalContent: totalContent,
+                averageDifficulty: averageDifficulty,
+                estimatedTime: totalEstimatedTime || lesson.estimated_minutes || 15,
+                hasStructuredFlow: true,
+                hasIntroduction: sections.some(s => s.section_type === 'introduction'),
+                hasVocabulary: sections.some(s => s.section_type === 'vocabulary'),
+                hasPronunciation: sections.some(s => s.section_type === 'pronunciation'),
+                hasGrammar: sections.some(s => s.section_type === 'grammar'),
+                hasPractice: sections.some(s => s.section_type === 'practice'),
                 // Sub-lesson progress info
                 sub_lesson_progress: lesson.is_sub_lesson ? {
                     current: lesson.current_sub_lesson,
