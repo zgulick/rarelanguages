@@ -1,0 +1,1824 @@
+{
+  "timestamp": "2025-09-20T09:32:08.020Z",
+  "processing_stats": {
+    "totalProcessed": 360,
+    "stressPatternsCreated": 360,
+    "pronunciationFixed": 172,
+    "pronunciationGenerated": 187,
+    "updates": [
+      {
+        "id": "018f4d46-64c1-4c39-b6bd-a6d87f5bda26",
+        "stress_pattern": "kuh hoo-loom-teem kon-tree-boo-on ndye-SHEM NUH FOO-shen.",
+        "pronunciation_guide": "kuh-hoo-loom-teem-kon-tree-boo-on-ndye-shem-nuh-foo-shen."
+      },
+      {
+        "id": "02895524-6d3c-470b-94bc-8846ebf54009",
+        "stress_pattern": "doo-ah teh po-roh-SEES NYUH KAH-feh.",
+        "pronunciation_guide": "doo-ah-teh-po-roh-sees-nyuh-kah-feh."
+      },
+      {
+        "id": "03595410-4482-487c-86f2-2672e5d017f2",
+        "stress_pattern": "nduhr-sah teh-oh-ree-ah esh-teh in-teh-rah-san-teh, ee moon-gohn mbuh-shteh-tyah em-pee-REE-keh.",
+        "pronunciation_guide": "nduhr-sah-teh-oh-ree-ah-esh-teh-in-teh-rah-san-teh-ee-moon-gohn-mbuh-shteh-tyah-em-pee-ree-keh."
+      },
+      {
+        "id": "04bedce4-9c20-4e59-85bc-5ca8034b57d2",
+        "stress_pattern": "ven-dos chë-li-me të a-RIT-shme",
+        "pronunciation_guide": "ven-dos-chë-li-me-të-a-rit-shme"
+      },
+      {
+        "id": "04bfa8f9-780e-45c8-8847-3b58fe12329c",
+        "stress_pattern": "NOOK POH KOOP-toy. [nuk pɔ kupˈtɔj]",
+        "pronunciation_guide": "nook-poh-koop-toy.-[nuk-pɔ-kupˈtɔj]"
+      },
+      {
+        "id": "050f2864-6af0-44f3-9827-e31cff4532a9",
+        "stress_pattern": "reh-flek-toh mbi da-li-met kul-tu-RO-re",
+        "pronunciation_guide": "reh-flek-toh-mbi-da-lli-met-kul-tu-ro-re"
+      },
+      {
+        "id": "07568f54-020c-42df-97d8-1673a77e1f31",
+        "stress_pattern": "fah-leh-meen-DEH-reet pur bash-kuh-poo-nee-MEEN TOO-eye.",
+        "pronunciation_guide": "fah-leh-meen-deh-reet-pur-bash-kuh-poo-nee-meen-too-eye."
+      },
+      {
+        "id": "0a2947f1-2964-4c5d-b4b5-56fa443452fd",
+        "stress_pattern": "ee-den-tee-fee-koh ee-dehn kry-oh-soh-REH TUH TEK-steet",
+        "pronunciation_guide": "ee-den-tee-fee-koh-ee-dehn-kry-oh-soh-reh-tuh-tek-steet"
+      },
+      {
+        "id": "0c0a63d4-4b92-434b-9934-bf578b1794fd",
+        "stress_pattern": "kër-ko re-a-gi-ME NGA SHO-kët",
+        "pronunciation_guide": "kër-ko-re-a-gi-me-nga-sho-kët"
+      },
+      {
+        "id": "0cc3f3cf-aa9b-4f71-8cf1-36da589759c9",
+        "stress_pattern": "duh-shee-roi tuh dees-koo-toi-muh deh-tah-yet eh pro-YEHK-teet.",
+        "pronunciation_guide": "duh-shee-roi-tuh-dees-koo-toi-muh-deh-tah-yet-eh-pro-yehk-teet."
+      },
+      {
+        "id": "0ce56c42-e2fe-43e5-8f04-dd9468123482",
+        "stress_pattern": "HEH-loh",
+        "pronunciation_guide": "heh-loh"
+      },
+      {
+        "id": "0e1bd879-e982-47e1-af93-942559fabe0c",
+        "stress_pattern": "IDENTIFIKO [IDƐNTIˈFIKO] PRETENDIMIN [PRƐTƐNˈDIMꞮN] KRYESOR [KRYƐˈSƆR]",
+        "pronunciation_guide": "identifiko-[idɛntiˈfiko]-pretendimin-[prɛtɛnˈdimɪn]-kryesor-[kryɛˈsɔr]"
+      },
+      {
+        "id": "10eee389-5078-460a-8c12-61612268d430",
+        "stress_pattern": "see-lat yah-neh sfi-dat kry-eh-so-reh chuh pur-bah-LEH-mee?",
+        "pronunciation_guide": "see-lat-yah-neh-sfi-dat-kry-eh-so-reh-chuh-pur-bah-leh-mee?"
+      },
+      {
+        "id": "111d4630-97d2-4dfd-93aa-e53ff05c4b99",
+        "stress_pattern": "PREY KAH YEH?",
+        "pronunciation_guide": "prey-kah-yeh?"
+      },
+      {
+        "id": "12b9175a-d3ff-49a8-a4ab-72561780c2c9",
+        "stress_pattern": "oo-nuh pie-TO-hem meh ket mendim [ˈunə pajˈtohɛm mɛ ˈkɛt mɛnˈdim]",
+        "pronunciation_guide": "oo-nuh-pie-to-hem-meh-ket-mendim-[ˈunə-pajˈtohɛm-mɛ-ˈkɛt-mɛnˈdim]"
+      },
+      {
+        "id": "130d77fa-c038-4381-9e2b-d70f074c238f",
+        "stress_pattern": "reh-zool-tah-tet treh-goy-nyeh nyuh pur-mee-reh-seem tuh ruhn-duh-SISH-em.",
+        "pronunciation_guide": "reh-zool-tah-tet-treh-goy-nyeh-nyuh-pur-mee-reh-seem-tuh-ruhn-duh-sish-em."
+      },
+      {
+        "id": "153db4d9-42e7-4f4f-bc07-f74b37c0735a",
+        "stress_pattern": "PRUHN-houn dah",
+        "pronunciation_guide": "pruhn-houn-dah"
+      },
+      {
+        "id": "192eb8c5-46da-4ada-a340-b0a1c1e6608b",
+        "stress_pattern": "see ah-plee-koh-het kyo teh-oh-ree nuh prah-TEE-kuh?",
+        "pronunciation_guide": "see-ah-plee-koh-het-kyo-teh-oh-ree-nuh-prah-tee-kuh?"
+      },
+      {
+        "id": "1ab55e81-e870-4902-a260-f956b4e6b32e",
+        "stress_pattern": "kur-koy fahl-yeh puhr shqet-uh-SEE-meen.",
+        "pronunciation_guide": "kur-koy-fahl-yeh-puhr-shqet-uh-see-meen."
+      },
+      {
+        "id": "1b274b38-2537-4c28-9029-108b964b62e9",
+        "stress_pattern": "ah moon-desh meh char-tay-soo peek-UHN TUH-ndeh?",
+        "pronunciation_guide": "ah-moon-desh-meh-char-tay-soo-peek-uhn-tuh-ndeh?"
+      },
+      {
+        "id": "1ecbd2a0-9de1-48a5-a3be-fdb29190f6b7",
+        "stress_pattern": "YAHM STOO-dent. [jam stuˈdɛnt]",
+        "pronunciation_guide": "yahm-stoo-dent.-[jam-stuˈdɛnt]"
+      },
+      {
+        "id": "1f073cc5-a7d7-49fb-ad27-2f447e8c691e",
+        "stress_pattern": "kur-koy fahl-yeh pur kech-koop-TEE-meen.",
+        "pronunciation_guide": "kur-koy-fahl-yeh-pur-kech-koop-tee-meen."
+      },
+      {
+        "id": "20b53807-f8da-4e14-8a92-4734b02561ee",
+        "stress_pattern": "nuh për-foon-deem, moon-DEH-mee meh than chuh...",
+        "pronunciation_guide": "nuh-për-foon-deem-moon-deh-mee-meh-than-chuh..."
+      },
+      {
+        "id": "20ecf7c7-01d2-4c4c-b615-5e72905cd3ad",
+        "stress_pattern": "ah-nah-lee-zoh ar-goo-men-teen eh ow-TOH-reet",
+        "pronunciation_guide": "ah-nah-lee-zoh-ar-goo-men-teen-eh-ow-toh-reet"
+      },
+      {
+        "id": "23fb0de4-603a-4a04-bc89-395124925245",
+        "stress_pattern": "e-deh pseh de-ty-ra ish-teh sfi-du-e-seh, e per-fun-DU-am ne koh.",
+        "pronunciation_guide": "e-deh-pseh-de-ty-ra-ish-teh-sfi-du-e-seh-e-per-fun-du-am-ne-koh."
+      },
+      {
+        "id": "248f98ca-7095-4fd1-8879-cbf7a8ed7bef",
+        "stress_pattern": "nuh-seh hee-po-teh-zah esh-tuh eh sahk-tuh, eks-peh-ree-mee-nee doh tah kon-feer-moh-YUH AH-tuh.",
+        "pronunciation_guide": "nuh-seh-hee-po-teh-zah-esh-tuh-eh-sahk-tuh-eks-peh-ree-mee-nee-doh-tah-kon-feer-moh-yuh-ah-tuh."
+      },
+      {
+        "id": "26667af9-fefa-4550-8be9-c1888ee060b9",
+        "stress_pattern": "fah-leh-meen-DEH-reet shoom.",
+        "pronunciation_guide": "fah-leh-meen-deh-reet-shoom."
+      },
+      {
+        "id": "288c3ba9-3840-49a1-b6b0-bb5628dfa847",
+        "stress_pattern": "TOONG, CHOOSH YEH? [TƱŊ, CʲUƩ JƐ]",
+        "pronunciation_guide": "toong-choosh-yeh?-[tʊŋ-cʲuʃ-jɛ]"
+      },
+      {
+        "id": "28ff484d-351f-4d24-90bf-0bba6a2873ae",
+        "stress_pattern": "see reh-zool-taht, moon-deh-MEE MEH N-jer chuh...",
+        "pronunciation_guide": "see-reh-zool-taht-moon-deh-mee-meh-n-jerr-chuh..."
+      },
+      {
+        "id": "2b36e308-2b29-4a22-9433-665f7a3d5800",
+        "stress_pattern": "fah-leh-meen-DEH-reet shoom. [falɛminˈdɛrit ʃum]",
+        "pronunciation_guide": "fah-leh-meen-deh-reet-shoom.-[falɛminˈdɛrit-ʃum]"
+      },
+      {
+        "id": "2ca5cfe8-5760-42f5-be2f-c11490e069b7",
+        "stress_pattern": "fah-leh-min-deh-reet puhr ndee-HEH-muhn.",
+        "pronunciation_guide": "fah-leh-min-deh-reet-puhr-ndee-heh-muhn."
+      },
+      {
+        "id": "2e729516-5244-4dce-9634-1d375ac216a6",
+        "stress_pattern": "see-laht yah-neh koo-fee-zee-meht eh ket-EE YAH-see?",
+        "pronunciation_guide": "see-laht-yah-neh-koo-fee-zee-meht-eh-ket-ee-yah-see?"
+      },
+      {
+        "id": "2f995ef8-ff84-4d1f-b335-8ff9a38a3723",
+        "stress_pattern": "SAH ESHT OH-rah? [sa ɛʃt ɔra]",
+        "pronunciation_guide": "sah-esht-oh-rah?-[sa-ɛʃt-ɔra]"
+      },
+      {
+        "id": "30144a88-b1a1-4eea-bea1-186f5346013a",
+        "stress_pattern": "eh vler-soy koh-men-TEEN TOO-eye.",
+        "pronunciation_guide": "eh-vler-soy-koh-men-teen-too-eye."
+      },
+      {
+        "id": "31db98d3-1441-4616-9d8d-c7511265b696",
+        "stress_pattern": "cheh kur a-fa-ti u shty, keh-mi meh shum koh per tu per-ga-TI-tur.",
+        "pronunciation_guide": "cheh-kur-a-fa-ti-u-shty-keh-mi-meh-shum-koh-per-tu-per-ga-ti-tur."
+      },
+      {
+        "id": "34d93ba1-eacf-4425-8795-1448694eb3d2",
+        "stress_pattern": "kahm ne-voy-uh meh pur-mee-ruh-soo ahf-teh-see-tuh eh mee-ah gyoo-huh-SOH-reh.",
+        "pronunciation_guide": "kahm-ne-voy-uh-meh-pur-mee-ruh-soo-ahf-teh-see-tuh-eh-mee-ah-gyoo-huh-soh-reh."
+      },
+      {
+        "id": "39e2f9e3-2d58-4e22-afa0-3873b2c46ea2",
+        "stress_pattern": "NOOK YAHM EE SEE-goort, por... [nuk jam i ˈsiɡurt, pɔr]",
+        "pronunciation_guide": "nook-yahm-ee-see-goort-por...-[nuk-jam-i-ˈsiɡurt-pɔr]"
+      },
+      {
+        "id": "39f34f2c-311a-4f3a-9fc3-9977b091059b",
+        "stress_pattern": "NOHS-whyth thah",
+        "pronunciation_guide": "nohs-whyth-thah"
+      },
+      {
+        "id": "3a64e2a9-6871-4232-97ec-5b8d740617ed",
+        "stress_pattern": "tuh dhuh-naht oo ah-nah-lee-zoo-ahn per tuh ee-den-tee-fee-koo-ar ten-den-tsaht meh kah-lee-MEEN EH KOH-es. [tə ðənat u analizuɑn pər tə idɛntifikuar tɛndɛntsat mɛ kalimin ɛ kɔhəs]",
+        "pronunciation_guide": "tuh-dhuh-naht-oo-ah-nah-lee-zoo-ahn-per-tuh-ee-den-tee-fee-koo-ar-ten-den-tsaht-meh-kah-lee-meen-eh-koh-es.-[tə-ðənat-u-analizuɑn-pər-tə-idɛntifikuar-tɛndɛntsat-mɛ-kalimin-ɛ-kɔhəs]"
+      },
+      {
+        "id": "3afc2840-505d-4e2f-94a4-3bcbcd3f2129",
+        "stress_pattern": "kra-ha-soh dheh kon-trah-stoh dyh teh-oh-REE-teh",
+        "pronunciation_guide": "kra-ha-soh-dheh-kon-trah-stoh-dyh-teh-oh-ree-teh"
+      },
+      {
+        "id": "3c03414a-0e2f-42a3-b849-fc4fbc9a3754",
+        "stress_pattern": "e-deh pseh kər-kee-mee eesh-teh ee jah-nuh, reh-zool-tah-tet ee-sheen teh pah-CHAR-tah.",
+        "pronunciation_guide": "e-deh-pseh-kər-kee-mee-eesh-teh-ee-jah-nuh-reh-zool-tah-tet-ee-sheen-teh-pah-char-tah."
+      },
+      {
+        "id": "3e32b3fd-362f-40fd-bb1b-4466b70d24af",
+        "stress_pattern": "hee-poh-teh-zah oo kon-feer-MOO-ah. [hipɔtɛza u kɔnfirmua]",
+        "pronunciation_guide": "hee-poh-teh-zah-oo-kon-feer-moo-ah.-[hipɔtɛza-u-kɔnfirmua]"
+      },
+      {
+        "id": "4215c23b-eb7a-4d1a-b887-e0fd9d520530",
+        "stress_pattern": "kur-koy fah-lyeh puhr shyeh-teh-SEE-meen.",
+        "pronunciation_guide": "kur-koy-fah-lyeh-puhr-shyeh-teh-see-meen."
+      },
+      {
+        "id": "42cf4f52-17f9-48eb-82b9-bbf6b587e08c",
+        "stress_pattern": "leh tuh dis-koo-toy-meh pur pah-so-yat eh ket-ee stoo-DEE-mee.",
+        "pronunciation_guide": "leh-tuh-dis-koo-toy-meh-pur-pah-so-yat-eh-ket-ee-stoo-dee-mee."
+      },
+      {
+        "id": "449d29fe-4799-4dee-b844-967c8790e744",
+        "stress_pattern": "ah moon-desh meh shp-yeh-goo kuh-tuh meh fya-leh mah tuh thye-SH-tah?",
+        "pronunciation_guide": "ah-moon-desh-meh-shp-yeh-goo-kuh-tuh-meh-fya-leh-mah-tuh-thye-sh-tah?"
+      },
+      {
+        "id": "44df143c-ab68-4ab8-8ef9-8ae421065238",
+        "stress_pattern": "koo-fee-zee-meht eh stoo-dee-meet doo-heht tuh prah-noh-hen nuh per-FOON-deem. [kufizimɛt ɛ studimit duhɛt tə pranɔhɛn nə pərfundim]",
+        "pronunciation_guide": "koo-fee-zee-meht-eh-stoo-dee-meet-doo-heht-tuh-prah-noh-hen-nuh-per-foon-deem.-[kufizimɛt-ɛ-studimit-duhɛt-tə-pranɔhɛn-nə-pərfundim]"
+      },
+      {
+        "id": "472d6105-d7f7-48ed-af9b-8991468d7437",
+        "stress_pattern": "dee-skoo-toh eem-plee-kee-meht eh gyeh-TYEH-veh",
+        "pronunciation_guide": "dee-skoo-toh-eem-plee-kee-meht-eh-gyeh-tyeh-veh"
+      },
+      {
+        "id": "49b2fd7d-a031-4bec-83e4-4f0bfcf7397d",
+        "stress_pattern": "ah moond tuh mah shpye-goh-NEE MUH MEER-uh? [a mund tə ma ʃpjɛˈgɔni mə ˈmiːrə]",
+        "pronunciation_guide": "ah-moond-tuh-mah-shpye-goh-nee-muh-meer-uh?-[a-mund-tə-ma-ʃpjɛˈgɔni-mə-ˈmiːrə]"
+      },
+      {
+        "id": "4b132025-99e1-43e7-8d44-7eb1b177cf6c",
+        "stress_pattern": "koh-mee-teh-tee reh-koh-man-doy ree-shee-kee-meen eh poh-lee-TEE-kës. [kɔmitɛti rɛkɔmandɔj riʃikimin ɛ pɔlitikəs]",
+        "pronunciation_guide": "koh-mee-teh-tee-reh-koh-man-doy-ree-shee-kee-meen-eh-poh-lee-tee-kës.-[kɔmitɛti-rɛkɔmandɔj-riʃikimin-ɛ-pɔlitikəs]"
+      },
+      {
+        "id": "4b94c690-0709-40c2-9679-7a708fdf82fd",
+        "stress_pattern": "hai-deh tuh tah-koh-eh-mee pur meh dee-skoo-too deh-tai-et eh pro-YEK-tit.",
+        "pronunciation_guide": "hai-deh-tuh-tah-koh-eh-mee-pur-meh-dee-skoo-too-deh-tai-et-eh-pro-yek-tit."
+      },
+      {
+        "id": "4bf70344-bf3f-46b0-acdb-52f00435a854",
+        "stress_pattern": "PRANDAJ [ˈPRANDAJ]",
+        "pronunciation_guide": "prandaj-[ˈprandaj]"
+      },
+      {
+        "id": "50e8a391-1a2f-41b2-bcda-5a95b9c552dc",
+        "stress_pattern": "seen-teh-tee-zee-mee ee teh-oh-ree-veh mor-fo-loh-GJEE-keh",
+        "pronunciation_guide": "seen-teh-tee-zee-mee-ee-teh-oh-ree-veh-mor-fo-loh-gjee-keh"
+      },
+      {
+        "id": "55c7fffb-1990-405c-9d45-4618703bb8d5",
+        "stress_pattern": "hai-deh tuh flah-seem puhr pro-YEHK-teen.",
+        "pronunciation_guide": "hai-deh-tuh-flah-seem-puhr-pro-yehk-teen."
+      },
+      {
+        "id": "56333401-0541-47f6-b54d-4b8707d677b6",
+        "stress_pattern": "REFLEKTO [ɾƐFLƐKˈTO] MBI [MBI] IMPLIKIMET [IMPLIˈKIMƐT]",
+        "pronunciation_guide": "reflekto-[ɾɛflɛkˈto]-mbi-[mbi]-implikimet-[impliˈkimɛt]"
+      },
+      {
+        "id": "59125ed8-ac68-4aa9-8a5f-b5cd107d1151",
+        "stress_pattern": "nuh-se hi-po-teh-za esh-teh e sak-teh, eks-pe-ri-men-ti do te keh-TEH SU-kes.",
+        "pronunciation_guide": "nuh-se-hi-po-teh-za-esh-teh-e-sak-teh-eks-pe-ri-men-ti-do-te-keh-teh-su-kes."
+      },
+      {
+        "id": "5924e378-8181-4a3d-9f3c-86c61a0a8e01",
+        "stress_pattern": "ah moon-desh meh shpye-GOO K'TUH KON-sept mah shoom? [a mundɛʃ mɛ ʃpjɛɡu kətə kɔnˈsɛpt ma ʃum]",
+        "pronunciation_guide": "ah-moon-desh-meh-shpye-goo-k'tuh-kon-sept-mah-shoom?-[a-mundɛʃ-mɛ-ʃpjɛɡu-kətə-kɔnˈsɛpt-ma-ʃum]"
+      },
+      {
+        "id": "59684da5-e6ff-4d68-90df-0b7bc185e654",
+        "stress_pattern": "koo uh-sht bee-blee-oh-TEH-kah?",
+        "pronunciation_guide": "koo-uh-sht-bee-blee-oh-teh-kah?"
+      },
+      {
+        "id": "5a0534fc-4829-4435-9a77-e1eaef9d50cd",
+        "stress_pattern": "VLERËSO [VLƐˈɾƏSO] FUQINË [FUˈʧINË] E ARGUMENTIT [AɾGUˈMƐNTIT]",
+        "pronunciation_guide": "vlerëso-[vlɛˈɾəso]-fuqinë-[fuˈʧinë]-e-argumentit-[aɾguˈmɛntit]"
+      },
+      {
+        "id": "5b95581c-7c72-4fc8-98ab-5078d173fa2d",
+        "stress_pattern": "tuh loo-tehm, purm-blehth pee-kaht kroo-yeh-SOH-reh. [tə lutɛm, pərmbled pikat kryɛsɔrɛ]",
+        "pronunciation_guide": "tuh-loo-tehm-purm-blehth-pee-kaht-kroo-yeh-soh-reh.-[tə-lutɛm-pərmbled-pikat-kryɛsɔrɛ]"
+      },
+      {
+        "id": "5c285512-04a7-4b74-bcba-af3ef074b063",
+        "stress_pattern": "fohl ngah-DAHL, TUH LOO-tem.",
+        "pronunciation_guide": "fohl-ngah-dahl-tuh-loo-tem."
+      },
+      {
+        "id": "5cd090e9-c447-43cc-91bb-78cfd4139e1e",
+        "stress_pattern": "see lee-dheht kyoh meh hoo-loom-tee-meht eh muh-PAR-shmeh? [si lidhɛt kjɔ mɛ hulumtimet ɛ məparʃmə]",
+        "pronunciation_guide": "see-lee-dheht-kyoh-meh-hoo-loom-tee-meht-eh-muh-par-shmeh?-[si-lidhɛt-kjɔ-mɛ-hulumtimet-ɛ-məparʃmə]"
+      },
+      {
+        "id": "5f9efcd8-147c-43e3-9cfc-f42cf5b79640",
+        "stress_pattern": "reh-flek-toh mbi proh-ches-in tond të më-SI-mit",
+        "pronunciation_guide": "reh-flek-toh-mbi-proh-ches-in-tond-të-më-si-mit"
+      },
+      {
+        "id": "616c0074-a99d-4839-8701-8b1a581a394d",
+        "stress_pattern": "PËR SHEMBUL [PƏR ˈƩƐMBUL]",
+        "pronunciation_guide": "për-shembull-[pər-ˈʃɛmbul]"
+      },
+      {
+        "id": "6235059f-f427-4d4c-822a-7075d4d453bb",
+        "stress_pattern": "uh-sht eh ruhn-deh-see-shmeh meh ven-doh-seh chuh-lee-meh meh-see-MOH-reh.",
+        "pronunciation_guide": "uh-sht-eh-ruhn-deh-see-shmeh-meh-ven-doh-seh-chuh-lee-meh-meh-see-moh-reh."
+      },
+      {
+        "id": "624606e1-2583-4569-851e-b872484729c5",
+        "stress_pattern": "për-koon-dër sfee-dah-veh, pro-yek-tee oo për-foon-doo-AH MEH SOO-kes. [pərkundər sfidave prɔjɛkti u pərfundua mɛ sukses]",
+        "pronunciation_guide": "për-koon-dër-sfee-dah-veh-pro-yek-tee-oo-për-foon-doo-ah-meh-soo-kes.-[pərkundər-sfidave-prɔjɛkti-u-pərfundua-mɛ-sukses]"
+      },
+      {
+        "id": "6277a0ee-0d68-4a01-83b5-c91c4ea46fa2",
+        "stress_pattern": "për shem-bool, kon-see-deh-ROH RAH-steen eh...",
+        "pronunciation_guide": "për-shem-bool-kon-see-deh-roh-rah-steen-eh..."
+      },
+      {
+        "id": "633dcfe5-f8a1-4c7d-b66c-b046a649fe7c",
+        "stress_pattern": "eh-deh pseh meh-toh-doh-loh-jee-ah ees-tee eh sahk-tuh, reh-zul-tah-tet ee-sheen tuh pah-CHAR-tah.",
+        "pronunciation_guide": "eh-deh-pseh-meh-toh-doh-loh-jee-ah-ees-tee-eh-sahk-tuh-reh-zul-tah-tet-ee-sheen-tuh-pah-char-tah."
+      },
+      {
+        "id": "63bfb8b2-210f-4651-888b-29d5d9d76549",
+        "stress_pattern": "NOOK POH KOOP-toy.",
+        "pronunciation_guide": "nook-poh-koop-toy."
+      },
+      {
+        "id": "6444f4f9-91f4-4c8f-b5b6-a2d6b7248f09",
+        "stress_pattern": "KRITIKO [KɾITIˈKO] KONSISTENCËN [KƆNSISˈTƐNTSƏN] LOGJIKE [LƆˈʤIKƐ]",
+        "pronunciation_guide": "kritiko-[kɾitiˈko]-konsistencën-[kɔnsisˈtɛntsən]-logjike-[lɔˈʤikɛ]"
+      },
+      {
+        "id": "647acdb9-9c4c-4b47-af81-65ee7f9d32b3",
+        "stress_pattern": "per-mblehth teks-teen meh fya-LET EH TOO-ah",
+        "pronunciation_guide": "per-mblehth-teks-teen-meh-fya-let-eh-too-ah"
+      },
+      {
+        "id": "655891fc-ad45-4185-8d8d-fa8ae3833c8e",
+        "stress_pattern": "ah moon-desh meh eh skah-roo peek-UHN TAHN-deh?",
+        "pronunciation_guide": "ah-moon-desh-meh-eh-skah-roo-peek-uhn-tahn-deh?"
+      },
+      {
+        "id": "656d6313-5a79-4da3-8214-5da198109a83",
+        "stress_pattern": "yoo loo-tem kon-feer-moh-nee pyeh-seh-mar-RYEN TOO-eye.",
+        "pronunciation_guide": "yoo-loo-tem-kon-feer-moh-nee-pyeh-seh-mar-ryen-too-eye."
+      },
+      {
+        "id": "6581eea8-1e46-4644-8194-e02f5e22dacf",
+        "stress_pattern": "seh-pseh te dhe-nat ish-in te pa-mya-f-tu-esh-meh, nuk mun-dem te n-jer-rim per-FUN-dim.",
+        "pronunciation_guide": "seh-pseh-te-dhe-nat-ish-in-te-pa-mya-f-tu-esh-meh-nuk-mun-dem-te-n-jer-rim-per-fun-dim."
+      },
+      {
+        "id": "67bd6525-f582-4117-a316-0125e501a4d5",
+        "stress_pattern": "yoo loo-tem, preh-zan-TOH-hoo.",
+        "pronunciation_guide": "yoo-loo-tem-preh-zan-toh-hoo."
+      },
+      {
+        "id": "68e846fc-0cab-4cc1-af81-89dd57d595f0",
+        "stress_pattern": "suh pah-ree, esht meh rën-dee-SEE MEH VUH-rayt chuh...",
+        "pronunciation_guide": "suh-pah-ree-esht-meh-rën-dee-see-meh-vuh-rayt-chuh..."
+      },
+      {
+        "id": "69e0df06-ddd9-4ada-95f3-1c012da1dd8f",
+        "stress_pattern": "sa-po te pu-bli-ko-hen re-zu-lta-tet, do ti a-na-li-ZO-jme.",
+        "pronunciation_guide": "sa-po-te-pu-bli-ko-hen-re-zu-lta-tet-do-ti-a-na-li-zo-jme."
+      },
+      {
+        "id": "6a20247b-cf63-4357-a480-26198ee28a02",
+        "stress_pattern": "NË PËRFUNDIM [NƏ PƏRFUNˈDIM]",
+        "pronunciation_guide": "në-përfundim-[nə-pərfunˈdim]"
+      },
+      {
+        "id": "6b0f8f2c-11e4-4ccb-9aa1-f2ba0e5de1a0",
+        "stress_pattern": "fah-leh-meen-DEH-reet shoom!",
+        "pronunciation_guide": "fah-leh-meen-deh-reet-shoom!"
+      },
+      {
+        "id": "6cc236e5-2ccf-489b-98fe-8676ab3e2c42",
+        "stress_pattern": "koop-tee-mee ee noo-ahn-tsah-veh kool-too-roh-reh esht thehl-beh-sor per koh-moo-nee-keem eh-FEK-teev. [kuptimi i nuantsavɛ kulturore ɛʃtə θɛlbəsɔr pər kɔmunikim ɛfɛktiv]",
+        "pronunciation_guide": "koop-tee-mee-ee-noo-ahn-tsah-veh-kool-too-roh-reh-esht-thehl-beh-sor-per-koh-moo-nee-keem-eh-fek-teev.-[kuptimi-i-nuantsavɛ-kulturore-ɛʃtə-θɛlbəsɔr-pər-kɔmunikim-ɛfɛktiv]"
+      },
+      {
+        "id": "6f424399-1f70-4846-a457-21bab1b4b21e",
+        "stress_pattern": "koop-tee-mee ee ndroo-shee-meh-veh mor-foh-foh-neh-MEE-keh",
+        "pronunciation_guide": "koop-tee-mee-ee-ndroo-shee-meh-veh-mor-foh-foh-neh-mee-keh"
+      },
+      {
+        "id": "715f381d-82ac-4b3a-ae3a-e83dc02eaa06",
+        "stress_pattern": "kyoh teh-oh-ree sfee-dohn beh-see-meht ehk-zees-too-EH-seh. [kjɔ tɛɔri sfidɔn bɛsimɛt ɛɡzistuɛsɛ]",
+        "pronunciation_guide": "kyoh-teh-oh-ree-sfee-dohn-beh-see-meht-ehk-zees-too-eh-seh.-[kjɔ-tɛɔri-sfidɔn-bɛsimɛt-ɛɡzistuɛsɛ]"
+      },
+      {
+        "id": "727e0af5-3492-448c-a202-67016efd8d66",
+        "stress_pattern": "vleh-reh-soh beh-soo-ehsh-meh-ree-nee eh boo-ree-MEH-veh",
+        "pronunciation_guide": "vleh-reh-soh-beh-soo-ehsh-meh-ree-nee-eh-boo-ree-meh-veh"
+      },
+      {
+        "id": "7345e577-a660-4b52-82ae-77d0fc43a6fe",
+        "stress_pattern": "SEE EH KEE EM-neen?",
+        "pronunciation_guide": "see-eh-kee-em-neen?"
+      },
+      {
+        "id": "73b3102a-dbc0-4911-b0f6-e58d21521943",
+        "stress_pattern": "nga ah-nah tyeh-TUR, MOOND TUH THEH-mee seh... [ŋa ana ˈtjɛtər, mund tə ˈθɛmi sɛ]",
+        "pronunciation_guide": "nga-ah-nah-tyeh-tur-moond-tuh-theh-mee-seh...-[ŋa-ana-ˈtjɛtər-mund-tə-ˈθɛmi-sɛ]"
+      },
+      {
+        "id": "7430188a-8fe1-4595-91bd-380371ae6cb0",
+        "stress_pattern": "hai-deh neh-SUHR NUH ZOO-ruh.",
+        "pronunciation_guide": "hai-deh-neh-suhr-nuh-zoo-ruh."
+      },
+      {
+        "id": "76d00df7-21c2-4592-807a-e3894ad2d61e",
+        "stress_pattern": "ah moon-desh meh muh n-dee-MOO MEH KOOP-too kuht tehkst?",
+        "pronunciation_guide": "ah-moon-desh-meh-muh-n-dee-moo-meh-koop-too-kuht-tehkst?"
+      },
+      {
+        "id": "799f9f0a-8456-41d3-ad4c-48d1616321fc",
+        "stress_pattern": "ah moond tuh muh yep-nee muh shoom een-for-MAH-tsyon? [a mund tə mə ˈjɛpni mə ʃum infɔrmaˈtsjon]",
+        "pronunciation_guide": "ah-moond-tuh-muh-yep-nee-muh-shoom-een-for-mah-tsyon?-[a-mund-tə-mə-ˈjɛpni-mə-ʃum-infɔrmaˈtsjon]"
+      },
+      {
+        "id": "7d700ac1-6b8b-4fdc-a5a2-458000e63c01",
+        "stress_pattern": "koo esht beeb-lee-oh-TEH-kah? [ku ɛʃt biblioˈtɛka]",
+        "pronunciation_guide": "koo-esht-beeb-lee-oh-teh-kah?-[ku-ɛʃt-biblioˈtɛka]"
+      },
+      {
+        "id": "7ed8890b-413e-4fd3-b85c-b655250c74b4",
+        "stress_pattern": "ah moon-desh meh thah-NUH NYUH SHEM-bool?",
+        "pronunciation_guide": "ah-moon-desh-meh-thah-nuh-nyuh-shem-bool?"
+      },
+      {
+        "id": "808c91e4-dd3a-4ae5-b7a0-fff82267d71c",
+        "stress_pattern": "nuh-seh hee-po-teh-zah esh-teh eh sahk-teh, eks-peh-ree-men-tee doh tah kon-feer-MOHY AH-teh.",
+        "pronunciation_guide": "nuh-seh-hee-po-teh-zah-esh-teh-eh-sahk-teh-eks-peh-ree-men-tee-doh-tah-kon-feer-mohy-ah-teh."
+      },
+      {
+        "id": "80c14161-03e9-4d2f-a3b4-e0dbc605c6ad",
+        "stress_pattern": "sah uh-SHT OH-rah?",
+        "pronunciation_guide": "sah-uh-sht-oh-rah?"
+      },
+      {
+        "id": "84239ca6-3877-475a-8ba4-c3b05e8849cc",
+        "stress_pattern": "POH MUH-soy shkip.",
+        "pronunciation_guide": "poh-muh-soy-shkip."
+      },
+      {
+        "id": "845cfeb2-ffda-4641-b64f-341a50146f82",
+        "stress_pattern": "për shkahk seh tuh dhuh-nat ee-sheen tuh pah-char-tah, neh-voh-yee-teht kehr-keem ee muh-TEH-yshuhm.",
+        "pronunciation_guide": "për-shkahk-seh-tuh-dhuh-nat-ee-sheen-tuh-pah-char-tah-neh-voh-yee-teht-kehr-keem-ee-muh-teh-yshuhm."
+      },
+      {
+        "id": "84fe880b-991b-400b-a3df-8c5b2d28d667",
+        "stress_pattern": "hey, ah moon-desh meh mee choo shuh-NEE-met?",
+        "pronunciation_guide": "hey-ah-moon-desh-meh-mee-choo-shuh-nee-met?"
+      },
+      {
+        "id": "85ca1c7d-6870-4926-b84f-6d04b693ae22",
+        "stress_pattern": "për sah koh chuh vah-ree-ahb-lat kon-troh-loh-hen, eks-peh-ree-mee-nee doo-heht tuh yeh-TEH EE VLEHF-shuhm.",
+        "pronunciation_guide": "për-sah-koh-chuh-vah-ree-ahb-lat-kon-troh-loh-hen-eks-peh-ree-mee-nee-doo-heht-tuh-yeh-teh-ee-vlehf-shuhm."
+      },
+      {
+        "id": "874f8e3d-60ca-4281-ae94-ce526e757fdb",
+        "stress_pattern": "yoo loo-tehm, muh nyof-toh-nee nuh-seh keh-nee ndon-YUH PYOO-tyeh.",
+        "pronunciation_guide": "yoo-loo-tehm-muh-nyof-toh-nee-nuh-seh-keh-nee-ndon-yuh-pyoo-tyeh."
+      },
+      {
+        "id": "88c10b97-34f0-4643-af3c-07bf056e3bd8",
+        "stress_pattern": "tsee-lah meh-toh-doh-loh-jee oo pur-DOR NUH K'TUH STOO-deem? [tsila mɛtɔdɔlɔɟi u pərdɔr nə kətə studim]",
+        "pronunciation_guide": "tsee-lah-meh-toh-doh-loh-jee-oo-pur-dor-nuh-k'tuh-stoo-deem?-[tsila-mɛtɔdɔlɔɟi-u-pərdɔr-nə-kətə-studim]"
+      },
+      {
+        "id": "8b019bbd-fd0d-4d13-a49f-d46f999c9433",
+        "stress_pattern": "ee-den-tee-fee-kee-mee ee moh-deh-leh-veh een-flek-see-oh-NAH-leh",
+        "pronunciation_guide": "ee-den-tee-fee-kee-mee-ee-moh-deh-leh-veh-een-flek-see-oh-nah-leh"
+      },
+      {
+        "id": "8eb0d87a-a8d7-46f2-b67a-bac4ffa4d8e7",
+        "stress_pattern": "krah-hah-see-mee ee see-stem-eh-veh mor-fo-loh-GJEE-keh",
+        "pronunciation_guide": "krah-hah-see-mee-ee-see-stem-eh-veh-mor-fo-loh-gjee-keh"
+      },
+      {
+        "id": "94c59b82-63a7-43e1-bdbe-010760abac3a",
+        "stress_pattern": "reh-zool-tah-tet ee-sheen tuh pah-PREET-shmeh [rɛzultatɛt iʃin tə papritʃmə]",
+        "pronunciation_guide": "reh-zool-tah-tet-ee-sheen-tuh-pah-preet-shmeh-[rɛzultatɛt-iʃin-tə-papritʃmə]"
+      },
+      {
+        "id": "9607b09f-349f-485c-99e6-992294502b37",
+        "stress_pattern": "vleh-reh-see-mee ee kom-plek-see-teh-teet mor-fo-LOH-gjeek",
+        "pronunciation_guide": "vleh-reh-see-mee-ee-kom-plek-see-teh-teet-mor-fo-loh-gjeek"
+      },
+      {
+        "id": "96b8d1c7-1c89-4b02-8e5a-80cbdb9d685b",
+        "stress_pattern": "pur shem-BOOL, MOOND TUH THEH-mee seh... [pər ˈʃɛmbul, mund tə ˈθɛmi sɛ]",
+        "pronunciation_guide": "pur-shem-bool-moond-tuh-theh-mee-seh...-[pər-ˈʃɛmbul-mund-tə-ˈθɛmi-sɛ]"
+      },
+      {
+        "id": "970d87da-66b1-4cb6-9239-250509e1feb0",
+        "stress_pattern": "SEE THOO-het kyoh nuh shkip?",
+        "pronunciation_guide": "see-thoo-het-kyoh-nuh-shkip?"
+      },
+      {
+        "id": "97217b7f-9cfc-447d-968e-1c448b25d430",
+        "stress_pattern": "nga ah-nah tee-eh-tehr, esht eh moon-DSH-meh chuh...",
+        "pronunciation_guide": "nga-ah-nah-tee-eh-tehr-esht-eh-moon-dsh-meh-chuh..."
+      },
+      {
+        "id": "98b00824-7f81-40c3-817c-df7dd00eaca6",
+        "stress_pattern": "VLERËSO [VLƐˈɾƏSO] RËNDËSINË [ɾƏNˈDƏSINË] E ARGUMENTIT [AɾGUˈMƐNTIT]",
+        "pronunciation_guide": "vlerëso-[vlɛˈɾəso]-rëndësinë-[ɾənˈdəsinë]-e-argumentit-[aɾguˈmɛntit]"
+      },
+      {
+        "id": "9ba7dbc7-d70e-4ffa-bf97-6326fc1493fe",
+        "stress_pattern": "reh-flek-toy mbee pur-voy-aht eh mee-ah teh meh-SEE-meet.",
+        "pronunciation_guide": "reh-flek-toy-mbee-pur-voy-aht-eh-mee-ah-teh-meh-see-meet."
+      },
+      {
+        "id": "9c6710ed-3df2-4542-837e-978066d6543c",
+        "stress_pattern": "i-den-ti-fi-ko for-tsat dhe doh-be-SI-të tua",
+        "pronunciation_guide": "i-den-ti-fi-ko-for-tsat-dhe-doh-be-si-të-tua"
+      },
+      {
+        "id": "9e44bc97-4966-4865-8967-74cbdf33813a",
+        "stress_pattern": "PËRVEÇ [PƏRˈVƐTƩ] KËSAJ [KƏˈSAJ]",
+        "pronunciation_guide": "përveç-[pərˈvɛtʃ]-kësaj-[kəˈsaj]"
+      },
+      {
+        "id": "9f75b659-ba7b-4cac-88dd-f6607a6c99c3",
+        "stress_pattern": "nuh-seh vah-ree-ah-blat kon-troh-loh-hen, reh-zoo-lah-tet doh të yeh-neh të beh-soo-ESH-meh. [nəsɛ variablat kɔntrɔlɔhɛn rɛzultatɛt dɔ tə jɛnə tə bɛsuɛʃmɛ]",
+        "pronunciation_guide": "nuh-seh-vah-ree-ah-blat-kon-troh-loh-hen-reh-zoo-lah-tet-doh-të-yeh-neh-të-beh-soo-esh-meh.-[nəsɛ-variablat-kɔntrɔllɔhɛn-rɛzultatɛt-dɔ-tə-jɛnə-tə-bɛsuɛʃmɛ]"
+      },
+      {
+        "id": "a1b55019-7ce0-4ded-88bd-fb037c800532",
+        "stress_pattern": "ah moon-desh meh dah-neh tuh dhen-at pur rah-POR-tin?",
+        "pronunciation_guide": "ah-moon-desh-meh-dah-neh-tuh-dhen-at-pur-rah-por-tin?"
+      },
+      {
+        "id": "a2fc46bd-7882-49b5-bc91-3075eb7d9d62",
+        "stress_pattern": "leh tuh ree-shee-koy-meh pee-kaht kroo-yeh-SOH-reh.",
+        "pronunciation_guide": "leh-tuh-ree-shee-koy-meh-pee-kaht-kroo-yeh-soh-reh."
+      },
+      {
+        "id": "a3f43c09-e323-4bd4-8068-a24661ec0c5e",
+        "stress_pattern": "eh-deh pseh reh-zul-tah-tet ee-sheen tuh pah-prih-too-rah, stoo-dee-mee ees-TEE UH NYË SOO-ksehss.",
+        "pronunciation_guide": "eh-deh-pseh-reh-zul-tah-tet-ee-sheen-tuh-pah-prih-too-rah-stoo-dee-mee-ees-tee-uh-nyë-soo-ksehss."
+      },
+      {
+        "id": "a41621a9-1a09-4cf6-a613-d8d588e910a9",
+        "stress_pattern": "chah men-dohn puhr kuh-TUH CHESH-tyeh?",
+        "pronunciation_guide": "chah-men-dohn-puhr-kuh-tuh-chesh-tyeh?"
+      },
+      {
+        "id": "a4caf804-59c3-4ba8-b7e3-ddded5b4286c",
+        "stress_pattern": "for-moo-loh nyuh hee-po-teh-zuh bah-zoo-AR NUH PROH-vaht",
+        "pronunciation_guide": "for-moo-loh-nyuh-hee-po-teh-zuh-bah-zoo-ar-nuh-proh-vaht"
+      },
+      {
+        "id": "a4e003cf-9505-4b1a-b9b8-5e29cfd56d36",
+        "stress_pattern": "për-vech nuh-seh tuh dhuh-nat vehr-ee-fee-koh-hen, puhr-foon-dee-meht doh tuh mbay-tehn tuh pah-see-GOOR-tah.",
+        "pronunciation_guide": "për-vech-nuh-seh-tuh-dhuh-nat-vehr-ee-fee-koh-hen-puhr-foon-dee-meht-doh-tuh-mbay-tehn-tuh-pah-see-goor-tah."
+      },
+      {
+        "id": "a55e4040-cfcc-46e9-93ce-a5e80c1fe174",
+        "stress_pattern": "oo-nuh eh n-dyek proh-greh-sin teem reh-GOO-leesht.",
+        "pronunciation_guide": "oo-nuh-eh-n-dyek-proh-greh-sin-teem-rreh-goo-leesht."
+      },
+      {
+        "id": "a6c3db6c-9102-4f87-8c3a-f915ac77f3a3",
+        "stress_pattern": "dees-koo-tee-mee ee deh-ree-vee-meh-veh mor-fo-loh-GJEE-ke",
+        "pronunciation_guide": "dees-koo-tee-mee-ee-deh-ree-vee-meh-veh-mor-fo-loh-gjee-ke"
+      },
+      {
+        "id": "a6d3bece-5568-4ebf-ae44-5bae76c3f4a6",
+        "stress_pattern": "pur-doh-ree reh-ah-gee-meht pur meh pur-mee-RUH-soo.",
+        "pronunciation_guide": "pur-doh-ree-reh-ah-gee-meht-pur-meh-pur-mee-ruh-soo."
+      },
+      {
+        "id": "ab348c97-ec9e-4564-bce9-f72b73f14b73",
+        "stress_pattern": "ah moon-DESH MEH MUH NDEE-moo? [a mundɛʃ mɛ mə ndiˈhmu]",
+        "pronunciation_guide": "ah-moon-desh-meh-muh-ndee-moo?-[a-mundɛʃ-mɛ-mə-ndiˈhmu]"
+      },
+      {
+        "id": "acc8cde2-d915-49b7-8b26-97f8d2477753",
+        "stress_pattern": "vle-rë-so stra-teh-gji-të e më-SI-mit tond",
+        "pronunciation_guide": "vle-rë-so-stra-teh-gji-të-e-më-si-mit-tond"
+      },
+      {
+        "id": "ad9def99-9a4a-457d-8420-21b54ca0b6b1",
+        "stress_pattern": "ah moon-desh meh shpyay-goo kuh-TUH KON-sept?",
+        "pronunciation_guide": "ah-moon-desh-meh-shpyay-goo-kuh-tuh-kon-sept?"
+      },
+      {
+        "id": "ae7bb01e-fdfa-47c7-9f9b-117587fd7d69",
+        "stress_pattern": "meh-yee-thah-tuh, esht kroo-see-ah-LEH MEH KOOP-too chuh...",
+        "pronunciation_guide": "meh-yee-thah-tuh-esht-kroo-see-ah-leh-meh-koop-too-chuh..."
+      },
+      {
+        "id": "b0c25285-5f1f-4a55-aea1-3d72670d46d0",
+        "stress_pattern": "sah-poh tuh thuh-naht teh veh-ree-fee-koh-hen, rah-por-tee doh teh poo-blee-KOH-het.",
+        "pronunciation_guide": "sah-poh-tuh-thuh-naht-teh-veh-ree-fee-koh-hen-rah-por-tee-doh-teh-poo-blee-koh-het."
+      },
+      {
+        "id": "b214dbcc-0016-4695-9bb6-28a839a57a30",
+        "stress_pattern": "nook pie-TO-hem meh ket mendim [nuk pajˈtohɛm mɛ ˈkɛt mɛnˈdim]",
+        "pronunciation_guide": "nook-pie-to-hem-meh-ket-mendim-[nuk-pajˈtohɛm-mɛ-ˈkɛt-mɛnˈdim]"
+      },
+      {
+        "id": "b56ce2a5-7583-4651-9d45-79257235e9cb",
+        "stress_pattern": "SIT OIT TEE",
+        "pronunciation_guide": "sit-oit-tee"
+      },
+      {
+        "id": "b6e32b6c-250e-4861-bb25-4eb3079e4795",
+        "stress_pattern": "nuh pur-foon-DEEM, MOOND TUH THEH-mee seh... [nə pərfunˈdim, mund tə ˈθɛmi sɛ]",
+        "pronunciation_guide": "nuh-pur-foon-deem-moond-tuh-theh-mee-seh...-[nə-pərfunˈdim-mund-tə-ˈθɛmi-sɛ]"
+      },
+      {
+        "id": "b6ec375b-8139-4d61-b09c-6233b6bde36f",
+        "stress_pattern": "ah moon-desh meh mah dah-nuh rah-por-tin deh-REE NEH-suhr?",
+        "pronunciation_guide": "ah-moon-desh-meh-mah-dah-nuh-rah-por-tin-deh-ree-neh-suhr?"
+      },
+      {
+        "id": "baac3c7d-db52-4fd7-8259-b33d04791563",
+        "stress_pattern": "chuh koor ah-fah-tee oo shty, keh-mee muh shoom koh per teh ree-shee-KOO-ar.",
+        "pronunciation_guide": "chuh-koor-ah-fah-tee-oo-shty-keh-mee-muh-shoom-koh-per-teh-ree-shee-koo-ar."
+      },
+      {
+        "id": "be124d3a-e183-4ffc-9061-18be04d8efef",
+        "stress_pattern": "doo-ah meh thek-soo ket-UH PEEK-uh.",
+        "pronunciation_guide": "doo-ah-meh-thek-soo-ket-uh-peek-uh."
+      },
+      {
+        "id": "be557a76-cfa3-413e-a5f9-f8af87d9317d",
+        "stress_pattern": "kyoh teh-oh-ree esht prah-noo-ar jer-EH-sisht nuh foosh.",
+        "pronunciation_guide": "kyoh-teh-oh-ree-esht-prah-noo-ar-jer-eh-sisht-nuh-foosh."
+      },
+      {
+        "id": "bf2b9d85-d7f0-4ccd-9c9b-5235c1cb9678",
+        "stress_pattern": "per-vech nuh-se mar-rim fon-deh, pro-jek-ti nuk mund te vazh-DO-jeh.",
+        "pronunciation_guide": "per-vech-nuh-se-mar-rim-fon-deh-pro-jek-ti-nuk-mund-te-vazh-do-jeh."
+      },
+      {
+        "id": "c3b049d3-a61a-4686-bebc-9776fa7fab98",
+        "stress_pattern": "ah moon-desh meh thahn mah shoom deh-tah-YEH MBEE KUHTUH TEH-muh?",
+        "pronunciation_guide": "ah-moon-desh-meh-thahn-mah-shoom-deh-tah-yeh-mbee-kuhtuh-teh-muh?"
+      },
+      {
+        "id": "c509fd16-ccb3-4d8e-8028-0e2169d26063",
+        "stress_pattern": "kur-koy fahl-yeh pur shkeh-tuh-SEE-meen.",
+        "pronunciation_guide": "kur-koy-fahl-yeh-pur-shkeh-tuh-see-meen."
+      },
+      {
+        "id": "c52b64bf-3778-44cf-a7a1-d069c95233ae",
+        "stress_pattern": "për-vetch kuh-sah-ee, doo-het meh kon-see-DEH-roo...",
+        "pronunciation_guide": "për-vetch-kuh-sah-ee-doo-het-meh-kon-see-deh-roo..."
+      },
+      {
+        "id": "c6d88c16-470f-4c59-b5c8-3aa2027c9741",
+        "stress_pattern": "fah-leh-min-deh-reet per n-dee-MEN TOO-eye.",
+        "pronunciation_guide": "fah-leh-min-deh-reet-per-n-dee-men-too-eye."
+      },
+      {
+        "id": "ca402026-9eb6-4a85-b3f5-996a93321c83",
+        "stress_pattern": "ah moon-desh meh dah-nuh mah shoom deh-TAH-yeh?",
+        "pronunciation_guide": "ah-moon-desh-meh-dah-nuh-mah-shoom-deh-tah-yeh?"
+      },
+      {
+        "id": "cbef1acc-b3a2-4d78-bccf-21e621d3f325",
+        "stress_pattern": "mo-ni-to-ro pro-GRE-sin tond",
+        "pronunciation_guide": "mo-ni-to-ro-pro-gre-sin-tond"
+      },
+      {
+        "id": "cefffa2f-feea-4673-a857-6bbbb90584c3",
+        "stress_pattern": "TOONG, CHOOSH YEH?",
+        "pronunciation_guide": "toong-choosh-yeh?"
+      },
+      {
+        "id": "cf17956e-086d-4d95-beaa-f0af08253e07",
+        "stress_pattern": "ah-nah-lee-zee-mee ee stru-ktu-rah-veh mor-fo-loh-gjee-ke kom-PLEK-se",
+        "pronunciation_guide": "ah-nah-lee-zee-mee-ee-stru-ktu-rah-veh-mor-fo-loh-gjee-ke-kom-plek-se"
+      },
+      {
+        "id": "cf84c687-cf0e-4b4b-abd3-a1f8eadc753e",
+        "stress_pattern": "nook eh koop-toy kuh-TUH KON-sept.",
+        "pronunciation_guide": "nook-eh-koop-toy-kuh-tuh-kon-sept."
+      },
+      {
+        "id": "d0ba901d-d19f-4d71-a0f9-894c9dbb1951",
+        "stress_pattern": "ANALIZO [ANAˈLIZO] PROVAT [ˈPɾƆVAT] E DHËNA [Ɛ ˈÐƏNƏ]",
+        "pronunciation_guide": "analizo-[anaˈlizo]-provat-[ˈpɾɔvat]-e-dhëna-[ɛ-ˈðənə]"
+      },
+      {
+        "id": "d12025c9-08a9-4d78-99f2-7e2a8b71a05d",
+        "stress_pattern": "ah moon-DESH MEH M'NEE-moo?",
+        "pronunciation_guide": "ah-moon-desh-meh-m'nee-moo?"
+      },
+      {
+        "id": "d3083474-8a2f-4851-88e6-3db7bf598067",
+        "stress_pattern": "e-deh pseh hu-lum-ti-mi ish-te i plo-teh, re-zu-lta-tet ish-in te pa-CHAR-ta.",
+        "pronunciation_guide": "e-deh-pseh-hu-lum-ti-mi-ish-te-i-plo-teh-re-zu-lta-tet-ish-in-te-pa-char-ta."
+      },
+      {
+        "id": "d5533301-5ae0-4a85-ab68-d520c7cdc50f",
+        "stress_pattern": "chuh koor ah-fah-tee poh ah-froh-heht, doo-heht tuh puhr-foon-doh-yuhm rah-POHR-teen.",
+        "pronunciation_guide": "chuh-koor-ah-fah-tee-poh-ah-froh-heht-doo-heht-tuh-puhr-foon-doh-yuhm-rah-pohr-teen."
+      },
+      {
+        "id": "d6f08b91-dd92-470f-9eae-881723b6a4fb",
+        "stress_pattern": "nduhr-sah teh-oh-ree-ah esh-tuh jeh-rehs-sisht eh prah-noo-ar, dee-sah stoo-dee-oo-ehs nook pah-YOH-hen.",
+        "pronunciation_guide": "nduhr-sah-teh-oh-ree-ah-esh-tuh-jeh-rehs-sisht-eh-prah-noo-ar-dee-sah-stoo-dee-oo-ehs-nook-pah-yoh-hen."
+      },
+      {
+        "id": "d757a6c4-2e9f-4467-ba1e-bfa2b710120d",
+        "stress_pattern": "ah moond teh muh n-dee-MOSH MEH KET-uh?",
+        "pronunciation_guide": "ah-moond-teh-muh-n-dee-mosh-meh-ket-uh?"
+      },
+      {
+        "id": "d84c9dfe-9cf5-483c-babe-7b04f29faba1",
+        "stress_pattern": "zhvi-lo një plan më-SI-mi",
+        "pronunciation_guide": "zhvi-llo-një-plan-më-si-mi"
+      },
+      {
+        "id": "d8884755-80d5-46df-bcd4-1fdc2ab5121e",
+        "stress_pattern": "e-deh pseh meh-toh-doh-loh-jee-ah eesh-teh eh chən-droo-esh-meh, jet-yet ee-sheen teh pah-pree-TOO-rah.",
+        "pronunciation_guide": "e-deh-pseh-meh-toh-doh-loh-jee-ah-eesh-teh-eh-chən-droo-esh-meh-jet-yet-ee-sheen-teh-pah-pree-too-rah."
+      },
+      {
+        "id": "db0b2177-adff-4909-90c6-d21148afcdb5",
+        "stress_pattern": "kuh-roi fahl-yeh pur kech-koop-TEE-meen.",
+        "pronunciation_guide": "kuh-roi-fahl-yeh-pur-kech-koop-tee-meen."
+      },
+      {
+        "id": "dd955f9f-0f68-4b02-bbaf-09024589280f",
+        "stress_pattern": "tsee-laht yah-nuh eem-plee-kee-meht eh kuh-teey stoo-DEE-mee? [tsilat janə implikimɛt ɛ kətij studimi]",
+        "pronunciation_guide": "tsee-laht-yah-nuh-eem-plee-kee-meht-eh-kuh-teey-stoo-dee-mee?-[tsilat-janə-implikimɛt-ɛ-kətij-studimi]"
+      },
+      {
+        "id": "de3411b3-1fe5-443f-9e94-129c00db2e4a",
+        "stress_pattern": "fah-leh-meen-DEH-reet puhr nee-the-MEN TOO-eye.",
+        "pronunciation_guide": "fah-leh-meen-deh-reet-puhr-nee-the-men-too-eye."
+      },
+      {
+        "id": "df87b757-00eb-4084-84a4-e6eaf96fecaa",
+        "stress_pattern": "kee-sha dasht nee kah-FEH, TUH LOO-tem. [kiʃa daʃt ɲi kafe, tə lutɛm]",
+        "pronunciation_guide": "kee-sha-dasht-nee-kah-feh-tuh-loo-tem.-[kiʃa-daʃt-ɲi-kafe-tə-lutɛm]"
+      },
+      {
+        "id": "dfc7189d-f3ad-42d2-bd31-bd270917c7db",
+        "stress_pattern": "plah-nee-fee-koy koh-uhn eh stoo-dee-meet nuh muh-nyuh-ruh eh-fek-TEE-veh.",
+        "pronunciation_guide": "plah-nee-fee-koy-koh-uhn-eh-stoo-dee-meet-nuh-muh-nyuh-ruh-eh-fek-tee-veh."
+      },
+      {
+        "id": "e06b1472-26ee-4f00-82c9-83a0fb3e1942",
+        "stress_pattern": "eks-ploh-ree-mee ee proh-duhk-tee-vee-teh-teet mor-fo-LOH-gjeek",
+        "pronunciation_guide": "eks-ploh-ree-mee-ee-proh-duhk-tee-vee-teh-teet-mor-fo-loh-gjeek"
+      },
+      {
+        "id": "e3cb9c3d-5b0a-4bc6-b153-21fbbd865399",
+        "stress_pattern": "een-tehr-preh-toh tuh thuh-nat eh pah-rah-chee-too-RAH NUH GRAH-feek",
+        "pronunciation_guide": "een-tehr-preh-toh-tuh-thuh-nat-eh-pah-rah-chee-too-rah-nuh-grah-feek"
+      },
+      {
+        "id": "e47c5263-99ee-4b78-acea-f4a889256033",
+        "stress_pattern": "see moon-DEM MEH YOO NDEE-hoo sot?",
+        "pronunciation_guide": "see-moon-dem-meh-yoo-ndee-hoo-sot?"
+      },
+      {
+        "id": "e68d602b-866f-4334-be10-c2c917c9f6ad",
+        "stress_pattern": "hi-po-teh-zah oo tes-too-ah doo-keh për-do-roor nyë chah-see të meh-to-dah-veh të për-ZEE-rah. [hipɔtɛza u tɛstua dukɛ pərdɔrur ɲə tʃasjə tə mɛtɔdavə tə pərziɛra]",
+        "pronunciation_guide": "hi-po-teh-zah-oo-tes-too-ah-doo-keh-për-do-roor-nyë-chah-see-të-meh-to-dah-veh-të-për-zee-rah.-[hipɔtɛza-u-tɛstua-dukɛ-pərdɔrur-ɲə-tʃasjə-tə-mɛtɔdavə-tə-pərziɛra]"
+      },
+      {
+        "id": "e6beb05d-8bbe-4756-8f8c-fca1824751fd",
+        "stress_pattern": "për meh teh-PEHR, KYOH TREH-gohn chuh...",
+        "pronunciation_guide": "për-meh-teh-pehr-kyoh-treh-gohn-chuh..."
+      },
+      {
+        "id": "eb2dcfc5-83e0-4edf-b9b5-c7e86b136b90",
+        "stress_pattern": "MER [MƐɾ] PARASYSH [PAɾAˈSYƩ] PERSPEKTIVAT [PƐɾSPƐKˈTIVAT] ALTERNATIVE [ALTƐɾˈNATIVƐ]",
+        "pronunciation_guide": "merr-[mɛɾ]-parasysh-[paɾaˈsyʃ]-perspektivat-[pɛɾspɛkˈtivat]-alternative-[altɛɾˈnativɛ]"
+      },
+      {
+        "id": "eb68b218-0d8b-469e-90fa-b309eac87699",
+        "stress_pattern": "BOH-reh dah",
+        "pronunciation_guide": "boh-reh-dah"
+      },
+      {
+        "id": "ec888165-4802-4958-b2b9-97f89a7e6639",
+        "stress_pattern": "SI REZULTAT [SI RƐZULTAˈT]",
+        "pronunciation_guide": "si-rezultat-[si-rɛzultaˈt]"
+      },
+      {
+        "id": "eca02c6f-f25b-4f1e-b3e8-210aeabff57b",
+        "stress_pattern": "MUH FAHL PUHR AHT!",
+        "pronunciation_guide": "muh-fahl-puhr-aht!"
+      },
+      {
+        "id": "f0244235-3de9-4c3d-839b-f14f246f57d3",
+        "stress_pattern": "shpesh ee ree-shee-koy shuh-nee-teh eh mee-AH MBAHS KLAH-seh.",
+        "pronunciation_guide": "shpesh-ee-ree-shee-koy-shuh-nee-teh-eh-mee-ah-mbahs-klah-seh."
+      },
+      {
+        "id": "f205b211-4516-4ada-97c6-4078cb023f68",
+        "stress_pattern": "yahm stoo-DEN-t.",
+        "pronunciation_guide": "yahm-stoo-den-t."
+      },
+      {
+        "id": "f2c447b5-070c-4942-a013-7fc6738489cb",
+        "stress_pattern": "PËRMBLEDH [PƏRMˈBLƐÐ] PIKAT [ˈPIKAT] KRYESORE [KRYƐˈSƆɾƐ]",
+        "pronunciation_guide": "përmbledh-[pərmˈblɛð]-pikat-[ˈpikat]-kryesore-[kryɛˈsɔɾɛ]"
+      },
+      {
+        "id": "f3db913a-6126-41c3-ac82-bb326b5cd23c",
+        "stress_pattern": "leh tuh tsahk-toy-me nyuh tah-keem pur tuh dees-koo-TOO-ar muh tay.",
+        "pronunciation_guide": "leh-tuh-tsahk-toy-me-nyuh-tah-keem-pur-tuh-dees-koo-too-ar-muh-tay."
+      },
+      {
+        "id": "f7236c07-f9ee-4b85-ab9c-5db11a6d67f9",
+        "stress_pattern": "MEGJITHATË [MƐɟIˈΘATƏ]",
+        "pronunciation_guide": "megjithatë-[mɛɟiˈθatə]"
+      },
+      {
+        "id": "f9ad3cc8-cc8b-4af9-a8ae-3d8a14e4144d",
+        "stress_pattern": "NË ANËN TJETËR [NƏ ANƏN ˈTJETƏR]",
+        "pronunciation_guide": "në-anën-tjetër-[nə-anən-ˈtjetər]"
+      },
+      {
+        "id": "fc317710-e8ff-444c-b756-6f7faa61efc3",
+        "stress_pattern": "NË KUNDËRSHTIM [NƏ KUNDƏRˈƩTIM]",
+        "pronunciation_guide": "në-kundërshtim-[nə-kundərˈʃtim]"
+      },
+      {
+        "id": "feb86185-881d-4a6d-b1a8-5729d7ca7730",
+        "stress_pattern": "për-vech nuh-seh reh-zool-tah-tet për-mee-reh-soh-hen, pro-yek-tee doh teh ndër-PREE-tet.",
+        "pronunciation_guide": "për-vech-nuh-seh-reh-zool-tah-tet-për-mee-reh-soh-hen-pro-yek-tee-doh-teh-ndër-pree-tet."
+      },
+      {
+        "id": "feeb3d31-56a1-4a33-96ca-d7f09f9c9103",
+        "stress_pattern": "gyet-jet eh hoo-luhm-tee-meet sug-yer-oyn nyë kor-reh-lah-TSI-on të rëndësishëm. [ɟɛtjet ɛ huləmtimit suɟɛrɔjn ɲə kɔrelatsion tə rəndəsishəm]",
+        "pronunciation_guide": "gyet-jet-eh-hoo-luhm-tee-meet-sug-yer-oyn-nyë-kor-reh-lah-tsi-on-të-rëndësishëm.-[ɟɛtjet-ɛ-huləmtimit-suɟɛrɔjn-ɲə-kɔrrelatsion-tə-rəndəsishəm]"
+      },
+      {
+        "id": "ff73375f-74ee-4f54-9af3-42d6c2a274ff",
+        "stress_pattern": "sep-seh tuh thuh-naht ee-sheen teh pah-ploh-tah, kər-koh-hey ah-nah-leez eh muh-TEY-shmeh.",
+        "pronunciation_guide": "sep-seh-tuh-thuh-naht-ee-sheen-teh-pah-ploh-tah-kər-koh-hey-ah-nah-leez-eh-muh-tey-shmeh."
+      },
+      {
+        "id": "fff437bc-f70c-41b4-ad65-a7c4110d4b9c",
+        "stress_pattern": "n-der-sa te-o-ri-a esh-teh in-te-re-san-teh, i mun-gon mbesh-teh-tja em-pi-RI-keh.",
+        "pronunciation_guide": "n-der-sa-te-o-ri-a-esh-teh-in-te-re-san-teh-i-mun-gon-mbesh-teh-tja-em-pi-ri-keh."
+      },
+      {
+        "id": "01468a29-227d-42a3-af7d-c67c93bcfb50",
+        "stress_pattern": "du-he-t tu-h ta-ko-he-mi mu-h sh-PE-sh",
+        "pronunciation_guide": "du-he-t tu-h ta-ko-he-mi mu-h sh-pe-sh"
+      },
+      {
+        "id": "019646c7-134e-4da7-8de3-350ead343ee4",
+        "stress_pattern": "ndi-HE-t si dye",
+        "pronunciation_guide": "ndi-he-t si dye"
+      },
+      {
+        "id": "026c9d27-4073-4327-b5a3-ea2a5a9812ef",
+        "stress_pattern": "bie bo-RU-h",
+        "pronunciation_guide": "bie bo-ru-h"
+      },
+      {
+        "id": "05654b54-decb-4630-b1d1-5ff2d76b459c",
+        "stress_pattern": "nu-h neeu-H CHA-st",
+        "pronunciation_guide": "nu-h neeu-h cha-st"
+      },
+      {
+        "id": "0695c8e3-3013-4674-9ea9-f1bfbe4ee43f",
+        "stress_pattern": "ke-te me-NGEEE-s",
+        "pronunciation_guide": "ke-te me-ngeee-s"
+      },
+      {
+        "id": "07bdd44b-7912-489c-a378-1b2b67180fc9",
+        "stress_pattern": "di-sa mu-h shu-MU-h",
+        "pronunciation_guide": "di-sa mu-h shu-mu-h"
+      },
+      {
+        "id": "08a250d5-c9fb-4507-9669-a6e89d351129",
+        "stress_pattern": "SKAH PER-seh",
+        "pronunciation_guide": "skah per-seh"
+      },
+      {
+        "id": "0acc06fa-9482-4959-bd4f-7f713a7b262a",
+        "stress_pattern": "geee-THE PO BIE-n",
+        "pronunciation_guide": "geee-the po bie-n"
+      },
+      {
+        "id": "0b883629-8079-4c2c-82a0-9145552c50bf",
+        "stress_pattern": "vye-sh-tu-h e fre-SKU-ht",
+        "pronunciation_guide": "vye-sh-tu-h e fre-sku-ht"
+      },
+      {
+        "id": "0dbe6a85-3630-40f2-95bb-43ff0f091944",
+        "stress_pattern": "ai ka tri-dhye-tu-h e pe-su-H VYE-ch",
+        "pronunciation_guide": "ai ka tri-dhye-tu-h e pe-su-h vye-ch"
+      },
+      {
+        "id": "0f2cb45c-011f-40b4-b6c6-8986e0a85926",
+        "stress_pattern": "du-ke a-rdhu-R VO-n",
+        "pronunciation_guide": "du-ke a-rdhu-r vo-n"
+      },
+      {
+        "id": "102a12d5-9fee-45fe-ba40-08beffb45da4",
+        "stress_pattern": "ye-mi ku-HTU PU-hr tee",
+        "pronunciation_guide": "ye-mi ku-htu pu-hr tee"
+      },
+      {
+        "id": "118bc9d4-cbb3-4da1-b6a1-0b08ae355ad7",
+        "stress_pattern": "mbee-l sh-ka-LE-t",
+        "pronunciation_guide": "mbee-l sh-ka-le-t"
+      },
+      {
+        "id": "1344bf88-5419-4664-85da-c08726b970a6",
+        "stress_pattern": "mo-s u tu-RPU-hro",
+        "pronunciation_guide": "mo-s u tu-rpu-hro"
+      },
+      {
+        "id": "13d0bade-4707-4c72-979e-4041ef256d5e",
+        "stress_pattern": "ae-r i fre-SKU-ht",
+        "pronunciation_guide": "ae-r i fre-sku-ht"
+      },
+      {
+        "id": "146b1d62-4eb9-4e6a-afe8-09b017d37ac5",
+        "stress_pattern": "ye mi-RU-h",
+        "pronunciation_guide": "ye mi-ru-h"
+      },
+      {
+        "id": "16354a4c-454d-465f-aff7-360e58f0d426",
+        "stress_pattern": "sa ko-hu-h mu-nd tu-h chu-HNDRO-sh?",
+        "pronunciation_guide": "sa ko-hu-h mu-nd tu-h chu-hndro-sh?"
+      },
+      {
+        "id": "1684a512-e411-4224-9ac2-de017c3f9bad",
+        "stress_pattern": "re-ce-ta u-hsh-tu-h e vye-TU-hr",
+        "pronunciation_guide": "re-ce-ta u-hsh-tu-h e vye-tu-hr"
+      },
+      {
+        "id": "183bfde6-cde1-48fc-89b5-250d1bfaac7b",
+        "stress_pattern": "ku-r zgeeo-HE-sh?",
+        "pronunciation_guide": "ku-r zgeeo-he-sh?"
+      },
+      {
+        "id": "1bbd36a0-4a93-405b-9b45-45a915855ba9",
+        "stress_pattern": "mi-ru-h se vye-ni nu-h sh-tu-hpi-nu-h to-NU-h",
+        "pronunciation_guide": "mi-ru-h se vye-ni nu-h sh-tu-hpi-nu-h to-nu-h"
+      },
+      {
+        "id": "1ce575f5-9f94-4a8c-9818-b1e67808c49c",
+        "stress_pattern": "e-dhe neeu-h fi-LZHA-n?",
+        "pronunciation_guide": "e-dhe neeu-h fi-lzha-n?"
+      },
+      {
+        "id": "1deff7c1-6818-41fe-b2a9-a1c795a36a5f",
+        "stress_pattern": "tu-h geei-thu-H A-ta",
+        "pronunciation_guide": "tu-h geei-thu-h a-ta"
+      },
+      {
+        "id": "1df7cf67-4f84-49af-9e93-6712b61618e9",
+        "stress_pattern": "MU-hso nga kyo",
+        "pronunciation_guide": "mu-hso nga kyo"
+      },
+      {
+        "id": "1e018700-2591-4954-8aad-14b26d006645",
+        "stress_pattern": "i pa-ri, i dee-TI, I TRE-ti",
+        "pronunciation_guide": "i pa-ri, i dee-ti, i tre-ti"
+      },
+      {
+        "id": "202911c0-2919-414d-ae86-444ecf8f78aa",
+        "stress_pattern": "ga-bi-me-t ndo-DHI-n",
+        "pronunciation_guide": "ga-bi-me-t ndo-dhi-n"
+      },
+      {
+        "id": "21705bb8-88ad-4490-8461-a66229fc7c31",
+        "stress_pattern": "ne-se-r e-sh-te neee di-te tye-TE-r",
+        "pronunciation_guide": "ne-se-r e-sh-te neee di-te tye-te-r"
+      },
+      {
+        "id": "2252b50b-d1f0-4ea2-903f-504f4bdc829c",
+        "stress_pattern": "e-ndra te e-MBE-l",
+        "pronunciation_guide": "e-ndra te e-mbe-l"
+      },
+      {
+        "id": "22f19f3a-2104-41b7-b4d0-5184b8facd8b",
+        "stress_pattern": "tu-ndu-HR DHE RU-fe",
+        "pronunciation_guide": "tu-ndu-hr dhe ru-fe"
+      },
+      {
+        "id": "23da81f7-f726-4a51-9d3e-d9fae89b74bc",
+        "stress_pattern": "ch-do di-TU-h",
+        "pronunciation_guide": "ch-do di-tu-h"
+      },
+      {
+        "id": "261b0b09-1bf3-415c-8deb-226fcdeebb5e",
+        "stress_pattern": "nu-mu-hro de-ri nu-h dhye-TU-h",
+        "pronunciation_guide": "nu-mu-hro de-ri nu-h dhye-tu-h"
+      },
+      {
+        "id": "2645d7d1-3f3a-47e3-864d-546db9861123",
+        "stress_pattern": "a-ku-l nu-h ru-GU-h",
+        "pronunciation_guide": "a-ku-l nu-h ru-gu-h"
+      },
+      {
+        "id": "28c46553-eaae-4608-b6fc-3c798cc66633",
+        "stress_pattern": "mo-S U BU-hy i/e huay",
+        "pronunciation_guide": "mo-s u bu-hy i/e huay"
+      },
+      {
+        "id": "29352ef3-7719-4aff-95ee-c7b2386c5857",
+        "stress_pattern": "ka mya-ftue-SHU-hm",
+        "pronunciation_guide": "ka mya-ftue-shu-hm"
+      },
+      {
+        "id": "2949fda7-5fc8-494a-a178-8eb92a622c15",
+        "stress_pattern": "si po sh-ko-N PU-na?",
+        "pronunciation_guide": "si po sh-ko-n pu-na?"
+      },
+      {
+        "id": "2b95c40a-e902-41ef-bf0b-25c514d2986a",
+        "stress_pattern": "mu-h pu-hlche-n pi-KA-nt",
+        "pronunciation_guide": "mu-h pu-hlche-n pi-ka-nt"
+      },
+      {
+        "id": "2d5cefd5-5988-46e5-a28d-7d76df25c6d5",
+        "stress_pattern": "SA KA?",
+        "pronunciation_guide": "sa ka?"
+      },
+      {
+        "id": "2eec289f-c1a7-4197-984a-06095fb87099",
+        "stress_pattern": "u-hsh-tu-h nu-h re-GU-l",
+        "pronunciation_guide": "u-hsh-tu-h nu-h re-gu-l"
+      },
+      {
+        "id": "2f32e63d-54bb-414a-8f63-392b4d82d1c0",
+        "stress_pattern": "pe-mu-ht ya-nu-h tu-H GEEE-lbra",
+        "pronunciation_guide": "pe-mu-ht ya-nu-h tu-h geee-lbra"
+      },
+      {
+        "id": "30324e25-cdae-49f9-bbbb-c93b28fc3a17",
+        "stress_pattern": "na-te-n e ka-LUA-r",
+        "pronunciation_guide": "na-te-n e ka-lua-r"
+      },
+      {
+        "id": "322f4f5f-2b59-4342-add9-1aac1d16213c",
+        "stress_pattern": "nu-h tu-h neeu-hytu-hn ko-HU-h",
+        "pronunciation_guide": "nu-h tu-h neeu-hytu-hn ko-hu-h"
+      },
+      {
+        "id": "3267823e-a445-420e-8f73-703bd1e0cfef",
+        "stress_pattern": "ya-sh-tu-h u-hsh-tu-h shu-mu-h fto-HTU-h",
+        "pronunciation_guide": "ya-sh-tu-h u-hsh-tu-h shu-mu-h fto-htu-h"
+      },
+      {
+        "id": "331d1d7e-49b8-4c7e-bc6f-4919a22c8c7c",
+        "stress_pattern": "eya te ta-vo-LI-na",
+        "pronunciation_guide": "eya te ta-vo-li-na"
+      },
+      {
+        "id": "332721ca-73c9-4cd1-8758-ff8af3183deb",
+        "stress_pattern": "ye i ru-hndu-hsi-SHU-hm",
+        "pronunciation_guide": "ye i ru-hndu-hsi-shu-hm"
+      },
+      {
+        "id": "3379b7e8-2728-49e0-bd7d-293bcf592983",
+        "stress_pattern": "ch'yu sye-L KU-htu?",
+        "pronunciation_guide": "ch'yu sye-l ku-htu?"
+      },
+      {
+        "id": "34ff8e29-df6a-4ebd-b3ea-bfc77f749441",
+        "stress_pattern": "ne ye-mi pri-ndu-hr kre-na-RU-h",
+        "pronunciation_guide": "ne ye-mi pri-ndu-hr kre-na-ru-h"
+      },
+      {
+        "id": "3531c5be-4428-419e-a493-015233dda6ac",
+        "stress_pattern": "chu-hndro pu-hr da-RKU-h",
+        "pronunciation_guide": "chu-hndro pu-hr da-rku-h"
+      },
+      {
+        "id": "368249c5-3802-403c-a7eb-fdd2414db1b7",
+        "stress_pattern": "fu-hmiyu-HT PO LUAYNU-h",
+        "pronunciation_guide": "fu-hmiyu-ht po luaynu-h"
+      },
+      {
+        "id": "3724a265-2417-428a-8c56-bed28da7e403",
+        "stress_pattern": "PO BIE SHI",
+        "pronunciation_guide": "po bie shi"
+      },
+      {
+        "id": "391e6059-65d7-48da-bfd9-cbf089395b4d",
+        "stress_pattern": "vayza i-me sh-ko-n nu-h sh-ko-LU-h",
+        "pronunciation_guide": "vayza i-me sh-ko-n nu-h sh-ko-lu-h"
+      },
+      {
+        "id": "3a285bac-6e89-4b5e-97b9-2f55b662eae5",
+        "stress_pattern": "mo-s u tri-SH-to",
+        "pronunciation_guide": "mo-s u tri-sh-to"
+      },
+      {
+        "id": "401a4523-5cd1-40a7-a8e6-81cea043a049",
+        "stress_pattern": "du-hshi-ra tu-H MI-ra",
+        "pronunciation_guide": "du-hshi-ra tu-h mi-ra"
+      },
+      {
+        "id": "40b706f5-d05c-46ac-9e52-fcb07588b882",
+        "stress_pattern": "di-tu-h e bu-ku-r pra-NVE-re",
+        "pronunciation_guide": "di-tu-h e bu-ku-r pra-nve-re"
+      },
+      {
+        "id": "419755e5-f1f6-4565-a515-ff3f2ba67427",
+        "stress_pattern": "ke-te pa-SDI-te",
+        "pronunciation_guide": "ke-te pa-sdi-te"
+      },
+      {
+        "id": "45039523-017d-4167-bcbb-242d4b2b0c8d",
+        "stress_pattern": "si mu-nd tu-H NDI-hmoy?",
+        "pronunciation_guide": "si mu-nd tu-h ndi-hmoy?"
+      },
+      {
+        "id": "45243593-daaf-43db-9c56-98e74210c747",
+        "stress_pattern": "sa fu-HMIYU-h ke?",
+        "pronunciation_guide": "sa fu-hmiyu-h ke?"
+      },
+      {
+        "id": "467aec2d-a1cf-4baf-bc84-e7a05dcc45a9",
+        "stress_pattern": "pro-vo-ni ku-htu-h pya-TU-h",
+        "pronunciation_guide": "pro-vo-ni ku-htu-h pya-tu-h"
+      },
+      {
+        "id": "48a86746-5f61-472d-b3b6-9b4d48d9defc",
+        "stress_pattern": "ruay ve-nd pu-hr u-hmbu-hlsi-RU-h",
+        "pronunciation_guide": "ruay ve-nd pu-hr u-hmbu-hlsi-ru-h"
+      },
+      {
+        "id": "48b013fb-b696-4362-a677-df7472c14d1c",
+        "stress_pattern": "so-T KA DIE-l",
+        "pronunciation_guide": "so-t ka die-l"
+      },
+      {
+        "id": "493949fc-694e-456c-99ec-94f64c702017",
+        "stress_pattern": "na du-he-t tu-h bu-hymu-h pu-hrdi-tu-HSI-m",
+        "pronunciation_guide": "na du-he-t tu-h bu-hymu-h pu-hrdi-tu-hsi-m"
+      },
+      {
+        "id": "4a2ab63b-e94c-4f3a-9017-61949b28faae",
+        "stress_pattern": "e-ra e fo-RTU-h",
+        "pronunciation_guide": "e-ra e fo-rtu-h"
+      },
+      {
+        "id": "4ac20423-20dc-4872-a1df-4f74fa981417",
+        "stress_pattern": "zo-gee po ku-HNDOYNU-h",
+        "pronunciation_guide": "zo-gee po ku-hndoynu-h"
+      },
+      {
+        "id": "4acb2d17-3d58-4c47-80f1-5c36404fe115",
+        "stress_pattern": "CH'TU-h re ka me tee?",
+        "pronunciation_guide": "ch'tu-h re ka me tee?"
+      },
+      {
+        "id": "4af1083d-869f-4db3-8023-b692a0e11a87",
+        "stress_pattern": "eeye-t ya-nu-h tu-h ndri-TSHU-hm",
+        "pronunciation_guide": "eeye-t ya-nu-h tu-h ndri-tshu-hm"
+      },
+      {
+        "id": "4b0a0e6a-eaf8-468e-b72b-d417e64e4d13",
+        "stress_pattern": "be-beya ka geea-sh-TU-h muay",
+        "pronunciation_guide": "be-beya ka geea-sh-tu-h muay"
+      },
+      {
+        "id": "508739e4-a33a-43e3-b27d-aa6d88c5e2c7",
+        "stress_pattern": "si u-hsh-tu-h shu-hnde-TI EE-t?",
+        "pronunciation_guide": "si u-hsh-tu-h shu-hnde-ti ee-t?"
+      },
+      {
+        "id": "54d1499d-834b-4e48-859c-87bb25fb6bb7",
+        "stress_pattern": "ndi-hu-ni si nu-h sh-TU-hpi",
+        "pronunciation_guide": "ndi-hu-ni si nu-h sh-tu-hpi"
+      },
+      {
+        "id": "54e3c737-b9b3-4e87-8f87-2bd6670d7106",
+        "stress_pattern": "a-sneeu-h tye-tu-hr i mbe-TU-r",
+        "pronunciation_guide": "a-sneeu-h tye-tu-hr i mbe-tu-r"
+      },
+      {
+        "id": "5725ee96-4c4e-4589-b802-5090666adc02",
+        "stress_pattern": "di-sa fu-HMIYU-h",
+        "pronunciation_guide": "di-sa fu-hmiyu-h"
+      },
+      {
+        "id": "5a6b9016-1c94-44b2-82e2-b16ba7a53ca8",
+        "stress_pattern": "mu-h shu-mu-h bu-ku-h lu-TE-m",
+        "pronunciation_guide": "mu-h shu-mu-h bu-ku-h lu-te-m"
+      },
+      {
+        "id": "5bfff848-b71d-4344-a747-1c7d57551ed1",
+        "stress_pattern": "ku-r do tu-H VI-sh?",
+        "pronunciation_guide": "ku-r do tu-h vi-sh?"
+      },
+      {
+        "id": "5c1a0df0-1009-456b-8e4d-1ed75c0048a4",
+        "stress_pattern": "di-tu-hn e mi-RU-h",
+        "pronunciation_guide": "di-tu-hn e mi-ru-h"
+      },
+      {
+        "id": "5c4022cf-0cb2-402e-8eaf-e96ca0ee1019",
+        "stress_pattern": "ke-te mba-SDI-te",
+        "pronunciation_guide": "ke-te mba-sdi-te"
+      },
+      {
+        "id": "5c719a46-fa6f-4c07-9728-f7bf791bcb4e",
+        "stress_pattern": "a ye i lo-DHU-r?",
+        "pronunciation_guide": "a ye i lo-dhu-r?"
+      },
+      {
+        "id": "5ce65c38-f6be-4705-9c6b-c432a45d44a2",
+        "stress_pattern": "mbee-le de-RE-n",
+        "pronunciation_guide": "mbee-le de-re-n"
+      },
+      {
+        "id": "5ea492e3-f1c8-4781-a635-661b18dccdd4",
+        "stress_pattern": "po sh-KOY NE PU-ne",
+        "pronunciation_guide": "po sh-koy ne pu-ne"
+      },
+      {
+        "id": "5eb9ddb3-367b-46f0-a6c3-79a8835f5139",
+        "stress_pattern": "la-NI DUA-rt",
+        "pronunciation_guide": "la-ni dua-rt"
+      },
+      {
+        "id": "600617ad-107a-4716-9837-eede9d0f45c0",
+        "stress_pattern": "bo-ra e pa-RU-h",
+        "pronunciation_guide": "bo-ra e pa-ru-h"
+      },
+      {
+        "id": "61de21d3-1b11-4605-a8e3-cbd2569987a8",
+        "stress_pattern": "geei-th-ch-ka u-hsh-tu-h nu-h re-GU-l",
+        "pronunciation_guide": "geei-th-ch-ka u-hsh-tu-h nu-h re-gu-l"
+      },
+      {
+        "id": "635ab858-5466-49ec-a98b-07fa3d84fc4b",
+        "stress_pattern": "be-beya u-hsh-tu-h du-ke fye-TU-r",
+        "pronunciation_guide": "be-beya u-hsh-tu-h du-ke fye-tu-r"
+      },
+      {
+        "id": "635ca378-acf8-4fcc-bc16-ea1ed885cd39",
+        "stress_pattern": "ve-shu ngro-HTU-h",
+        "pronunciation_guide": "ve-shu ngro-htu-h"
+      },
+      {
+        "id": "66f8d21c-8275-4c72-9b16-2bd793f18273",
+        "stress_pattern": "nday sh-che-tu-hsi-ME-t tua",
+        "pronunciation_guide": "nday sh-che-tu-hsi-me-t tua"
+      },
+      {
+        "id": "68d9580c-269a-4679-bd64-554751fa00c9",
+        "stress_pattern": "chu-hndro i fo-RTU-h",
+        "pronunciation_guide": "chu-hndro i fo-rtu-h"
+      },
+      {
+        "id": "6a7db403-cf74-4637-8ec7-a340c3a12df3",
+        "stress_pattern": "mo-s e sh-to-ni shu-mu-h pi-pe-RI-n",
+        "pronunciation_guide": "mo-s e sh-to-ni shu-mu-h pi-pe-ri-n"
+      },
+      {
+        "id": "6b265cbe-c5a1-4b1d-92ac-3fb91009e68e",
+        "stress_pattern": "eya ta-ko-hu me pri-ndu-HRI-t e mi",
+        "pronunciation_guide": "eya ta-ko-hu me pri-ndu-hri-t e mi"
+      },
+      {
+        "id": "6d090a6a-9e29-4c74-9ad6-d13503f43dbf",
+        "stress_pattern": "mo-s u do-RU-hzo",
+        "pronunciation_guide": "mo-s u do-ru-hzo"
+      },
+      {
+        "id": "6de5866f-4aea-4158-a1a7-f729533ab16a",
+        "stress_pattern": "le tu-h u-le-mi dhe bi-se-DOYMU-h",
+        "pronunciation_guide": "le tu-h u-le-mi dhe bi-se-doymu-h"
+      },
+      {
+        "id": "6ee14471-9a41-45f5-84c2-d7e2cec3c078",
+        "stress_pattern": "kuyde-s nu-H DREYTI-m",
+        "pronunciation_guide": "kuyde-s nu-h dreyti-m"
+      },
+      {
+        "id": "6efa045c-0fb0-4cd6-8e7d-2fb9e3faee8e",
+        "stress_pattern": "ku-ru-h nu-k ye i/e ve-tu-HM/VE-tme",
+        "pronunciation_guide": "ku-ru-h nu-k ye i/e ve-tu-hm/ve-tme"
+      },
+      {
+        "id": "6f25ddeb-ef4e-488f-b920-48ef1642fc5d",
+        "stress_pattern": "u-le-hu, che-tu-HSO-hu",
+        "pronunciation_guide": "u-le-hu, che-tu-hso-hu"
+      },
+      {
+        "id": "6f55e1dd-feed-4bd1-a60d-7e201c3afd9d",
+        "stress_pattern": "nu-k ka shu-mu-h tu-h mbe-TU-r",
+        "pronunciation_guide": "nu-k ka shu-mu-h tu-h mbe-tu-r"
+      },
+      {
+        "id": "70715f02-e170-46c7-8405-0c4a5f969846",
+        "stress_pattern": "pe-ri-me tu-h fre-SKU-hta",
+        "pronunciation_guide": "pe-ri-me tu-h fre-sku-hta"
+      },
+      {
+        "id": "717c5c5e-76d6-4412-b49c-3592b3c62ec8",
+        "stress_pattern": "do tu-h dua-sh tu-h ye-tu-h e u-HMBU-hl?",
+        "pronunciation_guide": "do tu-h dua-sh tu-h ye-tu-h e u-hmbu-hl?"
+      },
+      {
+        "id": "71a55d27-a6ac-449f-b3d2-d5780c0d354a",
+        "stress_pattern": "so-t e-sh-te bu-KU-r",
+        "pronunciation_guide": "so-t e-sh-te bu-ku-r"
+      },
+      {
+        "id": "729542fd-2b8e-4065-984b-f7046b462d10",
+        "stress_pattern": "po, lu-TE-m",
+        "pronunciation_guide": "po, lu-te-m"
+      },
+      {
+        "id": "74226699-8aa0-4c8c-9cea-0ff25883fa8d",
+        "stress_pattern": "tu-h chu-hndro-sh i shu-hnde-TSHU-hm",
+        "pronunciation_guide": "tu-h chu-hndro-sh i shu-hnde-tshu-hm"
+      },
+      {
+        "id": "76a2d9ec-4596-4022-a733-9b22e37dcb78",
+        "stress_pattern": "dee-fi-sho a-tu-h shu-MU-h",
+        "pronunciation_guide": "dee-fi-sho a-tu-h shu-mu-h"
+      },
+      {
+        "id": "76fad273-993f-476d-b34f-2f444ad83228",
+        "stress_pattern": "ye-ta u-hsh-tu-h e mi-RU-h",
+        "pronunciation_guide": "ye-ta u-hsh-tu-h e mi-ru-h"
+      },
+      {
+        "id": "77dc7fcd-81ec-434f-b156-3f977fb39a93",
+        "stress_pattern": "zo-ti tu-h be-KO-fte",
+        "pronunciation_guide": "zo-ti tu-h be-ko-fte"
+      },
+      {
+        "id": "7b7c67f4-7101-45b4-87d8-62d8672b7e1f",
+        "stress_pattern": "lu-hru-h tu-h fto-HE-t",
+        "pronunciation_guide": "lu-hru-h tu-h fto-he-t"
+      },
+      {
+        "id": "7c07d866-413e-4014-bd3c-c1e6dd0703f6",
+        "stress_pattern": "pa-mye e bu-KU-r",
+        "pronunciation_guide": "pa-mye e bu-ku-r"
+      },
+      {
+        "id": "7e71f254-4049-4bd6-bfff-044653a71b73",
+        "stress_pattern": "dye i-sh-TE MI-re",
+        "pronunciation_guide": "dye i-sh-te mi-re"
+      },
+      {
+        "id": "7efd0a07-689a-4097-a969-56596df4b972",
+        "stress_pattern": "yu lu-te-m u-LU-ni",
+        "pronunciation_guide": "yu lu-te-m u-lu-ni"
+      },
+      {
+        "id": "7fe072fc-f719-4def-bbae-b8686e065852",
+        "stress_pattern": "chu-HNDRO BRE-nda",
+        "pronunciation_guide": "chu-hndro bre-nda"
+      },
+      {
+        "id": "820c4c33-2b19-4426-a211-614a017b4917",
+        "stress_pattern": "nu-k ka shu-mu-h ko-HU-h",
+        "pronunciation_guide": "nu-k ka shu-mu-h ko-hu-h"
+      },
+      {
+        "id": "83254ef2-437a-481f-9d75-a9bc85e59a77",
+        "stress_pattern": "chie-li i pa-STU-hr",
+        "pronunciation_guide": "chie-li i pa-stu-hr"
+      },
+      {
+        "id": "83953c1f-91f5-49ab-a216-0a3526420544",
+        "stress_pattern": "do tu-h ye-tu-h geei-th-ch-ka nu-h re-GU-l",
+        "pronunciation_guide": "do tu-h ye-tu-h geei-th-ch-ka nu-h re-gu-l"
+      },
+      {
+        "id": "83d8b820-9abc-44d4-9933-c5612c053b4d",
+        "stress_pattern": "ne po ha da-RKU-h",
+        "pronunciation_guide": "ne po ha da-rku-h"
+      },
+      {
+        "id": "865581dc-a5ae-409f-bc88-20039151f30d",
+        "stress_pattern": "dee he-ru-H NU-h muay",
+        "pronunciation_guide": "dee he-ru-h nu-h muay"
+      },
+      {
+        "id": "868ff378-a73b-48ae-b2a0-cb7994bd9cbc",
+        "stress_pattern": "mi-ru-HDI-ta",
+        "pronunciation_guide": "mi-ru-hdi-ta"
+      },
+      {
+        "id": "888e3fc0-736d-45c2-abac-912651e51f3f",
+        "stress_pattern": "ne mbli-dhe-mi ch-do tu-h die-LU-h",
+        "pronunciation_guide": "ne mbli-dhe-mi ch-do tu-h die-lu-h"
+      },
+      {
+        "id": "889655c4-cb6b-4fb9-99aa-1fcd257fa33c",
+        "stress_pattern": "ka-lo kri-PU-hn",
+        "pronunciation_guide": "ka-lo kri-pu-hn"
+      },
+      {
+        "id": "8939acb1-29e8-47d0-9f42-0bdf9819a246",
+        "stress_pattern": "hu-hna e plo-tu-h so-t nu-H MBRU-hmye",
+        "pronunciation_guide": "hu-hna e plo-tu-h so-t nu-h mbru-hmye"
+      },
+      {
+        "id": "8d5204a1-2568-4c50-974b-20722ce2c919",
+        "stress_pattern": "c'ka sh-PEYTE-si?",
+        "pronunciation_guide": "c'ka sh-peyte-si?"
+      },
+      {
+        "id": "8dd87c53-2c50-4f3a-9b10-574f1fcd484b",
+        "stress_pattern": "NEEU-h, dee, tre",
+        "pronunciation_guide": "neeu-h, dee, tre"
+      },
+      {
+        "id": "8e60628c-40ac-4a94-bd4b-b77b29e45986",
+        "stress_pattern": "shi-he-mi mu-h vo-NU-h",
+        "pronunciation_guide": "shi-he-mi mu-h vo-nu-h"
+      },
+      {
+        "id": "91daf1e0-921f-4ce0-8b4e-a13046e9f3e1",
+        "stress_pattern": "ye geei-th-mo-nu-h i/e mi-ru-hpri-TU-r",
+        "pronunciation_guide": "ye geei-th-mo-nu-h i/e mi-ru-hpri-tu-r"
+      },
+      {
+        "id": "92b3a87a-29a6-4f6b-b507-59b7598f8f20",
+        "stress_pattern": "fi-k dri-TA-t",
+        "pronunciation_guide": "fi-k dri-ta-t"
+      },
+      {
+        "id": "94ba9a51-7edc-4f27-8809-9ecac1b0f9ac",
+        "stress_pattern": "mi-ru-HMBRU-hma",
+        "pronunciation_guide": "mi-ru-hmbru-hma"
+      },
+      {
+        "id": "982aba11-7639-4a8c-8b21-c48dc39ff414",
+        "stress_pattern": "geei-th-ch-ka ka-LO-n",
+        "pronunciation_guide": "geei-th-ch-ka ka-lo-n"
+      },
+      {
+        "id": "9aa4aaa0-a868-4b34-998a-b105e54034eb",
+        "stress_pattern": "die-LI PO NDRI-t",
+        "pronunciation_guide": "die-li po ndri-t"
+      },
+      {
+        "id": "9d682079-dcc8-4811-9cb2-46dbc1a1805c",
+        "stress_pattern": "shu-mi-ca e neee-RU-hzve",
+        "pronunciation_guide": "shu-mi-ca e neee-ru-hzve"
+      },
+      {
+        "id": "9dce21d6-c45a-4ac2-b60a-28a6fa104275",
+        "stress_pattern": "u-hsh-tu-h shu-mu-h e mi-RU-h",
+        "pronunciation_guide": "u-hsh-tu-h shu-mu-h e mi-ru-h"
+      },
+      {
+        "id": "9e308141-5525-49ca-8c33-6c9a6ec22a2a",
+        "stress_pattern": "ya-m kre-na-R PU-hr tee",
+        "pronunciation_guide": "ya-m kre-na-r pu-hr tee"
+      },
+      {
+        "id": "9ebe16ae-ad81-46b9-9569-57ecc1bd309b",
+        "stress_pattern": "ve-ru-h e nxe-HTU-h",
+        "pronunciation_guide": "ve-ru-h e nxe-htu-h"
+      },
+      {
+        "id": "9f16d106-7c89-47a2-8516-af69ac25929c",
+        "stress_pattern": "si i-sh-te u-dhu-hti-MI EE-t?",
+        "pronunciation_guide": "si i-sh-te u-dhu-hti-mi ee-t?"
+      },
+      {
+        "id": "9fc16094-c500-46d8-b273-c9d410fedfd0",
+        "stress_pattern": "ku-sh ga-tua-n ku-HTU-h?",
+        "pronunciation_guide": "ku-sh ga-tua-n ku-htu-h?"
+      },
+      {
+        "id": "a1bbfbbd-7a8d-4acc-bafd-697bc8202114",
+        "stress_pattern": "ch-fa-ru-h me-NDO-n?",
+        "pronunciation_guide": "ch-fa-ru-h me-ndo-n?"
+      },
+      {
+        "id": "a37fbb31-4369-4507-87df-16be56024ac8",
+        "stress_pattern": "pe-s e de-RI NE PE-se",
+        "pronunciation_guide": "pe-s e de-ri ne pe-se"
+      },
+      {
+        "id": "a3f67ed0-08ca-4214-970d-033984aefdaa",
+        "stress_pattern": "di-tu-hli-ndya i-me u-hsh-tu-h muayi-n e a-rdh-SHU-hm",
+        "pronunciation_guide": "di-tu-hli-ndya i-me u-hsh-tu-h muayi-n e a-rdh-shu-hm"
+      },
+      {
+        "id": "a4ccd640-2149-466a-948a-cf08c4ed9560",
+        "stress_pattern": "na mu-NGO-ve",
+        "pronunciation_guide": "na mu-ngo-ve"
+      },
+      {
+        "id": "a4d39586-9ff6-4e17-9e15-1693d0ed7883",
+        "stress_pattern": "daya i-m po vi-zi-TO-n",
+        "pronunciation_guide": "daya i-m po vi-zi-to-n"
+      },
+      {
+        "id": "a50504f0-778c-4f98-afd9-62dd28286ab5",
+        "stress_pattern": "TU-h dua",
+        "pronunciation_guide": "tu-h dua"
+      },
+      {
+        "id": "a6562d3b-1de3-45ac-95e3-13d8730bb228",
+        "stress_pattern": "shi-he-mi ne-SE-r",
+        "pronunciation_guide": "shi-he-mi ne-se-r"
+      },
+      {
+        "id": "a7d67f1d-f0e2-40df-bc20-50725c32cbf6",
+        "stress_pattern": "shu-mu-h vi-te mu-h pa-RU-h",
+        "pronunciation_guide": "shu-mu-h vi-te mu-h pa-ru-h"
+      },
+      {
+        "id": "a8bc58b5-b5f1-4e2c-8f42-590e80785e6e",
+        "stress_pattern": "KUYDE-su",
+        "pronunciation_guide": "kuyde-su"
+      },
+      {
+        "id": "a8ed47ad-1f91-4820-8cb5-6dcd0e8d30c5",
+        "stress_pattern": "mu-h tre-GO LAYME-t",
+        "pronunciation_guide": "mu-h tre-go layme-t"
+      },
+      {
+        "id": "aa136ec9-68e4-4484-bf4e-3afbc2305d41",
+        "stress_pattern": "ha-p dri-ta-RE-t",
+        "pronunciation_guide": "ha-p dri-ta-re-t"
+      },
+      {
+        "id": "ad2e4d2e-2d5a-4e33-a436-6ff4b02bbf22",
+        "stress_pattern": "kyo u-hsh-tu-h shu-mu-H E SHIYSH-me",
+        "pronunciation_guide": "kyo u-hsh-tu-h shu-mu-h e shiysh-me"
+      },
+      {
+        "id": "b1275969-0800-4970-8298-61fb7a6433a5",
+        "stress_pattern": "me-rni e-DHE PA-k",
+        "pronunciation_guide": "me-rni e-dhe pa-k"
+      },
+      {
+        "id": "b172db36-fcb3-49bd-bef7-18227b17869d",
+        "stress_pattern": "ta-ni ve-TU-hm",
+        "pronunciation_guide": "ta-ni ve-tu-hm"
+      },
+      {
+        "id": "b26c2886-04f0-4be1-968a-3c709434e6d5",
+        "stress_pattern": "SA VYE-ch ye?",
+        "pronunciation_guide": "sa vye-ch ye?"
+      },
+      {
+        "id": "b3445a00-fc46-4a09-9465-99de7bd18453",
+        "stress_pattern": "mo-s u sh-che-TU-hso",
+        "pronunciation_guide": "mo-s u sh-che-tu-hso"
+      },
+      {
+        "id": "b5e67ce0-95dc-492d-8cee-3dbbf28c22e0",
+        "stress_pattern": "mo-S U VO-no",
+        "pronunciation_guide": "mo-s u vo-no"
+      },
+      {
+        "id": "b8650d85-f9a3-4cdd-9b2b-5dc6d2b0fdb4",
+        "stress_pattern": "pu-shi-M TE MI-re",
+        "pronunciation_guide": "pu-shi-m te mi-re"
+      },
+      {
+        "id": "bc4b6a0d-298c-4253-b411-2e9247aa6b47",
+        "stress_pattern": "lu-le po lu-lu-HZOYNU-h",
+        "pronunciation_guide": "lu-le po lu-lu-hzoynu-h"
+      },
+      {
+        "id": "bd7e290a-64f9-4200-a307-9e3afc2b7da2",
+        "stress_pattern": "ye i/e zu-hnu-h ku-hto di-TU-h?",
+        "pronunciation_guide": "ye i/e zu-hnu-h ku-hto di-tu-h?"
+      },
+      {
+        "id": "bdbfa47f-36eb-4091-b87d-24d74f7dfa80",
+        "stress_pattern": "ka-te-r e geeee-SE-m",
+        "pronunciation_guide": "ka-te-r e geeee-se-m"
+      },
+      {
+        "id": "bf02a490-fc2e-48eb-b64b-9437f67c1bbc",
+        "stress_pattern": "na-te-N E MI-re",
+        "pronunciation_guide": "na-te-n e mi-re"
+      },
+      {
+        "id": "c03ab118-7bf3-4fb7-b52b-c186f0b17ecb",
+        "stress_pattern": "a-ko-ma e ngro-HTU-h",
+        "pronunciation_guide": "a-ko-ma e ngro-htu-h"
+      },
+      {
+        "id": "c395f557-f940-46f7-a19c-983b680388d8",
+        "stress_pattern": "u-dhu-h tu-h si-gu-RTU-h",
+        "pronunciation_guide": "u-dhu-h tu-h si-gu-rtu-h"
+      },
+      {
+        "id": "c41c39ed-0e8b-408c-ad7e-f973581fb75a",
+        "stress_pattern": "me-r pa-k she-CHE-r",
+        "pronunciation_guide": "me-r pa-k she-che-r"
+      },
+      {
+        "id": "c9054392-8852-4634-9dd1-76d22acf424f",
+        "stress_pattern": "u-RI-me",
+        "pronunciation_guide": "u-ri-me"
+      },
+      {
+        "id": "ca1807fa-15e4-4833-b5f2-71dc2b2d36f8",
+        "stress_pattern": "KU-ptoy",
+        "pronunciation_guide": "ku-ptoy"
+      },
+      {
+        "id": "ca6c70ad-957c-4fbb-b6ec-b3213b118700",
+        "stress_pattern": "mi-ru-h e ke bu-HRU-h",
+        "pronunciation_guide": "mi-ru-h e ke bu-hru-h"
+      },
+      {
+        "id": "cb5e1465-7a99-46ca-a7c8-aaf31b00b1cc",
+        "stress_pattern": "si sh-koynu-h pu-NU-ht?",
+        "pronunciation_guide": "si sh-koynu-h pu-nu-ht?"
+      },
+      {
+        "id": "cbd914d0-e9eb-4d42-afdc-3ec9de32ab34",
+        "stress_pattern": "ne-su-hr u-hsh-tu-h mu-h mi-RU-h",
+        "pronunciation_guide": "ne-su-hr u-hsh-tu-h mu-h mi-ru-h"
+      },
+      {
+        "id": "cd454005-1fb3-44f9-b182-961970559ee5",
+        "stress_pattern": "ye-mi e-mo-cio-NUA-r",
+        "pronunciation_guide": "ye-mi e-mo-cio-nua-r"
+      },
+      {
+        "id": "cfe2e8f7-9485-4f99-86e2-b785f30e0829",
+        "stress_pattern": "ayo ka pe-su-hmbu-hdhye-tu-H VYE-ch",
+        "pronunciation_guide": "ayo ka pe-su-hmbu-hdhye-tu-h vye-ch"
+      },
+      {
+        "id": "d0454aa7-eab2-445f-8b73-db9ec6f71c71",
+        "stress_pattern": "le tu-h pa-stro-ni-m ta-vo-li-NU-hn",
+        "pronunciation_guide": "le tu-h pa-stro-ni-m ta-vo-li-nu-hn"
+      },
+      {
+        "id": "d05660a3-dc4f-4249-91de-66b28bcf10ab",
+        "stress_pattern": "fle he-RE-t",
+        "pronunciation_guide": "fle he-re-t"
+      },
+      {
+        "id": "d2f3124c-6499-4175-a8ff-97662dc3f67b",
+        "stress_pattern": "bu-hru-h me da-SHU-ri",
+        "pronunciation_guide": "bu-hru-h me da-shu-ri"
+      },
+      {
+        "id": "d2f6d3ef-ec9f-4f07-9aaf-f714f05a9706",
+        "stress_pattern": "ta-ki-mi e-sh-TE NE PE-se",
+        "pronunciation_guide": "ta-ki-mi e-sh-te ne pe-se"
+      },
+      {
+        "id": "d5510108-a279-47d7-b55d-b6e58745aee8",
+        "stress_pattern": "de-ra yo-nu-h u-hsh-tu-h geei-th-mo-nu-h e ha-PU-r",
+        "pronunciation_guide": "de-ra yo-nu-h u-hsh-tu-h geei-th-mo-nu-h e ha-pu-r"
+      },
+      {
+        "id": "d8327f28-16a8-4080-937b-8ee1fd551e4f",
+        "stress_pattern": "u-hsh-tu-h mi-ru-h chu-h tu-H SHO-h",
+        "pronunciation_guide": "u-hsh-tu-h mi-ru-h chu-h tu-h sho-h"
+      },
+      {
+        "id": "da335c41-9140-4681-b8e8-ae606a0e88dd",
+        "stress_pattern": "ye-MI PRA-pa",
+        "pronunciation_guide": "ye-mi pra-pa"
+      },
+      {
+        "id": "dd2a7fb3-c963-4ab9-ac77-7b69aa9de598",
+        "stress_pattern": "ya-ve-n tye-TE-r",
+        "pronunciation_guide": "ya-ve-n tye-te-r"
+      },
+      {
+        "id": "e07d91f0-38cf-4560-8d5f-6ad0265c838f",
+        "stress_pattern": "su-H FU-ndmi",
+        "pronunciation_guide": "su-h fu-ndmi"
+      },
+      {
+        "id": "e0d06577-8ee0-48e2-9729-ea74fa6cd911",
+        "stress_pattern": "pa-k e ngro-HTU-h",
+        "pronunciation_guide": "pa-k e ngro-htu-h"
+      },
+      {
+        "id": "e17f91c3-19ba-4857-b588-c2883c334297",
+        "stress_pattern": "neeu-h geeee-smu-H E KU-hsay",
+        "pronunciation_guide": "neeu-h geeee-smu-h e ku-hsay"
+      },
+      {
+        "id": "e1bce85c-15cb-4d5a-9f60-e105bc9dc7d2",
+        "stress_pattern": "ch'tu-h ka ndo-DHU-r?",
+        "pronunciation_guide": "ch'tu-h ka ndo-dhu-r?"
+      },
+      {
+        "id": "e489a113-0532-4efc-9bf1-a9d2f9cb192f",
+        "stress_pattern": "ya-m i ngo-PU-r",
+        "pronunciation_guide": "ya-m i ngo-pu-r"
+      },
+      {
+        "id": "e59b29b5-f4cd-45ee-9203-07412a75074b",
+        "stress_pattern": "s'ka ne-voyu-h pu-hr tu-h sh-PEYTUA-r",
+        "pronunciation_guide": "s'ka ne-voyu-h pu-hr tu-h sh-peytua-r"
+      },
+      {
+        "id": "e6ae639e-751f-477a-a9e5-104eb7402e54",
+        "stress_pattern": "pu-SHO PA-k",
+        "pronunciation_guide": "pu-sho pa-k"
+      },
+      {
+        "id": "ea02e186-7dd8-4697-b69d-2e9617980444",
+        "stress_pattern": "a ye i u-ri-TU-r?",
+        "pronunciation_guide": "a ye i u-ri-tu-r?"
+      },
+      {
+        "id": "ea5fef47-dffd-410c-8bec-4525782090e1",
+        "stress_pattern": "shu-MU-h re",
+        "pronunciation_guide": "shu-mu-h re"
+      },
+      {
+        "id": "eaaafd5f-50d5-40c4-97e9-54770d859b6b",
+        "stress_pattern": "shi-he-mi ne me-NGEEE-s",
+        "pronunciation_guide": "shi-he-mi ne me-ngeee-s"
+      },
+      {
+        "id": "eb143d7b-afcd-42b4-9a54-b79e41395efc",
+        "stress_pattern": "ru-gu-ht ya-nu-h tu-h sh-ku-hpu-TSH-me",
+        "pronunciation_guide": "ru-gu-ht ya-nu-h tu-h sh-ku-hpu-tsh-me"
+      },
+      {
+        "id": "f3bd3326-b64b-4d43-92ac-12dfe3db7fa4",
+        "stress_pattern": "bu-ku-h e bu-hru-h nu-h sh-TU-hpi",
+        "pronunciation_guide": "bu-ku-h e bu-hru-h nu-h sh-tu-hpi"
+      },
+      {
+        "id": "f3ce0c65-bd6c-45fd-8347-ea53f624a05a",
+        "stress_pattern": "bu-hhu i du-RUA-r",
+        "pronunciation_guide": "bu-hhu i du-rua-r"
+      },
+      {
+        "id": "f4cf6257-860f-4cf4-a6bb-9825a166dcea",
+        "stress_pattern": "pro-vo pu-HRSU-hri",
+        "pronunciation_guide": "pro-vo pu-hrsu-hri"
+      },
+      {
+        "id": "f564264e-e7d0-4b22-b457-629eaeaf1833",
+        "stress_pattern": "nga ko-psh-ti ee-NU-h",
+        "pronunciation_guide": "nga ko-psh-ti ee-nu-h"
+      },
+      {
+        "id": "f60caaa3-f6e7-467d-8682-0c5317b965fd",
+        "stress_pattern": "ne kuyde-se-MI PU-hr tee",
+        "pronunciation_guide": "ne kuyde-se-mi pu-hr tee"
+      },
+      {
+        "id": "f6561fef-fc04-4536-af95-03092ac725ae",
+        "stress_pattern": "neeu-h he-ru-h nu-h ya-VU-h",
+        "pronunciation_guide": "neeu-h he-ru-h nu-h ya-vu-h"
+      },
+      {
+        "id": "f7817a4e-75fe-4478-af24-b1a3aab96d93",
+        "stress_pattern": "PO DU-hgeeoy",
+        "pronunciation_guide": "po du-hgeeoy"
+      },
+      {
+        "id": "fbe74b36-6524-4e27-ade4-f4ee33dd7534",
+        "stress_pattern": "si u-hsh-tu-h geee-ndya e tu-h geei-THU-hve?",
+        "pronunciation_guide": "si u-hsh-tu-h geee-ndya e tu-h geei-thu-hve?"
+      },
+      {
+        "id": "fd64b7ef-0c72-4c47-8ce6-0a21d20ec229",
+        "stress_pattern": "mu-H FO-l",
+        "pronunciation_guide": "mu-h fo-l"
+      },
+      {
+        "id": "ff72c65d-f3a5-4f46-a054-a62ab6dcbd4f",
+        "stress_pattern": "be-SOY NU-h tee",
+        "pronunciation_guide": "be-soy nu-h tee"
+      }
+    ],
+    "errors": [
+      "Pronunciation batch update failed: value too long for type character varying(100)",
+      "Pronunciation batch update failed: value too long for type character varying(100)",
+      "Pronunciation batch update failed: value too long for type character varying(100)",
+      "Pronunciation batch update failed: value too long for type character varying(100)"
+    ]
+  },
+  "verification": {
+    "total_items": 360,
+    "pronunciation_coverage": "333/360 (92.5%)",
+    "stress_pattern_coverage": "160/360 (44.4%)",
+    "avg_pronunciation_length": 41.2972972972973,
+    "avg_stress_length": 22.45625
+  }
+}

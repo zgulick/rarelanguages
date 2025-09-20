@@ -28,34 +28,105 @@ interface LessonContent {
 interface Lesson {
   id: string;
   name: string;
-  description: string;
+  description?: string;
   skill_name: string;
   skill_description: string;
   estimated_minutes: number;
+  is_split_lesson: boolean;
+  sub_lesson_count: number;
+  total_sub_lessons: number;
+  lesson_type: 'split' | 'single';
+}
+
+interface SubLesson {
+  id: string;
+  name: string;
+  sequence_number: number;
+  estimated_minutes: number;
+  content_count: number;
+  is_accessible: boolean;
+  completion_status: string;
+}
+
+interface LessonInfo {
+  id: string;
+  name: string;
+  is_sub_lesson: boolean;
+  parent_lesson_id?: string;
+  parent_lesson_name?: string;
+  current_sub_lesson: number;
+  total_sub_lessons: number;
+  lesson_type: 'sub_lesson' | 'parent' | 'single';
+}
+
+interface Navigation {
+  previous_lesson?: {
+    id: string;
+    name: string;
+  } | null;
+  next_lesson?: {
+    id: string;
+    name: string;
+  } | null;
 }
 
 export default function SkillLearningPage() {
   const params = useParams();
   const skillId = params.id as string;
+
+  // State management for sub-lesson support
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [currentLessonIndex, setCurrentLessonIndex] = useState(0);
+  const [subLessons, setSubLessons] = useState<SubLesson[]>([]);
+  const [currentSubLessonIndex, setCurrentSubLessonIndex] = useState(0);
+  const [currentLessonInfo, setCurrentLessonInfo] = useState<LessonInfo | null>(null);
   const [currentContent, setCurrentContent] = useState<LessonContent[]>([]);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [navigation, setNavigation] = useState<Navigation | null>(null);
   const [loading, setLoading] = useState(true);
   const [skillName, setSkillName] = useState('');
+  const [isLoadingNextLesson, setIsLoadingNextLesson] = useState(false);
 
+  // Load lesson content for a specific lesson ID
+  const loadLessonContent = async (lessonId: string) => {
+    try {
+      const lessonResponse = await fetch(`/api/lessons/${lessonId}/content`);
+
+      if (!lessonResponse.ok) {
+        throw new Error(`Failed to fetch lesson content: ${lessonResponse.status}`);
+      }
+
+      const lessonData = await lessonResponse.json();
+
+      if (!lessonData.success) {
+        throw new Error(`Lesson content API error: ${lessonData.error}`);
+      }
+
+      setCurrentLessonInfo(lessonData.lesson);
+      setCurrentContent(lessonData.content);
+      setNavigation(lessonData.navigation);
+      setCurrentCardIndex(0);
+
+      return lessonData;
+    } catch (error) {
+      console.error('Failed to load lesson content:', error);
+      throw error;
+    }
+  };
+
+  // Initialize the learning experience
   useEffect(() => {
-    const fetchSkillLessons = async () => {
+    const initializeLearning = async () => {
       try {
-        // First, get all lessons for this skill
+        // First, get all parent lessons for this skill
         const skillResponse = await fetch(`/api/skills/${skillId}/lessons`);
-        
+
         if (!skillResponse.ok) {
           throw new Error(`Failed to fetch skill lessons: ${skillResponse.status}`);
         }
 
         const skillData = await skillResponse.json();
-        
+
         if (!skillData.success) {
           throw new Error(`Skill API error: ${skillData.error}`);
         }
@@ -67,40 +138,113 @@ export default function SkillLearningPage() {
         setSkillName(skillData.skill.name);
         setLessons(skillData.lessons);
 
-        // Get content for the first lesson
+        // Get the first lesson and determine if it has sub-lessons
         const firstLesson = skillData.lessons[0];
-        const lessonResponse = await fetch(`/api/lessons/${firstLesson.id}/content`);
-        
-        if (!lessonResponse.ok) {
-          throw new Error(`Failed to fetch lesson content: ${lessonResponse.status}`);
+
+        if (firstLesson.is_split_lesson) {
+          // This lesson has sub-lessons, get them
+          const subLessonsResponse = await fetch(`/api/lessons/${firstLesson.id}/sub-lessons`);
+
+          if (!subLessonsResponse.ok) {
+            throw new Error(`Failed to fetch sub-lessons: ${subLessonsResponse.status}`);
+          }
+
+          const subLessonsData = await subLessonsResponse.json();
+
+          if (!subLessonsData.success) {
+            throw new Error(`Sub-lessons API error: ${subLessonsData.error}`);
+          }
+
+          setSubLessons(subLessonsData.sub_lessons);
+
+          // Load content for the first sub-lesson
+          const firstSubLesson = subLessonsData.sub_lessons[0];
+          await loadLessonContent(firstSubLesson.id);
+        } else {
+          // This is a regular lesson, load it directly
+          await loadLessonContent(firstLesson.id);
         }
 
-        const lessonData = await lessonResponse.json();
-        
-        if (!lessonData.success) {
-          throw new Error(`Lesson content API error: ${lessonData.error}`);
-        }
-
-        setCurrentContent(lessonData.content);
         setLoading(false);
 
       } catch (error) {
-        console.error('Failed to fetch skill lessons:', error);
-        throw error;
+        console.error('Failed to initialize learning:', error);
+        setLoading(false);
+        // Show error to user
+        alert(`Failed to load lesson: ${error.message}`);
       }
     };
 
     if (skillId) {
-      fetchSkillLessons();
+      initializeLearning();
     }
   }, [skillId]);
+
+  // Navigate to next lesson (sub-lesson or next parent lesson)
+  const navigateToNextLesson = async () => {
+    if (isLoadingNextLesson) return;
+
+    try {
+      setIsLoadingNextLesson(true);
+
+      // Check if there's a next lesson in navigation
+      if (navigation?.next_lesson) {
+        await loadLessonContent(navigation.next_lesson.id);
+
+        // Update sub-lesson index if we're in a sub-lesson sequence
+        if (currentLessonInfo?.is_sub_lesson && subLessons.length > 0) {
+          const nextIndex = subLessons.findIndex(sl => sl.id === navigation.next_lesson?.id);
+          if (nextIndex !== -1) {
+            setCurrentSubLessonIndex(nextIndex);
+          }
+        }
+      } else {
+        // No more sub-lessons, check if there's a next parent lesson
+        const currentParentIndex = lessons.findIndex(l =>
+          l.id === (currentLessonInfo?.parent_lesson_id || currentLessonInfo?.id)
+        );
+
+        if (currentParentIndex < lessons.length - 1) {
+          // Move to next parent lesson
+          const nextParentLesson = lessons[currentParentIndex + 1];
+          setCurrentLessonIndex(currentParentIndex + 1);
+
+          if (nextParentLesson.is_split_lesson) {
+            // Load sub-lessons for the next parent lesson
+            const subLessonsResponse = await fetch(\`/api/lessons/\${nextParentLesson.id}/sub-lessons\`);
+            const subLessonsData = await subLessonsResponse.json();
+
+            if (subLessonsData.success) {
+              setSubLessons(subLessonsData.sub_lessons);
+              setCurrentSubLessonIndex(0);
+              await loadLessonContent(subLessonsData.sub_lessons[0].id);
+            }
+          } else {
+            // Regular lesson
+            setSubLessons([]);
+            setCurrentSubLessonIndex(0);
+            await loadLessonContent(nextParentLesson.id);
+          }
+        } else {
+          // All lessons complete!
+          alert('🎉 Congratulations! You have completed all lessons in this skill!');
+          // TODO: Navigate back to skill selection or show completion screen
+        }
+      }
+    } catch (error) {
+      console.error('Failed to navigate to next lesson:', error);
+      alert(\`Failed to load next lesson: \${error.message}\`);
+    } finally {
+      setIsLoadingNextLesson(false);
+    }
+  };
 
   const nextCard = () => {
     if (currentCardIndex < currentContent.length - 1) {
       setCurrentCardIndex(currentCardIndex + 1);
     } else {
-      // Lesson complete
-      alert('Lesson complete! (TODO: Navigate to next lesson or skill completion)');
+      // Current lesson complete, navigate to next lesson
+      navigateToNextLesson();
     }
   };
 
@@ -150,6 +294,32 @@ export default function SkillLearningPage() {
 
   const currentCard = currentContent[currentCardIndex];
 
+  // Helper function to get lesson sequence display text
+  const getLessonSequenceText = () => {
+    if (!currentLessonInfo) return '';
+
+    if (currentLessonInfo.is_sub_lesson) {
+      return `Part ${currentLessonInfo.current_sub_lesson} of ${currentLessonInfo.total_sub_lessons}`;
+    }
+
+    return 'Single Lesson';
+  };
+
+  // Helper function to get overall progress percentage
+  const getOverallProgressPercentage = () => {
+    if (!currentLessonInfo) return 0;
+
+    if (currentLessonInfo.is_sub_lesson) {
+      // Calculate progress within the lesson sequence
+      const lessonProgress = (currentLessonInfo.current_sub_lesson - 1) / currentLessonInfo.total_sub_lessons;
+      const cardProgress = (currentCardIndex + 1) / currentContent.length / currentLessonInfo.total_sub_lessons;
+      return (lessonProgress + cardProgress) * 100;
+    } else {
+      // Single lesson progress
+      return ((currentCardIndex + 1) / currentContent.length) * 100;
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-stone-50 to-orange-50">
       {/* Navigation Bar */}
@@ -162,10 +332,21 @@ export default function SkillLearningPage() {
               </span>
             </Link>
             <div className="flex items-center space-x-4">
-              <span className="text-sm text-gray-600">
-                {currentCardIndex + 1} of {currentContent.length}
-              </span>
-              <button 
+              {/* Lesson Progress Indicator */}
+              {currentLessonInfo && (
+                <div className="flex items-center space-x-2 text-sm text-gray-600">
+                  <span>Card {currentCardIndex + 1} of {currentContent.length}</span>
+                  {currentLessonInfo.is_sub_lesson && (
+                    <>
+                      <span>•</span>
+                      <span className="font-medium text-emerald-700">
+                        {getLessonSequenceText()}
+                      </span>
+                    </>
+                  )}
+                </div>
+              )}
+              <button
                 onClick={() => window.history.back()}
                 className="text-emerald-700 hover:text-emerald-800 font-medium transition-colors"
               >
@@ -178,9 +359,29 @@ export default function SkillLearningPage() {
 
       {/* Learning Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Skill Header */}
+        {/* Lesson Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">{skillName}</h1>
+
+          {/* Lesson Name and Sequence Info */}
+          {currentLessonInfo && (
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                {currentLessonInfo.parent_lesson_name || currentLessonInfo.name}
+              </h2>
+              {currentLessonInfo.is_sub_lesson && (
+                <div className="flex justify-center items-center space-x-2">
+                  <div className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    {getLessonSequenceText()}
+                  </div>
+                  <span className="text-gray-400">•</span>
+                  <span className="text-sm text-gray-600">{currentLessonInfo.name}</span>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Card Type and Progress */}
           <div className="flex justify-center items-center space-x-4 text-sm text-gray-600">
             <span>Card {currentCardIndex + 1} of {currentContent.length}</span>
             <span>•</span>
@@ -188,20 +389,43 @@ export default function SkillLearningPage() {
           </div>
         </div>
 
-        {/* Progress Bar */}
-        <div className="mb-8">
-          <div className="bg-gray-200 rounded-full h-2">
-            <div 
-              className="bg-gradient-to-r from-emerald-500 to-orange-500 h-2 rounded-full transition-all duration-300"
-              style={{ width: `${((currentCardIndex + 1) / currentContent.length) * 100}%` }}
-            ></div>
+        {/* Enhanced Progress Section */}
+        <div className="mb-8 space-y-3">
+          {/* Card Progress Bar */}
+          <div>
+            <div className="flex justify-between text-xs text-gray-600 mb-1">
+              <span>Card Progress</span>
+              <span>{currentCardIndex + 1} / {currentContent.length}</span>
+            </div>
+            <div className="bg-gray-200 rounded-full h-2">
+              <div
+                className="bg-gradient-to-r from-emerald-500 to-orange-500 h-2 rounded-full transition-all duration-300"
+                style={{ width: `${((currentCardIndex + 1) / currentContent.length) * 100}%` }}
+              ></div>
+            </div>
           </div>
+
+          {/* Overall Lesson Sequence Progress (if sub-lesson) */}
+          {currentLessonInfo?.is_sub_lesson && (
+            <div>
+              <div className="flex justify-between text-xs text-gray-600 mb-1">
+                <span>Overall Progress</span>
+                <span>{Math.round(getOverallProgressPercentage())}%</span>
+              </div>
+              <div className="bg-gray-200 rounded-full h-1">
+                <div
+                  className="bg-gradient-to-r from-emerald-300 to-orange-300 h-1 rounded-full transition-all duration-500"
+                  style={{ width: `${getOverallProgressPercentage()}%` }}
+                ></div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Learning Card */}
         {currentCard && renderLearningCard(currentCard)}
 
-        {/* Navigation Controls */}
+        {/* Enhanced Navigation Controls */}
         <div className="flex justify-between items-center mt-8">
           <button
             onClick={previousCard}
@@ -210,14 +434,36 @@ export default function SkillLearningPage() {
           >
             ← Previous
           </button>
-          
+
           <button
             onClick={nextCard}
-            className="px-6 py-3 bg-gradient-to-r from-emerald-600 to-orange-600 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-orange-700 transition-colors"
+            disabled={isLoadingNextLesson}
+            className="px-6 py-3 bg-gradient-to-r from-emerald-600 to-orange-600 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-orange-700 transition-colors disabled:opacity-50 flex items-center space-x-2"
           >
-            {currentCardIndex === currentContent.length - 1 ? 'Complete Lesson' : 'Next →'}
+            {isLoadingNextLesson ? (
+              <>
+                <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                <span>Loading...</span>
+              </>
+            ) : (
+              <span>
+                {currentCardIndex === currentContent.length - 1
+                  ? (navigation?.next_lesson ? 'Next Lesson' : 'Complete!')
+                  : 'Next →'
+                }
+              </span>
+            )}
           </button>
         </div>
+
+        {/* Next Lesson Preview */}
+        {currentCardIndex === currentContent.length - 1 && navigation?.next_lesson && (
+          <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-center">
+            <p className="text-emerald-800 font-medium">
+              Next: {navigation.next_lesson.name}
+            </p>
+          </div>
+        )}
       </main>
     </div>
   );
