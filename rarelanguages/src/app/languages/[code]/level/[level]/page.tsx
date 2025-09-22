@@ -65,122 +65,146 @@ export default function LevelPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-stone-50 to-orange-50">
-        <nav className="bg-white/80 backdrop-blur-sm border-b border-emerald-100 sticky top-0 z-50">
+      <div className="min-h-screen relative overflow-hidden">
+        {/* Enhanced Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/50"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-100/20 via-transparent to-orange-100/20"></div>
+
+        <nav className="glass-nav sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <Link href="/" className="flex items-center space-x-2">
-                <span className="text-2xl font-bold bg-gradient-to-r from-emerald-700 to-orange-600 bg-clip-text text-transparent">
+            <div className="flex justify-between items-center h-20">
+              <Link href="/" className="group flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500 to-orange-500 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <span className="text-white font-bold text-lg">R</span>
+                </div>
+                <span className="text-2xl font-bold gradient-text">
                   Rare Languages
                 </span>
               </Link>
             </div>
           </div>
         </nav>
-        <div className="text-center py-16">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading skills...</p>
+
+        <div className="relative z-10 flex items-center justify-center min-h-[60vh]">
+          <div className="text-center">
+            <div className="relative mb-6">
+              <div className="w-16 h-16 border-4 border-emerald-200 border-t-emerald-600 rounded-full animate-spin mx-auto"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-orange-200 border-t-orange-500 rounded-full animate-spin" style={{animationDelay: '0.5s'}}></div>
+            </div>
+            <div className="glass-card px-6 py-4 rounded-3xl inline-block">
+              <p className="text-gray-700 font-medium mb-1">Loading skills...</p>
+              <p className="text-gray-500 text-sm">Preparing your learning path</p>
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-stone-50 to-orange-50">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Enhanced Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/50"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-100/20 via-transparent to-orange-100/20"></div>
+
       {/* Navigation Bar */}
-      <nav className="bg-white/80 backdrop-blur-sm border-b border-emerald-100 sticky top-0 z-50">
+      <nav className="glass-nav sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold bg-gradient-to-r from-emerald-700 to-orange-600 bg-clip-text text-transparent">
+          <div className="flex justify-between items-center h-20">
+            <Link href="/" className="group flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500 to-orange-500 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                <span className="text-white font-bold text-lg">R</span>
+              </div>
+              <span className="text-2xl font-bold gradient-text">
                 Rare Languages
               </span>
             </Link>
-            <Link 
+            <Link
               href={`/languages/${languageCode}`}
-              className="text-emerald-700 hover:text-emerald-800 font-medium transition-colors"
+              className="btn-ghost px-4 py-2 text-sm"
             >
-              ← Back to {languageName} Levels
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to {languageName} Levels
             </Link>
           </div>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8">
+          <h1 className="heading-1 mb-4 animate-fade-in-up" style={{color: '#f97316'}}>
             {languageName} Level {level}
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="body-large max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             Choose a skill to start learning. ({skills.length} skills available)
           </p>
         </div>
 
-        {/* Debug Info */}
-        <div className="mb-8 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-          <p className="text-sm text-yellow-800">
-            <strong>Debug:</strong> Found {skills.length} skills with positions: {' '}
-            {skills.map(s => s.position).join(', ')}
-          </p>
-        </div>
-
         {/* Skills Selection */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill) => (
             <Link 
               key={skill.id} 
               href={`/skills/${skill.id}/learn`}
               className="group"
             >
-              <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:border-emerald-200">
-                {/* Skill Icon/Position */}
-                <div className="flex justify-between items-start mb-6">
-                  <div className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    Skill {skill.position}
-                  </div>
-                  <div className="text-3xl">
-                    📚
-                  </div>
-                </div>
-                
-                {/* Skill Name */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-emerald-700 transition-colors">
-                  {skill.name}
-                </h3>
-                
-                {/* Skill Description */}
-                <p className="text-gray-600 mb-6 line-clamp-3">
-                  {skill.description}
-                </p>
-                
-                {/* Course Name */}
-                <p className="text-sm text-gray-500 mb-4">
-                  From: {skill.courseName}
-                </p>
-                
-                {/* Stats */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="text-center p-3 bg-emerald-50 rounded-lg border border-emerald-100">
-                    <div className="text-2xl font-bold text-emerald-700">{skill.totalLessons}</div>
-                    <div className="text-sm text-emerald-600 font-medium">
-                      {skill.totalLessons === 1 ? 'Lesson' : 'Lessons'}
+              <div className="card-hover p-6 hover:shadow-glow-emerald">
+                <div className="flex flex-col h-full">
+                  {/* Skill Icon/Position */}
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="badge-emerald text-sm font-bold">
+                      Skill {skill.position}
+                    </div>
+                    <div className="text-3xl">
+                      📚
                     </div>
                   </div>
-                  <div className="text-center p-3 bg-orange-50 rounded-lg border border-orange-100">
-                    <div className="text-2xl font-bold text-orange-700">{skill.estimatedHours}h</div>
-                    <div className="text-sm text-orange-600 font-medium">Est. Time</div>
+
+                  {/* Skill Name */}
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:gradient-text transition-all duration-300">
+                    {skill.name}
+                  </h3>
+
+                  {/* Skill Description */}
+                  <p className="text-gray-600 mb-4 text-sm line-height-relaxed overflow-hidden" style={{
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical'
+                  }}>
+                    {skill.description.length > 80 ? skill.description.substring(0, 80) + '...' : skill.description}
+                  </p>
+
+                  {/* Course Name */}
+                  <p className="text-xs text-gray-500 mb-4">
+                    From: {skill.courseName}
+                  </p>
+
+                  {/* Stats */}
+                  <div className="grid grid-cols-2 gap-3 mb-6">
+                    <div className="text-center glass-card">
+                      <div className="text-xl font-bold gradient-text mb-1">{skill.totalLessons}</div>
+                      <div className="text-xs text-gray-600 font-medium">
+                        {skill.totalLessons === 1 ? 'Lesson' : 'Lessons'}
+                      </div>
+                    </div>
+                    <div className="text-center glass-card">
+                      <div className="text-xl font-bold gradient-text mb-1">{skill.estimatedHours}h</div>
+                      <div className="text-xs text-gray-600 font-medium">Est. Time</div>
+                    </div>
                   </div>
-                </div>
-                
-                {/* Action */}
-                <div className="text-center">
-                  <div className="inline-flex items-center text-emerald-700 font-semibold group-hover:text-emerald-800 transition-colors">
-                    Start Learning
-                    <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
+
+                  {/* Action */}
+                  <div className="mt-auto">
+                    <div className="btn-primary w-full flex items-center justify-center text-sm">
+                      Start Learning
+                      <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
