@@ -1,0 +1,240 @@
+{
+  "removed_count": 39,
+  "timestamp": "2025-09-23T20:08:42.860Z",
+  "removed_items": [
+    {
+      "content_id": "ec888165-4802-4958-b2b9-97f89a7e6639",
+      "phrase": "As a result",
+      "lesson": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: as a result"
+    },
+    {
+      "content_id": "6a20247b-cf63-4357-a480-26198ee28a02",
+      "phrase": "In conclusion",
+      "lesson": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: in conclusion"
+    },
+    {
+      "content_id": "fc317710-e8ff-444c-b756-6f7faa61efc3",
+      "phrase": "In contrast",
+      "lesson": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: in contrast"
+    },
+    {
+      "content_id": "28ff484d-351f-4d24-90bf-0bba6a2873ae",
+      "phrase": "As a result, we can infer that...",
+      "lesson": "Daily Routines",
+      "reason": "Matches academic/inappropriate pattern: as a result"
+    },
+    {
+      "content_id": "20b53807-f8da-4e14-8a92-4734b02561ee",
+      "phrase": "In conclusion, we can say that...",
+      "lesson": "Daily Routines",
+      "reason": "Matches academic/inappropriate pattern: in conclusion"
+    },
+    {
+      "content_id": "a41621a9-1a09-4cf6-a613-d8d588e910a9",
+      "phrase": "What are your thoughts on this issue?",
+      "lesson": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: what are your thoughts on this issue"
+    },
+    {
+      "content_id": "ca402026-9eb6-4a85-b3f5-996a93321c83",
+      "phrase": "Could you please provide more details?",
+      "lesson": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: could you please provide more details"
+    },
+    {
+      "content_id": "2ca5cfe8-5760-42f5-be2f-c11490e069b7",
+      "phrase": "Thank you for your assistance.",
+      "lesson": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: thank you for your assistance"
+    },
+    {
+      "content_id": "1ab55e81-e870-4902-a260-f956b4e6b32e",
+      "phrase": "I apologize for the inconvenience.",
+      "lesson": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: apologize for the inconvenience"
+    },
+    {
+      "content_id": "6444f4f9-91f4-4c8f-b5b6-a2d6b7248f09",
+      "phrase": "Critique the logical consistency",
+      "lesson": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: critique the"
+    },
+    {
+      "content_id": "0e1bd879-e982-47e1-af93-942559fabe0c",
+      "phrase": "Identify the main claim",
+      "lesson": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: identify the main claim"
+    },
+    {
+      "content_id": "56333401-0541-47f6-b54d-4b8707d677b6",
+      "phrase": "Reflect on the implications",
+      "lesson": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: reflect on the implications"
+    },
+    {
+      "content_id": "f2c447b5-070c-4942-a013-7fc6738489cb",
+      "phrase": "Summarize the key points",
+      "lesson": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: summarize the key points"
+    },
+    {
+      "content_id": "a08602da-0e72-4e65-8e5f-e14cc32fd16e",
+      "phrase": "Discover vocabulary for home and places.",
+      "lesson": "Places in Town",
+      "reason": "Matches academic/inappropriate pattern: discover vocabulary for"
+    },
+    {
+      "content_id": "de3411b3-1fe5-443f-9e94-129c00db2e4a",
+      "phrase": "Thank you for your assistance.",
+      "lesson": "Past Tense",
+      "reason": "Matches academic/inappropriate pattern: thank you for your assistance"
+    },
+    {
+      "content_id": "4215c23b-eb7a-4d1a-b887-e0fd9d520530",
+      "phrase": "I apologize for the inconvenience.",
+      "lesson": "Past Tense",
+      "reason": "Matches academic/inappropriate pattern: apologize for the inconvenience"
+    },
+    {
+      "content_id": "7b078454-4a3f-4df3-9156-0ecdb53ce0d9",
+      "phrase": "Discover vocabulary for home and places.",
+      "lesson": "Home Vocabulary",
+      "reason": "Matches academic/inappropriate pattern: discover vocabulary for"
+    },
+    {
+      "content_id": "9ba7dbc7-d70e-4ffa-bf97-6326fc1493fe",
+      "phrase": "I reflect on my learning experiences.",
+      "lesson": "Asking for Help",
+      "reason": "Matches academic/inappropriate pattern: reflect on.*learning"
+    },
+    {
+      "content_id": "a6d3bece-5568-4ebf-ae44-5bae76c3f4a6",
+      "phrase": "I use feedback to improve.",
+      "lesson": "Asking for Help",
+      "reason": "Matches academic/inappropriate pattern: feedback to improve"
+    },
+    {
+      "content_id": "2f9839d1-ea6a-4663-9ceb-df26e71f6410",
+      "phrase": "In this lesson, you'll learn numbers and time.",
+      "lesson": "Days of the Week",
+      "reason": "Matches academic/inappropriate pattern: in this lesson.*you'll learn"
+    },
+    {
+      "content_id": "9c6710ed-3df2-4542-837e-978066d6543c",
+      "phrase": "Identify your strengths and weaknesses",
+      "lesson": "Reflective Language Learning",
+      "reason": "Matches academic/inappropriate pattern: identify your strengths and weaknesses"
+    },
+    {
+      "content_id": "050f2864-6af0-44f3-9827-e31cff4532a9",
+      "phrase": "Reflect on cultural differences",
+      "lesson": "Reflective Language Learning",
+      "reason": "Matches academic/inappropriate pattern: reflect on cultural differences"
+    },
+    {
+      "content_id": "0c0a63d4-4b92-434b-9934-bf578b1794fd",
+      "phrase": "Seek feedback from peers",
+      "lesson": "Reflective Language Learning",
+      "reason": "Matches academic/inappropriate pattern: seek feedback from peers"
+    },
+    {
+      "content_id": "5924bf68-6a18-40f5-8b99-68d58d2a49a1",
+      "phrase": "In this lesson, you'll learn numbers and time.",
+      "lesson": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: in this lesson.*you'll learn"
+    },
+    {
+      "content_id": "1b274b38-2537-4c28-9029-108b964b62e9",
+      "phrase": "Could you please clarify your point?",
+      "lesson": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: clarify your point"
+    },
+    {
+      "content_id": "07568f54-020c-42df-97d8-1673a77e1f31",
+      "phrase": "Thank you for your cooperation.",
+      "lesson": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: thank you for your cooperation"
+    },
+    {
+      "content_id": "db0b2177-adff-4909-90c6-d21148afcdb5",
+      "phrase": "I apologize for the misunderstanding.",
+      "lesson": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: i apologize for the misunderstanding"
+    },
+    {
+      "content_id": "a2fc46bd-7882-49b5-bc91-3075eb7d9d62",
+      "phrase": "Let's review the main points.",
+      "lesson": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: let's review the main points"
+    },
+    {
+      "content_id": "c509fd16-ccb3-4d8e-8028-0e2169d26063",
+      "phrase": "I apologize for the inconvenience.",
+      "lesson": "Storytelling",
+      "reason": "Matches academic/inappropriate pattern: apologize for the inconvenience"
+    },
+    {
+      "content_id": "0ba2764a-67ce-4193-83bd-33cea15d6576",
+      "phrase": "In this lesson, you'll learn numbers and time.",
+      "lesson": "Basic Interactions",
+      "reason": "Matches academic/inappropriate pattern: in this lesson.*you'll learn"
+    },
+    {
+      "content_id": "51bb7b67-1be1-4035-8899-d90ccce958cf",
+      "phrase": "Discover vocabulary for home and places.",
+      "lesson": "Giving Directions",
+      "reason": "Matches academic/inappropriate pattern: discover vocabulary for"
+    },
+    {
+      "content_id": "655891fc-ad45-4185-8d8d-fa8ae3833c8e",
+      "phrase": "Could you clarify your point?",
+      "lesson": "Basic Vocabulary",
+      "reason": "Matches academic/inappropriate pattern: clarify your point"
+    },
+    {
+      "content_id": "1f073cc5-a7d7-49fb-ad27-2f447e8c691e",
+      "phrase": "I apologize for the misunderstanding.",
+      "lesson": "Basic Vocabulary",
+      "reason": "Matches academic/inappropriate pattern: i apologize for the misunderstanding"
+    },
+    {
+      "content_id": "9f16d106-7c89-47a2-8516-af69ac25929c",
+      "phrase": "How was your trip?",
+      "lesson": "Albanian Sounds - Part 9",
+      "reason": "Matches academic/inappropriate pattern: how was your trip"
+    },
+    {
+      "content_id": "45243593-daaf-43db-9c56-98e74210c747",
+      "phrase": "How many children do you have?",
+      "lesson": "Albanian Sounds - Part 4",
+      "reason": "Matches academic/inappropriate pattern: how many children do you have"
+    },
+    {
+      "content_id": "3379b7e8-2728-49e0-bd7d-293bcf592983",
+      "phrase": "What brings you here?",
+      "lesson": "Albanian Sounds - Part 4",
+      "reason": "Matches academic/inappropriate pattern: what brings you here"
+    },
+    {
+      "content_id": "2949fda7-5fc8-494a-a178-8eb92a622c15",
+      "phrase": "How is work going?",
+      "lesson": "Albanian Sounds - Part 3",
+      "reason": "Matches academic/inappropriate pattern: how is work going"
+    },
+    {
+      "content_id": "0a2947f1-2964-4c5d-b4b5-56fa443452fd",
+      "phrase": "Identify the main idea of the text.",
+      "lesson": "Expressing Opinions",
+      "reason": "Matches academic/inappropriate pattern: main idea of the text"
+    },
+    {
+      "content_id": "647acdb9-9c4c-4b47-af81-65ee7f9d32b3",
+      "phrase": "Summarize the text in your own words.",
+      "lesson": "Expressing Opinions",
+      "reason": "Matches academic/inappropriate pattern: in your own words"
+    }
+  ]
+}

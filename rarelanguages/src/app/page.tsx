@@ -71,11 +71,11 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Enhanced Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/50"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-100/20 via-transparent to-orange-100/20"></div>
+      <div className="absolute inset-0" style={{backgroundColor: '#f7f9fa'}}></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-100/20 via-transparent to-secondary-100/20"></div>
       <div className="absolute top-0 left-0 w-full h-full opacity-3">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-        <div className="absolute top-40 right-10 w-64 h-64 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-primary-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
+        <div className="absolute top-40 right-10 w-64 h-64 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
       </div>
 
       {/* Modern Navigation Bar */}
@@ -83,10 +83,10 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link href="/" className="group flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500 to-orange-500 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+              <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                 <span className="text-white font-bold text-lg">R</span>
               </div>
-              <span className="text-2xl font-bold gradient-text">
+              <span className="text-2xl font-bold text-primary">
                 Rare Languages
               </span>
             </Link>
@@ -100,12 +100,12 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
           <div className="text-center relative">
             {/* Floating Elements - Minimal */}
-            <div className="absolute -top-8 left-1/4 w-2 h-2 bg-emerald-400 rounded-full animate-float opacity-10"></div>
-            <div className="absolute top-16 right-1/3 w-1 h-1 bg-orange-400 rounded-full animate-float opacity-8" style={{animationDelay: '1s'}}></div>
+            <div className="absolute -top-8 left-1/4 w-2 h-2 bg-primary-400 rounded-full animate-float opacity-10"></div>
+            <div className="absolute top-16 right-1/3 w-1 h-1 bg-secondary-400 rounded-full animate-float opacity-8" style={{animationDelay: '1s'}}></div>
 
             <div className="mb-6">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-emerald-700 text-sm font-medium mb-6 animate-fade-in-down">
-                <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-primary-700 text-sm font-medium mb-6 animate-fade-in-down">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
                 Next-generation language learning platform
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function LandingPage() {
               Master{' '}
               <span className="relative">
                 Rare Languages
-                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 to-orange-400 rounded-full transform scale-x-0 animate-scale-in" style={{animationDelay: '1s'}}></div>
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full transform scale-x-0 animate-scale-in" style={{animationDelay: '1s'}}></div>
               </span>
             </h1>
 
@@ -129,7 +129,7 @@ export default function LandingPage() {
                   const languageSection = document.querySelector('#language-selection');
                   languageSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="btn-primary px-8 py-4 shadow-glow-emerald flex items-center justify-center"
+                className="btn-primary px-8 py-4 shadow-glow-primary flex items-center justify-center"
               >
                 Explore Languages
                 <svg className="ml-2 w-5 h-5 transition-transform group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -141,16 +141,16 @@ export default function LandingPage() {
             {/* Stats Cards - Standardized */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               <div className="glass-card text-center hover-lift">
-                <div className="text-2xl font-bold gradient-text mb-1">{languages.length}</div>
-                <div className="text-gray-600 font-medium text-sm">Rare Languages</div>
+                <div className="text-2xl font-bold text-primary mb-1">{languages.length}</div>
+                <div className="text-text-secondary font-medium text-sm">Rare Languages</div>
               </div>
               <div className="glass-card text-center hover-lift">
-                <div className="text-2xl font-bold gradient-text mb-1">{courses.length}</div>
-                <div className="text-gray-600 font-medium text-sm">Learning Courses</div>
+                <div className="text-2xl font-bold text-primary mb-1">{courses.length}</div>
+                <div className="text-text-secondary font-medium text-sm">Learning Courses</div>
               </div>
               <div className="glass-card text-center hover-lift">
-                <div className="text-2xl font-bold gradient-text mb-1">∞</div>
-                <div className="text-gray-600 font-medium text-sm">Possibilities</div>
+                <div className="text-2xl font-bold text-primary mb-1">∞</div>
+                <div className="text-text-secondary font-medium text-sm">Possibilities</div>
               </div>
             </div>
           </div>
@@ -168,10 +168,10 @@ export default function LandingPage() {
           {loading ? (
             <div className="text-center py-16">
               <div className="relative">
-                <div className="w-16 h-16 border-4 border-emerald-200 border-t-emerald-600 rounded-full animate-spin mx-auto mb-6"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-orange-200 border-t-orange-500 rounded-full animate-spin"></div>
+                <div className="w-16 h-16 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mx-auto mb-6"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-secondary-200 border-t-secondary-500 rounded-full animate-spin"></div>
               </div>
-              <p className="text-gray-600 font-medium">Discovering rare languages...</p>
+              <p className="text-text-secondary font-medium">Discovering rare languages...</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up">
@@ -193,17 +193,17 @@ export default function LandingPage() {
                       className={`group ${isFeatured ? 'lg:col-start-2 lg:row-start-1' : ''}`}
                       style={{animationDelay: `${index * 0.1}s`}}
                     >
-                      <div className={`card-hover p-6 relative overflow-hidden group-hover:shadow-glow-emerald ${
-                        isFeatured ? 'scale-105 shadow-lg ring-2 ring-emerald-200/50' : ''
+                      <div className={`card-hover p-6 relative overflow-hidden group-hover:shadow-glow-primary ${
+                        isFeatured ? 'scale-105 shadow-lg ring-2 ring-primary-200/50' : ''
                       }`}>
                       {/* Subtle Background Pattern - Reduced opacity */}
-                      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-emerald-50 to-orange-50 rounded-full -translate-y-12 translate-x-12 opacity-20 group-hover:scale-110 transition-transform duration-500"></div>
+                      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-full -translate-y-12 translate-x-12 opacity-20 group-hover:scale-110 transition-transform duration-500"></div>
 
                         <div className="relative z-10 flex flex-col h-full">
                           {/* Featured Badge */}
                           {isFeatured && (
                             <div className="absolute -top-3 -right-3 z-20">
-                              <div className="badge-emerald text-xs font-bold px-3 py-1 shadow-lg">
+                              <div className="badge-success text-xs font-bold px-3 py-1 shadow-lg">
                                 Most Content
                               </div>
                             </div>
@@ -219,13 +219,13 @@ export default function LandingPage() {
 
                             {/* Language Names */}
                             <div className="space-y-1">
-                              <h3 className={`font-bold text-gray-900 group-hover:gradient-text transition-all duration-300 ${
+                              <h3 className={`font-bold text-text-primary group-hover:text-primary transition-all duration-300 ${
                                 isFeatured ? 'text-2xl' : 'text-xl'
                               }`}>
                                 {language.name}
                               </h3>
                               {language.native_name && language.native_name !== language.name && (
-                                <p className={`text-gray-600 font-medium ${
+                                <p className={`text-text-secondary font-medium ${
                                   isFeatured ? 'text-lg' : 'text-base'
                                 }`}>
                                   {language.native_name}
@@ -237,14 +237,14 @@ export default function LandingPage() {
                           {/* Enhanced Stats */}
                           <div className="grid grid-cols-2 gap-3 mb-6">
                             <div className="text-center glass-card">
-                              <div className="text-xl font-bold gradient-text mb-1">{totalCourses}</div>
-                              <div className="text-xs text-gray-600 font-medium">
+                              <div className="text-xl font-bold text-primary mb-1">{totalCourses}</div>
+                              <div className="text-xs text-text-secondary font-medium">
                                 {totalCourses === 1 ? 'Course' : 'Courses'}
                               </div>
                             </div>
                             <div className="text-center glass-card">
-                              <div className="text-xl font-bold gradient-text mb-1">{totalLessons}</div>
-                              <div className="text-xs text-gray-600 font-medium">
+                              <div className="text-xl font-bold text-primary mb-1">{totalLessons}</div>
+                              <div className="text-xs text-text-secondary font-medium">
                                 {totalLessons === 1 ? 'Lesson' : 'Lessons'}
                               </div>
                             </div>
@@ -277,8 +277,8 @@ export default function LandingPage() {
                 <div className="glass-card w-32 h-32 rounded-3xl mx-auto flex items-center justify-center text-6xl animate-float">
                   📚
                 </div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-orange-400 rounded-full animate-pulse"></div>
-                <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-emerald-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-secondary-400 rounded-full animate-pulse"></div>
+                <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-primary-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
               </div>
 
               <h3 className="heading-3 mb-6">New Languages Coming Soon</h3>

@@ -62,9 +62,9 @@ export default function GrammarExplanationCard({
 
   // Get difficulty indicator
   const getDifficultyColor = (level: number) => {
-    if (level <= 2) return 'bg-green-100 text-green-800';
-    if (level <= 3) return 'bg-yellow-100 text-yellow-800';
-    return 'bg-red-100 text-red-800';
+    if (level <= 2) return 'bg-success-100 text-success-800';
+    if (level <= 3) return 'bg-secondary-100 text-secondary-800';
+    return 'bg-error-100 text-error-800';
   };
 
   const getDifficultyLabel = (level: number) => {
@@ -97,16 +97,16 @@ export default function GrammarExplanationCard({
   };
 
   return (
-    <div className={`bg-white rounded-2xl shadow-xl border border-gray-200 p-8 max-w-4xl mx-auto ${className}`}>
+    <div className={`bg-neutral-surface rounded-2xl shadow-xl border border-gray-200 p-8 max-w-4xl mx-auto ${className}`} style={{backgroundColor: '#ffffff'}}>
       <div className="space-y-6">
         {/* Header */}
         <div className="flex justify-between items-start">
           <div className="flex items-center space-x-3">
             <span className="text-2xl">{getCategoryIcon(rule.category)}</span>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">{rule.rule_name}</h2>
+              <h2 className="text-2xl font-bold text-text-primary">{rule.rule_name}</h2>
               <div className="flex items-center space-x-2 mt-1">
-                <span className="text-sm text-gray-600 capitalize">
+                <span className="text-sm text-text-secondary capitalize">
                   {rule.category.replace('_', ' ')}
                   {rule.subcategory && ` • ${rule.subcategory.replace('_', ' ')}`}
                 </span>
@@ -116,7 +116,7 @@ export default function GrammarExplanationCard({
 
           <div className="flex items-center space-x-2">
             {rule.cefr_level && (
-              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">
+              <span className="bg-primary-100 text-primary-800 px-2 py-1 rounded text-sm font-medium">
                 {rule.cefr_level}
               </span>
             )}
@@ -124,7 +124,7 @@ export default function GrammarExplanationCard({
               {getDifficultyLabel(rule.difficulty_level)}
             </span>
             {rule.is_exception && (
-              <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm font-medium">
+              <span className="bg-secondary-100 text-secondary-800 px-2 py-1 rounded text-sm font-medium">
                 Exception
               </span>
             )}
@@ -132,13 +132,13 @@ export default function GrammarExplanationCard({
         </div>
 
         {/* Explanation */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+        <div className="bg-primary-50 border border-primary-200 rounded-lg p-6">
           <div className="space-y-3">
             {/* Simple explanation (always visible) */}
             {rule.simple_explanation && (
               <div>
-                <h3 className="font-semibold text-blue-800 mb-2">Quick Overview</h3>
-                <p className="text-blue-700">{rule.simple_explanation}</p>
+                <h3 className="font-semibold text-primary-800 mb-2">Quick Overview</h3>
+                <p className="text-primary-700">{rule.simple_explanation}</p>
               </div>
             )}
 
@@ -147,7 +147,7 @@ export default function GrammarExplanationCard({
               <div>
                 <button
                   onClick={() => setShowDetailedExplanation(!showDetailedExplanation)}
-                  className="flex items-center space-x-2 text-blue-800 font-medium hover:text-blue-900 transition-colors"
+                  className="flex items-center space-x-2 text-primary-800 font-medium hover:text-blue-900 transition-colors"
                 >
                   <span>Detailed Explanation</span>
                   <span className="transform transition-transform">
@@ -157,7 +157,7 @@ export default function GrammarExplanationCard({
 
                 {showDetailedExplanation && (
                   <div className="mt-3 p-4 bg-blue-100 rounded-lg">
-                    <p className="text-blue-800">{rule.explanation}</p>
+                    <p className="text-primary-800">{rule.explanation}</p>
                   </div>
                 )}
               </div>
@@ -167,14 +167,14 @@ export default function GrammarExplanationCard({
 
         {/* Parent rule (if this is an exception) */}
         {rule.parent_rule && (
-          <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+          <div className="bg-secondary-50 border border-secondary-200 rounded-lg p-4">
             <div className="flex items-start space-x-2">
-              <span className="text-orange-600 text-lg">⚠️</span>
+              <span className="text-secondary-600 text-lg">⚠️</span>
               <div>
-                <div className="font-medium text-orange-800 text-sm">Exception to:</div>
-                <div className="text-orange-700 font-semibold">{rule.parent_rule.name}</div>
+                <div className="font-medium text-secondary-800 text-sm">Exception to:</div>
+                <div className="text-secondary-700 font-semibold">{rule.parent_rule.name}</div>
                 {rule.parent_rule.explanation && (
-                  <div className="text-orange-600 text-sm mt-1">{rule.parent_rule.explanation}</div>
+                  <div className="text-secondary-600 text-sm mt-1">{rule.parent_rule.explanation}</div>
                 )}
               </div>
             </div>
@@ -217,12 +217,12 @@ export default function GrammarExplanationCard({
 
         {/* Exercises */}
         {showExercises && rule.exercises && rule.exercises.length > 0 && (
-          <div className="bg-green-50 border border-green-200 rounded-lg p-6">
-            <h3 className="font-semibold text-green-800 mb-4">Practice Exercises</h3>
+          <div className="bg-success-50 border border-success-200 rounded-lg p-6">
+            <h3 className="font-semibold text-success-800 mb-4">Practice Exercises</h3>
 
             {selectedExerciseIndex === null ? (
               <div className="space-y-3">
-                <div className="text-green-700 mb-3">
+                <div className="text-success-700 mb-3">
                   Choose an exercise to practice this grammar rule:
                 </div>
                 {rule.exercises.slice(0, 2).map((exercise, index) => (
@@ -232,11 +232,11 @@ export default function GrammarExplanationCard({
                       setSelectedExerciseIndex(index);
                       resetExercise();
                     }}
-                    className="w-full text-left bg-white rounded-lg p-4 border border-green-200 hover:border-green-300 hover:bg-green-25 transition-colors"
+                    className="w-full text-left bg-white rounded-lg p-4 border border-success-200 hover:border-success-300 hover:bg-success-50 transition-colors"
                   >
                     <div className="flex justify-between items-center">
                       <div>
-                        <div className="font-medium text-green-800 capitalize">
+                        <div className="font-medium text-success-800 capitalize">
                           {exercise.exercise_type.replace('_', ' ')} Exercise
                         </div>
                         <div className="text-sm text-green-600">
@@ -252,12 +252,12 @@ export default function GrammarExplanationCard({
             ) : (
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <h4 className="font-medium text-green-800">
+                  <h4 className="font-medium text-success-800">
                     Exercise {selectedExerciseIndex + 1}
                   </h4>
                   <button
                     onClick={() => setSelectedExerciseIndex(null)}
-                    className="text-green-600 hover:text-green-800 text-sm"
+                    className="text-green-600 hover:text-success-800 text-sm"
                   >
                     ← Back to exercises
                   </button>

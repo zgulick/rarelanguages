@@ -1,0 +1,3904 @@
+{
+  "step": "conjugations",
+  "completed": 15,
+  "conjugations": [
+    {
+      "verb_id": "656fe20a-1f25-47bd-8541-6902db0990d2",
+      "target_phrase": "me ardhë",
+      "english_phrase": "to come",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "ardh",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'ardh' remains consistent, but the conjugation endings are irregular.",
+        "notes": "This verb is highly irregular in its conjugation patterns across different tenses."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "vi",
+          "pronunciation_guide": "vee",
+          "usage_notes": "Used when the speaker is referring to themselves coming.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "vjen",
+          "pronunciation_guide": "v-yen",
+          "usage_notes": "Used when addressing one person directly.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "vjen",
+          "pronunciation_guide": "v-yen",
+          "usage_notes": "Used for he, she, or it.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "vimë",
+          "pronunciation_guide": "vee-muh",
+          "usage_notes": "Used when the speaker is part of a group.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "vini",
+          "pronunciation_guide": "vee-nee",
+          "usage_notes": "Used when addressing a group.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "vijnë",
+          "pronunciation_guide": "vee-nyuh",
+          "usage_notes": "Used for they.",
+          "is_irregular": true,
+          "frequency_rank": 5
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "erdha",
+          "pronunciation_guide": "erd-ha",
+          "usage_notes": "Used when the speaker is referring to themselves having come.",
+          "is_irregular": true,
+          "frequency_rank": 6
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "erdhe",
+          "pronunciation_guide": "erd-he",
+          "usage_notes": "Used when addressing one person directly.",
+          "is_irregular": true,
+          "frequency_rank": 7
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "erdhi",
+          "pronunciation_guide": "erd-hi",
+          "usage_notes": "Used for he, she, or it.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "erdhëm",
+          "pronunciation_guide": "erd-hum",
+          "usage_notes": "Used when the speaker is part of a group.",
+          "is_irregular": true,
+          "frequency_rank": 9
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "erdhët",
+          "pronunciation_guide": "erd-hut",
+          "usage_notes": "Used when addressing a group.",
+          "is_irregular": true,
+          "frequency_rank": 10
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "erdhën",
+          "pronunciation_guide": "erd-hun",
+          "usage_notes": "Used for they.",
+          "is_irregular": true,
+          "frequency_rank": 11
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me ardhë",
+          "pronunciation_guide": "kam meh ardh",
+          "usage_notes": "Used when the speaker is referring to themselves coming in the future.",
+          "is_irregular": false,
+          "frequency_rank": 12
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke me ardhë",
+          "pronunciation_guide": "keh meh ardh",
+          "usage_notes": "Used when addressing one person directly.",
+          "is_irregular": false,
+          "frequency_rank": 13
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me ardhë",
+          "pronunciation_guide": "kah meh ardh",
+          "usage_notes": "Used for he, she, or it.",
+          "is_irregular": false,
+          "frequency_rank": 14
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me ardhë",
+          "pronunciation_guide": "keh-mee meh ardh",
+          "usage_notes": "Used when the speaker is part of a group.",
+          "is_irregular": false,
+          "frequency_rank": 15
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me ardhë",
+          "pronunciation_guide": "keh-nee meh ardh",
+          "usage_notes": "Used when addressing a group.",
+          "is_irregular": false,
+          "frequency_rank": 16
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me ardhë",
+          "pronunciation_guide": "kah-nuh meh ardh",
+          "usage_notes": "Used for they.",
+          "is_irregular": false,
+          "frequency_rank": 17
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam ardhë",
+          "pronunciation_guide": "kam ardh",
+          "usage_notes": "Used when the speaker has come.",
+          "is_irregular": false,
+          "frequency_rank": 18
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke ardhë",
+          "pronunciation_guide": "keh ardh",
+          "usage_notes": "Used when addressing one person directly.",
+          "is_irregular": false,
+          "frequency_rank": 19
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka ardhë",
+          "pronunciation_guide": "kah ardh",
+          "usage_notes": "Used for he, she, or it.",
+          "is_irregular": false,
+          "frequency_rank": 20
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi ardhë",
+          "pronunciation_guide": "keh-mee ardh",
+          "usage_notes": "Used when the speaker is part of a group.",
+          "is_irregular": false,
+          "frequency_rank": 21
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni ardhë",
+          "pronunciation_guide": "keh-nee ardh",
+          "usage_notes": "Used when addressing a group.",
+          "is_irregular": false,
+          "frequency_rank": 22
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë ardhë",
+          "pronunciation_guide": "kah-nuh ardh",
+          "usage_notes": "Used for they.",
+          "is_irregular": false,
+          "frequency_rank": 23
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "The verb 'me ardhë' follows an irregular pattern in the present and past tenses, while the future and perfect tenses are formed regularly with auxiliary verbs.",
+        "example_usage": "Unë vi në shtëpi çdo ditë. (I come home every day.)"
+      }
+    },
+    {
+      "verb_id": "ed5cadb9-6b42-4a3c-a742-f68459f2a4c0",
+      "target_phrase": "me fol",
+      "english_phrase": "to speak",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "fol",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'fol' remains mostly unchanged, but conjugation endings vary irregularly.",
+        "notes": "The verb 'me fol' is irregular and does not follow a consistent pattern across all tenses."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë foli",
+          "pronunciation_guide": "oo-nuh fo-lee",
+          "usage_notes": "Used when the speaker is talking about themselves speaking in the present.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti folë",
+          "pronunciation_guide": "tee fo-luh",
+          "usage_notes": "Used when addressing someone directly in the present.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo folë",
+          "pronunciation_guide": "eye/ah-yoh fo-luh",
+          "usage_notes": "Used when talking about someone else speaking in the present.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na folim",
+          "pronunciation_guide": "nah fo-leem",
+          "usage_notes": "Used when the speaker is part of a group speaking in the present.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju folni",
+          "pronunciation_guide": "yoo fo-lee",
+          "usage_notes": "Used when addressing a group directly in the present.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato folin",
+          "pronunciation_guide": "ah-tah/ah-toh fo-leen",
+          "usage_notes": "Used when talking about a group speaking in the present.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë fola",
+          "pronunciation_guide": "oo-nuh fo-lah",
+          "usage_notes": "Used when the speaker is talking about themselves having spoken in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti fole",
+          "pronunciation_guide": "tee fo-leh",
+          "usage_notes": "Used when addressing someone directly about their past speaking.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo foli",
+          "pronunciation_guide": "eye/ah-yoh fo-lee",
+          "usage_notes": "Used when talking about someone else having spoken in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na folëm",
+          "pronunciation_guide": "nah fo-luhm",
+          "usage_notes": "Used when the speaker is part of a group that spoke in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju folët",
+          "pronunciation_guide": "yoo fo-luht",
+          "usage_notes": "Used when addressing a group about their past speaking.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato folën",
+          "pronunciation_guide": "ah-tah/ah-toh fo-luhn",
+          "usage_notes": "Used when talking about a group that spoke in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me folë",
+          "pronunciation_guide": "oo-nuh kahm meh fo-luh",
+          "usage_notes": "Used when the speaker is talking about themselves speaking in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me folë",
+          "pronunciation_guide": "tee keh meh fo-luh",
+          "usage_notes": "Used when addressing someone directly about their future speaking.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me folë",
+          "pronunciation_guide": "eye/ah-yoh kah meh fo-luh",
+          "usage_notes": "Used when talking about someone else speaking in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me folë",
+          "pronunciation_guide": "nah keh-mee meh fo-luh",
+          "usage_notes": "Used when the speaker is part of a group that will speak in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me folë",
+          "pronunciation_guide": "yoo keh-nee meh fo-luh",
+          "usage_notes": "Used when addressing a group about their future speaking.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me folë",
+          "pronunciation_guide": "ah-tah/ah-toh kahn meh fo-luh",
+          "usage_notes": "Used when talking about a group that will speak in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam folë",
+          "pronunciation_guide": "oo-nuh kahm fo-luh",
+          "usage_notes": "Used when the speaker is talking about having spoken.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke folë",
+          "pronunciation_guide": "tee keh fo-luh",
+          "usage_notes": "Used when addressing someone directly about having spoken.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka folë",
+          "pronunciation_guide": "eye/ah-yoh kah fo-luh",
+          "usage_notes": "Used when talking about someone else having spoken.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi folë",
+          "pronunciation_guide": "nah keh-mee fo-luh",
+          "usage_notes": "Used when the speaker is part of a group that has spoken.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni folë",
+          "pronunciation_guide": "yoo keh-nee fo-luh",
+          "usage_notes": "Used when addressing a group about having spoken.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë folë",
+          "pronunciation_guide": "ah-tah/ah-toh kahn fo-luh",
+          "usage_notes": "Used when talking about a group that has spoken.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "The verb 'me fol' follows an irregular pattern with unique endings for each tense and person.",
+        "example_usage": "Unë foli shqip çdo ditë. (I speak Albanian every day.)"
+      }
+    },
+    {
+      "verb_id": "134adec9-5630-4fe9-9bb3-4071b63675fe",
+      "target_phrase": "me hangër",
+      "english_phrase": "to eat",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "hangër",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'hangër' changes to 'ha' in the present tense.",
+        "notes": "This verb is irregular and has unique forms in different tenses."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë ha",
+          "pronunciation_guide": "oo-neh ha",
+          "usage_notes": "Used when the speaker is eating in the present moment.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti han",
+          "pronunciation_guide": "tee han",
+          "usage_notes": "Used when addressing someone who is eating.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo han",
+          "pronunciation_guide": "eye/ah-yoh han",
+          "usage_notes": "Used when talking about someone else eating.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na hamë",
+          "pronunciation_guide": "nah hah-muh",
+          "usage_notes": "Used when the speaker and others are eating.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju hani",
+          "pronunciation_guide": "yoo hah-nee",
+          "usage_notes": "Used when addressing multiple people who are eating.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato hanë",
+          "pronunciation_guide": "ah-tah/ah-toh hah-nuh",
+          "usage_notes": "Used when talking about multiple people eating.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë hangra",
+          "pronunciation_guide": "oo-neh hang-rah",
+          "usage_notes": "Used when the speaker ate in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti hange",
+          "pronunciation_guide": "tee hang-eh",
+          "usage_notes": "Used when addressing someone who ate.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo hangu",
+          "pronunciation_guide": "eye/ah-yoh hang-oo",
+          "usage_notes": "Used when talking about someone else who ate.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na hangrëm",
+          "pronunciation_guide": "nah hang-rum",
+          "usage_notes": "Used when the speaker and others ate.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju hangrët",
+          "pronunciation_guide": "yoo hang-ret",
+          "usage_notes": "Used when addressing multiple people who ate.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato hangrën",
+          "pronunciation_guide": "ah-tah/ah-toh hang-ren",
+          "usage_notes": "Used when talking about multiple people who ate.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me hangër",
+          "pronunciation_guide": "oo-neh kahm meh hang-er",
+          "usage_notes": "Used when the speaker will eat in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me hangër",
+          "pronunciation_guide": "tee keh meh hang-er",
+          "usage_notes": "Used when addressing someone who will eat.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me hangër",
+          "pronunciation_guide": "eye/ah-yoh kah meh hang-er",
+          "usage_notes": "Used when talking about someone else who will eat.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me hangër",
+          "pronunciation_guide": "nah keh-mee meh hang-er",
+          "usage_notes": "Used when the speaker and others will eat.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me hangër",
+          "pronunciation_guide": "yoo keh-nee meh hang-er",
+          "usage_notes": "Used when addressing multiple people who will eat.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me hangër",
+          "pronunciation_guide": "ah-tah/ah-toh kah-nuh meh hang-er",
+          "usage_notes": "Used when talking about multiple people who will eat.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam hangër",
+          "pronunciation_guide": "oo-neh kahm hang-er",
+          "usage_notes": "Used when the speaker has eaten.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke hangër",
+          "pronunciation_guide": "tee keh hang-er",
+          "usage_notes": "Used when addressing someone who has eaten.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka hangër",
+          "pronunciation_guide": "eye/ah-yoh kah hang-er",
+          "usage_notes": "Used when talking about someone else who has eaten.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi hangër",
+          "pronunciation_guide": "nah keh-mee hang-er",
+          "usage_notes": "Used when the speaker and others have eaten.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni hangër",
+          "pronunciation_guide": "yoo keh-nee hang-er",
+          "usage_notes": "Used when addressing multiple people who have eaten.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë hangër",
+          "pronunciation_guide": "ah-tah/ah-toh kah-nuh hang-er",
+          "usage_notes": "Used when talking about multiple people who have eaten.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "This verb follows an irregular conjugation pattern with unique forms in different tenses.",
+        "example_usage": "Unë ha bukë çdo ditë. (I eat bread every day.)"
+      }
+    },
+    {
+      "verb_id": "fcf28555-6cbf-4296-876d-dba41ae23ec7",
+      "target_phrase": "me pi",
+      "english_phrase": "to drink",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "pi",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'pi' remains consistent across most forms, but changes in the past tense.",
+        "notes": "This verb is irregular and does not follow the typical conjugation patterns of regular verbs."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "pi",
+          "pronunciation_guide": "pee",
+          "usage_notes": "Used when the speaker is referring to themselves drinking.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "pin",
+          "pronunciation_guide": "peen",
+          "usage_notes": "Used when addressing one person directly.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "pi",
+          "pronunciation_guide": "pee",
+          "usage_notes": "Used when referring to someone else drinking.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "pijmë",
+          "pronunciation_guide": "pee-muh",
+          "usage_notes": "Used when the speaker is part of a group drinking.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "pini",
+          "pronunciation_guide": "pee-nee",
+          "usage_notes": "Used when addressing a group.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "pinë",
+          "pronunciation_guide": "pee-nuh",
+          "usage_notes": "Used when referring to a group of others.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "piva",
+          "pronunciation_guide": "pee-vah",
+          "usage_notes": "Used when the speaker drank something.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "pive",
+          "pronunciation_guide": "pee-veh",
+          "usage_notes": "Used when addressing someone who drank.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "piu",
+          "pronunciation_guide": "pee-oo",
+          "usage_notes": "Used when referring to someone else who drank.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "pimë",
+          "pronunciation_guide": "pee-muh",
+          "usage_notes": "Used when the speaker and others drank.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "pitë",
+          "pronunciation_guide": "pee-tuh",
+          "usage_notes": "Used when addressing a group who drank.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "pinë",
+          "pronunciation_guide": "pee-nuh",
+          "usage_notes": "Used when referring to a group of others who drank.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me pi",
+          "pronunciation_guide": "kahm meh pee",
+          "usage_notes": "Used when the speaker will drink something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke me pi",
+          "pronunciation_guide": "keh meh pee",
+          "usage_notes": "Used when addressing someone who will drink.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me pi",
+          "pronunciation_guide": "kah meh pee",
+          "usage_notes": "Used when referring to someone else who will drink.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me pi",
+          "pronunciation_guide": "keh-mee meh pee",
+          "usage_notes": "Used when the speaker and others will drink.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me pi",
+          "pronunciation_guide": "keh-nee meh pee",
+          "usage_notes": "Used when addressing a group who will drink.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me pi",
+          "pronunciation_guide": "kah-nuh meh pee",
+          "usage_notes": "Used when referring to a group of others who will drink.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam pi",
+          "pronunciation_guide": "kahm pee",
+          "usage_notes": "Used when the speaker has drunk something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke pi",
+          "pronunciation_guide": "keh pee",
+          "usage_notes": "Used when addressing someone who has drunk.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka pi",
+          "pronunciation_guide": "kah pee",
+          "usage_notes": "Used when referring to someone else who has drunk.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi pi",
+          "pronunciation_guide": "keh-mee pee",
+          "usage_notes": "Used when the speaker and others have drunk.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni pi",
+          "pronunciation_guide": "keh-nee pee",
+          "usage_notes": "Used when addressing a group who have drunk.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë pi",
+          "pronunciation_guide": "kah-nuh pee",
+          "usage_notes": "Used when referring to a group of others who have drunk.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "This verb follows an irregular pattern, with changes in the past tense forms.",
+        "example_usage": "Unë pi ujë çdo ditë. (I drink water every day.)"
+      }
+    },
+    {
+      "verb_id": "84948755-1c07-4d19-b767-aa53c2c954bd",
+      "target_phrase": "me flejt",
+      "english_phrase": "to sleep",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "flej",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'flej' remains consistent, but the endings change irregularly in some forms.",
+        "notes": "This verb is irregular and does not follow standard conjugation patterns."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë flej",
+          "pronunciation_guide": "oon-uh fley",
+          "usage_notes": "Used when the speaker is talking about themselves sleeping currently or habitually.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti flejsh",
+          "pronunciation_guide": "tee fleysh",
+          "usage_notes": "Used when addressing one person directly about their sleeping habits.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo fle",
+          "pronunciation_guide": "eye/ah-yoh fley",
+          "usage_notes": "Used when talking about someone else sleeping.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na flejmë",
+          "pronunciation_guide": "nah fley-muh",
+          "usage_notes": "Used when the speaker includes themselves and others in the action of sleeping.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju flejni",
+          "pronunciation_guide": "yoo fley-nee",
+          "usage_notes": "Used when addressing a group about their sleeping habits.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato flejnë",
+          "pronunciation_guide": "ah-tah/ah-toh fley-nuh",
+          "usage_notes": "Used when talking about a group of people sleeping.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë fjeta",
+          "pronunciation_guide": "oon-uh fye-tah",
+          "usage_notes": "Used when the speaker is talking about themselves having slept.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti fjete",
+          "pronunciation_guide": "tee fye-teh",
+          "usage_notes": "Used when addressing one person about their past sleeping.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo fjeti",
+          "pronunciation_guide": "eye/ah-yoh fye-tee",
+          "usage_notes": "Used when talking about someone else having slept.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na fjetëm",
+          "pronunciation_guide": "nah fye-tuhm",
+          "usage_notes": "Used when the speaker includes themselves and others in the action of having slept.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju fjetët",
+          "pronunciation_guide": "yoo fye-tet",
+          "usage_notes": "Used when addressing a group about their past sleeping.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato fjetën",
+          "pronunciation_guide": "ah-tah/ah-toh fye-tuhn",
+          "usage_notes": "Used when talking about a group of people having slept.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me flejt",
+          "pronunciation_guide": "oon-uh kahm meh fleyt",
+          "usage_notes": "Used when the speaker is talking about themselves sleeping in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me flejt",
+          "pronunciation_guide": "tee keh meh fleyt",
+          "usage_notes": "Used when addressing one person about their future sleeping.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me flejt",
+          "pronunciation_guide": "eye/ah-yoh kah meh fleyt",
+          "usage_notes": "Used when talking about someone else sleeping in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me flejt",
+          "pronunciation_guide": "nah keh-mee meh fleyt",
+          "usage_notes": "Used when the speaker includes themselves and others in the action of sleeping in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me flejt",
+          "pronunciation_guide": "yoo keh-nee meh fleyt",
+          "usage_notes": "Used when addressing a group about their future sleeping.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me flejt",
+          "pronunciation_guide": "ah-tah/ah-toh kahn meh fleyt",
+          "usage_notes": "Used when talking about a group of people sleeping in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam flejt",
+          "pronunciation_guide": "oon-uh kahm fleyt",
+          "usage_notes": "Used when the speaker is talking about themselves having slept at some point.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke flejt",
+          "pronunciation_guide": "tee keh fleyt",
+          "usage_notes": "Used when addressing one person about their past sleeping experience.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka flejt",
+          "pronunciation_guide": "eye/ah-yoh kah fleyt",
+          "usage_notes": "Used when talking about someone else having slept at some point.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi flejt",
+          "pronunciation_guide": "nah keh-mee fleyt",
+          "usage_notes": "Used when the speaker includes themselves and others in the action of having slept.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni flejt",
+          "pronunciation_guide": "yoo keh-nee fleyt",
+          "usage_notes": "Used when addressing a group about their past sleeping experience.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë flejt",
+          "pronunciation_guide": "ah-tah/ah-toh kahn fleyt",
+          "usage_notes": "Used when talking about a group of people having slept at some point.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "This verb follows an irregular pattern with unique endings in the present and past tenses.",
+        "example_usage": "Unë flej çdo natë në orën dhjetë. (I sleep every night at ten o'clock.)"
+      }
+    },
+    {
+      "verb_id": "0b01725d-a9f9-4c6b-996e-e57cc2de026f",
+      "target_phrase": "me punu",
+      "english_phrase": "to work",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "punu",
+        "verb_class": "regular_er",
+        "stem_changes": "no stem changes",
+        "notes": "This is a regular verb in Gheg Albanian, commonly used in everyday conversation."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë punoj",
+          "pronunciation_guide": "oo-neh poo-noy",
+          "usage_notes": "Used when the speaker is referring to themselves working.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti punon",
+          "pronunciation_guide": "tee poo-non",
+          "usage_notes": "Used when addressing one person directly.",
+          "is_irregular": false,
+          "frequency_rank": 7
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo punon",
+          "pronunciation_guide": "eye/ah-yoh poo-non",
+          "usage_notes": "Used for he/she/it.",
+          "is_irregular": false,
+          "frequency_rank": 6
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na punojmë",
+          "pronunciation_guide": "nah poo-noy-muh",
+          "usage_notes": "Used when the speaker is referring to a group including themselves.",
+          "is_irregular": false,
+          "frequency_rank": 5
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju punoni",
+          "pronunciation_guide": "yoo poo-noh-nee",
+          "usage_notes": "Used when addressing a group of people.",
+          "is_irregular": false,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato punojnë",
+          "pronunciation_guide": "ah-tah/ah-toh poo-noy-n",
+          "usage_notes": "Used for they (masculine/feminine).",
+          "is_irregular": false,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë punova",
+          "pronunciation_guide": "oo-neh poo-noh-vah",
+          "usage_notes": "Used when the speaker is referring to themselves having worked.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti punove",
+          "pronunciation_guide": "tee poo-noh-veh",
+          "usage_notes": "Used when addressing one person directly about past work.",
+          "is_irregular": false,
+          "frequency_rank": 7
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo punoi",
+          "pronunciation_guide": "eye/ah-yoh poo-noy",
+          "usage_notes": "Used for he/she/it having worked.",
+          "is_irregular": false,
+          "frequency_rank": 6
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na punuam",
+          "pronunciation_guide": "nah poo-noo-ahm",
+          "usage_notes": "Used when the speaker is referring to a group including themselves having worked.",
+          "is_irregular": false,
+          "frequency_rank": 5
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju punuat",
+          "pronunciation_guide": "yoo poo-noo-aht",
+          "usage_notes": "Used when addressing a group of people about past work.",
+          "is_irregular": false,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato punuan",
+          "pronunciation_guide": "ah-tah/ah-toh poo-noo-ahn",
+          "usage_notes": "Used for they (masculine/feminine) having worked.",
+          "is_irregular": false,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me punu",
+          "pronunciation_guide": "oo-neh kahm meh poo-noo",
+          "usage_notes": "Used when the speaker is referring to themselves working in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me punu",
+          "pronunciation_guide": "tee keh meh poo-noo",
+          "usage_notes": "Used when addressing one person directly about future work.",
+          "is_irregular": false,
+          "frequency_rank": 7
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me punu",
+          "pronunciation_guide": "eye/ah-yoh kah meh poo-noo",
+          "usage_notes": "Used for he/she/it working in the future.",
+          "is_irregular": false,
+          "frequency_rank": 6
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me punu",
+          "pronunciation_guide": "nah keh-mee meh poo-noo",
+          "usage_notes": "Used when the speaker is referring to a group including themselves working in the future.",
+          "is_irregular": false,
+          "frequency_rank": 5
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me punu",
+          "pronunciation_guide": "yoo keh-nee meh poo-noo",
+          "usage_notes": "Used when addressing a group of people about future work.",
+          "is_irregular": false,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me punu",
+          "pronunciation_guide": "ah-tah/ah-toh kahn meh poo-noo",
+          "usage_notes": "Used for they (masculine/feminine) working in the future.",
+          "is_irregular": false,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam punu",
+          "pronunciation_guide": "oo-neh kahm poo-noo",
+          "usage_notes": "Used when the speaker is referring to themselves having worked.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke punu",
+          "pronunciation_guide": "tee keh poo-noo",
+          "usage_notes": "Used when addressing one person directly about having worked.",
+          "is_irregular": false,
+          "frequency_rank": 7
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka punu",
+          "pronunciation_guide": "eye/ah-yoh kah poo-noo",
+          "usage_notes": "Used for he/she/it having worked.",
+          "is_irregular": false,
+          "frequency_rank": 6
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi punu",
+          "pronunciation_guide": "nah keh-mee poo-noo",
+          "usage_notes": "Used when the speaker is referring to a group including themselves having worked.",
+          "is_irregular": false,
+          "frequency_rank": 5
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni punu",
+          "pronunciation_guide": "yoo keh-nee poo-noo",
+          "usage_notes": "Used when addressing a group of people about having worked.",
+          "is_irregular": false,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë punu",
+          "pronunciation_guide": "ah-tah/ah-toh kahn poo-noo",
+          "usage_notes": "Used for they (masculine/feminine) having worked.",
+          "is_irregular": false,
+          "frequency_rank": 3
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "Regular verb conjugation pattern for verbs ending in -u",
+        "example_usage": "Unë punoj çdo ditë në zyrë. (I work every day in the office.)"
+      }
+    },
+    {
+      "verb_id": "49354fd8-1de0-4984-a172-e252feb4279c",
+      "target_phrase": "me mendu",
+      "english_phrase": "to think",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "mend",
+        "verb_class": "regular_ar",
+        "stem_changes": "No stem changes occur during conjugation.",
+        "notes": "This verb follows regular conjugation patterns typical for verbs ending in -u in Gheg Albanian."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "mendoj",
+          "pronunciation_guide": "men-doy",
+          "usage_notes": "Used when the speaker is thinking in the present.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "mendon",
+          "pronunciation_guide": "men-don",
+          "usage_notes": "Used when addressing someone directly.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "mendon",
+          "pronunciation_guide": "men-don",
+          "usage_notes": "Used when referring to he/she/it.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "mendojmë",
+          "pronunciation_guide": "men-doy-muh",
+          "usage_notes": "Used when the speaker is part of a group.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "mendoni",
+          "pronunciation_guide": "men-do-nee",
+          "usage_notes": "Used when addressing a group.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "mendojnë",
+          "pronunciation_guide": "men-doy-nuh",
+          "usage_notes": "Used when referring to they.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "mendova",
+          "pronunciation_guide": "men-do-va",
+          "usage_notes": "Used to express a completed thought in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "mendove",
+          "pronunciation_guide": "men-do-ve",
+          "usage_notes": "Used when addressing someone about their past thoughts.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "mendoi",
+          "pronunciation_guide": "men-do-ee",
+          "usage_notes": "Used for he/she/it in past tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "menduam",
+          "pronunciation_guide": "men-du-am",
+          "usage_notes": "Used when a group including the speaker thought in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "menduat",
+          "pronunciation_guide": "men-du-at",
+          "usage_notes": "Used when addressing a group about their past thoughts.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "menduan",
+          "pronunciation_guide": "men-du-an",
+          "usage_notes": "Used for they in past tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me mendu",
+          "pronunciation_guide": "kam meh men-doo",
+          "usage_notes": "Used to express future intention or plan.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke me mendu",
+          "pronunciation_guide": "keh meh men-doo",
+          "usage_notes": "Used when addressing someone about their future plans.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me mendu",
+          "pronunciation_guide": "ka meh men-doo",
+          "usage_notes": "Used for he/she/it in future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me mendu",
+          "pronunciation_guide": "keh-mee meh men-doo",
+          "usage_notes": "Used when a group including the speaker plans to think.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me mendu",
+          "pronunciation_guide": "keh-nee meh men-doo",
+          "usage_notes": "Used when addressing a group about their future plans.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me mendu",
+          "pronunciation_guide": "kan-uh meh men-doo",
+          "usage_notes": "Used for they in future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam mendu",
+          "pronunciation_guide": "kam men-doo",
+          "usage_notes": "Used to express a completed action in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke mendu",
+          "pronunciation_guide": "keh men-doo",
+          "usage_notes": "Used when addressing someone about their completed actions.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka mendu",
+          "pronunciation_guide": "ka men-doo",
+          "usage_notes": "Used for he/she/it in perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi mendu",
+          "pronunciation_guide": "keh-mee men-doo",
+          "usage_notes": "Used when a group including the speaker has completed an action.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni mendu",
+          "pronunciation_guide": "keh-nee men-doo",
+          "usage_notes": "Used when addressing a group about their completed actions.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë mendu",
+          "pronunciation_guide": "kan-uh men-doo",
+          "usage_notes": "Used for they in perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "Regular verbs ending in -u follow a predictable pattern for each tense.",
+        "example_usage": "Ai mendon shumë për të ardhmen. (He thinks a lot about the future.)"
+      }
+    },
+    {
+      "verb_id": "82272889-9cab-4536-b6de-6d410d9b724d",
+      "target_phrase": "me ditë",
+      "english_phrase": "to know",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "ditë",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'ditë' changes to 'di' in some conjugations.",
+        "notes": "This verb is irregular and has unique forms in various tenses."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë di",
+          "pronunciation_guide": "oo-neh dee",
+          "usage_notes": "Used when the speaker knows something.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti din",
+          "pronunciation_guide": "tee deen",
+          "usage_notes": "Used when addressing someone who knows something.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo di",
+          "pronunciation_guide": "eye/ah-yo dee",
+          "usage_notes": "Used when referring to someone who knows something.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na dimë",
+          "pronunciation_guide": "nah dee-meh",
+          "usage_notes": "Used when the group including the speaker knows something.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju dini",
+          "pronunciation_guide": "yoo dee-nee",
+          "usage_notes": "Used when addressing a group who knows something.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato dinë",
+          "pronunciation_guide": "ah-tah/ah-toh dee-neh",
+          "usage_notes": "Used when referring to a group who knows something.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë dita",
+          "pronunciation_guide": "oo-neh dee-tah",
+          "usage_notes": "Used when the speaker knew something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti dite",
+          "pronunciation_guide": "tee dee-teh",
+          "usage_notes": "Used when addressing someone who knew something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo diti",
+          "pronunciation_guide": "eye/ah-yo dee-tee",
+          "usage_notes": "Used when referring to someone who knew something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na ditëm",
+          "pronunciation_guide": "nah dee-tuhm",
+          "usage_notes": "Used when the group including the speaker knew something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju ditët",
+          "pronunciation_guide": "yoo dee-tuht",
+          "usage_notes": "Used when addressing a group who knew something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato ditën",
+          "pronunciation_guide": "ah-tah/ah-toh dee-tehn",
+          "usage_notes": "Used when referring to a group who knew something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me ditë",
+          "pronunciation_guide": "oo-neh kahm meh dee-teh",
+          "usage_notes": "Used when the speaker will know something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me ditë",
+          "pronunciation_guide": "tee keh meh dee-teh",
+          "usage_notes": "Used when addressing someone who will know something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me ditë",
+          "pronunciation_guide": "eye/ah-yo kah meh dee-teh",
+          "usage_notes": "Used when referring to someone who will know something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me ditë",
+          "pronunciation_guide": "nah keh-mee meh dee-teh",
+          "usage_notes": "Used when the group including the speaker will know something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me ditë",
+          "pronunciation_guide": "yoo keh-nee meh dee-teh",
+          "usage_notes": "Used when addressing a group who will know something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me ditë",
+          "pronunciation_guide": "ah-tah/ah-toh kahn meh dee-teh",
+          "usage_notes": "Used when referring to a group who will know something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam ditë",
+          "pronunciation_guide": "oo-neh kahm dee-teh",
+          "usage_notes": "Used when the speaker has known something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke ditë",
+          "pronunciation_guide": "tee keh dee-teh",
+          "usage_notes": "Used when addressing someone who has known something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka ditë",
+          "pronunciation_guide": "eye/ah-yo kah dee-teh",
+          "usage_notes": "Used when referring to someone who has known something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi ditë",
+          "pronunciation_guide": "nah keh-mee dee-teh",
+          "usage_notes": "Used when the group including the speaker has known something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni ditë",
+          "pronunciation_guide": "yoo keh-nee dee-teh",
+          "usage_notes": "Used when addressing a group who has known something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë ditë",
+          "pronunciation_guide": "ah-tah/ah-toh kahn dee-teh",
+          "usage_notes": "Used when referring to a group who has known something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "This verb follows an irregular pattern with unique forms in the present and past tenses, while future and perfect tenses use auxiliary verbs.",
+        "example_usage": "Unë di shumë gjëra. (I know many things.)"
+      }
+    },
+    {
+      "verb_id": "55d7c167-366f-4e8a-90fd-996dd5648d7e",
+      "target_phrase": "me kuptu",
+      "english_phrase": "to understand",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "kuptu",
+        "verb_class": "regular_u",
+        "stem_changes": "no stem changes",
+        "notes": "This verb follows the regular conjugation pattern for verbs ending in -u."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kuptoj",
+          "pronunciation_guide": "oo-neh koop-toy",
+          "usage_notes": "Used when the speaker is the one understanding.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti kupton",
+          "pronunciation_guide": "tee koop-ton",
+          "usage_notes": "Used when addressing one person informally.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo kupton",
+          "pronunciation_guide": "eye/ah-yoh koop-ton",
+          "usage_notes": "Used when referring to he/she/it.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kuptojmë",
+          "pronunciation_guide": "nah koop-toym",
+          "usage_notes": "Used when the speaker is part of a group understanding.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju kuptoni",
+          "pronunciation_guide": "yoo koop-toh-nee",
+          "usage_notes": "Used when addressing a group of people.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kuptojnë",
+          "pronunciation_guide": "ah-tah/ah-toh koop-toyn",
+          "usage_notes": "Used when referring to they (masculine/feminine).",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kuptova",
+          "pronunciation_guide": "oo-neh koop-toh-vah",
+          "usage_notes": "Used when the speaker understood something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti kuptove",
+          "pronunciation_guide": "tee koop-toh-veh",
+          "usage_notes": "Used when addressing one person who understood something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo kuptoi",
+          "pronunciation_guide": "eye/ah-yoh koop-toy",
+          "usage_notes": "Used when referring to he/she/it who understood something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kuptuam",
+          "pronunciation_guide": "nah koop-too-ahm",
+          "usage_notes": "Used when the speaker and others understood something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju kuptuet",
+          "pronunciation_guide": "yoo koop-too-eht",
+          "usage_notes": "Used when addressing a group who understood something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kuptuen",
+          "pronunciation_guide": "ah-tah/ah-toh koop-too-ehn",
+          "usage_notes": "Used when referring to they (masculine/feminine) who understood something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me kuptu",
+          "pronunciation_guide": "oo-neh kahm meh koop-too",
+          "usage_notes": "Used when the speaker will understand something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me kuptu",
+          "pronunciation_guide": "tee keh meh koop-too",
+          "usage_notes": "Used when addressing one person who will understand something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me kuptu",
+          "pronunciation_guide": "eye/ah-yoh kah meh koop-too",
+          "usage_notes": "Used when referring to he/she/it who will understand something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me kuptu",
+          "pronunciation_guide": "nah keh-mee meh koop-too",
+          "usage_notes": "Used when the speaker and others will understand something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me kuptu",
+          "pronunciation_guide": "yoo keh-nee meh koop-too",
+          "usage_notes": "Used when addressing a group who will understand something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me kuptu",
+          "pronunciation_guide": "ah-tah/ah-toh kahn meh koop-too",
+          "usage_notes": "Used when referring to they (masculine/feminine) who will understand something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam kuptu",
+          "pronunciation_guide": "oo-neh kahm koop-too",
+          "usage_notes": "Used when the speaker has understood something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke kuptu",
+          "pronunciation_guide": "tee keh koop-too",
+          "usage_notes": "Used when addressing one person who has understood something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka kuptu",
+          "pronunciation_guide": "eye/ah-yoh kah koop-too",
+          "usage_notes": "Used when referring to he/she/it who has understood something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi kuptu",
+          "pronunciation_guide": "nah keh-mee koop-too",
+          "usage_notes": "Used when the speaker and others have understood something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni kuptu",
+          "pronunciation_guide": "yoo keh-nee koop-too",
+          "usage_notes": "Used when addressing a group who have understood something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë kuptu",
+          "pronunciation_guide": "ah-tah/ah-toh kahn koop-too",
+          "usage_notes": "Used when referring to they (masculine/feminine) who have understood something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "Regular verbs ending in -u follow a consistent pattern across tenses.",
+        "example_usage": "Unë kuptoj gjuhën shqipe mirë. (I understand the Albanian language well.)"
+      }
+    },
+    {
+      "verb_id": "e53bf827-b787-4790-ac9f-25cbfdb438ee",
+      "target_phrase": "me mësu",
+      "english_phrase": "to learn",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "mësu",
+        "verb_class": "regular_ar",
+        "stem_changes": "no stem changes",
+        "notes": "This verb follows regular conjugation patterns in Gheg Albanian."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë mësoj",
+          "pronunciation_guide": "oo-neh muh-soy",
+          "usage_notes": "Used when the speaker is learning something currently.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti mëson",
+          "pronunciation_guide": "tee muh-son",
+          "usage_notes": "Used when addressing someone who is learning.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo mëson",
+          "pronunciation_guide": "eye/ah-yoh muh-son",
+          "usage_notes": "Used for he/she/it learning something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na mësojmë",
+          "pronunciation_guide": "nah muh-soy-meh",
+          "usage_notes": "Used when we are learning something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju mësoni",
+          "pronunciation_guide": "yoo muh-so-nee",
+          "usage_notes": "Used when addressing a group who are learning.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato mësojnë",
+          "pronunciation_guide": "ah-tah/ah-toh muh-soyn",
+          "usage_notes": "Used for they (masculine/feminine) learning something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë mësova",
+          "pronunciation_guide": "oo-neh muh-so-vah",
+          "usage_notes": "Used when the speaker learned something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti mësove",
+          "pronunciation_guide": "tee muh-so-veh",
+          "usage_notes": "Used when addressing someone who learned.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo mësoi",
+          "pronunciation_guide": "eye/ah-yoh muh-soy",
+          "usage_notes": "Used for he/she/it learned something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na mësuam",
+          "pronunciation_guide": "nah muh-soo-am",
+          "usage_notes": "Used when we learned something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju mësuat",
+          "pronunciation_guide": "yoo muh-soo-at",
+          "usage_notes": "Used when addressing a group who learned.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato mësuan",
+          "pronunciation_guide": "ah-tah/ah-toh muh-soo-an",
+          "usage_notes": "Used for they (masculine/feminine) learned something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me mësu",
+          "pronunciation_guide": "oo-neh kahm meh muh-soo",
+          "usage_notes": "Used when the speaker will learn something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me mësu",
+          "pronunciation_guide": "tee keh meh muh-soo",
+          "usage_notes": "Used when addressing someone who will learn.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me mësu",
+          "pronunciation_guide": "eye/ah-yoh kah meh muh-soo",
+          "usage_notes": "Used for he/she/it will learn something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me mësu",
+          "pronunciation_guide": "nah keh-mee meh muh-soo",
+          "usage_notes": "Used when we will learn something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me mësu",
+          "pronunciation_guide": "yoo keh-nee meh muh-soo",
+          "usage_notes": "Used when addressing a group who will learn.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me mësu",
+          "pronunciation_guide": "ah-tah/ah-toh kahn meh muh-soo",
+          "usage_notes": "Used for they (masculine/feminine) will learn something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam mësu",
+          "pronunciation_guide": "oo-neh kahm muh-soo",
+          "usage_notes": "Used when the speaker has learned something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke mësu",
+          "pronunciation_guide": "tee keh muh-soo",
+          "usage_notes": "Used when addressing someone who has learned.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka mësu",
+          "pronunciation_guide": "eye/ah-yoh kah muh-soo",
+          "usage_notes": "Used for he/she/it has learned something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi mësu",
+          "pronunciation_guide": "nah keh-mee muh-soo",
+          "usage_notes": "Used when we have learned something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni mësu",
+          "pronunciation_guide": "yoo keh-nee muh-soo",
+          "usage_notes": "Used when addressing a group who have learned.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë mësu",
+          "pronunciation_guide": "ah-tah/ah-toh kahn muh-soo",
+          "usage_notes": "Used for they (masculine/feminine) have learned something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "Regular verb conjugation pattern for -ar verbs in Gheg Albanian.",
+        "example_usage": "Unë mësoj shqip çdo ditë. (I learn Albanian every day.)"
+      }
+    },
+    {
+      "verb_id": "48babf44-5809-4ac6-915c-97196626518b",
+      "target_phrase": "me ba",
+      "english_phrase": "to do",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "ba",
+        "verb_class": "irregular",
+        "stem_changes": "The verb 'ba' is irregular and does not follow a predictable pattern.",
+        "notes": "The verb 'me ba' is highly irregular and commonly used in everyday speech."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "baj",
+          "pronunciation_guide": "bai",
+          "usage_notes": "Used for actions currently happening or general truths.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ban",
+          "pronunciation_guide": "ban",
+          "usage_notes": "Used for addressing one person directly.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ban",
+          "pronunciation_guide": "ban",
+          "usage_notes": "Used for talking about someone else.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "bajmë",
+          "pronunciation_guide": "bai-muh",
+          "usage_notes": "Used for actions involving the speaker and others.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "bani",
+          "pronunciation_guide": "bani",
+          "usage_notes": "Used for addressing a group of people.",
+          "is_irregular": true,
+          "frequency_rank": 5
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "bajnë",
+          "pronunciation_guide": "bai-nuh",
+          "usage_notes": "Used for talking about a group of people.",
+          "is_irregular": true,
+          "frequency_rank": 6
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "bana",
+          "pronunciation_guide": "bana",
+          "usage_notes": "Used for actions completed in the past.",
+          "is_irregular": true,
+          "frequency_rank": 7
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "bave",
+          "pronunciation_guide": "bave",
+          "usage_notes": "Used for addressing one person about past actions.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "bani",
+          "pronunciation_guide": "bani",
+          "usage_notes": "Used for talking about someone else's past actions.",
+          "is_irregular": true,
+          "frequency_rank": 9
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "bamë",
+          "pronunciation_guide": "ba-muh",
+          "usage_notes": "Used for past actions involving the speaker and others.",
+          "is_irregular": true,
+          "frequency_rank": 10
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "batë",
+          "pronunciation_guide": "ba-tuh",
+          "usage_notes": "Used for addressing a group about past actions.",
+          "is_irregular": true,
+          "frequency_rank": 11
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "banë",
+          "pronunciation_guide": "ba-nuh",
+          "usage_notes": "Used for talking about a group's past actions.",
+          "is_irregular": true,
+          "frequency_rank": 12
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me ba",
+          "pronunciation_guide": "kam meh bah",
+          "usage_notes": "Used for actions that will happen in the future.",
+          "is_irregular": true,
+          "frequency_rank": 13
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ki me ba",
+          "pronunciation_guide": "ki meh bah",
+          "usage_notes": "Used for addressing one person about future actions.",
+          "is_irregular": true,
+          "frequency_rank": 14
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me ba",
+          "pronunciation_guide": "ka meh bah",
+          "usage_notes": "Used for talking about someone else's future actions.",
+          "is_irregular": true,
+          "frequency_rank": 15
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me ba",
+          "pronunciation_guide": "ke-mi meh bah",
+          "usage_notes": "Used for future actions involving the speaker and others.",
+          "is_irregular": true,
+          "frequency_rank": 16
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me ba",
+          "pronunciation_guide": "ke-ni meh bah",
+          "usage_notes": "Used for addressing a group about future actions.",
+          "is_irregular": true,
+          "frequency_rank": 17
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me ba",
+          "pronunciation_guide": "ka-nuh meh bah",
+          "usage_notes": "Used for talking about a group's future actions.",
+          "is_irregular": true,
+          "frequency_rank": 18
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam ba",
+          "pronunciation_guide": "kam bah",
+          "usage_notes": "Used for actions that have been completed.",
+          "is_irregular": true,
+          "frequency_rank": 19
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ki ba",
+          "pronunciation_guide": "ki bah",
+          "usage_notes": "Used for addressing one person about completed actions.",
+          "is_irregular": true,
+          "frequency_rank": 20
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka ba",
+          "pronunciation_guide": "ka bah",
+          "usage_notes": "Used for talking about someone else's completed actions.",
+          "is_irregular": true,
+          "frequency_rank": 21
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi ba",
+          "pronunciation_guide": "ke-mi bah",
+          "usage_notes": "Used for completed actions involving the speaker and others.",
+          "is_irregular": true,
+          "frequency_rank": 22
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni ba",
+          "pronunciation_guide": "ke-ni bah",
+          "usage_notes": "Used for addressing a group about completed actions.",
+          "is_irregular": true,
+          "frequency_rank": 23
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë ba",
+          "pronunciation_guide": "ka-nuh bah",
+          "usage_notes": "Used for talking about a group's completed actions.",
+          "is_irregular": true,
+          "frequency_rank": 24
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "The verb 'ba' follows an irregular pattern and does not conform to regular verb conjugation rules.",
+        "example_usage": "Unë baj detyrat e shtëpisë çdo ditë. (I do my homework every day.)"
+      }
+    },
+    {
+      "verb_id": "b7f9c820-c13a-4578-ae87-f4615c7bcba5",
+      "target_phrase": "me kriju",
+      "english_phrase": "to make",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "kriju",
+        "verb_class": "regular_ar",
+        "stem_changes": "none",
+        "notes": "This verb follows regular conjugation patterns typical for verbs ending in -u in Gheg Albanian."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë krijoj",
+          "pronunciation_guide": "oo-neh kree-yoy",
+          "usage_notes": "Used when the speaker is making something in the present.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti krijon",
+          "pronunciation_guide": "tee kree-yon",
+          "usage_notes": "Used when addressing a single person making something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo krijon",
+          "pronunciation_guide": "eye/ah-yoh kree-yon",
+          "usage_notes": "Used when referring to a third person making something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na krijojmë",
+          "pronunciation_guide": "nah kree-yoy-muh",
+          "usage_notes": "Used when the speaker and others are making something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju krijoni",
+          "pronunciation_guide": "yoo kree-yoh-nee",
+          "usage_notes": "Used when addressing multiple people making something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato krijojnë",
+          "pronunciation_guide": "ah-tah/ah-toh kree-yoy-n",
+          "usage_notes": "Used when referring to multiple people making something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë krijova",
+          "pronunciation_guide": "oo-neh kree-yoh-vah",
+          "usage_notes": "Used when the speaker made something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti krijove",
+          "pronunciation_guide": "tee kree-yoh-veh",
+          "usage_notes": "Used when addressing a single person who made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo krijoi",
+          "pronunciation_guide": "eye/ah-yoh kree-yoy",
+          "usage_notes": "Used when referring to a third person who made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na krijumë",
+          "pronunciation_guide": "nah kree-yoo-muh",
+          "usage_notes": "Used when the speaker and others made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju krijutë",
+          "pronunciation_guide": "yoo kree-yoo-tuh",
+          "usage_notes": "Used when addressing multiple people who made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato krijunë",
+          "pronunciation_guide": "ah-tah/ah-toh kree-yoo-nuh",
+          "usage_notes": "Used when referring to multiple people who made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me kriju",
+          "pronunciation_guide": "oo-neh kahm meh kree-yoo",
+          "usage_notes": "Used when the speaker intends to make something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me kriju",
+          "pronunciation_guide": "tee keh meh kree-yoo",
+          "usage_notes": "Used when addressing a single person who intends to make something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me kriju",
+          "pronunciation_guide": "eye/ah-yoh kah meh kree-yoo",
+          "usage_notes": "Used when referring to a third person who intends to make something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me kriju",
+          "pronunciation_guide": "nah keh-mee meh kree-yoo",
+          "usage_notes": "Used when the speaker and others intend to make something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me kriju",
+          "pronunciation_guide": "yoo keh-nee meh kree-yoo",
+          "usage_notes": "Used when addressing multiple people who intend to make something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me kriju",
+          "pronunciation_guide": "ah-tah/ah-toh kah-nuh meh kree-yoo",
+          "usage_notes": "Used when referring to multiple people who intend to make something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam kriju",
+          "pronunciation_guide": "oo-neh kahm kree-yoo",
+          "usage_notes": "Used when the speaker has made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke kriju",
+          "pronunciation_guide": "tee keh kree-yoo",
+          "usage_notes": "Used when addressing a single person who has made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka kriju",
+          "pronunciation_guide": "eye/ah-yoh kah kree-yoo",
+          "usage_notes": "Used when referring to a third person who has made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi kriju",
+          "pronunciation_guide": "nah keh-mee kree-yoo",
+          "usage_notes": "Used when the speaker and others have made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni kriju",
+          "pronunciation_guide": "yoo keh-nee kree-yoo",
+          "usage_notes": "Used when addressing multiple people who have made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë kriju",
+          "pronunciation_guide": "ah-tah/ah-toh kah-nuh kree-yoo",
+          "usage_notes": "Used when referring to multiple people who have made something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "Regular verb conjugation pattern for verbs ending in -u.",
+        "example_usage": "Unë krijoj një pikturë. (I make a painting.)"
+      }
+    },
+    {
+      "verb_id": "39cb13b9-a41b-4a18-9762-3c37e3bdc607",
+      "target_phrase": "me marrë",
+      "english_phrase": "to take",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "marr",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'marr' remains mostly unchanged, but the endings vary irregularly.",
+        "notes": "The verb 'me marrë' is irregular and has unique conjugations in different tenses."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë marr",
+          "pronunciation_guide": "oo-neh marr",
+          "usage_notes": "Used when the speaker is taking something currently.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti merr",
+          "pronunciation_guide": "tee merr",
+          "usage_notes": "Used when addressing someone who is taking something currently.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo merr",
+          "pronunciation_guide": "eye/ah-yoh merr",
+          "usage_notes": "Used for a third person taking something currently.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na marrim",
+          "pronunciation_guide": "nah marr-eem",
+          "usage_notes": "Used when the speaker and others are taking something currently.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju merrni",
+          "pronunciation_guide": "yoo merr-nee",
+          "usage_notes": "Used when addressing multiple people taking something currently.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato marrin",
+          "pronunciation_guide": "ah-tah/ah-toh marr-een",
+          "usage_notes": "Used for multiple third persons taking something currently.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë mora",
+          "pronunciation_guide": "oo-neh moh-rah",
+          "usage_notes": "Used when the speaker took something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti more",
+          "pronunciation_guide": "tee moh-reh",
+          "usage_notes": "Used when addressing someone who took something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo mori",
+          "pronunciation_guide": "eye/ah-yoh moh-ree",
+          "usage_notes": "Used for a third person who took something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na morëm",
+          "pronunciation_guide": "nah moh-rem",
+          "usage_notes": "Used when the speaker and others took something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju morët",
+          "pronunciation_guide": "yoo moh-ret",
+          "usage_notes": "Used when addressing multiple people who took something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato morën",
+          "pronunciation_guide": "ah-tah/ah-toh moh-ren",
+          "usage_notes": "Used for multiple third persons who took something in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam me marrë",
+          "pronunciation_guide": "oo-neh kahm meh marr",
+          "usage_notes": "Used when the speaker will take something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke me marrë",
+          "pronunciation_guide": "tee keh meh marr",
+          "usage_notes": "Used when addressing someone who will take something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka me marrë",
+          "pronunciation_guide": "eye/ah-yoh kah meh marr",
+          "usage_notes": "Used for a third person who will take something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi me marrë",
+          "pronunciation_guide": "nah keh-mee meh marr",
+          "usage_notes": "Used when the speaker and others will take something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni me marrë",
+          "pronunciation_guide": "yoo keh-nee meh marr",
+          "usage_notes": "Used when addressing multiple people who will take something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë me marrë",
+          "pronunciation_guide": "ah-tah/ah-toh kahn meh marr",
+          "usage_notes": "Used for multiple third persons who will take something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "unë kam marrë",
+          "pronunciation_guide": "oo-neh kahm marr",
+          "usage_notes": "Used when the speaker has taken something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ti ke marrë",
+          "pronunciation_guide": "tee keh marr",
+          "usage_notes": "Used when addressing someone who has taken something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ai/ajo ka marrë",
+          "pronunciation_guide": "eye/ah-yoh kah marr",
+          "usage_notes": "Used for a third person who has taken something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "na kemi marrë",
+          "pronunciation_guide": "nah keh-mee marr",
+          "usage_notes": "Used when the speaker and others have taken something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ju keni marrë",
+          "pronunciation_guide": "yoo keh-nee marr",
+          "usage_notes": "Used when addressing multiple people who have taken something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ata/ato kanë marrë",
+          "pronunciation_guide": "ah-tah/ah-toh kahn marr",
+          "usage_notes": "Used for multiple third persons who have taken something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "The verb 'me marrë' follows an irregular pattern in the present and past tenses, while the future and perfect tenses use auxiliary verbs.",
+        "example_usage": "Unë marr librin nga tavolina. (I take the book from the table.)"
+      }
+    },
+    {
+      "verb_id": "d0e61419-2c8d-45d6-a56a-263df3e36251",
+      "target_phrase": "me dhanë",
+      "english_phrase": "to give",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "dhanë",
+        "verb_class": "irregular",
+        "stem_changes": "The stem 'dhanë' changes to 'jap' in certain forms.",
+        "notes": "This verb is irregular and exhibits significant changes in its stem across different tenses."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "jap",
+          "pronunciation_guide": "yahp",
+          "usage_notes": "Used for the first person singular present tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "jep",
+          "pronunciation_guide": "yehp",
+          "usage_notes": "Used for the second person singular present tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "jep",
+          "pronunciation_guide": "yehp",
+          "usage_notes": "Used for the third person singular present tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "japim",
+          "pronunciation_guide": "yah-peem",
+          "usage_notes": "Used for the first person plural present tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "jepni",
+          "pronunciation_guide": "yehp-nee",
+          "usage_notes": "Used for the second person plural present tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "japin",
+          "pronunciation_guide": "yah-peen",
+          "usage_notes": "Used for the third person plural present tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "dhashë",
+          "pronunciation_guide": "dah-shuh",
+          "usage_notes": "Used for the first person singular past tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "dhe",
+          "pronunciation_guide": "deh",
+          "usage_notes": "Used for the second person singular past tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "dhi",
+          "pronunciation_guide": "dee",
+          "usage_notes": "Used for the third person singular past tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "dhamë",
+          "pronunciation_guide": "dah-muh",
+          "usage_notes": "Used for the first person plural past tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "dhatë",
+          "pronunciation_guide": "dah-tuh",
+          "usage_notes": "Used for the second person plural past tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "dhanë",
+          "pronunciation_guide": "dah-nuh",
+          "usage_notes": "Used for the third person plural past tense.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me dhanë",
+          "pronunciation_guide": "kahm meh dah-nuh",
+          "usage_notes": "Used for the first person singular future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke me dhanë",
+          "pronunciation_guide": "keh meh dah-nuh",
+          "usage_notes": "Used for the second person singular future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me dhanë",
+          "pronunciation_guide": "kah meh dah-nuh",
+          "usage_notes": "Used for the third person singular future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me dhanë",
+          "pronunciation_guide": "keh-mee meh dah-nuh",
+          "usage_notes": "Used for the first person plural future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me dhanë",
+          "pronunciation_guide": "keh-nee meh dah-nuh",
+          "usage_notes": "Used for the second person plural future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me dhanë",
+          "pronunciation_guide": "kah-nuh meh dah-nuh",
+          "usage_notes": "Used for the third person plural future tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam dhanë",
+          "pronunciation_guide": "kahm dah-nuh",
+          "usage_notes": "Used for the first person singular perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke dhanë",
+          "pronunciation_guide": "keh dah-nuh",
+          "usage_notes": "Used for the second person singular perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka dhanë",
+          "pronunciation_guide": "kah dah-nuh",
+          "usage_notes": "Used for the third person singular perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi dhanë",
+          "pronunciation_guide": "keh-mee dah-nuh",
+          "usage_notes": "Used for the first person plural perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni dhanë",
+          "pronunciation_guide": "keh-nee dah-nuh",
+          "usage_notes": "Used for the second person plural perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë dhanë",
+          "pronunciation_guide": "kah-nuh dah-nuh",
+          "usage_notes": "Used for the third person plural perfect tense.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "Irregular verb with stem changes and auxiliary usage in future and perfect tenses.",
+        "example_usage": "Ai jep shumë dhurata. (He gives many gifts.)"
+      }
+    },
+    {
+      "verb_id": "ba2559f1-8382-4cbd-9d73-0dad6e6c3b39",
+      "target_phrase": "me dashtë",
+      "english_phrase": "to love",
+      "lesson_name": "Albanian Sounds",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "dasht",
+        "verb_class": "irregular",
+        "stem_changes": "The verb 'me dashtë' is irregular and does not follow a consistent pattern across tenses.",
+        "notes": "This verb is commonly used in everyday conversation in Kosovo and exhibits irregularities in its conjugation."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "du",
+          "pronunciation_guide": "doo",
+          "usage_notes": "Used when the speaker is expressing love or affection in the present.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "don",
+          "pronunciation_guide": "don",
+          "usage_notes": "Used when addressing someone directly about their feelings.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "don",
+          "pronunciation_guide": "don",
+          "usage_notes": "Used to describe someone else's feelings.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "dojmë",
+          "pronunciation_guide": "doy-muh",
+          "usage_notes": "Used when expressing collective feelings of love.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "doni",
+          "pronunciation_guide": "do-nee",
+          "usage_notes": "Used when addressing a group about their feelings.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "dojnë",
+          "pronunciation_guide": "doy-nuh",
+          "usage_notes": "Used to describe the feelings of a group.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "deshta",
+          "pronunciation_guide": "desh-tah",
+          "usage_notes": "Used to express love or affection in the past.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "deshte",
+          "pronunciation_guide": "desh-teh",
+          "usage_notes": "Used when addressing someone about their past feelings.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "deshti",
+          "pronunciation_guide": "desh-tee",
+          "usage_notes": "Used to describe someone else's past feelings.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "deshtëm",
+          "pronunciation_guide": "desh-tuhm",
+          "usage_notes": "Used when expressing collective past feelings of love.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "deshtë",
+          "pronunciation_guide": "desh-tuh",
+          "usage_notes": "Used when addressing a group about their past feelings.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "deshtën",
+          "pronunciation_guide": "desh-tuhn",
+          "usage_notes": "Used to describe the past feelings of a group.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me dashtë",
+          "pronunciation_guide": "kahm meh dasht",
+          "usage_notes": "Used to express future intentions or feelings of love.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ki me dashtë",
+          "pronunciation_guide": "kee meh dasht",
+          "usage_notes": "Used when addressing someone about their future feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me dashtë",
+          "pronunciation_guide": "kah meh dasht",
+          "usage_notes": "Used to describe someone else's future feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me dashtë",
+          "pronunciation_guide": "keh-mee meh dasht",
+          "usage_notes": "Used when expressing collective future intentions or feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me dashtë",
+          "pronunciation_guide": "keh-nee meh dasht",
+          "usage_notes": "Used when addressing a group about their future feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me dashtë",
+          "pronunciation_guide": "kah-nuh meh dasht",
+          "usage_notes": "Used to describe the future feelings of a group.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam dashtë",
+          "pronunciation_guide": "kahm dasht",
+          "usage_notes": "Used to express completed actions or feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke dashtë",
+          "pronunciation_guide": "keh dasht",
+          "usage_notes": "Used when addressing someone about their completed actions or feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka dashtë",
+          "pronunciation_guide": "kah dasht",
+          "usage_notes": "Used to describe someone else's completed actions or feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi dashtë",
+          "pronunciation_guide": "keh-mee dasht",
+          "usage_notes": "Used when expressing collective completed actions or feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni dashtë",
+          "pronunciation_guide": "keh-nee dasht",
+          "usage_notes": "Used when addressing a group about their completed actions or feelings.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë dashtë",
+          "pronunciation_guide": "kah-nuh dasht",
+          "usage_notes": "Used to describe the completed actions or feelings of a group.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "This verb follows an irregular pattern in the present and past tenses, while the future and perfect tenses are formed with auxiliary verbs.",
+        "example_usage": "Unë du shumë familjen time. (I love my family very much.)"
+      }
+    }
+  ],
+  "timestamp": "2025-09-22T21:20:29.775Z",
+  "costSummary": {
+    "totalCost": 0.539535,
+    "totalCalls": 15,
+    "operations": {
+      "verb-conjugation": {
+        "calls": 15,
+        "cost": 0.539535,
+        "tokens": 41427
+      }
+    },
+    "averageCostPerCall": 0.035969
+  }
+}

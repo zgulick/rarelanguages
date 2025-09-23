@@ -1,0 +1,796 @@
+{
+  "step": "completed",
+  "completed": 3,
+  "conjugations": [
+    {
+      "verb_id": "04bfa8f9-780e-45c8-8847-3b58fe12329c",
+      "target_phrase": "Nuk po kuptoj.",
+      "english_phrase": "I don't understand.",
+      "lesson_name": "Basic Greetings",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "kuptoj",
+        "verb_class": "regular_ar",
+        "stem_changes": "No stem changes",
+        "notes": "The verb 'kuptoj' is a regular verb in Gheg Albanian, typically following the regular_ar conjugation pattern."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "nuk po kuptoj",
+          "pronunciation_guide": "nook poh koop-toy",
+          "usage_notes": "Used when the speaker does not understand something currently.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "nuk po kupton",
+          "pronunciation_guide": "nook poh koop-ton",
+          "usage_notes": "Used when addressing someone who does not understand.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "nuk po kupton",
+          "pronunciation_guide": "nook poh koop-ton",
+          "usage_notes": "Used when referring to someone who does not understand.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "nuk po kuptojmë",
+          "pronunciation_guide": "nook poh koop-toym",
+          "usage_notes": "Used when the speaker and others do not understand.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "nuk po kuptoni",
+          "pronunciation_guide": "nook poh koop-ton-ee",
+          "usage_notes": "Used when addressing multiple people who do not understand.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "nuk po kuptojnë",
+          "pronunciation_guide": "nook poh koop-toyn",
+          "usage_notes": "Used when referring to multiple people who do not understand.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "nuk kuptova",
+          "pronunciation_guide": "nook koop-toh-vah",
+          "usage_notes": "Used when the speaker did not understand something in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "nuk kuptove",
+          "pronunciation_guide": "nook koop-toh-veh",
+          "usage_notes": "Used when addressing someone who did not understand in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "nuk kuptoi",
+          "pronunciation_guide": "nook koop-toy",
+          "usage_notes": "Used when referring to someone who did not understand in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "nuk kuptuam",
+          "pronunciation_guide": "nook koop-too-ahm",
+          "usage_notes": "Used when the speaker and others did not understand in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "nuk kuptuat",
+          "pronunciation_guide": "nook koop-too-aht",
+          "usage_notes": "Used when addressing multiple people who did not understand in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "nuk kuptuan",
+          "pronunciation_guide": "nook koop-too-ahn",
+          "usage_notes": "Used when referring to multiple people who did not understand in the past.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "nuk kam me kuptu",
+          "pronunciation_guide": "nook kahm meh koop-too",
+          "usage_notes": "Used when the speaker will not understand something in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "nuk ki me kuptu",
+          "pronunciation_guide": "nook kee meh koop-too",
+          "usage_notes": "Used when addressing someone who will not understand in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "nuk ka me kuptu",
+          "pronunciation_guide": "nook kah meh koop-too",
+          "usage_notes": "Used when referring to someone who will not understand in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "nuk kemi me kuptu",
+          "pronunciation_guide": "nook keh-mee meh koop-too",
+          "usage_notes": "Used when the speaker and others will not understand in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "nuk keni me kuptu",
+          "pronunciation_guide": "nook keh-nee meh koop-too",
+          "usage_notes": "Used when addressing multiple people who will not understand in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "nuk kanë me kuptu",
+          "pronunciation_guide": "nook kahn meh koop-too",
+          "usage_notes": "Used when referring to multiple people who will not understand in the future.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "nuk kam kuptu",
+          "pronunciation_guide": "nook kahm koop-too",
+          "usage_notes": "Used when the speaker has not understood something.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "nuk ke kuptu",
+          "pronunciation_guide": "nook keh koop-too",
+          "usage_notes": "Used when addressing someone who has not understood.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "nuk ka kuptu",
+          "pronunciation_guide": "nook kah koop-too",
+          "usage_notes": "Used when referring to someone who has not understood.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "nuk kemi kuptu",
+          "pronunciation_guide": "nook keh-mee koop-too",
+          "usage_notes": "Used when the speaker and others have not understood.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "nuk keni kuptu",
+          "pronunciation_guide": "nook keh-nee koop-too",
+          "usage_notes": "Used when addressing multiple people who have not understood.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "nuk kanë kuptu",
+          "pronunciation_guide": "nook kahn koop-too",
+          "usage_notes": "Used when referring to multiple people who have not understood.",
+          "is_irregular": false,
+          "frequency_rank": 8
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "The verb 'kuptoj' follows the regular_ar conjugation pattern in Gheg Albanian, with no stem changes across tenses.",
+        "example_usage": "Nuk po kuptoj çka po thue. (I don't understand what you are saying.)"
+      }
+    },
+    {
+      "verb_id": "1ecbd2a0-9de1-48a5-a3be-fdb29190f6b7",
+      "target_phrase": "Jam student.",
+      "english_phrase": "I am a student.",
+      "lesson_name": "Basic Greetings",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "jam",
+        "verb_class": "irregular",
+        "stem_changes": "The verb 'jam' is irregular and does not follow typical conjugation patterns.",
+        "notes": "This verb is an auxiliary verb used for forming various tenses and is highly irregular."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "jam",
+          "pronunciation_guide": "yahm",
+          "usage_notes": "Used to express current state of being.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "je",
+          "pronunciation_guide": "yeh",
+          "usage_notes": "Used to address someone directly.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "asht",
+          "pronunciation_guide": "usht",
+          "usage_notes": "Used to describe a third person or object.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "jemi",
+          "pronunciation_guide": "yeh-mee",
+          "usage_notes": "Used to express a group including the speaker.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "jeni",
+          "pronunciation_guide": "yeh-nee",
+          "usage_notes": "Used to address a group directly.",
+          "is_irregular": true,
+          "frequency_rank": 5
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "janë",
+          "pronunciation_guide": "yah-nuh",
+          "usage_notes": "Used to describe a group of people or objects.",
+          "is_irregular": true,
+          "frequency_rank": 6
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "isha",
+          "pronunciation_guide": "ee-shah",
+          "usage_notes": "Used to express past state of being.",
+          "is_irregular": true,
+          "frequency_rank": 7
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ishe",
+          "pronunciation_guide": "ee-sheh",
+          "usage_notes": "Used to address someone directly about past state.",
+          "is_irregular": true,
+          "frequency_rank": 8
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ishte",
+          "pronunciation_guide": "eesh-teh",
+          "usage_notes": "Used to describe a third person or object in the past.",
+          "is_irregular": true,
+          "frequency_rank": 9
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "ishim",
+          "pronunciation_guide": "ee-sheem",
+          "usage_notes": "Used to express a group including the speaker in the past.",
+          "is_irregular": true,
+          "frequency_rank": 10
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ishit",
+          "pronunciation_guide": "ee-sheet",
+          "usage_notes": "Used to address a group directly about past state.",
+          "is_irregular": true,
+          "frequency_rank": 11
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ishin",
+          "pronunciation_guide": "ee-sheen",
+          "usage_notes": "Used to describe a group of people or objects in the past.",
+          "is_irregular": true,
+          "frequency_rank": 12
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me qenë",
+          "pronunciation_guide": "kahm meh chuhn",
+          "usage_notes": "Used to express future state of being.",
+          "is_irregular": true,
+          "frequency_rank": 13
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke me qenë",
+          "pronunciation_guide": "keh meh chuhn",
+          "usage_notes": "Used to address someone directly about future state.",
+          "is_irregular": true,
+          "frequency_rank": 14
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me qenë",
+          "pronunciation_guide": "kah meh chuhn",
+          "usage_notes": "Used to describe a third person or object in the future.",
+          "is_irregular": true,
+          "frequency_rank": 15
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me qenë",
+          "pronunciation_guide": "keh-mee meh chuhn",
+          "usage_notes": "Used to express a group including the speaker in the future.",
+          "is_irregular": true,
+          "frequency_rank": 16
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me qenë",
+          "pronunciation_guide": "keh-nee meh chuhn",
+          "usage_notes": "Used to address a group directly about future state.",
+          "is_irregular": true,
+          "frequency_rank": 17
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me qenë",
+          "pronunciation_guide": "kah-nuh meh chuhn",
+          "usage_notes": "Used to describe a group of people or objects in the future.",
+          "is_irregular": true,
+          "frequency_rank": 18
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam qenë",
+          "pronunciation_guide": "kahm chuhn",
+          "usage_notes": "Used to express a completed state of being.",
+          "is_irregular": true,
+          "frequency_rank": 19
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke qenë",
+          "pronunciation_guide": "keh chuhn",
+          "usage_notes": "Used to address someone directly about completed state.",
+          "is_irregular": true,
+          "frequency_rank": 20
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka qenë",
+          "pronunciation_guide": "kah chuhn",
+          "usage_notes": "Used to describe a third person or object in a completed state.",
+          "is_irregular": true,
+          "frequency_rank": 21
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi qenë",
+          "pronunciation_guide": "keh-mee chuhn",
+          "usage_notes": "Used to express a group including the speaker in a completed state.",
+          "is_irregular": true,
+          "frequency_rank": 22
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni qenë",
+          "pronunciation_guide": "keh-nee chuhn",
+          "usage_notes": "Used to address a group directly about completed state.",
+          "is_irregular": true,
+          "frequency_rank": 23
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë qenë",
+          "pronunciation_guide": "kah-nuh chuhn",
+          "usage_notes": "Used to describe a group of people or objects in a completed state.",
+          "is_irregular": true,
+          "frequency_rank": 24
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "The verb 'jam' follows an irregular conjugation pattern typical of auxiliary verbs in Albanian.",
+        "example_usage": "Jam student. (I am a student.)"
+      }
+    },
+    {
+      "verb_id": "288c3ba9-3840-49a1-b6b0-bb5628dfa847",
+      "target_phrase": "Tung, qysh je?",
+      "english_phrase": "Hello, how are you?",
+      "lesson_name": "Basic Greetings",
+      "skill_name": "Albanian 1: Unit 1 - Greetings & Basic Phrases",
+      "verb_analysis": {
+        "root_form": "qen",
+        "verb_class": "irregular",
+        "stem_changes": "The stem changes in different tenses and persons.",
+        "notes": "This is an auxiliary and irregular verb, commonly used in various expressions."
+      },
+      "conjugations": [
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "jam",
+          "pronunciation_guide": "yahm",
+          "usage_notes": "Used to express current state or identity.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "je",
+          "pronunciation_guide": "yeh",
+          "usage_notes": "Used to ask or state someone's current state.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "asht",
+          "pronunciation_guide": "ahsht",
+          "usage_notes": "Used to describe the state of a third person or object.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "jemi",
+          "pronunciation_guide": "yeh-mee",
+          "usage_notes": "Used to express the state of a group including the speaker.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "jeni",
+          "pronunciation_guide": "yeh-nee",
+          "usage_notes": "Used to address a group of people.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "janë",
+          "pronunciation_guide": "yah-nuh",
+          "usage_notes": "Used to describe the state of multiple people or objects.",
+          "is_irregular": true,
+          "frequency_rank": 1
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "isha",
+          "pronunciation_guide": "ee-shah",
+          "usage_notes": "Used to describe a past state or identity.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ishe",
+          "pronunciation_guide": "ee-sheh",
+          "usage_notes": "Used to describe someone's past state.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ishte",
+          "pronunciation_guide": "eesh-teh",
+          "usage_notes": "Used to describe a third person's past state.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "ishim",
+          "pronunciation_guide": "ee-sheem",
+          "usage_notes": "Used to describe a past state of a group including the speaker.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "ishit",
+          "pronunciation_guide": "ee-sheet",
+          "usage_notes": "Used to describe a past state of a group being addressed.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "ishin",
+          "pronunciation_guide": "ee-sheen",
+          "usage_notes": "Used to describe a past state of multiple people or objects.",
+          "is_irregular": true,
+          "frequency_rank": 2
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam me qenë",
+          "pronunciation_guide": "kahm meh chen",
+          "usage_notes": "Used to express a future state or identity.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ki me qenë",
+          "pronunciation_guide": "kee meh chen",
+          "usage_notes": "Used to express someone's future state.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka me qenë",
+          "pronunciation_guide": "kah meh chen",
+          "usage_notes": "Used to express a third person's future state.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "future",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi me qenë",
+          "pronunciation_guide": "keh-mee meh chen",
+          "usage_notes": "Used to express a future state of a group including the speaker.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "future",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni me qenë",
+          "pronunciation_guide": "keh-nee meh chen",
+          "usage_notes": "Used to express a future state of a group being addressed.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "future",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë me qenë",
+          "pronunciation_guide": "kah-nuh meh chen",
+          "usage_notes": "Used to express a future state of multiple people or objects.",
+          "is_irregular": true,
+          "frequency_rank": 3
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "singular",
+          "conjugated_form": "kam qenë",
+          "pronunciation_guide": "kahm chen",
+          "usage_notes": "Used to express a completed state or identity.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "singular",
+          "conjugated_form": "ke qenë",
+          "pronunciation_guide": "keh chen",
+          "usage_notes": "Used to express someone's completed state.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "singular",
+          "conjugated_form": "ka qenë",
+          "pronunciation_guide": "kah chen",
+          "usage_notes": "Used to express a third person's completed state.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "perfect",
+          "person": "first",
+          "number": "plural",
+          "conjugated_form": "kemi qenë",
+          "pronunciation_guide": "keh-mee chen",
+          "usage_notes": "Used to express a completed state of a group including the speaker.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "perfect",
+          "person": "second",
+          "number": "plural",
+          "conjugated_form": "keni qenë",
+          "pronunciation_guide": "keh-nee chen",
+          "usage_notes": "Used to express a completed state of a group being addressed.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        },
+        {
+          "tense": "perfect",
+          "person": "third",
+          "number": "plural",
+          "conjugated_form": "kanë qenë",
+          "pronunciation_guide": "kah-nuh chen",
+          "usage_notes": "Used to express a completed state of multiple people or objects.",
+          "is_irregular": true,
+          "frequency_rank": 4
+        }
+      ],
+      "paradigm_info": {
+        "pattern_template": "Irregular verb conjugation pattern with unique forms for each tense and person.",
+        "example_usage": "Qysh je? - How are you?"
+      }
+    }
+  ],
+  "timestamp": "2025-09-21T11:21:27.882Z",
+  "costSummary": {
+    "totalCost": 0.10686000000000001,
+    "totalCalls": 3,
+    "operations": {
+      "verb-conjugation": {
+        "calls": 3,
+        "cost": 0.10686000000000001,
+        "tokens": 8010
+      }
+    },
+    "averageCostPerCall": 0.035620000000000006
+  }
+}

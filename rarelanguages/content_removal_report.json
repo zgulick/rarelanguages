@@ -1,0 +1,285 @@
+{
+  "timestamp": "2025-09-23T20:08:36.447Z",
+  "total_analyzed": 410,
+  "to_remove": 39,
+  "to_keep": 371,
+  "removal_rate": "9.5%",
+  "categories": {
+    "academic_language": 39
+  },
+  "items_to_remove": [
+    {
+      "content_id": "ec888165-4802-4958-b2b9-97f89a7e6639",
+      "english_phrase": "As a result",
+      "lesson_name": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: as a result",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "6a20247b-cf63-4357-a480-26198ee28a02",
+      "english_phrase": "In conclusion",
+      "lesson_name": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: in conclusion",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "fc317710-e8ff-444c-b756-6f7faa61efc3",
+      "english_phrase": "In contrast",
+      "lesson_name": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: in contrast",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "28ff484d-351f-4d24-90bf-0bba6a2873ae",
+      "english_phrase": "As a result, we can infer that...",
+      "lesson_name": "Daily Routines",
+      "reason": "Matches academic/inappropriate pattern: as a result",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "20b53807-f8da-4e14-8a92-4734b02561ee",
+      "english_phrase": "In conclusion, we can say that...",
+      "lesson_name": "Daily Routines",
+      "reason": "Matches academic/inappropriate pattern: in conclusion",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "a41621a9-1a09-4cf6-a613-d8d588e910a9",
+      "english_phrase": "What are your thoughts on this issue?",
+      "lesson_name": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: what are your thoughts on this issue",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "ca402026-9eb6-4a85-b3f5-996a93321c83",
+      "english_phrase": "Could you please provide more details?",
+      "lesson_name": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: could you please provide more details",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "2ca5cfe8-5760-42f5-be2f-c11490e069b7",
+      "english_phrase": "Thank you for your assistance.",
+      "lesson_name": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: thank you for your assistance",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "1ab55e81-e870-4902-a260-f956b4e6b32e",
+      "english_phrase": "I apologize for the inconvenience.",
+      "lesson_name": "Future Plans",
+      "reason": "Matches academic/inappropriate pattern: apologize for the inconvenience",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "6444f4f9-91f4-4c8f-b5b6-a2d6b7248f09",
+      "english_phrase": "Critique the logical consistency",
+      "lesson_name": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: critique the",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "0e1bd879-e982-47e1-af93-942559fabe0c",
+      "english_phrase": "Identify the main claim",
+      "lesson_name": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: identify the main claim",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "56333401-0541-47f6-b54d-4b8707d677b6",
+      "english_phrase": "Reflect on the implications",
+      "lesson_name": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: reflect on the implications",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "f2c447b5-070c-4942-a013-7fc6738489cb",
+      "english_phrase": "Summarize the key points",
+      "lesson_name": "Talking About Feelings",
+      "reason": "Matches academic/inappropriate pattern: summarize the key points",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "a08602da-0e72-4e65-8e5f-e14cc32fd16e",
+      "english_phrase": "Discover vocabulary for home and places.",
+      "lesson_name": "Places in Town",
+      "reason": "Matches academic/inappropriate pattern: discover vocabulary for",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "de3411b3-1fe5-443f-9e94-129c00db2e4a",
+      "english_phrase": "Thank you for your assistance.",
+      "lesson_name": "Past Tense",
+      "reason": "Matches academic/inappropriate pattern: thank you for your assistance",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "4215c23b-eb7a-4d1a-b887-e0fd9d520530",
+      "english_phrase": "I apologize for the inconvenience.",
+      "lesson_name": "Past Tense",
+      "reason": "Matches academic/inappropriate pattern: apologize for the inconvenience",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "7b078454-4a3f-4df3-9156-0ecdb53ce0d9",
+      "english_phrase": "Discover vocabulary for home and places.",
+      "lesson_name": "Home Vocabulary",
+      "reason": "Matches academic/inappropriate pattern: discover vocabulary for",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "9ba7dbc7-d70e-4ffa-bf97-6326fc1493fe",
+      "english_phrase": "I reflect on my learning experiences.",
+      "lesson_name": "Asking for Help",
+      "reason": "Matches academic/inappropriate pattern: reflect on.*learning",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "a6d3bece-5568-4ebf-ae44-5bae76c3f4a6",
+      "english_phrase": "I use feedback to improve.",
+      "lesson_name": "Asking for Help",
+      "reason": "Matches academic/inappropriate pattern: feedback to improve",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "2f9839d1-ea6a-4663-9ceb-df26e71f6410",
+      "english_phrase": "In this lesson, you'll learn numbers and time.",
+      "lesson_name": "Days of the Week",
+      "reason": "Matches academic/inappropriate pattern: in this lesson.*you'll learn",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "9c6710ed-3df2-4542-837e-978066d6543c",
+      "english_phrase": "Identify your strengths and weaknesses",
+      "lesson_name": "Reflective Language Learning",
+      "reason": "Matches academic/inappropriate pattern: identify your strengths and weaknesses",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "050f2864-6af0-44f3-9827-e31cff4532a9",
+      "english_phrase": "Reflect on cultural differences",
+      "lesson_name": "Reflective Language Learning",
+      "reason": "Matches academic/inappropriate pattern: reflect on cultural differences",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "0c0a63d4-4b92-434b-9934-bf578b1794fd",
+      "english_phrase": "Seek feedback from peers",
+      "lesson_name": "Reflective Language Learning",
+      "reason": "Matches academic/inappropriate pattern: seek feedback from peers",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "5924bf68-6a18-40f5-8b99-68d58d2a49a1",
+      "english_phrase": "In this lesson, you'll learn numbers and time.",
+      "lesson_name": "Making Plans",
+      "reason": "Matches academic/inappropriate pattern: in this lesson.*you'll learn",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "1b274b38-2537-4c28-9029-108b964b62e9",
+      "english_phrase": "Could you please clarify your point?",
+      "lesson_name": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: clarify your point",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "07568f54-020c-42df-97d8-1673a77e1f31",
+      "english_phrase": "Thank you for your cooperation.",
+      "lesson_name": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: thank you for your cooperation",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "db0b2177-adff-4909-90c6-d21148afcdb5",
+      "english_phrase": "I apologize for the misunderstanding.",
+      "lesson_name": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: i apologize for the misunderstanding",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "a2fc46bd-7882-49b5-bc91-3075eb7d9d62",
+      "english_phrase": "Let's review the main points.",
+      "lesson_name": "Social Phrases",
+      "reason": "Matches academic/inappropriate pattern: let's review the main points",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "c509fd16-ccb3-4d8e-8028-0e2169d26063",
+      "english_phrase": "I apologize for the inconvenience.",
+      "lesson_name": "Storytelling",
+      "reason": "Matches academic/inappropriate pattern: apologize for the inconvenience",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "0ba2764a-67ce-4193-83bd-33cea15d6576",
+      "english_phrase": "In this lesson, you'll learn numbers and time.",
+      "lesson_name": "Basic Interactions",
+      "reason": "Matches academic/inappropriate pattern: in this lesson.*you'll learn",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "51bb7b67-1be1-4035-8899-d90ccce958cf",
+      "english_phrase": "Discover vocabulary for home and places.",
+      "lesson_name": "Giving Directions",
+      "reason": "Matches academic/inappropriate pattern: discover vocabulary for",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "655891fc-ad45-4185-8d8d-fa8ae3833c8e",
+      "english_phrase": "Could you clarify your point?",
+      "lesson_name": "Basic Vocabulary",
+      "reason": "Matches academic/inappropriate pattern: clarify your point",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "1f073cc5-a7d7-49fb-ad27-2f447e8c691e",
+      "english_phrase": "I apologize for the misunderstanding.",
+      "lesson_name": "Basic Vocabulary",
+      "reason": "Matches academic/inappropriate pattern: i apologize for the misunderstanding",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "9f16d106-7c89-47a2-8516-af69ac25929c",
+      "english_phrase": "How was your trip?",
+      "lesson_name": "Albanian Sounds - Part 9",
+      "reason": "Matches academic/inappropriate pattern: how was your trip",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "45243593-daaf-43db-9c56-98e74210c747",
+      "english_phrase": "How many children do you have?",
+      "lesson_name": "Albanian Sounds - Part 4",
+      "reason": "Matches academic/inappropriate pattern: how many children do you have",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "3379b7e8-2728-49e0-bd7d-293bcf592983",
+      "english_phrase": "What brings you here?",
+      "lesson_name": "Albanian Sounds - Part 4",
+      "reason": "Matches academic/inappropriate pattern: what brings you here",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "2949fda7-5fc8-494a-a178-8eb92a622c15",
+      "english_phrase": "How is work going?",
+      "lesson_name": "Albanian Sounds - Part 3",
+      "reason": "Matches academic/inappropriate pattern: how is work going",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "0a2947f1-2964-4c5d-b4b5-56fa443452fd",
+      "english_phrase": "Identify the main idea of the text.",
+      "lesson_name": "Expressing Opinions",
+      "reason": "Matches academic/inappropriate pattern: main idea of the text",
+      "category": "academic_language"
+    },
+    {
+      "content_id": "647acdb9-9c4c-4b47-af81-65ee7f9d32b3",
+      "english_phrase": "Summarize the text in your own words.",
+      "lesson_name": "Expressing Opinions",
+      "reason": "Matches academic/inappropriate pattern: in your own words",
+      "category": "academic_language"
+    }
+  ]
+}

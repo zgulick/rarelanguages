@@ -1,0 +1,2975 @@
+{
+  "timestamp": "2025-09-23T20:10:43.317Z",
+  "statistics": {
+    "total": 380,
+    "word_type_mismatches": 25,
+    "difficulty_mismatches": 100,
+    "theme_mismatches": 6,
+    "obvious_errors": 6
+  },
+  "issues": [
+    {
+      "content_id": "f9ad3cc8-cc8b-4af9-a8ae-3d8a14e4144d",
+      "english_phrase": "On the other hand",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Making Plans",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "0b9c467b-64ce-40cb-a4fc-7e3efe5b07f3",
+      "english_phrase": "I go to sleep",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily_activities",
+      "lesson_name": "Daily Routines",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "1ad94f35-eb3c-4e58-973f-98d484c5677e",
+      "english_phrase": "I go to work",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily_activities",
+      "lesson_name": "Daily Routines",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "16ad5bf7-0a45-491f-aba6-8ed0da995528",
+      "english_phrase": "I take a shower",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily_activities",
+      "lesson_name": "Daily Routines",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "97217b7f-9cfc-447d-968e-1c448b25d430",
+      "english_phrase": "I sleep in my bed",
+      "current_word_type": "preposition",
+      "current_grammar_category": "body_parts",
+      "lesson_name": "Daily Routines",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "obvious_error",
+          "severity": "high",
+          "description": "\"I sleep in my bed\" is a sentence but labeled as \"preposition\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "68e846fc-0cab-4cc1-af81-89dd57d595f0",
+      "english_phrase": "This is our kitchen",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Daily Routines",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "b8650d85-f9a3-4cdd-9b2b-5dc6d2b0fdb4",
+      "english_phrase": "Have a good rest",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily activities",
+      "lesson_name": "Albanian Sounds - Part 10",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "b26c2886-04f0-4be1-968a-3c709434e6d5",
+      "english_phrase": "How old are you?",
+      "current_word_type": "question",
+      "current_grammar_category": "question",
+      "lesson_name": "Albanian Sounds - Part 10",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "a4d39586-9ff6-4e17-9e15-1693d0ed7883",
+      "english_phrase": "My uncle is visiting",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 10",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "83953c1f-91f5-49ab-a216-0a3526420544",
+      "english_phrase": "Everything will be fine",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 8",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "868ff378-a73b-48ae-b2a0-cb7994bd9cbc",
+      "english_phrase": "Good afternoon",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Albanian Sounds - Part 8",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"phrase\" but labeled as \"courtesy_phrase\""
+        }
+      ]
+    },
+    {
+      "content_id": "7efd0a07-689a-4097-a969-56596df4b972",
+      "english_phrase": "Please sit down",
+      "current_word_type": "phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Albanian Sounds - Part 8",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "courtesy_phrase",
+        "confidence": 0.9,
+        "reason": "common courtesy phrase"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"courtesy_phrase\" but labeled as \"phrase\""
+        }
+      ]
+    },
+    {
+      "content_id": "83d8b820-9abc-44d4-9933-c5612c053b4d",
+      "english_phrase": "We are having dinner",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 8",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "ad9def99-9a4a-457d-8420-21b54ca0b6b1",
+      "english_phrase": "Can you explain this concept?",
+      "current_word_type": "pronoun",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Future Plans",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"question\" but labeled as \"pronoun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "e47c5263-99ee-4b78-acea-f4a889256033",
+      "english_phrase": "How can I assist you today?",
+      "current_word_type": "adverb",
+      "current_grammar_category": "time_expressions",
+      "lesson_name": "Future Plans",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"question\" but labeled as \"adverb\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "7430188a-8fe1-4595-91bd-380371ae6cb0",
+      "english_phrase": "Let's meet tomorrow at the office.",
+      "current_word_type": "adverb",
+      "current_grammar_category": "time_expressions",
+      "lesson_name": "Future Plans",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.8,
+        "reason": "complete sentence with punctuation"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"adverb\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d0ba901d-d19f-4d71-a0f9-894c9dbb1951",
+      "english_phrase": "Nice to meet you",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Talking About Feelings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "288c3ba9-3840-49a1-b6b0-bb5628dfa847",
+      "english_phrase": "Hello, how are you?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "398ee023-7c5b-4979-8e5e-3221d019ef3a",
+      "english_phrase": "Please",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "word",
+        "confidence": 0.7,
+        "reason": "single word"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"word\" but labeled as \"courtesy_phrase\""
+        }
+      ]
+    },
+    {
+      "content_id": "df87b757-00eb-4084-84a4-e6eaf96fecaa",
+      "english_phrase": "I would like a coffee, please.",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.8,
+        "reason": "complete sentence with punctuation"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"phrase\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "2b36e308-2b29-4a22-9433-665f7a3d5800",
+      "english_phrase": "Thank you very much.",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "courtesy_phrase",
+        "confidence": 0.9,
+        "reason": "common courtesy phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "ab348c97-ec9e-4564-bce9-f72b73f14b73",
+      "english_phrase": "Can you help me?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "1ecbd2a0-9de1-48a5-a3be-fdb29190f6b7",
+      "english_phrase": "I am a student.",
+      "current_word_type": "phrase",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "7d700ac1-6b8b-4fdc-a5a2-458000e63c01",
+      "english_phrase": "Where is the library?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "fff437bc-f70c-41b4-ad65-a7c4110d4b9c",
+      "english_phrase": "Please",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Places in Town",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "word",
+        "confidence": 0.7,
+        "reason": "single word"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"word\" but labeled as \"courtesy_phrase\""
+        }
+      ]
+    },
+    {
+      "content_id": "69e0df06-ddd9-4ada-95f3-1c012da1dd8f",
+      "english_phrase": "Hello, my name is Ana",
+      "current_word_type": "greeting",
+      "current_grammar_category": "greeting",
+      "lesson_name": "Places in Town",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"greeting\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d3083474-8a2f-4851-88e6-3db7bf598067",
+      "english_phrase": "Hello, my name is John",
+      "current_word_type": "pronoun",
+      "current_grammar_category": "body_parts",
+      "lesson_name": "Places in Town",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "obvious_error",
+          "severity": "high",
+          "description": "\"Hello, my name is John\" is a sentence but labeled as \"pronoun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "59125ed8-ac68-4aa9-8a5f-b5cd107d1151",
+      "english_phrase": "Thank you very much",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Places in Town",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "courtesy_phrase",
+        "confidence": 0.9,
+        "reason": "common courtesy phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "84fe880b-991b-400b-a3df-8c5b2d28d667",
+      "english_phrase": "Hey, can you send me the notes?",
+      "current_word_type": "preposition",
+      "current_grammar_category": "questions",
+      "lesson_name": "Past Tense",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "obvious_error",
+          "severity": "high",
+          "description": "\"Hey, can you send me the notes?\" is a question but labeled as \"preposition\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "0cc3f3cf-aa9b-4f71-8cf1-36da589759c9",
+      "english_phrase": "I am fifteen years old",
+      "current_word_type": "sentence",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Past Tense",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "55c7fffb-1990-405c-9d45-4618703bb8d5",
+      "english_phrase": "Let's talk about the project.",
+      "current_word_type": "preposition",
+      "current_grammar_category": "basic_verbs",
+      "lesson_name": "Past Tense",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.8,
+        "reason": "complete sentence with punctuation"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "obvious_error",
+          "severity": "high",
+          "description": "\"Let's talk about the project.\" is a sentence but labeled as \"preposition\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d5533301-5ae0-4a85-ab68-d520c7cdc50f",
+      "english_phrase": "I sleep in my bed",
+      "current_word_type": "sentence",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Home Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d6f08b91-dd92-470f-9eae-881723b6a4fb",
+      "english_phrase": "The house is beautiful",
+      "current_word_type": "phrase",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Home Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "248f98ca-7095-4fd1-8879-cbf7a8ed7bef",
+      "english_phrase": "I help at home",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Home Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "845cfeb2-ffda-4641-b64f-341a50146f82",
+      "english_phrase": "This is our kitchen",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Home Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "6235059f-f427-4d4c-822a-7075d4d453bb",
+      "english_phrase": "I am fifteen years old",
+      "current_word_type": "adjective",
+      "current_grammar_category": "body_parts",
+      "lesson_name": "Asking for Help",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "obvious_error",
+          "severity": "high",
+          "description": "\"I am fifteen years old\" is a sentence but labeled as \"adjective\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "4c7220b0-d8d9-4962-b5b3-474b78fafbb6",
+      "english_phrase": "What day is it?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Days of the Week",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "cbef1acc-b3a2-4d78-bccf-21e621d3f325",
+      "english_phrase": "I am fourteen years old",
+      "current_word_type": "noun",
+      "current_grammar_category": "questions",
+      "lesson_name": "Reflective Language Learning",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"noun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d8327f28-16a8-4080-937b-8ee1fd551e4f",
+      "english_phrase": "It's good to see you",
+      "current_word_type": "phrase",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Albanian Sounds - Part 12",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"phrase\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d2f6d3ef-ec9f-4f07-9aaf-f714f05a9706",
+      "english_phrase": "The meeting is at five",
+      "current_word_type": "noun",
+      "current_grammar_category": "numbers",
+      "lesson_name": "Albanian Sounds - Part 12",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"noun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d12025c9-08a9-4d78-99f2-7e2a8b71a05d",
+      "english_phrase": "Can you help me?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 12",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "e59b29b5-f4cd-45ee-9203-07412a75074b",
+      "english_phrase": "No need to rush",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 12",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d5510108-a279-47d7-b55d-b6e58745aee8",
+      "english_phrase": "Our door is always open",
+      "current_word_type": "sentence",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Albanian Sounds - Part 12",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "1684a512-e411-4224-9ac2-de017c3f9bad",
+      "english_phrase": "The recipe is old",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 2",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "1bbd36a0-4a93-405b-9b45-45a915855ba9",
+      "english_phrase": "Welcome to our home",
+      "current_word_type": "phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Albanian Sounds - Part 2",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "183bfde6-cde1-48fc-89b5-250d1bfaac7b",
+      "english_phrase": "When do you wake up?",
+      "current_word_type": "pronoun",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 2",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"question\" but labeled as \"pronoun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "07ee34c2-3c02-4ef1-8dd4-311e01e20635",
+      "english_phrase": "What time is it?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Making Plans",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "c3b049d3-a61a-4686-bebc-9776fa7fab98",
+      "english_phrase": "I drink coffee",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily activities",
+      "lesson_name": "Social Phrases",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "advanced vocabulary for level 1",
+        "suggested_level": 3
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "advanced vocabulary for level 1",
+          "suggested_level": 3
+        }
+      ]
+    },
+    {
+      "content_id": "cefffa2f-feea-4673-a857-6bbbb90584c3",
+      "english_phrase": "Hello, how are you?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 11",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d0454aa7-eab2-445f-8b73-db9ec6f71c71",
+      "english_phrase": "Let's clear the table",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 11",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "cf84c687-cf0e-4b4b-abd3-a1f8eadc753e",
+      "english_phrase": "I don't understand this concept.",
+      "current_word_type": "sentence",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Storytelling",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.8,
+        "reason": "complete sentence with punctuation"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "449d29fe-4799-4dee-b844-967c8790e744",
+      "english_phrase": "Thank you very much",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Storytelling",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "courtesy_phrase",
+        "confidence": 0.9,
+        "reason": "common courtesy phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "03595410-4482-487c-86f2-2672e5d017f2",
+      "english_phrase": "Hello, my name is Mark",
+      "current_word_type": "phrase",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Giving Directions",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"phrase\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "42cf4f52-17f9-48eb-82b9-bbf6b587e08c",
+      "english_phrase": "I drink coffee",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily activities",
+      "lesson_name": "Basic Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "advanced vocabulary for level 1",
+        "suggested_level": 3
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "advanced vocabulary for level 1",
+          "suggested_level": 3
+        }
+      ]
+    },
+    {
+      "content_id": "be124d3a-e183-4ffc-9061-18be04d8efef",
+      "english_phrase": "I would like to emphasize this point.",
+      "current_word_type": "sentence",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Basic Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.8,
+        "reason": "complete sentence with punctuation"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "018f4d46-64c1-4c39-b6bd-a6d87f5bda26",
+      "english_phrase": "This is good food",
+      "current_word_type": "phrase",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Basic Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "63e757ff-9aed-453a-a1d0-53ff14ad7176",
+      "english_phrase": "Coffee",
+      "current_word_type": "word",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Basic Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "word",
+        "confidence": 0.7,
+        "reason": "single word"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "advanced vocabulary for level 1",
+        "suggested_level": 3
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "advanced vocabulary for level 1",
+          "suggested_level": 3
+        }
+      ]
+    },
+    {
+      "content_id": "9aa4aaa0-a868-4b34-998a-b105e54034eb",
+      "english_phrase": "The sun is shining",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 9",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "a1bbfbbd-7a8d-4acc-bafd-697bc8202114",
+      "english_phrase": "What do you think?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 9",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "9e308141-5525-49ca-8c33-6c9a6ec22a2a",
+      "english_phrase": "I'm proud of you",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 9",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "92b3a87a-29a6-4f6b-b507-59b7598f8f20",
+      "english_phrase": "Turn off the lights",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 9",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "91daf1e0-921f-4ce0-8b4e-a13046e9f3e1",
+      "english_phrase": "You are always welcome",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 9",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "6b265cbe-c5a1-4b1d-92ac-3fb91009e68e",
+      "english_phrase": "Come meet my parents",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily activities",
+      "lesson_name": "Albanian Sounds - Part 6",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "5ea492e3-f1c8-4781-a635-661b18dccdd4",
+      "english_phrase": "I'm going to work",
+      "current_word_type": "phrase",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Albanian Sounds - Part 6",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "6de5866f-4aea-4158-a1a7-f729533ab16a",
+      "english_phrase": "Let's sit and talk",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 6",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "6a7db403-cf74-4637-8ec7-a340c3a12df3",
+      "english_phrase": "Not too much pepper",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 6",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "635ab858-5466-49ec-a98b-07fa3d84fc4b",
+      "english_phrase": "The baby is sleeping",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily activities",
+      "lesson_name": "Albanian Sounds - Part 6",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "717c5c5e-76d6-4412-b49c-3592b3c62ec8",
+      "english_phrase": "Do you want it sweet?",
+      "current_word_type": "question",
+      "current_grammar_category": "question",
+      "lesson_name": "Albanian Sounds - Part 7",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "7b7c67f4-7101-45b4-87d8-62d8672b7e1f",
+      "english_phrase": "Let it cool down",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 7",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "74226699-8aa0-4c8c-9cea-0ff25883fa8d",
+      "english_phrase": "May you be healthy",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 7",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "7345e577-a660-4b52-82ae-77d0fc43a6fe",
+      "english_phrase": "What is your name?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 7",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "5c1a0df0-1009-456b-8e4d-1ed75c0048a4",
+      "english_phrase": "Have a good day",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily activities",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "5c285512-04a7-4b74-bcba-af3ef074b063",
+      "english_phrase": "Please speak slowly.",
+      "current_word_type": "phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "courtesy_phrase",
+        "confidence": 0.9,
+        "reason": "common courtesy phrase"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"courtesy_phrase\" but labeled as \"phrase\""
+        }
+      ]
+    },
+    {
+      "content_id": "4b0a0e6a-eaf8-468e-b72b-d417e64e4d13",
+      "english_phrase": "The baby is six months old",
+      "current_word_type": "sentence",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "508739e4-a33a-43e3-b27d-aa6d88c5e2c7",
+      "english_phrase": "How is your health?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "54d1499d-834b-4e48-859c-87bb25fb6bb7",
+      "english_phrase": "Make yourself at home",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "493949fc-694e-456c-99ec-94f64c702017",
+      "english_phrase": "We need to catch up",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"phrase\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "4acb2d17-3d58-4c47-80f1-5c36404fe115",
+      "english_phrase": "What's new with you?",
+      "current_word_type": "question",
+      "current_grammar_category": "question",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "5bfff848-b71d-4344-a747-1c7d57551ed1",
+      "english_phrase": "When will you visit?",
+      "current_word_type": "question",
+      "current_grammar_category": "question",
+      "lesson_name": "Albanian Sounds - Part 5",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "eaaafd5f-50d5-40c4-97e9-54770d859b6b",
+      "english_phrase": "See you in the morning",
+      "current_word_type": "noun",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Albanian Sounds - Part 13",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"noun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "f205b211-4516-4ada-97c6-4078cb023f68",
+      "english_phrase": "I am a student.",
+      "current_word_type": "phrase",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Albanian Sounds - Part 13",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "ff72c65d-f3a5-4f46-a054-a62ab6dcbd4f",
+      "english_phrase": "I believe in you",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 13",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "f60caaa3-f6e7-467d-8682-0c5317b965fd",
+      "english_phrase": "We care about you",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 13",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "368249c5-3802-403c-a7eb-fdd2414db1b7",
+      "english_phrase": "The children are playing",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 4",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "45039523-017d-4167-bcbb-242d4b2b0c8d",
+      "english_phrase": "How can I help?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 4",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "391e6059-65d7-48da-bfd9-cbf089395b4d",
+      "english_phrase": "My daughter goes to school",
+      "current_word_type": "noun",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 4",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"noun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "48a86746-5f61-472d-b3b6-9b4d48d9defc",
+      "english_phrase": "Save room for dessert",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 4",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "34ff8e29-df6a-4ebd-b3ea-bfc77f749441",
+      "english_phrase": "We are proud parents",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 4",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "d757a6c4-2e9f-4467-ba1e-bfa2b710120d",
+      "english_phrase": "Can you help me with this?",
+      "current_word_type": "pronoun",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Travel Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"question\" but labeled as \"pronoun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        },
+        {
+          "type": "theme_mismatch",
+          "severity": "low",
+          "description": "Content doesn't match travel theme: \"Can you help me with this?\""
+        }
+      ]
+    },
+    {
+      "content_id": "970d87da-66b1-4cb6-9239-250509e1feb0",
+      "english_phrase": "How do you say this in Albanian?",
+      "current_word_type": "pronoun",
+      "current_grammar_category": "greetings",
+      "lesson_name": "Travel Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"question\" but labeled as \"pronoun\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        },
+        {
+          "type": "theme_mismatch",
+          "severity": "low",
+          "description": "Content doesn't match travel theme: \"How do you say this in Albanian?\""
+        }
+      ]
+    },
+    {
+      "content_id": "67bd6525-f582-4117-a316-0125e501a4d5",
+      "english_phrase": "Please introduce yourself.",
+      "current_word_type": "phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Travel Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "courtesy_phrase",
+        "confidence": 0.9,
+        "reason": "common courtesy phrase"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"courtesy_phrase\" but labeled as \"phrase\""
+        },
+        {
+          "type": "theme_mismatch",
+          "severity": "low",
+          "description": "Content doesn't match travel theme: \"Please introduce yourself.\""
+        }
+      ]
+    },
+    {
+      "content_id": "c6d88c16-470f-4c59-b5c8-3aa2027c9741",
+      "english_phrase": "Thank you for your help.",
+      "current_word_type": "preposition",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Travel Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.8,
+        "reason": "complete sentence with punctuation"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "obvious_error",
+          "severity": "high",
+          "description": "\"Thank you for your help.\" is a sentence but labeled as \"preposition\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        },
+        {
+          "type": "theme_mismatch",
+          "severity": "low",
+          "description": "Content doesn't match travel theme: \"Thank you for your help.\""
+        }
+      ]
+    },
+    {
+      "content_id": "80c14161-03e9-4d2f-a3b4-e0dbc605c6ad",
+      "english_phrase": "What time is it?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Travel Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        },
+        {
+          "type": "theme_mismatch",
+          "severity": "low",
+          "description": "Content doesn't match travel theme: \"What time is it?\""
+        }
+      ]
+    },
+    {
+      "content_id": "84239ca6-3877-475a-8ba4-c3b05e8849cc",
+      "english_phrase": "I am learning Albanian.",
+      "current_word_type": "phrase",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Travel Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        },
+        {
+          "type": "theme_mismatch",
+          "severity": "low",
+          "description": "Content doesn't match travel theme: \"I am learning Albanian.\""
+        }
+      ]
+    },
+    {
+      "content_id": "59684da5-e6ff-4d68-90df-0b7bc185e654",
+      "english_phrase": "Where is the library?",
+      "current_word_type": "question",
+      "current_grammar_category": "questions",
+      "lesson_name": "Travel Vocabulary",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "26667af9-fefa-4550-8be9-c1888ee060b9",
+      "english_phrase": "Thank you very much.",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Albanian Sounds - Part 3",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "courtesy_phrase",
+        "confidence": 0.9,
+        "reason": "common courtesy phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "331d1d7e-49b8-4c7e-bc6f-4919a22c8c7c",
+      "english_phrase": "Come to the table",
+      "current_word_type": "phrase",
+      "current_grammar_category": "daily activities",
+      "lesson_name": "Albanian Sounds - Part 3",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "28c46553-eaae-4608-b6fc-3c798cc66633",
+      "english_phrase": "Don't be a stranger",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 3",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "2d5cefd5-5988-46e5-a28d-7d76df25c6d5",
+      "english_phrase": "How many are there?",
+      "current_word_type": "question",
+      "current_grammar_category": "question",
+      "lesson_name": "Albanian Sounds - Part 3",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "2645d7d1-3f3a-47e3-864d-546db9861123",
+      "english_phrase": "Ice on the road",
+      "current_word_type": "phrase",
+      "current_grammar_category": "questions",
+      "lesson_name": "Albanian Sounds - Part 3",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "2b95c40a-e902-41ef-bf0b-25c514d2986a",
+      "english_phrase": "I like it spicy",
+      "current_word_type": "phrase",
+      "current_grammar_category": "phrase",
+      "lesson_name": "Albanian Sounds - Part 3",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "e3cb9c3d-5b0a-4bc6-b153-21fbbd865399",
+      "english_phrase": "Hello, my name is David",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Expressing Opinions",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"sentence\" but labeled as \"phrase\""
+        },
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "472d6105-d7f7-48ed-af9b-8991468d7437",
+      "english_phrase": "Nice to meet you",
+      "current_word_type": "phrase",
+      "current_grammar_category": "questions",
+      "lesson_name": "Expressing Opinions",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "1cbca682-19f0-4a76-918b-c4d0df296aab",
+      "english_phrase": "Please",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Albanian Sounds",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "word",
+        "confidence": 0.7,
+        "reason": "single word"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"word\" but labeled as \"courtesy_phrase\""
+        }
+      ]
+    },
+    {
+      "content_id": "01468a29-227d-42a3-af7d-c67c93bcfb50",
+      "english_phrase": "We should meet more often",
+      "current_word_type": "sentence",
+      "current_grammar_category": "sentence",
+      "lesson_name": "Albanian Sounds - Part 1",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "sentence",
+        "confidence": 0.6,
+        "reason": "long phrase likely sentence"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "102a12d5-9fee-45fe-ba40-08beffb45da4",
+      "english_phrase": "We're here for you",
+      "current_word_type": "phrase",
+      "current_grammar_category": "general_vocabulary",
+      "lesson_name": "Albanian Sounds - Part 1",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "111d4630-97d2-4dfd-93aa-e53ff05c4b99",
+      "english_phrase": "Where are you from?",
+      "current_word_type": "question",
+      "current_grammar_category": "question",
+      "lesson_name": "Albanian Sounds - Part 1",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "question",
+        "confidence": 0.9,
+        "reason": "ends with question mark"
+      },
+      "difficulty_check": {
+        "appropriate": false,
+        "reason": "too complex for level 1",
+        "suggested_level": 2
+      },
+      "issues": [
+        {
+          "type": "difficulty_mismatch",
+          "severity": "medium",
+          "description": "too complex for level 1",
+          "suggested_level": 2
+        }
+      ]
+    },
+    {
+      "content_id": "153db4d9-42e7-4f4f-bc07-f74b37c0735a",
+      "english_phrase": "Good afternoon",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "phrase",
+        "confidence": 0.6,
+        "reason": "short phrase"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"phrase\" but labeled as \"courtesy_phrase\""
+        }
+      ]
+    },
+    {
+      "content_id": "6e53cf14-d6aa-4c83-9a25-3e8e3050c3d9",
+      "english_phrase": "Please",
+      "current_word_type": "courtesy_phrase",
+      "current_grammar_category": "courtesy",
+      "lesson_name": "Basic Greetings",
+      "lesson_level": 1,
+      "analysis": {
+        "type": "word",
+        "confidence": 0.7,
+        "reason": "single word"
+      },
+      "difficulty_check": {
+        "appropriate": true,
+        "reason": "seems appropriate"
+      },
+      "issues": [
+        {
+          "type": "word_type_mismatch",
+          "severity": "medium",
+          "description": "Analyzed as \"word\" but labeled as \"courtesy_phrase\""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_issues": 109,
+    "error_rate": "28.7%",
+    "high_priority": 6,
+    "medium_priority": 109,
+    "low_priority": 6
+  }
+}
