@@ -1,0 +1,1223 @@
+{
+  "timestamp": "2025-09-22T21:37:09.408Z",
+  "summary": {
+    "reclassified": 64,
+    "deleted": 0,
+    "errors": 0,
+    "remainingPhraseVerbs": 0,
+    "typeDistribution": [
+      {
+        "word_type": "phrase",
+        "count": "135"
+      },
+      {
+        "word_type": "noun",
+        "count": "113"
+      },
+      {
+        "word_type": "pronoun",
+        "count": "36"
+      },
+      {
+        "word_type": "verb",
+        "count": "25"
+      },
+      {
+        "word_type": "adverb",
+        "count": "23"
+      },
+      {
+        "word_type": "sentence",
+        "count": "23"
+      },
+      {
+        "word_type": "preposition",
+        "count": "20"
+      },
+      {
+        "word_type": "adjective",
+        "count": "12"
+      },
+      {
+        "word_type": "question",
+        "count": "12"
+      },
+      {
+        "word_type": null,
+        "count": "8"
+      },
+      {
+        "word_type": "greeting",
+        "count": "3"
+      }
+    ]
+  },
+  "analyses": [
+    {
+      "index": 1,
+      "english": "He is thirty-five",
+      "albanian": "Ai ka tridhjetë e pesë vjeç",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence used to state someone's age, which is useful for practice.",
+      "confidence": "high"
+    },
+    {
+      "index": 2,
+      "english": "You're welcome",
+      "albanian": "S'ka përse",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common phrase used in response to 'thank you'.",
+      "confidence": "high"
+    },
+    {
+      "index": 3,
+      "english": "We should meet more often",
+      "albanian": "Duhet të takohemi më shpesh",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence expressing a suggestion, useful for practice.",
+      "confidence": "high"
+    },
+    {
+      "index": 4,
+      "english": "We're here for you",
+      "albanian": "Jemi këtu për ty",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence offering support, useful for practice.",
+      "confidence": "high"
+    },
+    {
+      "index": 5,
+      "english": "Where are you from?",
+      "albanian": "Prej kah je?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about someone's origin, useful for conversation.",
+      "confidence": "high"
+    },
+    {
+      "index": 6,
+      "english": "How old are you?",
+      "albanian": "Sa vjeç je?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to ask about someone's age, useful for conversation.",
+      "confidence": "high"
+    },
+    {
+      "index": 7,
+      "english": "I love you",
+      "albanian": "Të dua",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common phrase expressing affection, useful for personal interactions.",
+      "confidence": "high"
+    },
+    {
+      "index": 8,
+      "english": "Many years ago",
+      "albanian": "Shumë vite më parë",
+      "recommended_type": "phrase",
+      "reasoning": "This is a phrase indicating time, useful for storytelling or historical context.",
+      "confidence": "medium"
+    },
+    {
+      "index": 9,
+      "english": "Hello, how are you?",
+      "albanian": "Tung, qysh je?",
+      "recommended_type": "greeting",
+      "reasoning": "This is a basic greeting combined with a question, useful for starting conversations.",
+      "confidence": "high"
+    },
+    {
+      "index": 10,
+      "english": "She is fifteen",
+      "albanian": "Ajo ka pesëmbëdhjetë vjeç",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence used to state someone's age, which is useful for practice.",
+      "confidence": "high"
+    },
+    {
+      "index": 1,
+      "english": "I understand",
+      "albanian": "Kuptoj",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression used to indicate comprehension, useful in everyday conversation.",
+      "confidence": "high"
+    },
+    {
+      "index": 2,
+      "english": "We are excited",
+      "albanian": "Jemi emocionuar",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence expressing a state of emotion, useful for practicing sentence structure.",
+      "confidence": "high"
+    },
+    {
+      "index": 3,
+      "english": "We're running behind",
+      "albanian": "Jemi prapa",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common phrase used to express being late, useful in conversational contexts.",
+      "confidence": "high"
+    },
+    {
+      "index": 4,
+      "english": "I'm full",
+      "albanian": "Jam i ngopur",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression used after eating, useful in social dining situations.",
+      "confidence": "high"
+    },
+    {
+      "index": 5,
+      "english": "I sleep early",
+      "albanian": "Fle heret",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence describing a habitual action, useful for practicing verb conjugation.",
+      "confidence": "high"
+    },
+    {
+      "index": 6,
+      "english": "Made with love",
+      "albanian": "Bërë me dashuri",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression often used to describe something crafted with care, useful in cultural contexts.",
+      "confidence": "high"
+    },
+    {
+      "index": 7,
+      "english": "No need to rush",
+      "albanian": "S'ka nevojë për të shpejtuar",
+      "recommended_type": "phrase",
+      "reasoning": "This is a useful phrase for advising someone to take their time, common in everyday conversation.",
+      "confidence": "high"
+    },
+    {
+      "index": 8,
+      "english": "Our door is always open",
+      "albanian": "Dera jonë është gjithmonë e hapur",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence expressing hospitality, useful for practicing sentence structure.",
+      "confidence": "high"
+    },
+    {
+      "index": 9,
+      "english": "What's wrong?",
+      "albanian": "Ç'të ka ndodhur?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about someone's well-being, useful in conversational contexts.",
+      "confidence": "high"
+    },
+    {
+      "index": 10,
+      "english": "Are you hungry?",
+      "albanian": "A je i uritur?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about someone's need for food, useful in social situations.",
+      "confidence": "high"
+    },
+    {
+      "index": 1,
+      "english": "Homemade bread",
+      "albanian": "Bukë e bërë në shtëpi",
+      "recommended_type": "noun",
+      "reasoning": "This is a noun phrase describing a specific type of bread, useful for vocabulary building.",
+      "confidence": "high"
+    },
+    {
+      "index": 2,
+      "english": "I am a student.",
+      "albanian": "Jam student.",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence that can be used for self-introduction and practice.",
+      "confidence": "high"
+    },
+    {
+      "index": 3,
+      "english": "I believe in you",
+      "albanian": "Besoj në ty",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression of support and encouragement.",
+      "confidence": "high"
+    },
+    {
+      "index": 4,
+      "english": "All of them",
+      "albanian": "Të gjithë ata",
+      "recommended_type": "phrase",
+      "reasoning": "This is a useful phrase for indicating inclusivity or entirety.",
+      "confidence": "high"
+    },
+    {
+      "index": 5,
+      "english": "You look well",
+      "albanian": "Je mirë",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression used to comment on someone's appearance or health.",
+      "confidence": "high"
+    },
+    {
+      "index": 6,
+      "english": "How many are there?",
+      "albanian": "Sa ka?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about quantity, useful for conversation.",
+      "confidence": "high"
+    },
+    {
+      "index": 7,
+      "english": "I like it spicy",
+      "albanian": "Më pëlqen pikant",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common phrase used to express a preference for spicy food.",
+      "confidence": "high"
+    },
+    {
+      "index": 8,
+      "english": "There's plenty",
+      "albanian": "Ka mjaftueshëm",
+      "recommended_type": "phrase",
+      "reasoning": "This phrase is used to indicate abundance or sufficiency.",
+      "confidence": "high"
+    },
+    {
+      "index": 9,
+      "english": "How many children do you have?",
+      "albanian": "Sa fëmijë ke?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about family size, useful in personal conversations.",
+      "confidence": "high"
+    },
+    {
+      "index": 10,
+      "english": "We are proud parents",
+      "albanian": "Ne jemi prindër krenarë",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence expressing pride, useful for family-related discussions.",
+      "confidence": "high"
+    },
+    {
+      "index": 1,
+      "english": "The baby is six months old",
+      "albanian": "Bebeja ka gjashtë muaj",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence that provides practice with age-related expressions and basic sentence structure.",
+      "confidence": "high"
+    },
+    {
+      "index": 2,
+      "english": "We need to catch up",
+      "albanian": "Na duhet të bëjmë përditësim",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression used in social contexts to indicate the need to update or reconnect.",
+      "confidence": "high"
+    },
+    {
+      "index": 3,
+      "english": "What's new with you?",
+      "albanian": "Ç'të re ka me ty?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about recent events or changes in someone's life.",
+      "confidence": "high"
+    },
+    {
+      "index": 4,
+      "english": "When will you visit?",
+      "albanian": "Kur do të vish?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to ask about future plans or intentions regarding a visit.",
+      "confidence": "high"
+    },
+    {
+      "index": 5,
+      "english": "Everything is fine",
+      "albanian": "Gjithçka është në rregull",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence used to express that everything is okay, useful in various contexts.",
+      "confidence": "high"
+    },
+    {
+      "index": 6,
+      "english": "Are you tired?",
+      "albanian": "A je i lodhur?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about someone's state of fatigue or energy level.",
+      "confidence": "high"
+    },
+    {
+      "index": 7,
+      "english": "I don't understand.",
+      "albanian": "Nuk po kuptoj.",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common phrase used in language learning contexts to express lack of comprehension.",
+      "confidence": "high"
+    },
+    {
+      "index": 8,
+      "english": "I'm going to work",
+      "albanian": "Po shkoj ne pune",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence used to indicate one's intention or action of going to work.",
+      "confidence": "high"
+    },
+    {
+      "index": 9,
+      "english": "Never alone",
+      "albanian": "Kurrë nuk je i/e vetëm/vetme",
+      "recommended_type": "phrase",
+      "reasoning": "This is a reassuring phrase often used to express companionship or support.",
+      "confidence": "medium"
+    },
+    {
+      "index": 10,
+      "english": "Do you want it sweet?",
+      "albanian": "Do të duash të jetë e ëmbël?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to inquire about someone's preference regarding sweetness, often in culinary contexts.",
+      "confidence": "high"
+    },
+    {
+      "index": 1,
+      "english": "May you be healthy",
+      "albanian": "Të qëndrosh i shëndetshëm",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression used to wish someone well, fitting the category of useful phrases.",
+      "confidence": "high"
+    },
+    {
+      "index": 2,
+      "english": "Not many left",
+      "albanian": "Nuk ka shumë të mbetur",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence that can be used in various contexts, making it suitable for sentence practice.",
+      "confidence": "high"
+    },
+    {
+      "index": 3,
+      "english": "Everything will be fine",
+      "albanian": "Do të jetë gjithçka në rregull",
+      "recommended_type": "phrase",
+      "reasoning": "This is a reassuring expression often used in conversation, thus categorized as a useful phrase.",
+      "confidence": "high"
+    },
+    {
+      "index": 4,
+      "english": "We are having dinner",
+      "albanian": "Ne po ha darkë",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence that describes an action, useful for practicing present continuous tense.",
+      "confidence": "high"
+    },
+    {
+      "index": 5,
+      "english": "What's the hurry?",
+      "albanian": "C'ka shpejtesi?",
+      "recommended_type": "question",
+      "reasoning": "This is a direct question, making it suitable for the question category.",
+      "confidence": "high"
+    },
+    {
+      "index": 6,
+      "english": "Everything passes",
+      "albanian": "Gjithçka kalon",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression that can be used philosophically or conversationally, fitting the phrase category.",
+      "confidence": "high"
+    },
+    {
+      "index": 7,
+      "english": "I'm proud of you",
+      "albanian": "Jam krenar për ty",
+      "recommended_type": "phrase",
+      "reasoning": "This is a supportive expression often used in personal interactions, thus classified as a phrase.",
+      "confidence": "high"
+    },
+    {
+      "index": 8,
+      "english": "You are always welcome",
+      "albanian": "Je gjithmonë i/e mirëpritur",
+      "recommended_type": "phrase",
+      "reasoning": "This is a polite expression used to show hospitality, fitting the phrase category.",
+      "confidence": "high"
+    },
+    {
+      "index": 9,
+      "english": "I am Albanian",
+      "albanian": "Unë jam shqiptar",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence useful for self-identification and nationality practice.",
+      "confidence": "high"
+    },
+    {
+      "index": 10,
+      "english": "Hello, how are you?",
+      "albanian": "Tung, qysh je?",
+      "recommended_type": "greeting",
+      "reasoning": "This is a basic greeting and inquiry about someone's well-being, fitting the greeting category.",
+      "confidence": "high"
+    },
+    {
+      "index": 1,
+      "english": "I would like a coffee, please.",
+      "albanian": "Kisha dashtë nji kafe, të lutem.",
+      "recommended_type": "phrase",
+      "reasoning": "This is a polite request, which is a common useful phrase for learners.",
+      "confidence": "high"
+    },
+    {
+      "index": 2,
+      "english": "I am a student.",
+      "albanian": "Jam student.",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence useful for self-introduction.",
+      "confidence": "high"
+    },
+    {
+      "index": 3,
+      "english": "I don't understand.",
+      "albanian": "Nuk po kuptoj.",
+      "recommended_type": "phrase",
+      "reasoning": "A common expression used in language learning contexts.",
+      "confidence": "high"
+    },
+    {
+      "index": 4,
+      "english": "I would like to emphasize this point.",
+      "albanian": "Dua me theksu këtë pikë.",
+      "recommended_type": "sentence",
+      "reasoning": "A complete sentence useful for discussions.",
+      "confidence": "medium"
+    },
+    {
+      "index": 5,
+      "english": "Expressing uncertainty",
+      "albanian": "Nuk jam i sigurt, por...",
+      "recommended_type": "phrase",
+      "reasoning": "This is a phrase indicating uncertainty, useful in conversations.",
+      "confidence": "medium"
+    },
+    {
+      "index": 6,
+      "english": "What are your thoughts on this issue?",
+      "albanian": "Çka mendon për këtë çështje?",
+      "recommended_type": "question",
+      "reasoning": "This is a question used to solicit opinions.",
+      "confidence": "high"
+    },
+    {
+      "index": 7,
+      "english": "I sleep in my bed",
+      "albanian": "Unë fle në kreatin tim",
+      "recommended_type": "sentence",
+      "reasoning": "A complete sentence describing a daily activity.",
+      "confidence": "high"
+    },
+    {
+      "index": 8,
+      "english": "I help at home",
+      "albanian": "Unë ndihmoj në shtëpi",
+      "recommended_type": "sentence",
+      "reasoning": "A complete sentence describing a common activity.",
+      "confidence": "high"
+    },
+    {
+      "index": 9,
+      "english": "I am fifteen years old",
+      "albanian": "Unë jam pesëmbëdhjetë vjeç",
+      "recommended_type": "sentence",
+      "reasoning": "A complete sentence useful for stating age.",
+      "confidence": "high"
+    },
+    {
+      "index": 10,
+      "english": "Hello, my name is Ana",
+      "albanian": "Përshëndetje, unë quhem Ana",
+      "recommended_type": "greeting",
+      "reasoning": "A basic greeting and self-introduction.",
+      "confidence": "high"
+    },
+    {
+      "index": 1,
+      "english": "Thank you very much",
+      "albanian": "Faleminderit shumë",
+      "recommended_type": "phrase",
+      "reasoning": "This is a common expression of gratitude, useful in everyday interactions.",
+      "confidence": "high"
+    },
+    {
+      "index": 2,
+      "english": "I want water",
+      "albanian": "Unë dua ujë",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence expressing a basic need, useful for beginners.",
+      "confidence": "high"
+    },
+    {
+      "index": 3,
+      "english": "I don't understand this concept.",
+      "albanian": "Nuk e kuptoj këtë koncept.",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence useful for learners to express confusion or ask for clarification.",
+      "confidence": "high"
+    },
+    {
+      "index": 4,
+      "english": "I am learning Albanian.",
+      "albanian": "Po mësoj shqip.",
+      "recommended_type": "sentence",
+      "reasoning": "This is a complete sentence that learners can use to describe their language learning journey.",
+      "confidence": "high"
+    }
+  ],
+  "reclassifications": [
+    {
+      "id": "0dbe6a85-3630-40f2-95bb-43ff0f091944",
+      "english": "He is thirty-five",
+      "albanian": "Ai ka tridhjetë e pesë vjeç",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence used to state someone's age, which is useful for practice.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 1"
+    },
+    {
+      "id": "08a250d5-c9fb-4507-9669-a6e89d351129",
+      "english": "You're welcome",
+      "albanian": "S'ka përse",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common phrase used in response to 'thank you'.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 1"
+    },
+    {
+      "id": "01468a29-227d-42a3-af7d-c67c93bcfb50",
+      "english": "We should meet more often",
+      "albanian": "Duhet të takohemi më shpesh",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence expressing a suggestion, useful for practice.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 1"
+    },
+    {
+      "id": "102a12d5-9fee-45fe-ba40-08beffb45da4",
+      "english": "We're here for you",
+      "albanian": "Jemi këtu për ty",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence offering support, useful for practice.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 1"
+    },
+    {
+      "id": "111d4630-97d2-4dfd-93aa-e53ff05c4b99",
+      "english": "Where are you from?",
+      "albanian": "Prej kah je?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about someone's origin, useful for conversation.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 1"
+    },
+    {
+      "id": "b26c2886-04f0-4be1-968a-3c709434e6d5",
+      "english": "How old are you?",
+      "albanian": "Sa vjeç je?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to ask about someone's age, useful for conversation.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 10"
+    },
+    {
+      "id": "a50504f0-778c-4f98-afd9-62dd28286ab5",
+      "english": "I love you",
+      "albanian": "Të dua",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common phrase expressing affection, useful for personal interactions.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 10"
+    },
+    {
+      "id": "a7d67f1d-f0e2-40df-bc20-50725c32cbf6",
+      "english": "Many years ago",
+      "albanian": "Shumë vite më parë",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a phrase indicating time, useful for storytelling or historical context.",
+      "confidence": "medium",
+      "lesson": "Albanian Sounds - Part 10"
+    },
+    {
+      "id": "cefffa2f-feea-4673-a857-6bbbb90584c3",
+      "english": "Hello, how are you?",
+      "albanian": "Tung, qysh je?",
+      "old_type": "verb",
+      "new_type": "greeting",
+      "reasoning": "This is a basic greeting combined with a question, useful for starting conversations.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 11"
+    },
+    {
+      "id": "cfe2e8f7-9485-4f99-86e2-b785f30e0829",
+      "english": "She is fifteen",
+      "albanian": "Ajo ka pesëmbëdhjetë vjeç",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence used to state someone's age, which is useful for practice.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 11"
+    },
+    {
+      "id": "ca1807fa-15e4-4833-b5f2-71dc2b2d36f8",
+      "english": "I understand",
+      "albanian": "Kuptoj",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression used to indicate comprehension, useful in everyday conversation.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 11"
+    },
+    {
+      "id": "cd454005-1fb3-44f9-b182-961970559ee5",
+      "english": "We are excited",
+      "albanian": "Jemi emocionuar",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence expressing a state of emotion, useful for practicing sentence structure.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 11"
+    },
+    {
+      "id": "da335c41-9140-4681-b8e8-ae606a0e88dd",
+      "english": "We're running behind",
+      "albanian": "Jemi prapa",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common phrase used to express being late, useful in conversational contexts.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 12"
+    },
+    {
+      "id": "e489a113-0532-4efc-9bf1-a9d2f9cb192f",
+      "english": "I'm full",
+      "albanian": "Jam i ngopur",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression used after eating, useful in social dining situations.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 12"
+    },
+    {
+      "id": "d05660a3-dc4f-4249-91de-66b28bcf10ab",
+      "english": "I sleep early",
+      "albanian": "Fle heret",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence describing a habitual action, useful for practicing verb conjugation.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 12"
+    },
+    {
+      "id": "d2f3124c-6499-4175-a8ff-97662dc3f67b",
+      "english": "Made with love",
+      "albanian": "Bërë me dashuri",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression often used to describe something crafted with care, useful in cultural contexts.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 12"
+    },
+    {
+      "id": "e59b29b5-f4cd-45ee-9203-07412a75074b",
+      "english": "No need to rush",
+      "albanian": "S'ka nevojë për të shpejtuar",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a useful phrase for advising someone to take their time, common in everyday conversation.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 12"
+    },
+    {
+      "id": "d5510108-a279-47d7-b55d-b6e58745aee8",
+      "english": "Our door is always open",
+      "albanian": "Dera jonë është gjithmonë e hapur",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence expressing hospitality, useful for practicing sentence structure.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 12"
+    },
+    {
+      "id": "e1bce85c-15cb-4d5a-9f60-e105bc9dc7d2",
+      "english": "What's wrong?",
+      "albanian": "Ç'të ka ndodhur?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about someone's well-being, useful in conversational contexts.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 12"
+    },
+    {
+      "id": "ea02e186-7dd8-4697-b69d-2e9617980444",
+      "english": "Are you hungry?",
+      "albanian": "A je i uritur?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about someone's need for food, useful in social situations.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 13"
+    },
+    {
+      "id": "f3bd3326-b64b-4d43-92ac-12dfe3db7fa4",
+      "english": "Homemade bread",
+      "albanian": "Bukë e bërë në shtëpi",
+      "old_type": "verb",
+      "new_type": "noun",
+      "reasoning": "This is a noun phrase describing a specific type of bread, useful for vocabulary building.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 13"
+    },
+    {
+      "id": "f205b211-4516-4ada-97c6-4078cb023f68",
+      "english": "I am a student.",
+      "albanian": "Jam student.",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence that can be used for self-introduction and practice.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 13"
+    },
+    {
+      "id": "ff72c65d-f3a5-4f46-a054-a62ab6dcbd4f",
+      "english": "I believe in you",
+      "albanian": "Besoj në ty",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression of support and encouragement.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 13"
+    },
+    {
+      "id": "1deff7c1-6818-41fe-b2a9-a1c795a36a5f",
+      "english": "All of them",
+      "albanian": "Të gjithë ata",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a useful phrase for indicating inclusivity or entirety.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 2"
+    },
+    {
+      "id": "146b1d62-4eb9-4e6a-afe8-09b017d37ac5",
+      "english": "You look well",
+      "albanian": "Je mirë",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression used to comment on someone's appearance or health.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 2"
+    },
+    {
+      "id": "2d5cefd5-5988-46e5-a28d-7d76df25c6d5",
+      "english": "How many are there?",
+      "albanian": "Sa ka?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about quantity, useful for conversation.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 3"
+    },
+    {
+      "id": "2b95c40a-e902-41ef-bf0b-25c514d2986a",
+      "english": "I like it spicy",
+      "albanian": "Më pëlqen pikant",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common phrase used to express a preference for spicy food.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 3"
+    },
+    {
+      "id": "29352ef3-7719-4aff-95ee-c7b2386c5857",
+      "english": "There's plenty",
+      "albanian": "Ka mjaftueshëm",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This phrase is used to indicate abundance or sufficiency.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 3"
+    },
+    {
+      "id": "45243593-daaf-43db-9c56-98e74210c747",
+      "english": "How many children do you have?",
+      "albanian": "Sa fëmijë ke?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about family size, useful in personal conversations.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 4"
+    },
+    {
+      "id": "34ff8e29-df6a-4ebd-b3ea-bfc77f749441",
+      "english": "We are proud parents",
+      "albanian": "Ne jemi prindër krenarë",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence expressing pride, useful for family-related discussions.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 4"
+    },
+    {
+      "id": "4b0a0e6a-eaf8-468e-b72b-d417e64e4d13",
+      "english": "The baby is six months old",
+      "albanian": "Bebeja ka gjashtë muaj",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence that provides practice with age-related expressions and basic sentence structure.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 5"
+    },
+    {
+      "id": "493949fc-694e-456c-99ec-94f64c702017",
+      "english": "We need to catch up",
+      "albanian": "Na duhet të bëjmë përditësim",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression used in social contexts to indicate the need to update or reconnect.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 5"
+    },
+    {
+      "id": "4acb2d17-3d58-4c47-80f1-5c36404fe115",
+      "english": "What's new with you?",
+      "albanian": "Ç'të re ka me ty?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about recent events or changes in someone's life.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 5"
+    },
+    {
+      "id": "5bfff848-b71d-4344-a747-1c7d57551ed1",
+      "english": "When will you visit?",
+      "albanian": "Kur do të vish?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to ask about future plans or intentions regarding a visit.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 5"
+    },
+    {
+      "id": "61de21d3-1b11-4605-a8e3-cbd2569987a8",
+      "english": "Everything is fine",
+      "albanian": "Gjithçka është në rregull",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence used to express that everything is okay, useful in various contexts.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 6"
+    },
+    {
+      "id": "5c719a46-fa6f-4c07-9728-f7bf791bcb4e",
+      "english": "Are you tired?",
+      "albanian": "A je i lodhur?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about someone's state of fatigue or energy level.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 6"
+    },
+    {
+      "id": "63bfb8b2-210f-4651-888b-29d5d9d76549",
+      "english": "I don't understand.",
+      "albanian": "Nuk po kuptoj.",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common phrase used in language learning contexts to express lack of comprehension.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 6"
+    },
+    {
+      "id": "5ea492e3-f1c8-4781-a635-661b18dccdd4",
+      "english": "I'm going to work",
+      "albanian": "Po shkoj ne pune",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence used to indicate one's intention or action of going to work.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 6"
+    },
+    {
+      "id": "6efa045c-0fb0-4cd6-8e7d-2fb9e3faee8e",
+      "english": "Never alone",
+      "albanian": "Kurrë nuk je i/e vetëm/vetme",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a reassuring phrase often used to express companionship or support.",
+      "confidence": "medium",
+      "lesson": "Albanian Sounds - Part 7"
+    },
+    {
+      "id": "717c5c5e-76d6-4412-b49c-3592b3c62ec8",
+      "english": "Do you want it sweet?",
+      "albanian": "Do të duash të jetë e ëmbël?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to inquire about someone's preference regarding sweetness, often in culinary contexts.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 7"
+    },
+    {
+      "id": "74226699-8aa0-4c8c-9cea-0ff25883fa8d",
+      "english": "May you be healthy",
+      "albanian": "Të qëndrosh i shëndetshëm",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression used to wish someone well, fitting the category of useful phrases.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 7"
+    },
+    {
+      "id": "6f55e1dd-feed-4bd1-a60d-7e201c3afd9d",
+      "english": "Not many left",
+      "albanian": "Nuk ka shumë të mbetur",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence that can be used in various contexts, making it suitable for sentence practice.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 7"
+    },
+    {
+      "id": "83953c1f-91f5-49ab-a216-0a3526420544",
+      "english": "Everything will be fine",
+      "albanian": "Do të jetë gjithçka në rregull",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a reassuring expression often used in conversation, thus categorized as a useful phrase.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 8"
+    },
+    {
+      "id": "83d8b820-9abc-44d4-9933-c5612c053b4d",
+      "english": "We are having dinner",
+      "albanian": "Ne po ha darkë",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence that describes an action, useful for practicing present continuous tense.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 8"
+    },
+    {
+      "id": "8d5204a1-2568-4c50-974b-20722ce2c919",
+      "english": "What's the hurry?",
+      "albanian": "C'ka shpejtesi?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a direct question, making it suitable for the question category.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 8"
+    },
+    {
+      "id": "982aba11-7639-4a8c-8b21-c48dc39ff414",
+      "english": "Everything passes",
+      "albanian": "Gjithçka kalon",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression that can be used philosophically or conversationally, fitting the phrase category.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 9"
+    },
+    {
+      "id": "9e308141-5525-49ca-8c33-6c9a6ec22a2a",
+      "english": "I'm proud of you",
+      "albanian": "Jam krenar për ty",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a supportive expression often used in personal interactions, thus classified as a phrase.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 9"
+    },
+    {
+      "id": "91daf1e0-921f-4ce0-8b4e-a13046e9f3e1",
+      "english": "You are always welcome",
+      "albanian": "Je gjithmonë i/e mirëpritur",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a polite expression used to show hospitality, fitting the phrase category.",
+      "confidence": "high",
+      "lesson": "Albanian Sounds - Part 9"
+    },
+    {
+      "id": "34d93ba1-eacf-4425-8795-1448694eb3d2",
+      "english": "I am Albanian",
+      "albanian": "Unë jam shqiptar",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence useful for self-identification and nationality practice.",
+      "confidence": "high",
+      "lesson": "Asking for Help"
+    },
+    {
+      "id": "288c3ba9-3840-49a1-b6b0-bb5628dfa847",
+      "english": "Hello, how are you?",
+      "albanian": "Tung, qysh je?",
+      "old_type": "verb",
+      "new_type": "greeting",
+      "reasoning": "This is a basic greeting and inquiry about someone's well-being, fitting the greeting category.",
+      "confidence": "high",
+      "lesson": "Basic Greetings"
+    },
+    {
+      "id": "df87b757-00eb-4084-84a4-e6eaf96fecaa",
+      "english": "I would like a coffee, please.",
+      "albanian": "Kisha dashtë nji kafe, të lutem.",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a polite request, which is a common useful phrase for learners.",
+      "confidence": "high",
+      "lesson": "Basic Greetings"
+    },
+    {
+      "id": "1ecbd2a0-9de1-48a5-a3be-fdb29190f6b7",
+      "english": "I am a student.",
+      "albanian": "Jam student.",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence useful for self-introduction.",
+      "confidence": "high",
+      "lesson": "Basic Greetings"
+    },
+    {
+      "id": "04bfa8f9-780e-45c8-8847-3b58fe12329c",
+      "english": "I don't understand.",
+      "albanian": "Nuk po kuptoj.",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "A common expression used in language learning contexts.",
+      "confidence": "high",
+      "lesson": "Basic Greetings"
+    },
+    {
+      "id": "be124d3a-e183-4ffc-9061-18be04d8efef",
+      "english": "I would like to emphasize this point.",
+      "albanian": "Dua me theksu këtë pikë.",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "A complete sentence useful for discussions.",
+      "confidence": "medium",
+      "lesson": "Basic Vocabulary"
+    },
+    {
+      "id": "39e2f9e3-2d58-4e22-afa0-3873b2c46ea2",
+      "english": "Expressing uncertainty",
+      "albanian": "Nuk jam i sigurt, por...",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a phrase indicating uncertainty, useful in conversations.",
+      "confidence": "medium",
+      "lesson": "Critical Discussions"
+    },
+    {
+      "id": "a41621a9-1a09-4cf6-a613-d8d588e910a9",
+      "english": "What are your thoughts on this issue?",
+      "albanian": "Çka mendon për këtë çështje?",
+      "old_type": "verb",
+      "new_type": "question",
+      "reasoning": "This is a question used to solicit opinions.",
+      "confidence": "high",
+      "lesson": "Future Plans"
+    },
+    {
+      "id": "d5533301-5ae0-4a85-ab68-d520c7cdc50f",
+      "english": "I sleep in my bed",
+      "albanian": "Unë fle në kreatin tim",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "A complete sentence describing a daily activity.",
+      "confidence": "high",
+      "lesson": "Home Vocabulary"
+    },
+    {
+      "id": "248f98ca-7095-4fd1-8879-cbf7a8ed7bef",
+      "english": "I help at home",
+      "albanian": "Unë ndihmoj në shtëpi",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "A complete sentence describing a common activity.",
+      "confidence": "high",
+      "lesson": "Home Vocabulary"
+    },
+    {
+      "id": "0cc3f3cf-aa9b-4f71-8cf1-36da589759c9",
+      "english": "I am fifteen years old",
+      "albanian": "Unë jam pesëmbëdhjetë vjeç",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "A complete sentence useful for stating age.",
+      "confidence": "high",
+      "lesson": "Past Tense"
+    },
+    {
+      "id": "69e0df06-ddd9-4ada-95f3-1c012da1dd8f",
+      "english": "Hello, my name is Ana",
+      "albanian": "Përshëndetje, unë quhem Ana",
+      "old_type": "verb",
+      "new_type": "greeting",
+      "reasoning": "A basic greeting and self-introduction.",
+      "confidence": "high",
+      "lesson": "Places in Town"
+    },
+    {
+      "id": "59125ed8-ac68-4aa9-8a5f-b5cd107d1151",
+      "english": "Thank you very much",
+      "albanian": "Faleminderit shumë",
+      "old_type": "verb",
+      "new_type": "phrase",
+      "reasoning": "This is a common expression of gratitude, useful in everyday interactions.",
+      "confidence": "high",
+      "lesson": "Places in Town"
+    },
+    {
+      "id": "874f8e3d-60ca-4281-ae94-ce526e757fdb",
+      "english": "I want water",
+      "albanian": "Unë dua ujë",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence expressing a basic need, useful for beginners.",
+      "confidence": "high",
+      "lesson": "Social Phrases"
+    },
+    {
+      "id": "cf84c687-cf0e-4b4b-abd3-a1f8eadc753e",
+      "english": "I don't understand this concept.",
+      "albanian": "Nuk e kuptoj këtë koncept.",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence useful for learners to express confusion or ask for clarification.",
+      "confidence": "high",
+      "lesson": "Storytelling"
+    },
+    {
+      "id": "84239ca6-3877-475a-8ba4-c3b05e8849cc",
+      "english": "I am learning Albanian.",
+      "albanian": "Po mësoj shqip.",
+      "old_type": "verb",
+      "new_type": "sentence",
+      "reasoning": "This is a complete sentence that learners can use to describe their language learning journey.",
+      "confidence": "high",
+      "lesson": "Travel Vocabulary"
+    }
+  ],
+  "costSummary": {
+    "totalCost": 0.09262999999999999,
+    "totalCalls": 7,
+    "operations": {
+      "phrase-analysis": {
+        "calls": 7,
+        "cost": 0.09262999999999999,
+        "tokens": 9182
+      }
+    },
+    "averageCostPerCall": 0.013232857142857142
+  }
+}

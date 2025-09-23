@@ -114,7 +114,7 @@ export default function LearnPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-b from-success-50 to-white flex items-center justify-center p-4">
       <div className="max-w-2xl w-full">
         {/* Header */}
         <div className="text-center mb-8">
@@ -151,9 +151,9 @@ export default function LearnPage() {
               </button>
             ) : (
               <div className="space-y-4">
-                <div className="bg-green-50 border border-green-200 rounded-lg p-6">
-                  <p className="text-sm text-green-700 mb-2">Albanian (Gheg):</p>
-                  <p className="text-2xl font-bold text-green-800">
+                <div className="bg-success-50 border border-success-200 rounded-lg p-6">
+                  <p className="text-sm text-success-700 mb-2">Albanian (Gheg):</p>
+                  <p className="text-2xl font-bold text-success-800">
                     &ldquo;{currentLesson.target_phrase}&rdquo;
                   </p>
                 </div>
@@ -168,7 +168,7 @@ export default function LearnPage() {
                 <div className="flex space-x-4 mt-6">
                   <button
                     onClick={handleKnowIt}
-                    className="flex-1 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-200"
+                    className="flex-1 px-6 py-3 bg-success-600 text-white font-semibold rounded-lg hover:bg-success-700 transition duration-200"
                   >
                     ✓ I knew it!
                   </button>

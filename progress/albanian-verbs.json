@@ -1,0 +1,497 @@
+{
+  "step": "completed",
+  "total_verbs": 25,
+  "verbs": [
+    {
+      "rank": 1,
+      "english": "to be",
+      "albanian_infinitive": "me qenë",
+      "pronunciation": "meh chen",
+      "verb_type": "irregular",
+      "transitivity": "intransitive",
+      "cefr_level": "A1",
+      "category": "existence",
+      "frequency_score": 10,
+      "conjugation_difficulty": "high",
+      "usage_notes": "Most fundamental verb in Albanian, highly irregular conjugation",
+      "example_sentences": [
+        {
+          "albanian": "Unë dua me qenë doktor.",
+          "english": "I want to be a doctor."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "english": "to have",
+      "albanian_infinitive": "me pasë",
+      "pronunciation": "meh pah-seh",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "existence",
+      "frequency_score": 9.8,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Commonly used for possession and auxiliary functions",
+      "example_sentences": [
+        {
+          "albanian": "Unë kam me pasë një makinë.",
+          "english": "I will have a car."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "english": "to go",
+      "albanian_infinitive": "me shku",
+      "pronunciation": "meh shkoo",
+      "verb_type": "irregular",
+      "transitivity": "intransitive",
+      "cefr_level": "A1",
+      "category": "movement",
+      "frequency_score": 9.5,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Essential for expressing movement from one place to another",
+      "example_sentences": [
+        {
+          "albanian": "Unë po shkoj në shkollë.",
+          "english": "I am going to school."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "english": "to come",
+      "albanian_infinitive": "me ardhë",
+      "pronunciation": "meh ardh",
+      "verb_type": "irregular",
+      "transitivity": "intransitive",
+      "cefr_level": "A1",
+      "category": "movement",
+      "frequency_score": 9.3,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used to indicate movement towards the speaker",
+      "example_sentences": [
+        {
+          "albanian": "A po vjen këtu?",
+          "english": "Are you coming here?"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "english": "to speak",
+      "albanian_infinitive": "me fol",
+      "pronunciation": "meh fol",
+      "verb_type": "irregular",
+      "transitivity": "intransitive",
+      "cefr_level": "A1",
+      "category": "communication",
+      "frequency_score": 9,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Commonly used for verbal communication",
+      "example_sentences": [
+        {
+          "albanian": "Unë di me fol shqip.",
+          "english": "I can speak Albanian."
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "english": "to eat",
+      "albanian_infinitive": "me hangër",
+      "pronunciation": "meh hang-er",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "daily activities",
+      "frequency_score": 8.8,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Essential for discussing meals and food",
+      "example_sentences": [
+        {
+          "albanian": "Unë po ha bukë.",
+          "english": "I am eating bread."
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "english": "to drink",
+      "albanian_infinitive": "me pi",
+      "pronunciation": "meh pee",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "daily activities",
+      "frequency_score": 8.5,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for discussing beverages",
+      "example_sentences": [
+        {
+          "albanian": "Unë po pi ujë.",
+          "english": "I am drinking water."
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "english": "to sleep",
+      "albanian_infinitive": "me flejt",
+      "pronunciation": "meh fleyt",
+      "verb_type": "irregular",
+      "transitivity": "intransitive",
+      "cefr_level": "A1",
+      "category": "daily activities",
+      "frequency_score": 8.3,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for discussing rest and sleep",
+      "example_sentences": [
+        {
+          "albanian": "Unë po flej.",
+          "english": "I am sleeping."
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "english": "to work",
+      "albanian_infinitive": "me punu",
+      "pronunciation": "meh poo-noo",
+      "verb_type": "regular",
+      "transitivity": "intransitive",
+      "cefr_level": "A1",
+      "category": "daily activities",
+      "frequency_score": 8,
+      "conjugation_difficulty": "low",
+      "usage_notes": "Commonly used for discussing employment and tasks",
+      "example_sentences": [
+        {
+          "albanian": "Unë po punoj në zyrë.",
+          "english": "I am working in the office."
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "english": "to think",
+      "albanian_infinitive": "me mendu",
+      "pronunciation": "meh men-doo",
+      "verb_type": "regular",
+      "transitivity": "intransitive",
+      "cefr_level": "A2",
+      "category": "cognition",
+      "frequency_score": 7.8,
+      "conjugation_difficulty": "low",
+      "usage_notes": "Used for expressing thoughts and opinions",
+      "example_sentences": [
+        {
+          "albanian": "Unë mendoj se është mirë.",
+          "english": "I think it is good."
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "english": "to know",
+      "albanian_infinitive": "me ditë",
+      "pronunciation": "meh deet",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "cognition",
+      "frequency_score": 7.5,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Essential for expressing knowledge and awareness",
+      "example_sentences": [
+        {
+          "albanian": "Unë di shumë gjëra.",
+          "english": "I know many things."
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "english": "to understand",
+      "albanian_infinitive": "me kuptu",
+      "pronunciation": "meh koop-too",
+      "verb_type": "regular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "cognition",
+      "frequency_score": 7.3,
+      "conjugation_difficulty": "low",
+      "usage_notes": "Used for comprehension in communication",
+      "example_sentences": [
+        {
+          "albanian": "Unë po kuptoj çka po thua.",
+          "english": "I understand what you are saying."
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "english": "to learn",
+      "albanian_infinitive": "me mësu",
+      "pronunciation": "meh muh-soo",
+      "verb_type": "regular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "cognition",
+      "frequency_score": 7,
+      "conjugation_difficulty": "low",
+      "usage_notes": "Essential for discussing education and skills",
+      "example_sentences": [
+        {
+          "albanian": "Unë po mësoj shqip.",
+          "english": "I am learning Albanian."
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "english": "to do",
+      "albanian_infinitive": "me ba",
+      "pronunciation": "meh bah",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "actions",
+      "frequency_score": 6.8,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Commonly used for actions and tasks",
+      "example_sentences": [
+        {
+          "albanian": "Unë po bëj detyrat.",
+          "english": "I am doing the homework."
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "english": "to make",
+      "albanian_infinitive": "me kriju",
+      "pronunciation": "meh kree-yoo",
+      "verb_type": "regular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "actions",
+      "frequency_score": 6.5,
+      "conjugation_difficulty": "low",
+      "usage_notes": "Used for creating and constructing",
+      "example_sentences": [
+        {
+          "albanian": "Unë po krijoj një projekt.",
+          "english": "I am making a project."
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "english": "to take",
+      "albanian_infinitive": "me marrë",
+      "pronunciation": "meh mar",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "actions",
+      "frequency_score": 6.3,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Essential for discussing possession and actions",
+      "example_sentences": [
+        {
+          "albanian": "Unë po marr librin.",
+          "english": "I am taking the book."
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "english": "to give",
+      "albanian_infinitive": "me dhanë",
+      "pronunciation": "meh than",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "actions",
+      "frequency_score": 6,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for expressing transfer of objects",
+      "example_sentences": [
+        {
+          "albanian": "Unë po jap një dhuratë.",
+          "english": "I am giving a gift."
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "english": "to love",
+      "albanian_infinitive": "me dashtë",
+      "pronunciation": "meh dasht",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "emotions",
+      "frequency_score": 5.8,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for expressing affection",
+      "example_sentences": [
+        {
+          "albanian": "Unë të dua shumë.",
+          "english": "I love you very much."
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "english": "to like",
+      "albanian_infinitive": "me pëlqy",
+      "pronunciation": "meh pel-choo",
+      "verb_type": "regular",
+      "transitivity": "transitive",
+      "cefr_level": "A2",
+      "category": "emotions",
+      "frequency_score": 5.5,
+      "conjugation_difficulty": "low",
+      "usage_notes": "Commonly used for preferences",
+      "example_sentences": [
+        {
+          "albanian": "Unë po pëlqej muzikën.",
+          "english": "I like the music."
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "english": "to want",
+      "albanian_infinitive": "me dashtë",
+      "pronunciation": "meh dasht",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "emotions",
+      "frequency_score": 5.3,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for expressing desires and needs",
+      "example_sentences": [
+        {
+          "albanian": "Unë dua me shku në kinema.",
+          "english": "I want to go to the cinema."
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "english": "to need",
+      "albanian_infinitive": "me pasë nevojë",
+      "pronunciation": "meh pah-seh neh-voh-yeh",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "emotions",
+      "frequency_score": 5,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Essential for expressing necessity",
+      "example_sentences": [
+        {
+          "albanian": "Unë kam nevojë për ndihmë.",
+          "english": "I need help."
+        }
+      ]
+    },
+    {
+      "rank": 22,
+      "english": "to see",
+      "albanian_infinitive": "me pa",
+      "pronunciation": "meh pah",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "physical",
+      "frequency_score": 4.8,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for visual perception",
+      "example_sentences": [
+        {
+          "albanian": "Unë po shoh një film.",
+          "english": "I am watching a movie."
+        }
+      ]
+    },
+    {
+      "rank": 23,
+      "english": "to hear",
+      "albanian_infinitive": "me ndi",
+      "pronunciation": "meh nee",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "A1",
+      "category": "physical",
+      "frequency_score": 4.5,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for auditory perception",
+      "example_sentences": [
+        {
+          "albanian": "Unë po dëgjoj muzikë.",
+          "english": "I am listening to music."
+        }
+      ]
+    },
+    {
+      "rank": 24,
+      "english": "to touch",
+      "albanian_infinitive": "me prekë",
+      "pronunciation": "meh preh-keh",
+      "verb_type": "regular",
+      "transitivity": "transitive",
+      "cefr_level": "B1",
+      "category": "physical",
+      "frequency_score": 4.3,
+      "conjugation_difficulty": "low",
+      "usage_notes": "Used for physical interaction",
+      "example_sentences": [
+        {
+          "albanian": "Mos e prek atë.",
+          "english": "Do not touch that."
+        }
+      ]
+    },
+    {
+      "rank": 25,
+      "english": "to feel",
+      "albanian_infinitive": "me ndi",
+      "pronunciation": "meh nee",
+      "verb_type": "irregular",
+      "transitivity": "transitive",
+      "cefr_level": "B1",
+      "category": "physical",
+      "frequency_score": 4,
+      "conjugation_difficulty": "medium",
+      "usage_notes": "Used for emotional and physical sensations",
+      "example_sentences": [
+        {
+          "albanian": "Unë po ndihem mirë.",
+          "english": "I feel good."
+        }
+      ]
+    }
+  ],
+  "generation_timestamp": "2025-09-22T21:03:57.303Z",
+  "database_insertion": {
+    "insertedCount": 25,
+    "errors": []
+  },
+  "validation_stats": {
+    "total_verbs": "410",
+    "infinitive_verbs": "25",
+    "verb_type_count": "89"
+  },
+  "costSummary": {
+    "totalCost": 0,
+    "totalCalls": 0,
+    "operations": {},
+    "averageCostPerCall": 0
+  }
+}

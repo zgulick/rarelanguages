@@ -1,0 +1,1590 @@
+{
+  "fixes_applied": 264,
+  "timestamp": "2025-09-23T20:02:04.426Z",
+  "changes": [
+    {
+      "content_id": "616c0074-a99d-4839-8701-8b1a581a394d",
+      "phrase": "For example",
+      "word_type_change": "preposition → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "f9ad3cc8-cc8b-4af9-a8ae-3d8a14e4144d",
+      "phrase": "On the other hand",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "68e846fc-0cab-4cc1-af81-89dd57d595f0",
+      "phrase": "This is our kitchen",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "a6562d3b-1de3-45ac-95e3-13d8730bb228",
+      "phrase": "See you tomorrow",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "ad2e4d2e-2d5a-4e33-a436-6ff4b02bbf22",
+      "phrase": "This is delicious",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "b5e67ce0-95dc-492d-8cee-3dbbf28c22e0",
+      "phrase": "Don't be late",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "b3445a00-fc46-4a09-9465-99de7bd18453",
+      "phrase": "Don't worry",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "bc4b6a0d-298c-4253-b411-2e9247aa6b47",
+      "phrase": "Flowers blooming",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "b8650d85-f9a3-4cdd-9b2b-5dc6d2b0fdb4",
+      "phrase": "Have a good rest",
+      "word_type_change": "preposition → phrase",
+      "grammar_category_change": "basic_adjectives → daily activities"
+    },
+    {
+      "content_id": "b1275969-0800-4970-8298-61fb7a6433a5",
+      "phrase": "Have some more",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "b172db36-fcb3-49bd-bef7-18227b17869d",
+      "phrase": "Just now",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "a4d39586-9ff6-4e17-9e15-1693d0ed7883",
+      "phrase": "My uncle is visiting",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "aa136ec9-68e4-4484-bf4e-3afbc2305d41",
+      "phrase": "Open the windows",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "a8bc58b5-b5f1-4e2c-8f42-590e80785e6e",
+      "phrase": "Take care",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "questions → daily activities"
+    },
+    {
+      "content_id": "868ff378-a73b-48ae-b2a0-cb7994bd9cbc",
+      "phrase": "Good afternoon",
+      "word_type_change": "noun → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "8e60628c-40ac-4a94-bd4b-b77b29e45986",
+      "phrase": "See you later",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "7efd0a07-689a-4097-a969-56596df4b972",
+      "phrase": "Please sit down",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "8dd87c53-2c50-4f3a-9b10-574f1fcd484b",
+      "phrase": "One, two, three",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "83254ef2-437a-481f-9d75-a9bc85e59a77",
+      "phrase": "Clear sky",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "889655c4-cb6b-4fb9-99aa-1fcd257fa33c",
+      "phrase": "Pass the salt",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "7fe072fc-f719-4def-bbae-b8686e065852",
+      "phrase": "Stay inside",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "83d8b820-9abc-44d4-9933-c5612c053b4d",
+      "phrase": "We are having dinner",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "56333401-0541-47f6-b54d-4b8707d677b6",
+      "phrase": "Reflect on the implications",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "9d950cc1-21ba-4017-991a-0ef146b6eb8a",
+      "phrase": "Goodbye",
+      "word_type_change": "phrase → greeting",
+      "grammar_category_change": "greetings → greetings"
+    },
+    {
+      "content_id": "da81f93e-aca0-41d1-ab78-10b9c571edd0",
+      "phrase": "Good evening",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "5782db7d-7a11-448d-9473-f4cad6a4b508",
+      "phrase": "Good morning",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "926d8886-487e-4987-abb4-11d937b84fbd",
+      "phrase": "Hello",
+      "word_type_change": "phrase → greeting",
+      "grammar_category_change": "greetings → greetings"
+    },
+    {
+      "content_id": "288c3ba9-3840-49a1-b6b0-bb5628dfa847",
+      "phrase": "Hello, how are you?",
+      "word_type_change": "greeting → question",
+      "grammar_category_change": "greeting → questions"
+    },
+    {
+      "content_id": "6db5dba6-b4a8-4e63-ba16-a5b5f4f21de4",
+      "phrase": "How are you?",
+      "word_type_change": "phrase → question",
+      "grammar_category_change": "greetings → questions"
+    },
+    {
+      "content_id": "398ee023-7c5b-4979-8e5e-3221d019ef3a",
+      "phrase": "Please",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "151fc44d-8e78-4923-b063-e75f10a272cd",
+      "phrase": "Thank you",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "2b36e308-2b29-4a22-9433-665f7a3d5800",
+      "phrase": "Thank you very much.",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "ab348c97-ec9e-4564-bce9-f72b73f14b73",
+      "phrase": "Can you help me?",
+      "word_type_change": "preposition → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "1ecbd2a0-9de1-48a5-a3be-fdb29190f6b7",
+      "phrase": "I am a student.",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → sentence"
+    },
+    {
+      "content_id": "7d700ac1-6b8b-4fdc-a5a2-458000e63c01",
+      "phrase": "Where is the library?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "fff437bc-f70c-41b4-ad65-a7c4110d4b9c",
+      "phrase": "Please",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "59125ed8-ac68-4aa9-8a5f-b5cd107d1151",
+      "phrase": "Thank you very much",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "phrase → courtesy"
+    },
+    {
+      "content_id": "eca02c6f-f25b-4f1e-b3e8-210aeabff57b",
+      "phrase": "Sorry about that!",
+      "word_type_change": "preposition → phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "572312d9-b13f-4611-9a00-f677757708bd",
+      "phrase": "Tomorrow",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "time → general_vocabulary"
+    },
+    {
+      "content_id": "1263b1c4-d1c5-44f8-abc7-99de658cc975",
+      "phrase": "Yesterday",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "time → general_vocabulary"
+    },
+    {
+      "content_id": "361154f7-aef6-4779-b7c6-a8e3a7a7ea6d",
+      "phrase": "Bathroom",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "home → general_vocabulary"
+    },
+    {
+      "content_id": "630765db-87c5-4045-b12f-016c050dd706",
+      "phrase": "Bedroom",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "home → general_vocabulary"
+    },
+    {
+      "content_id": "2f634e13-dd99-4e8f-b054-8aa7b6bbc8e4",
+      "phrase": "House",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "home → general_vocabulary"
+    },
+    {
+      "content_id": "a3c96479-2a93-408c-84e3-de769ae0a4fc",
+      "phrase": "Kitchen",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "home → general_vocabulary"
+    },
+    {
+      "content_id": "6ddee506-f4c9-4287-86e1-e28ed5b85857",
+      "phrase": "Street",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "places → general_vocabulary"
+    },
+    {
+      "content_id": "248f98ca-7095-4fd1-8879-cbf7a8ed7bef",
+      "phrase": "I help at home",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "633dcfe5-f8a1-4c7d-b66c-b046a649fe7c",
+      "phrase": "I watch television",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "845cfeb2-ffda-4641-b64f-341a50146f82",
+      "phrase": "This is our kitchen",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "ce5db8a4-4517-4005-83a6-afe49b44f086",
+      "phrase": "Where is...?",
+      "word_type_change": "phrase → question",
+      "grammar_category_change": "directions → questions"
+    },
+    {
+      "content_id": "53a6d646-cd3f-4641-9078-b76f16448faa",
+      "phrase": "Airport",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "travel → general_vocabulary"
+    },
+    {
+      "content_id": "74f766b9-59d2-4954-8e1f-74f24102f364",
+      "phrase": "Hotel",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "travel → general_vocabulary"
+    },
+    {
+      "content_id": "34d93ba1-eacf-4425-8795-1448694eb3d2",
+      "phrase": "I am Albanian",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → sentence"
+    },
+    {
+      "content_id": "261ebad3-15d6-4c72-ada0-04225807cb2e",
+      "phrase": "Friday",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "dab60b7d-5203-4042-9dd4-bc41ffc17a4d",
+      "phrase": "Monday",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "439805e7-d203-48bb-8243-b6418fb6de49",
+      "phrase": "Next week",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "ef4be534-97c7-4ed0-96ae-cdc46dbda3ef",
+      "phrase": "Saturday",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "dd3edd08-522b-459e-9b4a-394bed4767c7",
+      "phrase": "Sunday",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "3e9ec2bf-4298-4cab-a3b2-e523bec1c9b8",
+      "phrase": "This week",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "8905282c-6420-4feb-a234-32cbb0c384cb",
+      "phrase": "Thursday",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "13feab6e-cabd-4610-a2e2-c880ce8eaeae",
+      "phrase": "Today is Monday",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "e96dea9e-f7fd-4d0b-b497-c3f54d869c01",
+      "phrase": "Tomorrow is Tuesday",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "eeb8970a-c76f-4f1a-a578-bde1909b947c",
+      "phrase": "Tuesday",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "6510a7c3-9925-4fd3-abbe-ee1e83ed1e01",
+      "phrase": "Wednesday",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "cff03701-efee-4938-961d-3975885c4bed",
+      "phrase": "Weekend",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "4c7220b0-d8d9-4962-b5b3-474b78fafbb6",
+      "phrase": "What day is it?",
+      "word_type_change": "noun → question",
+      "grammar_category_change": "time_expressions → questions"
+    },
+    {
+      "content_id": "5db38006-7086-4614-880b-782ed8efe965",
+      "phrase": "Yesterday was Sunday",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "04bedce4-9c20-4e59-85bc-5ca8034b57d2",
+      "phrase": "Set achievable goals",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "greetings → daily activities"
+    },
+    {
+      "content_id": "050f2864-6af0-44f3-9827-e31cff4532a9",
+      "phrase": "Reflect on cultural differences",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "0c0a63d4-4b92-434b-9934-bf578b1794fd",
+      "phrase": "Seek feedback from peers",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "49b2fd7d-a031-4bec-83e4-4f0bfcf7397d",
+      "phrase": "Asking for clarification",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "b214dbcc-0016-4695-9bb6-28a839a57a30",
+      "phrase": "Expressing disagreement",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "96b8d1c7-1c89-4b02-8e5a-80cbdb9d685b",
+      "phrase": "Providing an example",
+      "word_type_change": "preposition → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "799f9f0a-8456-41d3-ad4c-48d1616321fc",
+      "phrase": "Requesting further information",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "b6e32b6c-250e-4861-bb25-4eb3079e4795",
+      "phrase": "Summarizing a point",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "e17f91c3-19ba-4857-b588-c2883c334297",
+      "phrase": "Half of this",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "d12025c9-08a9-4d78-99f2-7e2a8b71a05d",
+      "phrase": "Can you help me?",
+      "word_type_change": "preposition → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "d05660a3-dc4f-4249-91de-66b28bcf10ab",
+      "phrase": "I sleep early",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → daily activities"
+    },
+    {
+      "content_id": "e0d06577-8ee0-48e2-9729-ea74fa6cd911",
+      "phrase": "Quite warm",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "e07d91f0-38cf-4560-8d5f-6ad0265c838f",
+      "phrase": "Recently",
+      "word_type_change": "adverb → word",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "e6ae639e-751f-477a-a9e5-104eb7402e54",
+      "phrase": "Rest a little",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "1e018700-2591-4954-8aad-14b26d006645",
+      "phrase": "First, second, third",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "1df7cf67-4f84-49af-9e93-6712b61618e9",
+      "phrase": "Learn from this",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "1ce575f5-9f94-4a8c-9818-b1e67808c49c",
+      "phrase": "One more cup?",
+      "word_type_change": "phrase → question",
+      "grammar_category_change": "numbers → questions"
+    },
+    {
+      "content_id": "13d0bade-4707-4c72-979e-4041ef256d5e",
+      "phrase": "Fresh air",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "202911c0-2919-414d-ae86-444ecf8f78aa",
+      "phrase": "Mistakes happen",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → daily activities"
+    },
+    {
+      "content_id": "2252b50b-d1f0-4ea2-903f-504f4bdc829c",
+      "phrase": "Sweet dreams",
+      "word_type_change": "preposition → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "1684a512-e411-4224-9ac2-de017c3f9bad",
+      "phrase": "The recipe is old",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "basic_adjectives → general_vocabulary"
+    },
+    {
+      "content_id": "22f19f3a-2104-41b7-b4d0-5184b8facd8b",
+      "phrase": "Thunder and lightning",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "1bbd36a0-4a93-405b-9b45-45a915855ba9",
+      "phrase": "Welcome to our home",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → courtesy"
+    },
+    {
+      "content_id": "ea5aaeac-65b0-4794-b76f-e1ed9f1138bb",
+      "phrase": "Eleven",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "17956e70-a738-49fd-9da4-5666d39c8367",
+      "phrase": "Fifteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "14b52e6d-fc23-4da4-89f5-919a398d1ad9",
+      "phrase": "Five",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "65e81dd9-7297-4591-96ec-348cb9f0c746",
+      "phrase": "Four",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "2b8e399d-e2bf-4ccc-8cc9-259d44d54038",
+      "phrase": "Fourteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "88e64a3b-d79d-429a-8a46-66fbadf21b6a",
+      "phrase": "One",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "dae00f56-cfa7-45e2-aa36-68e87dc0438f",
+      "phrase": "Thirteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "2bb7ab02-f82b-4e55-b553-377b3c106a2d",
+      "phrase": "Three",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "3d2112bb-c406-4cc9-a978-02d8494a7597",
+      "phrase": "Twelve",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "a1b167cc-2d48-404f-a61d-7f71bc6cbfc9",
+      "phrase": "Two",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "5f73869c-f82c-4962-acef-7a227f6d7c03",
+      "phrase": "At three o'clock",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "15ac6523-8a3e-4d33-ae44-1af65da03d73",
+      "phrase": "Half past one",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "70d88f22-4a16-4ca1-896a-e25f0a6e76cf",
+      "phrase": "In the afternoon",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "12e007bf-c787-4f63-aa6d-93ce573bfdb0",
+      "phrase": "In the morning",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "0260e95b-ea08-463b-afa4-61702640a535",
+      "phrase": "Quarter past two",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "4501de2f-f627-44f4-82df-d996e55c80df",
+      "phrase": "Today",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "2eb95372-1cdf-4abb-b1d2-ac210d754763",
+      "phrase": "Two o'clock",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "time_expressions → general_vocabulary"
+    },
+    {
+      "content_id": "07ee34c2-3c02-4ef1-8dd4-311e01e20635",
+      "phrase": "What time is it?",
+      "word_type_change": "phrase → question",
+      "grammar_category_change": "time_expressions → questions"
+    },
+    {
+      "content_id": "c3b049d3-a61a-4686-bebc-9776fa7fab98",
+      "phrase": "I drink coffee",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "greetings → daily activities"
+    },
+    {
+      "content_id": "874f8e3d-60ca-4281-ae94-ce526e757fdb",
+      "phrase": "I want water",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "bf02a490-fc2e-48eb-b64b-9437f67c1bbc",
+      "phrase": "Good night",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → greetings"
+    },
+    {
+      "content_id": "cefffa2f-feea-4673-a857-6bbbb90584c3",
+      "phrase": "Hello, how are you?",
+      "word_type_change": "greeting → question",
+      "grammar_category_change": "greeting → questions"
+    },
+    {
+      "content_id": "cb5e1465-7a99-46ca-a7c8-aaf31b00b1cc",
+      "phrase": "How are things?",
+      "word_type_change": "noun → question",
+      "grammar_category_change": "greetings → questions"
+    },
+    {
+      "content_id": "bdbfa47f-36eb-4091-b87d-24d74f7dfa80",
+      "phrase": "Half past four",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "cfe2e8f7-9485-4f99-86e2-b785f30e0829",
+      "phrase": "She is fifteen",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → sentence"
+    },
+    {
+      "content_id": "c41c39ed-0e8b-408c-ad7e-f973581fb75a",
+      "phrase": "Bring some sugar",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "c9054392-8852-4634-9dd1-76d22acf424f",
+      "phrase": "Congratulations",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "d0454aa7-eab2-445f-8b73-db9ec6f71c71",
+      "phrase": "Let's clear the table",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "c395f557-f940-46f7-a19c-983b680388d8",
+      "phrase": "Safe travels",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "c03ab118-7bf3-4fb7-b52b-c186f0b17ecb",
+      "phrase": "Still warm",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "cd454005-1fb3-44f9-b182-961970559ee5",
+      "phrase": "We are excited",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "449d29fe-4799-4dee-b844-967c8790e744",
+      "phrase": "Thank you very much",
+      "word_type_change": "pronoun → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "32fee58f-245a-48bf-a7ad-68d22723c218",
+      "phrase": "Eight",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "265458ac-3cdc-42e4-bfb0-e99323f9ae6d",
+      "phrase": "Eighteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "6ef1135b-a019-4c82-baa5-3d1d86d048c5",
+      "phrase": "Eleven",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "59fa56f9-b0ef-42ca-95d6-1dd6c160efda",
+      "phrase": "Fifteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "093968a8-9bbd-4b3c-8da2-3198d77aa88d",
+      "phrase": "Five",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "2451caae-132e-4bb2-82c8-123232d440cd",
+      "phrase": "Four",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "697b5d13-3cdf-4d28-94d3-ed54d83d65d2",
+      "phrase": "Fourteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "2646c717-8d8a-4f82-8ddc-fbac0c1f7225",
+      "phrase": "Nineteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "103db88f-66ff-47f3-9a3f-9c197d35acd2",
+      "phrase": "Seven",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "d2f15128-01da-47c2-bcf0-9e36d2a39d49",
+      "phrase": "Seventeen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "5c319c02-bf86-4771-84dc-dbd5013e259a",
+      "phrase": "Six",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "2c760099-261d-4694-9121-e57ae7de86a3",
+      "phrase": "Sixteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "34651848-1768-4c5b-9c1e-99a73ffb9852",
+      "phrase": "Ten",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "15e07297-9c09-4a90-8792-05bcd4af9bc6",
+      "phrase": "Thirteen",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "40925f55-64ae-4027-9d2d-9dfd0b82c6f2",
+      "phrase": "Three",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "00b62e76-3611-48e9-98ac-f3a540f599a9",
+      "phrase": "Twelve",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "25cf0da1-97f7-47a5-8725-6659b48fb743",
+      "phrase": "Twenty",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "537f29d1-3293-4317-915f-da1e90a0f5e6",
+      "phrase": "Two",
+      "word_type_change": "noun → word",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "42cf4f52-17f9-48eb-82b9-bbf6b587e08c",
+      "phrase": "I drink coffee",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "greetings → daily activities"
+    },
+    {
+      "content_id": "b6bfec5d-5cc4-43e9-9f47-c544690323fa",
+      "phrase": "Bread",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "food → general_vocabulary"
+    },
+    {
+      "content_id": "3e69e31c-9939-486f-a9fd-ad9acbbbd47a",
+      "phrase": "Cheese",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "food → general_vocabulary"
+    },
+    {
+      "content_id": "63e757ff-9aed-453a-a1d0-53ff14ad7176",
+      "phrase": "Coffee",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "food → general_vocabulary"
+    },
+    {
+      "content_id": "4d2754ea-fd10-41f4-b57c-f807fe696f13",
+      "phrase": "Water",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "food → general_vocabulary"
+    },
+    {
+      "content_id": "94ba9a51-7edc-4f27-8809-9ecac1b0f9ac",
+      "phrase": "Good evening",
+      "word_type_change": "noun → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "9aa4aaa0-a868-4b34-998a-b105e54034eb",
+      "phrase": "The sun is shining",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "a1bbfbbd-7a8d-4acc-bafd-697bc8202114",
+      "phrase": "What do you think?",
+      "word_type_change": "phrase → question",
+      "grammar_category_change": "greetings → questions"
+    },
+    {
+      "content_id": "9fc16094-c500-46d8-b273-c9d410fedfd0",
+      "phrase": "Who cooked this?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "greetings → questions"
+    },
+    {
+      "content_id": "a37fbb31-4369-4507-87df-16be56024ac8",
+      "phrase": "Quarter to five",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "9ebe16ae-ad81-46b9-9569-57ecc1bd309b",
+      "phrase": "Hot summer",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "food_drink → general_vocabulary"
+    },
+    {
+      "content_id": "9f16d106-7c89-47a2-8516-af69ac25929c",
+      "phrase": "How was your trip?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "9dce21d6-c45a-4ac2-b60a-28a6fa104275",
+      "phrase": "It's very good",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "basic_adjectives → daily activities"
+    },
+    {
+      "content_id": "9d682079-dcc8-4811-9cb2-46dbc1a1805c",
+      "phrase": "Most people",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "a4ccd640-2149-466a-948a-cf08c4ed9560",
+      "phrase": "We missed you",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "61de21d3-1b11-4605-a8e3-cbd2569987a8",
+      "phrase": "Everything is fine",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "635ca378-acf8-4fcc-bc16-ea1ed885cd39",
+      "phrase": "Bundle up warm",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "6b265cbe-c5a1-4b1d-92ac-3fb91009e68e",
+      "phrase": "Come meet my parents",
+      "word_type_change": "preposition → phrase",
+      "grammar_category_change": "family_vocab → daily activities"
+    },
+    {
+      "content_id": "6d090a6a-9e29-4c74-9ad6-d13503f43dbf",
+      "phrase": "Don't give up",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "5ea492e3-f1c8-4781-a635-661b18dccdd4",
+      "phrase": "I'm going to work",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → sentence"
+    },
+    {
+      "content_id": "5ce65c38-f6be-4705-9c6b-c432a45d44a2",
+      "phrase": "Lock the door",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "66f8d21c-8275-4c72-9b16-2bd793f18273",
+      "phrase": "Share your worries",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "68d9580c-269a-4679-bd64-554751fa00c9",
+      "phrase": "Stay strong",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "635ab858-5466-49ec-a98b-07fa3d84fc4b",
+      "phrase": "The baby is sleeping",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → daily activities"
+    },
+    {
+      "content_id": "5eb9ddb3-367b-46f0-a6c3-79a8835f5139",
+      "phrase": "Wash your hands",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "body_parts → general_vocabulary"
+    },
+    {
+      "content_id": "7c07d866-413e-4014-bd3c-c1e6dd0703f6",
+      "phrase": "Beautiful view",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "6ee14471-9a41-45f5-84c2-d7e2cec3c078",
+      "phrase": "Be careful driving",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "76a2d9ec-4596-4022-a733-9b22e37dcb78",
+      "phrase": "Double that amount",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "family_vocab → general_vocabulary"
+    },
+    {
+      "content_id": "70715f02-e170-46c7-8405-0c4a5f969846",
+      "phrase": "Fresh vegetables",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "food_drink → general_vocabulary"
+    },
+    {
+      "content_id": "77dc7fcd-81ec-434f-b156-3f977fb39a93",
+      "phrase": "God bless you",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → daily activities"
+    },
+    {
+      "content_id": "76fad273-993f-476d-b34f-2f444ad83228",
+      "phrase": "Life is good",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "basic_adjectives → daily activities"
+    },
+    {
+      "content_id": "6f55e1dd-feed-4bd1-a60d-7e201c3afd9d",
+      "phrase": "Not many left",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "6f25ddeb-ef4e-488f-b920-48ef1642fc5d",
+      "phrase": "Sit, relax",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "7345e577-a660-4b52-82ae-77d0fc43a6fe",
+      "phrase": "What is your name?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "5c1a0df0-1009-456b-8e4d-1ed75c0048a4",
+      "phrase": "Have a good day",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → daily activities"
+    },
+    {
+      "content_id": "5725ee96-4c4e-4589-b802-5090666adc02",
+      "phrase": "Some children",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "5c4022cf-0cb2-402e-8eaf-e96ca0ee1019",
+      "phrase": "This evening",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "5a6b9016-1c94-44b2-82e2-b16ba7a53ca8",
+      "phrase": "More bread please",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "5c285512-04a7-4b74-bcba-af3ef074b063",
+      "phrase": "Please speak slowly.",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "54e3c737-b9b3-4e87-8f87-2bd6670d7106",
+      "phrase": "None remaining",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "4ac20423-20dc-4872-a1df-4f74fa981417",
+      "phrase": "Birds are singing",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "508739e4-a33a-43e3-b27d-aa6d88c5e2c7",
+      "phrase": "How is your health?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "54d1499d-834b-4e48-859c-87bb25fb6bb7",
+      "phrase": "Make yourself at home",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "4af1083d-869f-4db3-8023-b692a0e11a87",
+      "phrase": "Stars are bright",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "4a2ab63b-e94c-4f3a-9017-61949b28faae",
+      "phrase": "Strong wind",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "fbe74b36-6524-4e27-ade4-f4ee33dd7534",
+      "phrase": "How is everyone?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "numbers → questions"
+    },
+    {
+      "content_id": "f3ce0c65-bd6c-45fd-8347-ea53f624a05a",
+      "phrase": "Be patient",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "f564264e-e7d0-4b22-b457-629eaeaf1833",
+      "phrase": "From our garden",
+      "word_type_change": "preposition → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "f3bd3326-b64b-4d43-92ac-12dfe3db7fa4",
+      "phrase": "Homemade bread",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "noun → general_vocabulary"
+    },
+    {
+      "content_id": "f205b211-4516-4ada-97c6-4078cb023f68",
+      "phrase": "I am a student.",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → sentence"
+    },
+    {
+      "content_id": "ea5fef47-dffd-410c-8bec-4525782090e1",
+      "phrase": "Many clouds",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "eb143d7b-afcd-42b4-9a54-b79e41395efc",
+      "phrase": "Roads are slippery",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "fd64b7ef-0c72-4c47-8ce6-0a21d20ec229",
+      "phrase": "Talk to me",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "f4cf6257-860f-4cf4-a6bb-9825a166dcea",
+      "phrase": "Try again",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "f60caaa3-f6e7-467d-8682-0c5317b965fd",
+      "phrase": "We care about you",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "368249c5-3802-403c-a7eb-fdd2414db1b7",
+      "phrase": "The children are playing",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "419755e5-f1f6-4565-a515-ff3f2ba67427",
+      "phrase": "This afternoon",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "467aec2d-a1cf-4baf-bc84-e7a05dcc45a9",
+      "phrase": "Try this dish",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "401a4523-5cd1-40a7-a8e6-81cea043a049",
+      "phrase": "Best wishes",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "3a285bac-6e89-4b5e-97b9-2f55b662eae5",
+      "phrase": "Don't be sad",
+      "word_type_change": "adjective → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "45039523-017d-4167-bcbb-242d4b2b0c8d",
+      "phrase": "How can I help?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "48a86746-5f61-472d-b3b6-9b4d48d9defc",
+      "phrase": "Save room for dessert",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "questions → general_vocabulary"
+    },
+    {
+      "content_id": "3531c5be-4428-419e-a493-015233dda6ac",
+      "phrase": "Stay for dinner",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "34ff8e29-df6a-4ebd-b3ea-bfc77f749441",
+      "phrase": "We are proud parents",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "3379b7e8-2728-49e0-bd7d-293bcf592983",
+      "phrase": "What brings you here?",
+      "word_type_change": "adverb → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "67bd6525-f582-4117-a316-0125e501a4d5",
+      "phrase": "Please introduce yourself.",
+      "word_type_change": "pronoun → phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "80c14161-03e9-4d2f-a3b4-e0dbc605c6ad",
+      "phrase": "What time is it?",
+      "word_type_change": "phrase → question",
+      "grammar_category_change": "time_expressions → questions"
+    },
+    {
+      "content_id": "84239ca6-3877-475a-8ba4-c3b05e8849cc",
+      "phrase": "I am learning Albanian.",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → sentence"
+    },
+    {
+      "content_id": "59684da5-e6ff-4d68-90df-0b7bc185e654",
+      "phrase": "Where is the library?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "26667af9-fefa-4550-8be9-c1888ee060b9",
+      "phrase": "Thank you very much.",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "261b0b09-1bf3-415c-8deb-226fcdeebb5e",
+      "phrase": "Count to ten",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "numbers → general_vocabulary"
+    },
+    {
+      "content_id": "331d1d7e-49b8-4c7e-bc6f-4919a22c8c7c",
+      "phrase": "Come to the table",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → daily activities"
+    },
+    {
+      "content_id": "2949fda7-5fc8-494a-a178-8eb92a622c15",
+      "phrase": "How is work going?",
+      "word_type_change": "pronoun → question",
+      "grammar_category_change": "questions → questions"
+    },
+    {
+      "content_id": "2f32e63d-54bb-414a-8f63-392b4d82d1c0",
+      "phrase": "Trees are green",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "colors → general_vocabulary"
+    },
+    {
+      "content_id": "3267823e-a445-420e-8f73-703bd1e0cfef",
+      "phrase": "Very cold outside",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "basic_adjectives → general_vocabulary"
+    },
+    {
+      "content_id": "7ea90ab5-877c-42d7-84f8-c7f3758b5834",
+      "phrase": "Goodbye",
+      "word_type_change": "phrase → greeting",
+      "grammar_category_change": "greetings → greetings"
+    },
+    {
+      "content_id": "faebd02a-2702-49f9-b23d-035ee2b9459c",
+      "phrase": "to be",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "existence → general_vocabulary"
+    },
+    {
+      "content_id": "414b50da-fb8a-437d-a91b-6e9b094a6656",
+      "phrase": "Good evening",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "4b7de9e9-cd78-424b-9e2d-3d4c5b30fdd0",
+      "phrase": "to have",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "existence → general_vocabulary"
+    },
+    {
+      "content_id": "4880e927-b576-4d1a-9f15-03c4cd4bff0c",
+      "phrase": "to go",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "movement → daily activities"
+    },
+    {
+      "content_id": "eeea67dc-ac3b-4d55-9ffe-8af3949c2b84",
+      "phrase": "Good morning",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "60ee61d4-1c98-4d56-8dcd-65a43fce2b04",
+      "phrase": "Hello",
+      "word_type_change": "phrase → greeting",
+      "grammar_category_change": "greetings → greetings"
+    },
+    {
+      "content_id": "656fe20a-1f25-47bd-8541-6902db0990d2",
+      "phrase": "to come",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "movement → daily activities"
+    },
+    {
+      "content_id": "4778ee91-0fb0-45fa-8f16-e0343dcf31aa",
+      "phrase": "Excuse me",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "ed5cadb9-6b42-4a3c-a742-f68459f2a4c0",
+      "phrase": "to speak",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "communication → general_vocabulary"
+    },
+    {
+      "content_id": "1cbca682-19f0-4a76-918b-c4d0df296aab",
+      "phrase": "Please",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "134adec9-5630-4fe9-9bb3-4071b63675fe",
+      "phrase": "to eat",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "daily activities → daily activities"
+    },
+    {
+      "content_id": "fcf28555-6cbf-4296-876d-dba41ae23ec7",
+      "phrase": "to drink",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "daily activities → daily activities"
+    },
+    {
+      "content_id": "01af2b2b-67af-43db-a2b8-1c34d0f22a55",
+      "phrase": "Sorry",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "ab7533de-f5a1-4db2-b8f9-d7fdf6012d50",
+      "phrase": "Thank you",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "84948755-1c07-4d19-b767-aa53c2c954bd",
+      "phrase": "to sleep",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "daily activities → daily activities"
+    },
+    {
+      "content_id": "0b01725d-a9f9-4c6b-996e-e57cc2de026f",
+      "phrase": "to work",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "daily activities → daily activities"
+    },
+    {
+      "content_id": "49354fd8-1de0-4984-a172-e252feb4279c",
+      "phrase": "to think",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "cognition → general_vocabulary"
+    },
+    {
+      "content_id": "82272889-9cab-4536-b6de-6d410d9b724d",
+      "phrase": "to know",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "cognition → general_vocabulary"
+    },
+    {
+      "content_id": "55d7c167-366f-4e8a-90fd-996dd5648d7e",
+      "phrase": "to understand",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "cognition → general_vocabulary"
+    },
+    {
+      "content_id": "e53bf827-b787-4790-ac9f-25cbfdb438ee",
+      "phrase": "to learn",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "cognition → general_vocabulary"
+    },
+    {
+      "content_id": "48babf44-5809-4ac6-915c-97196626518b",
+      "phrase": "to do",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "actions → general_vocabulary"
+    },
+    {
+      "content_id": "b7f9c820-c13a-4578-ae87-f4615c7bcba5",
+      "phrase": "to make",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "actions → general_vocabulary"
+    },
+    {
+      "content_id": "39cb13b9-a41b-4a18-9762-3c37e3bdc607",
+      "phrase": "to take",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "actions → daily activities"
+    },
+    {
+      "content_id": "d0e61419-2c8d-45d6-a56a-263df3e36251",
+      "phrase": "to give",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "actions → general_vocabulary"
+    },
+    {
+      "content_id": "ba2559f1-8382-4cbd-9d73-0dad6e6c3b39",
+      "phrase": "to love",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "emotions → general_vocabulary"
+    },
+    {
+      "content_id": "c6cc7684-464f-45b5-86ab-13b2c1a2157d",
+      "phrase": "to like",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "emotions → general_vocabulary"
+    },
+    {
+      "content_id": "ed0c0677-37c2-45a7-9e3e-bda3222a347a",
+      "phrase": "to want",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "emotions → general_vocabulary"
+    },
+    {
+      "content_id": "48191053-cc96-42b6-afe2-e71e2c50d8bd",
+      "phrase": "to need",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "emotions → general_vocabulary"
+    },
+    {
+      "content_id": "6eb29373-ef2f-4a39-96fb-3a6c54f5c225",
+      "phrase": "to see",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "physical → general_vocabulary"
+    },
+    {
+      "content_id": "6f2cb6d4-3f93-4f49-b04d-2bb809e60560",
+      "phrase": "to hear",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "physical → general_vocabulary"
+    },
+    {
+      "content_id": "c46a8483-3f51-46d9-9eb5-e9195b1d171b",
+      "phrase": "to touch",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "physical → general_vocabulary"
+    },
+    {
+      "content_id": "bd476e41-de26-417c-91ad-90de1c083b03",
+      "phrase": "to feel",
+      "word_type_change": "verb → phrase",
+      "grammar_category_change": "physical → general_vocabulary"
+    },
+    {
+      "content_id": "0dbe6a85-3630-40f2-95bb-43ff0f091944",
+      "phrase": "He is thirty-five",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → sentence"
+    },
+    {
+      "content_id": "0695c8e3-3013-4674-9ea9-f1bfbe4ee43f",
+      "phrase": "This morning",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "greetings → general_vocabulary"
+    },
+    {
+      "content_id": "07bdd44b-7912-489c-a378-1b2b67180fc9",
+      "phrase": "A few more",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "118bc9d4-cbb3-4da1-b6a1-0b08ae355ad7",
+      "phrase": "Close the shutters",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "0f2cb45c-011f-40b4-b6c6-8986e0a85926",
+      "phrase": "Coming home late",
+      "word_type_change": "adverb → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "0b883629-8079-4c2c-82a0-9145552c50bf",
+      "phrase": "Cool autumn",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "1344bf88-5419-4664-85da-c08726b970a6",
+      "phrase": "Don't be shy",
+      "word_type_change": "noun → phrase",
+      "grammar_category_change": "general_vocabulary → general_vocabulary"
+    },
+    {
+      "content_id": "102a12d5-9fee-45fe-ba40-08beffb45da4",
+      "phrase": "We're here for you",
+      "word_type_change": "sentence → phrase",
+      "grammar_category_change": "sentence → general_vocabulary"
+    },
+    {
+      "content_id": "153db4d9-42e7-4f4f-bc07-f74b37c0735a",
+      "phrase": "Good afternoon",
+      "word_type_change": "noun → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "298d0373-77c0-42e3-8fa7-2dc3d799cb75",
+      "phrase": "Goodbye",
+      "word_type_change": "phrase → greeting",
+      "grammar_category_change": "greetings → greetings"
+    },
+    {
+      "content_id": "39f34f2c-311a-4f3a-9fc3-9977b091059b",
+      "phrase": "Good evening",
+      "word_type_change": "noun → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "7a2f8e69-6c2e-4a3b-a352-86d56952deff",
+      "phrase": "Good morning",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "greetings → courtesy"
+    },
+    {
+      "content_id": "04d209df-dc0d-4dc0-be6c-6c5a606f82e0",
+      "phrase": "Hello",
+      "word_type_change": "phrase → greeting",
+      "grammar_category_change": "greetings → greetings"
+    },
+    {
+      "content_id": "9fe7c864-1b78-4a1b-8764-e4910563b953",
+      "phrase": "Excuse me",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "6e53cf14-d6aa-4c83-9a25-3e8e3050c3d9",
+      "phrase": "Please",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "65855a46-9404-4e1a-b6d0-3ec20a1133b4",
+      "phrase": "Sorry",
+      "word_type_change": "phrase → word",
+      "grammar_category_change": "courtesy → courtesy"
+    },
+    {
+      "content_id": "0b4538e9-2a57-4c5b-a078-abc85e5cfeee",
+      "phrase": "Thank you",
+      "word_type_change": "phrase → courtesy_phrase",
+      "grammar_category_change": "courtesy → courtesy"
+    }
+  ]
+}

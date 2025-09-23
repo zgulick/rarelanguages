@@ -7,6 +7,70 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        // Custom color palette
+        primary: {
+          50: '#e6f2f7',
+          100: '#b3d9e8',
+          200: '#80c0d9',
+          300: '#4da7ca',
+          400: '#2a6f97', // Main primary color
+          500: '#255f85',
+          600: '#204f73',
+          700: '#1b3f61',
+          800: '#162f4f',
+          900: '#111f3d',
+          DEFAULT: '#2a6f97',
+        },
+        secondary: {
+          50: '#fef4eb',
+          100: '#fde1c7',
+          200: '#fccea3',
+          300: '#fbbb7f',
+          400: '#f28c38', // Main secondary color
+          500: '#da7b32',
+          600: '#c26a2c',
+          700: '#aa5926',
+          800: '#924820',
+          900: '#7a371a',
+          DEFAULT: '#f28c38',
+        },
+        success: {
+          50: '#edf7ed',
+          100: '#d1e7cc',
+          200: '#b5d7ab',
+          300: '#99c78a',
+          400: '#6ab547', // Main success color
+          500: '#5fa340',
+          600: '#549139',
+          700: '#497f32',
+          800: '#3e6d2b',
+          900: '#335b24',
+          DEFAULT: '#6ab547',
+        },
+        error: {
+          50: '#fdf2f2',
+          100: '#fbd5d5',
+          200: '#f9b8b8',
+          300: '#f79b9b',
+          400: '#d9534f', // Main error color
+          500: '#c74b47',
+          600: '#b5433f',
+          700: '#a33b37',
+          800: '#91332f',
+          900: '#7f2b27',
+          DEFAULT: '#d9534f',
+        },
+        neutral: {
+          background: '#f7f9fa', // Main background
+          surface: '#ffffff', // Cards/modals
+          'surface-alt': '#f1f5f8', // Alternative surface
+        },
+        text: {
+          primary: '#2c3e50', // Main text
+          secondary: '#7f8c8d', // Secondary text
+        },
+      },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
         display: ['Inter', 'system-ui', 'sans-serif'],
@@ -160,15 +224,20 @@ module.exports = {
           'backdrop-filter': 'blur(10px)',
           'border': '1px solid rgba(255, 255, 255, 0.1)',
         },
-        '.glass-emerald': {
-          'background': 'rgba(16, 185, 129, 0.1)',
+        '.glass-primary': {
+          'background': 'rgba(42, 111, 151, 0.1)',
           'backdrop-filter': 'blur(12px)',
-          'border': '1px solid rgba(16, 185, 129, 0.2)',
+          'border': '1px solid rgba(42, 111, 151, 0.2)',
         },
-        '.glass-orange': {
-          'background': 'rgba(249, 115, 22, 0.1)',
+        '.glass-secondary': {
+          'background': 'rgba(242, 140, 56, 0.1)',
           'backdrop-filter': 'blur(12px)',
-          'border': '1px solid rgba(249, 115, 22, 0.2)',
+          'border': '1px solid rgba(242, 140, 56, 0.2)',
+        },
+        '.glass-success': {
+          'background': 'rgba(106, 181, 71, 0.1)',
+          'backdrop-filter': 'blur(12px)',
+          'border': '1px solid rgba(106, 181, 71, 0.2)',
         },
         '.text-shadow': {
           'text-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',

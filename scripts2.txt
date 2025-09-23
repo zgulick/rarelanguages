@@ -1,0 +1,18 @@
+I need you to fix my lesson flow. The clean architecture you built works great, but lessons are asking "How do you say..." before teaching anything. That's backwards!
+
+I need proper textbook methodology: Teach → Practice → Test
+
+Also fix the academic skill names like "Phonological Foundations" - I want "Albanian 1: Family & Greetings"
+
+Here are the detailed instructions and complete implementations:
+
+
+@/users/zgulick/downloads/textscreen.png
+
+@/users/zgulick/downloads/textbook_cards_implementation.js
+
+@/users/zgulick/downloads/textbook_lesson_api.js
+
+@/users/zgulick/downloads/updated_lesson_page.js
+
+@/users/zgulick/downloads/claude_code_textbook_instructions.md

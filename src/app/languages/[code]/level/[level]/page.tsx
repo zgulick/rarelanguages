@@ -67,17 +67,17 @@ export default function LevelPage() {
     return (
       <div className="min-h-screen relative overflow-hidden">
         {/* Enhanced Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/50"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-100/20 via-transparent to-orange-100/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-background via-primary-50/30 to-secondary-50/50"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-100/20 via-transparent to-secondary-100/20"></div>
 
         <nav className="glass-nav sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-20">
               <Link href="/" className="group flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500 to-orange-500 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                   <span className="text-white font-bold text-lg">R</span>
                 </div>
-                <span className="text-2xl font-bold gradient-text">
+                <span className="text-2xl font-bold text-primary">
                   Rare Languages
                 </span>
               </Link>
@@ -88,8 +88,8 @@ export default function LevelPage() {
         <div className="relative z-10 flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
             <div className="relative mb-6">
-              <div className="w-16 h-16 border-4 border-emerald-200 border-t-emerald-600 rounded-full animate-spin mx-auto"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-orange-200 border-t-orange-500 rounded-full animate-spin" style={{animationDelay: '0.5s'}}></div>
+              <div className="w-16 h-16 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mx-auto"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-secondary-200 border-t-secondary-500 rounded-full animate-spin" style={{animationDelay: '0.5s'}}></div>
             </div>
             <div className="glass-card px-6 py-4 rounded-3xl inline-block">
               <p className="text-gray-700 font-medium mb-1">Loading skills...</p>
@@ -104,18 +104,18 @@ export default function LevelPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Enhanced Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/50"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-100/20 via-transparent to-orange-100/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-neutral-background via-primary-50/30 to-secondary-50/50"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-100/20 via-transparent to-secondary-100/20"></div>
 
       {/* Navigation Bar */}
       <nav className="glass-nav sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link href="/" className="group flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500 to-orange-500 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+              <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                 <span className="text-white font-bold text-lg">R</span>
               </div>
-              <span className="text-2xl font-bold gradient-text">
+              <span className="text-2xl font-bold text-primary">
                 Rare Languages
               </span>
             </Link>
@@ -136,7 +136,7 @@ export default function LevelPage() {
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="heading-1 mb-4 animate-fade-in-up" style={{color: '#f97316'}}>
+          <h1 className="heading-1 mb-4 animate-fade-in-up text-primary">
             {languageName} Level {level}
           </h1>
           <p className="body-large max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -152,7 +152,7 @@ export default function LevelPage() {
               href={`/skills/${skill.id}/learn`}
               className="group"
             >
-              <div className="card-hover p-6 hover:shadow-glow-emerald">
+              <div className="card-hover p-6 hover:shadow-glow-primary">
                 <div className="flex flex-col h-full">
                   {/* Skill Icon/Position */}
                   <div className="flex justify-between items-start mb-4">
@@ -165,7 +165,7 @@ export default function LevelPage() {
                   </div>
 
                   {/* Skill Name */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:gradient-text transition-all duration-300">
+                  <h3 className="text-xl font-bold text-text-primary mb-3 group-hover:text-primary transition-all duration-300">
                     {skill.name}
                   </h3>
 
@@ -186,13 +186,13 @@ export default function LevelPage() {
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-3 mb-6">
                     <div className="text-center glass-card">
-                      <div className="text-xl font-bold gradient-text mb-1">{skill.totalLessons}</div>
+                      <div className="text-xl font-bold text-primary mb-1">{skill.totalLessons}</div>
                       <div className="text-xs text-gray-600 font-medium">
                         {skill.totalLessons === 1 ? 'Lesson' : 'Lessons'}
                       </div>
                     </div>
                     <div className="text-center glass-card">
-                      <div className="text-xl font-bold gradient-text mb-1">{skill.estimatedHours}h</div>
+                      <div className="text-xl font-bold text-primary mb-1">{skill.estimatedHours}h</div>
                       <div className="text-xs text-gray-600 font-medium">Est. Time</div>
                     </div>
                   </div>
