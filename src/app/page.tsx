@@ -25,31 +25,66 @@ interface Course {
   estimatedHours: number;
 }
 
+interface PlatformStats {
+  totalLanguages: number;
+  totalCourses: number;
+  totalSkills: number;
+  totalLessons: number;
+  totalHours: number;
+}
+
 export default function LandingPage() {
   const [languages, setLanguages] = useState<Language[]>([]);
   const [courses, setCourses] = useState<Course[]>([]);
+  const [stats, setStats] = useState<PlatformStats>({
+    totalLanguages: 0,
+    totalCourses: 0,
+    totalSkills: 0,
+    totalLessons: 0,
+    totalHours: 0
+  });
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchLanguagesAndCourses = async () => {
       try {
-        // Fetch both languages and courses
-        const [languagesRes, coursesRes] = await Promise.all([
+        setError(null);
+        // Fetch languages, courses, and platform stats
+        const [languagesRes, coursesRes, statsRes] = await Promise.all([
           fetch('/api/languages/available'),
-          fetch('/api/courses')
+          fetch('/api/courses'),
+          fetch('/api/stats')
         ]);
 
-        if (languagesRes.ok) {
-          const languagesData = await languagesRes.json();
-          setLanguages(languagesData);
+        // The language list is what the page is for. If it fails, the page
+        // has failed -- say so rather than rendering a convincing but empty
+        // "coming soon" screen.
+        if (!languagesRes.ok) {
+          throw new Error(`Languages request failed (${languagesRes.status})`);
         }
+        setLanguages(await languagesRes.json());
 
         if (coursesRes.ok) {
           const coursesData = await coursesRes.json();
           setCourses(coursesData.courses || []);
+        } else {
+          console.warn('Failed to fetch courses');
         }
-      } catch (error) {
+
+        if (statsRes.ok) {
+          const statsData = await statsRes.json();
+          if (statsData.success) {
+            // Merge rather than replace: a partial payload would otherwise
+            // leave counters undefined and crash the render below.
+            setStats(current => ({ ...current, ...statsData }));
+          }
+        } else {
+          console.warn('Failed to fetch stats');
+        }
+      } catch (error: any) {
         console.error('Failed to fetch data:', error);
+        setError('Unable to load content. Please try again later.');
       } finally {
         setLoading(false);
       }
@@ -96,6 +131,26 @@ export default function LandingPage() {
 
       {/* Main Content */}
       <main className="relative z-10">
+        {/* Error Banner */}
+        {error && (
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+            <div className="bg-error-50 border border-error-200 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+              <div className="flex items-center">
+                <svg className="w-5 h-5 text-error mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
+                <p className="text-error-900 font-medium text-sm">{error}</p>
+              </div>
+              <button
+                onClick={() => window.location.reload()}
+                className="btn-ghost px-4 py-2 text-sm text-error-700 hover:text-error-900 whitespace-nowrap"
+              >
+                Retry
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
           <div className="text-center relative">
@@ -138,19 +193,23 @@ export default function LandingPage() {
               </button>
             </div>
 
-            {/* Stats Cards - Standardized */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-              <div className="glass-card text-center hover-lift">
-                <div className="text-2xl font-bold text-primary mb-1">{languages.length}</div>
-                <div className="text-text-secondary font-medium text-sm">Rare Languages</div>
+            {/* Stats Cards - With Real Data */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto mb-12 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+              <div className="glass-card text-center hover-lift p-4">
+                <div className="text-3xl md:text-2xl font-bold text-primary mb-1">{stats.totalLanguages || languages.length}</div>
+                <div className="text-text-secondary font-medium text-xs md:text-sm">Rare Languages</div>
               </div>
-              <div className="glass-card text-center hover-lift">
-                <div className="text-2xl font-bold text-primary mb-1">{courses.length}</div>
-                <div className="text-text-secondary font-medium text-sm">Learning Courses</div>
+              <div className="glass-card text-center hover-lift p-4">
+                <div className="text-3xl md:text-2xl font-bold text-primary mb-1">{stats.totalCourses || courses.length}</div>
+                <div className="text-text-secondary font-medium text-xs md:text-sm">Courses</div>
               </div>
-              <div className="glass-card text-center hover-lift">
-                <div className="text-2xl font-bold text-primary mb-1">∞</div>
-                <div className="text-text-secondary font-medium text-sm">Possibilities</div>
+              <div className="glass-card text-center hover-lift p-4">
+                <div className="text-3xl md:text-2xl font-bold text-primary mb-1">{(stats.totalLessons ?? 0).toLocaleString()}</div>
+                <div className="text-text-secondary font-medium text-xs md:text-sm">Lessons</div>
+              </div>
+              <div className="glass-card text-center hover-lift p-4">
+                <div className="text-3xl md:text-2xl font-bold text-primary mb-1">{stats.totalHours}h</div>
+                <div className="text-text-secondary font-medium text-xs md:text-sm">Content Hours</div>
               </div>
             </div>
           </div>
@@ -175,59 +234,36 @@ export default function LandingPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up">
-              {(() => {
-                // Sort languages by lesson count (descending) to identify the featured one
-                const sortedLanguages = [...languages].sort((a, b) => b.lesson_count - a.lesson_count);
-                const featuredLanguageCode = sortedLanguages[0]?.code;
-
-                return languages.map((language, index) => {
+              {languages.map((language, index) => {
                   const languageCourses = coursesByLanguage[language.code] || [];
                   const totalCourses = languageCourses.length;
                   const totalLessons = language.lesson_count;
-                  const isFeatured = language.code === featuredLanguageCode;
 
                   return (
                     <Link
                       key={language.code}
                       href={`/languages/${language.code}`}
-                      className={`group ${isFeatured ? 'lg:col-start-2 lg:row-start-1' : ''}`}
+                      className="group"
                       style={{animationDelay: `${index * 0.1}s`}}
                     >
-                      <div className={`card-hover p-6 relative overflow-hidden group-hover:shadow-glow-primary ${
-                        isFeatured ? 'scale-105 shadow-lg ring-2 ring-primary-200/50' : ''
-                      }`}>
+                      <div className="card-hover p-6 relative overflow-hidden group-hover:shadow-glow-primary">
                       {/* Subtle Background Pattern - Reduced opacity */}
                       <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-full -translate-y-12 translate-x-12 opacity-20 group-hover:scale-110 transition-transform duration-500"></div>
 
                         <div className="relative z-10 flex flex-col h-full">
-                          {/* Featured Badge */}
-                          {isFeatured && (
-                            <div className="absolute -top-3 -right-3 z-20">
-                              <div className="badge-success text-xs font-bold px-3 py-1 shadow-lg">
-                                Most Content
-                              </div>
-                            </div>
-                          )}
-
                           {/* Language Flag/Icon */}
                           <div className="text-center mb-4">
-                            <div className={`mb-3 group-hover:scale-105 transition-transform duration-300 ${
-                              isFeatured ? 'text-6xl' : 'text-5xl'
-                            }`}>
+                            <div className="mb-3 text-5xl group-hover:scale-105 transition-transform duration-300">
                               {language.flag}
                             </div>
 
                             {/* Language Names */}
                             <div className="space-y-1">
-                              <h3 className={`font-bold text-text-primary group-hover:text-primary transition-all duration-300 ${
-                                isFeatured ? 'text-2xl' : 'text-xl'
-                              }`}>
+                              <h3 className="text-xl font-bold text-text-primary group-hover:text-primary transition-all duration-300">
                                 {language.name}
                               </h3>
                               {language.native_name && language.native_name !== language.name && (
-                                <p className={`text-text-secondary font-medium ${
-                                  isFeatured ? 'text-lg' : 'text-base'
-                                }`}>
+                                <p className="text-base text-text-secondary font-medium">
                                   {language.native_name}
                                 </p>
                               )}
@@ -263,14 +299,13 @@ export default function LandingPage() {
                       </div>
                     </Link>
                   );
-                });
-              })()}
+                })}
             </div>
           )}
         </div>
 
         {/* Enhanced Empty State */}
-        {!loading && languages.length === 0 && (
+        {!loading && !error && languages.length === 0 && (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
             <div className="text-center py-20">
               <div className="relative mb-8">
@@ -287,17 +322,6 @@ export default function LandingPage() {
                 learning experience. Check back soon for exciting updates!
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="btn-secondary px-6 py-3">
-                  Get Notified
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-5 5-5-5h5v-12" />
-                  </svg>
-                </button>
-                <button className="btn-ghost px-6 py-3">
-                  Learn More
-                </button>
-              </div>
             </div>
           </div>
         )}
