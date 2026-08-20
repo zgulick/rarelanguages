@@ -7,10 +7,10 @@ export async function GET() {
         l.code,
         l.name,
         l.native_name,
-        COUNT(les.id) as lesson_count
+        COUNT(pl.id) as lesson_count
       FROM languages l
       LEFT JOIN skills s ON l.id = s.language_id
-      LEFT JOIN lessons les ON s.id = les.skill_id
+      LEFT JOIN processed_lessons pl ON s.id = pl.skill_id
       WHERE l.active = true
       GROUP BY l.id, l.code, l.name, l.native_name
       ORDER BY lesson_count DESC
