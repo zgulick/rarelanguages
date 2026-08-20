@@ -2,7 +2,7 @@ import { query } from '../../../../../../lib/database';
 
 export async function GET(request, { params }) {
   try {
-    const { id: skillId } = params;
+    const { id: skillId } = await params;
 
     if (!skillId) {
       return Response.json(
@@ -25,7 +25,7 @@ export async function GET(request, { params }) {
       JOIN courses co ON cs.course_id = co.id
       WHERE pl.skill_id = $1
       AND pl.is_active = true
-      ORDER BY pl.created_at
+      ORDER BY pl.lesson_number ASC
     `;
 
     const result = await query(lessonsQuery, [skillId]);
@@ -78,8 +78,8 @@ export async function GET(request, { params }) {
 
     return Response.json(
       {
-        error: 'Failed to fetch processed lessons',
-        details: error.message
+        success: false,
+        error: 'Failed to fetch processed lessons'
       },
       { status: 500 }
     );

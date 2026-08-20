@@ -77,19 +77,19 @@ function createTextbookContent(lesson, rawContent) {
     topic: lesson.name,
     description: lesson.description || `Learn essential ${lesson.skill_name.toLowerCase()} vocabulary`,
     estimatedMinutes: lesson.estimated_minutes || calculateEstimatedTime(vocabulary.length),
-    
+
     // Teaching phase content
     vocabulary: vocabulary,
     grammar: grammar,
     examples: examples,
-    
+
     // Practice phase content  
     practiceExercises: createPracticeExercises(vocabulary),
-    
+
     // Testing phase content
     testExercises: createTestExercises(vocabulary),
     conversationScenario: conversationScenario,
-    
+
     // Review content
     reviewSummary: createReviewSummary(vocabulary, lesson)
   };
@@ -105,7 +105,7 @@ function organizeVocabulary(rawContent) {
     cultural_context: item.cultural_context,
     difficulty: item.difficulty_score || 5,
     wordNumber: index + 1,
-    
+
     // Add linguistic information
     gender: detectGender(item.target_phrase),
     wordType: detectWordType(item.english_phrase),
@@ -115,10 +115,10 @@ function organizeVocabulary(rawContent) {
 
 function extractGrammarConcepts(rawContent, lesson) {
   // Look for grammar patterns in the content
-  const verbs = rawContent.filter(item => 
+  const verbs = rawContent.filter(item =>
     isVerb(item.target_phrase) || isVerb(item.english_phrase)
   );
-  
+
   if (verbs.length > 0) {
     const mainVerb = verbs[0];
     return {
@@ -129,12 +129,12 @@ function extractGrammarConcepts(rawContent, lesson) {
       conjugations: generateAlbanianConjugations(mainVerb.target_phrase)
     };
   }
-  
+
   // Look for noun patterns
-  const nouns = rawContent.filter(item => 
+  const nouns = rawContent.filter(item =>
     detectGender(item.target_phrase) !== null
   );
-  
+
   if (nouns.length > 0) {
     return {
       concept: 'Albanian Articles',
@@ -143,14 +143,14 @@ function extractGrammarConcepts(rawContent, lesson) {
       examples: generateArticleExamples(nouns.slice(0, 3))
     };
   }
-  
+
   return null;
 }
 
 function createUsageExamples(vocabulary) {
   // Create realistic usage examples
   const examples = [];
-  
+
   vocabulary.slice(0, 4).forEach(word => {
     if (word.cultural_context) {
       examples.push({
@@ -161,7 +161,7 @@ function createUsageExamples(vocabulary) {
       });
     }
   });
-  
+
   return examples;
 }
 
@@ -174,14 +174,14 @@ function createPracticeExercises(vocabulary) {
       options: generateMultipleChoiceOptions(word, vocabulary),
       hint: word.pronunciation
     })),
-    
+
     audio: vocabulary.slice(0, 4).map(word => ({
       type: 'pronunciation',
       albanian: word.albanian,
       pronunciation: word.pronunciation,
       instruction: 'Listen and repeat'
     })),
-    
+
     pattern: vocabulary.slice(0, 3).map(word => ({
       type: 'fill_blank',
       sentence: createFillBlankSentence(word.albanian),
@@ -200,7 +200,7 @@ function createTestExercises(vocabulary) {
       pronunciation: word.pronunciation,
       cultural_context: word.cultural_context
     })),
-    
+
     translation: vocabulary.slice(0, 3).map(word => ({
       type: 'translation',
       english_sentence: createExampleSentence(word.english, word.wordType),
@@ -213,7 +213,7 @@ function createTestExercises(vocabulary) {
 function createConversationScenario(lesson, vocabulary) {
   // Create realistic conversation based on lesson topic
   const topic = lesson.name.toLowerCase();
-  
+
   if (topic.includes('family')) {
     return {
       title: 'Family Introduction',
@@ -235,7 +235,7 @@ function createConversationScenario(lesson, vocabulary) {
       cultural_notes: 'Albanian families are very close-knit. Always show respect to elders.'
     };
   }
-  
+
   if (topic.includes('greeting')) {
     return {
       title: 'Daily Greetings',
@@ -257,7 +257,7 @@ function createConversationScenario(lesson, vocabulary) {
       cultural_notes: 'Albanians always ask about health and family when greeting.'
     };
   }
-  
+
   return {
     title: 'Practice Conversation',
     setting: 'Using your new vocabulary in context',
@@ -278,17 +278,17 @@ function createReviewSummary(vocabulary, lesson) {
       english: word.english,
       pronunciation: word.pronunciation
     })),
-    
-    key_grammar: lesson.skill_name.includes('verb') ? 
-      [`${lesson.name} conjugation patterns`] : 
+
+    key_grammar: lesson.skill_name.includes('verb') ?
+      [`${lesson.name} conjugation patterns`] :
       [`${lesson.name} vocabulary usage`],
-    
-    essential_phrases: vocabulary.slice(0, 3).map(word => 
+
+    essential_phrases: vocabulary.slice(0, 3).map(word =>
       createExampleSentence(word.albanian, word.wordType)
     ),
-    
+
     next_lesson_prep: `Review these ${vocabulary.length} words throughout the day. Next lesson will build on this vocabulary.`,
-    
+
     study_tips: [
       'Practice pronunciation daily',
       'Use new words in sentences',
@@ -300,7 +300,7 @@ function createReviewSummary(vocabulary, lesson) {
 // Helper functions for Albanian linguistic analysis
 function cleanPronunciation(pronunciation) {
   if (!pronunciation) return '';
-  
+
   // Convert complex phonetic notation to simple English
   return pronunciation
     .replace(/\[|\]/g, '') // Remove brackets
@@ -313,13 +313,13 @@ function cleanPronunciation(pronunciation) {
 
 function detectGender(albanianWord) {
   if (!albanianWord) return null;
-  
+
   // Albanian gender patterns
   if (albanianWord.match(/\b(babai|baba|djali|burri|ati)\b/)) return 'masculine';
   if (albanianWord.match(/\b(nëna|nënë|vajza|gruaja|ema)\b/)) return 'feminine';
   if (albanianWord.includes(' i ') || albanianWord.endsWith(' i')) return 'masculine';
   if (albanianWord.includes(' e ') || albanianWord.endsWith(' e')) return 'feminine';
-  
+
   return null;
 }
 
@@ -328,29 +328,29 @@ function detectWordType(englishPhrase) {
   if (englishPhrase.match(/\b(father|mother|son|daughter|family)\b/)) return 'family_noun';
   if (englishPhrase.match(/\b(hello|goodbye|please|thank)\b/)) return 'greeting';
   if (englishPhrase.match(/\b(one|two|three|number)\b/)) return 'number';
-  
+
   return 'general';
 }
 
 function isVerb(phrase) {
   if (!phrase) return false;
-  
+
   const verbPatterns = ['oj', 'aj', 'ej', 'em', 'im'];
   const commonVerbs = ['jam', 'kam', 'shkoj', 'vij', 'flas'];
-  
-  return verbPatterns.some(ending => phrase.endsWith(ending)) || 
-         commonVerbs.some(verb => phrase.includes(verb));
+
+  return verbPatterns.some(ending => phrase.endsWith(ending)) ||
+    commonVerbs.some(verb => phrase.includes(verb));
 }
 
 function generateAlbanianConjugations(verb) {
   if (!verb) return null;
-  
+
   // Basic Albanian verb conjugation patterns
   if (verb === 'jam') {
     return {
       present: {
         'unë': 'jam',
-        'ti': 'je', 
+        'ti': 'je',
         'ai/ajo': 'është',
         'ne': 'jemi',
         'ju': 'jeni',
@@ -358,7 +358,7 @@ function generateAlbanianConjugations(verb) {
       }
     };
   }
-  
+
   if (verb.endsWith('oj')) {
     const root = verb.slice(0, -2);
     return {
@@ -372,7 +372,7 @@ function generateAlbanianConjugations(verb) {
       }
     };
   }
-  
+
   return null;
 }
 
@@ -380,11 +380,11 @@ function generateGrammarExplanation(verb, lesson) {
   if (verb.target_phrase === 'jam') {
     return 'The verb "to be" (jam) is irregular and essential for introducing people and describing things.';
   }
-  
+
   if (verb.target_phrase.endsWith('oj')) {
     return 'Regular Albanian verbs ending in -oj follow a predictable pattern for each person.';
   }
-  
+
   return `This grammar helps you use ${lesson.name.toLowerCase()} vocabulary correctly.`;
 }
 
@@ -392,7 +392,7 @@ function generateGrammarPattern(verb) {
   if (verb === 'jam') {
     return 'Subject + form of "jam" + description';
   }
-  
+
   return 'Subject + verb form + object';
 }
 
@@ -403,7 +403,7 @@ function generateGrammarExamples(verb) {
       { albanian: 'Ti je shumë i mirë', english: 'You are very good' }
     ];
   }
-  
+
   return [
     { albanian: `Unë ${verb}`, english: `I ${verb}` },
     { albanian: `Ti ${verb.replace(/oj$/, 'on')}`, english: `You ${verb}` }
@@ -426,7 +426,7 @@ function createExampleSentence(word, wordType) {
       english: `${word} is good`
     }
   };
-  
+
   return patterns[wordType] || patterns.general;
 }
 
@@ -439,7 +439,7 @@ function generateMultipleChoiceOptions(correct, allVocabulary) {
     .filter(word => word.albanian !== correct.albanian)
     .slice(0, 3)
     .map(word => word.albanian);
-  
+
   const options = [correct.albanian, ...incorrect];
   return shuffleArray(options);
 }
@@ -458,7 +458,7 @@ function calculateEstimatedTime(vocabularyCount) {
   const teachingTime = vocabularyCount * 1; // 1 minute per word
   const practiceTime = vocabularyCount * 0.5; // 30 seconds practice each
   const testingTime = vocabularyCount * 0.5; // 30 seconds test each
-  
+
   return Math.round(teachingTime + practiceTime + testingTime);
 }
 
@@ -466,14 +466,14 @@ function calculateFrequency(word) {
   // Simple frequency ranking for common Albanian words
   const highFreq = ['babai', 'nëna', 'jam', 'është', 'mirëmëngjes'];
   if (highFreq.includes(word)) return 'high';
-  
+
   return 'medium';
 }
 
 function extractVerbConcept(verb) {
   if (verb === 'jam') return 'The verb "to be"';
   if (verb.endsWith('oj')) return 'Regular -oj verbs';
-  
+
   return 'Verb usage';
 }
 

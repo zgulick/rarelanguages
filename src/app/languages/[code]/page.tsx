@@ -32,27 +32,32 @@ export default function LanguagePage() {
   const languageCode = params.code as string;
   const [levels, setLevels] = useState<LevelGroup[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [languageName, setLanguageName] = useState('');
 
   useEffect(() => {
     const fetchCourses = async () => {
       try {
+        setError(null);
         const response = await fetch(`/api/courses?language=${languageCode}`);
-        
+
         if (!response.ok) {
-          throw new Error(`API failed with status ${response.status}: ${response.statusText}`);
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(errorData.error || `Failed to load courses (${response.status})`);
         }
 
         const data = await response.json();
-        
+
         if (!data.success) {
-          throw new Error(`API returned error: ${data.error}`);
+          throw new Error(data.error || 'Failed to load courses');
         }
 
         const courses = data.courses;
-        
+
         if (!courses || courses.length === 0) {
-          throw new Error(`No courses found for language code: ${languageCode}`);
+          setError(`No courses available yet for ${languageCode}. Check back soon!`);
+          setLoading(false);
+          return;
         }
 
         // Set language name from first course
@@ -81,9 +86,10 @@ export default function LanguagePage() {
         setLevels(levelGroups);
         setLoading(false);
 
-      } catch (error) {
+      } catch (error: any) {
         console.error('Failed to fetch courses:', error);
-        throw error; // Re-throw to crash the page
+        setError(error.message || 'Failed to load courses. Please try again.');
+        setLoading(false);
       }
     };
 
@@ -125,6 +131,67 @@ export default function LanguagePage() {
             <div className="glass-card px-8 py-6 rounded-3xl inline-block">
               <p className="text-gray-700 font-medium text-lg mb-2">Loading language levels...</p>
               <p className="text-gray-500 text-sm">Preparing your learning journey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen relative overflow-hidden">
+        {/* Enhanced Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-background via-primary-50/30 to-secondary-50/50"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-100/20 via-transparent to-secondary-100/20"></div>
+
+        {/* Modern Navigation Bar */}
+        <nav className="glass-nav sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-20">
+              <Link href="/" className="group flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <span className="text-white font-bold text-lg">R</span>
+                </div>
+                <span className="text-2xl font-bold text-primary">
+                  Rare Languages
+                </span>
+              </Link>
+              <Link
+                href="/"
+                className="btn-ghost px-4 py-2 text-sm"
+              >
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Languages
+              </Link>
+            </div>
+          </div>
+        </nav>
+
+        {/* Error State */}
+        <div className="relative z-10 flex items-center justify-center min-h-[70vh]">
+          <div className="text-center max-w-md mx-auto px-4">
+            <div className="relative mb-8">
+              <div className="glass-card w-24 h-24 rounded-3xl mx-auto flex items-center justify-center text-5xl">
+                😞
+              </div>
+            </div>
+            <h2 className="heading-2 mb-4 text-error">Oops! Something went wrong</h2>
+            <div className="glass-card px-6 py-4 rounded-2xl mb-6">
+              <p className="text-gray-700 font-medium">{error}</p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={() => window.location.reload()}
+                className="btn-primary px-6 py-3"
+              >
+                Try Again
+              </button>
+              <Link href="/" className="btn-secondary px-6 py-3">
+                Back to Home
+              </Link>
             </div>
           </div>
         </div>

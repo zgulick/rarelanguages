@@ -4,7 +4,7 @@ const { query } = require('../../../../lib/database');
 /**
  * Courses API
  * GET /api/courses - List all available courses
- * POST /api/courses - Create new course (admin only)
+ * (POST removed: it allowed unauthenticated course creation.)
  */
 export async function GET(request) {
     try {
@@ -12,7 +12,7 @@ export async function GET(request) {
         const languageCode = searchParams.get('language');
         const level = searchParams.get('level');
         const userId = searchParams.get('userId');
-        
+
         // Handle guest users and invalid UUIDs
         const isValidUserId = userId && userId !== 'guest' && userId.length === 36;
         const userIdParam = isValidUserId ? userId : null;
@@ -86,79 +86,19 @@ export async function GET(request) {
             } : null
         }));
 
-        return NextResponse.json({ 
+        return NextResponse.json({
             courses,
             total: courses.length,
-            success: true 
+            success: true
         });
 
     } catch (error) {
         console.error('❌ Failed to fetch courses:', error);
-        
+
         return NextResponse.json(
-            { 
+            {
                 error: 'Failed to fetch courses',
-                details: error.message,
-                success: false 
-            },
-            { status: 500 }
-        );
-    }
-}
-
-/**
- * Create new course (admin functionality)
- */
-export async function POST(request) {
-    try {
-        const courseData = await request.json();
-        
-        // This would typically include authentication/authorization
-        // For now, we'll allow course creation for testing
-        
-        const {
-            languageId,
-            name,
-            code,
-            description,
-            level,
-            cefrLevel,
-            learningObjectives,
-            estimatedHours
-        } = courseData;
-
-        const result = await query(`
-            INSERT INTO courses (
-                language_id, name, code, description, level, cefr_level,
-                learning_objectives, estimated_hours, is_active
-            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, true)
-            RETURNING *
-        `, [
-            languageId,
-            name,
-            code,
-            description,
-            level,
-            cefrLevel,
-            JSON.stringify(learningObjectives),
-            estimatedHours
-        ]);
-
-        const course = result.rows[0];
-
-        return NextResponse.json({ 
-            course,
-            success: true 
-        }, { status: 201 });
-
-    } catch (error) {
-        console.error('❌ Failed to create course:', error);
-        
-        return NextResponse.json(
-            { 
-                error: 'Failed to create course',
-                details: error.message,
-                success: false 
+                success: false
             },
             { status: 500 }
         );
