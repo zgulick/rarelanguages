@@ -3,6 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import LessonSummaryCard from '../../../../../../components/exercises/LessonSummaryCard';
+
+interface Lesson {
+  id: string;
+  name: string;
+  description: string;
+  duration: string;
+  estimated_minutes: number;
+  difficulty_level: number;
+  completed: boolean;
+}
 
 interface Skill {
   id: string;
@@ -13,6 +24,7 @@ interface Skill {
   estimatedHours: number;
   courseName: string;
   courseId: string;
+  lessons?: Lesson[];
 }
 
 export default function LevelPage() {
@@ -22,39 +34,33 @@ export default function LevelPage() {
   const [skills, setSkills] = useState<Skill[]>([]);
   const [loading, setLoading] = useState(true);
   const [languageName, setLanguageName] = useState('');
+  const [expandedSkillId, setExpandedSkillId] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        // Use the new dedicated API endpoint
+        setError(null);
         const response = await fetch(`/api/languages/${languageCode}/level/${level}/skills`);
-        
+
         if (!response.ok) {
-          throw new Error(`Skills API failed with status ${response.status}: ${response.statusText}`);
+          throw new Error(`Skills API failed with status ${response.status}`);
         }
 
         const data = await response.json();
-        
+
         if (!data.success) {
-          throw new Error(`Skills API error: ${data.error}`);
+          throw new Error(data.error || 'Skills API returned an error');
         }
 
-        if (!data.skills || data.skills.length === 0) {
-          throw new Error(`No skills found for ${languageCode} level ${level}`);
-        }
-
-        // Set language name (extract from first skill's course or use code)
-        setLanguageName(languageCode.charAt(0).toUpperCase() + languageCode.slice(1));
-
-        // Skills should already be ordered by position from the API
-        console.log('Skills from API:', data.skills.map(s => ({ name: s.name, position: s.position })));
-        
-        setSkills(data.skills);
+        // Set unconditionally: an empty level is a valid state, not a failure.
+        setSkills(data.skills ?? []);
+        setLanguageName(data.languageName ?? '');
+      } catch (err) {
+        console.error('Failed to fetch skills:', err);
+        setError('We could not load this level. Please try again.');
+      } finally {
         setLoading(false);
-
-      } catch (error) {
-        console.error('Failed to fetch skills:', error);
-        throw error; // Re-throw to crash the page
       }
     };
 
@@ -63,70 +69,45 @@ export default function LevelPage() {
     }
   }, [languageCode, level]);
 
+  // The skills API already embeds each skill's lessons, so this is
+  // purely an expand/collapse toggle.
+  const toggleSkill = (skillId: string) => {
+    setExpandedSkillId(current => (current === skillId ? null : skillId));
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen relative overflow-hidden">
-        {/* Enhanced Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-background via-primary-50/30 to-secondary-50/50"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-100/20 via-transparent to-secondary-100/20"></div>
-
-        <nav className="glass-nav sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-20">
-              <Link href="/" className="group flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-                  <span className="text-white font-bold text-lg">R</span>
-                </div>
-                <span className="text-2xl font-bold text-primary">
-                  Rare Languages
-                </span>
-              </Link>
-            </div>
-          </div>
-        </nav>
-
-        <div className="relative z-10 flex items-center justify-center min-h-[60vh]">
-          <div className="text-center">
-            <div className="relative mb-6">
-              <div className="w-16 h-16 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mx-auto"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-secondary-200 border-t-secondary-500 rounded-full animate-spin" style={{animationDelay: '0.5s'}}></div>
-            </div>
-            <div className="glass-card px-6 py-4 rounded-3xl inline-block">
-              <p className="text-gray-700 font-medium mb-1">Loading skills...</p>
-              <p className="text-gray-500 text-sm">Preparing your learning path</p>
-            </div>
-          </div>
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden bg-gray-50">
       {/* Enhanced Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-neutral-background via-primary-50/30 to-secondary-50/50"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-100/20 via-transparent to-secondary-100/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-neutral-background via-primary-50/30 to-secondary-50/50 pointer-events-none"></div>
 
       {/* Navigation Bar */}
-      <nav className="glass-nav sticky top-0 z-50">
+      <nav className="glass-nav sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link href="/" className="group flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+              <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <span className="text-white font-bold text-lg">R</span>
               </div>
-              <span className="text-2xl font-bold text-primary">
+              <span className="text-2xl font-bold text-gray-900">
                 Rare Languages
               </span>
             </Link>
             <Link
               href={`/languages/${languageCode}`}
-              className="btn-ghost px-4 py-2 text-sm"
+              className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
             >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              Back to {languageName} Levels
+              ← Back to Levels
             </Link>
           </div>
         </div>
@@ -134,83 +115,107 @@ export default function LevelPage() {
 
       {/* Main Content */}
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
+        {error ? (
+          <div className="max-w-2xl mx-auto text-center py-20">
+            <div className="w-16 h-16 rounded-2xl bg-error-50 mx-auto mb-6 flex items-center justify-center text-3xl">
+              ⚠️
+            </div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-3">
+              Something went wrong
+            </h1>
+            <p className="text-lg text-gray-600 mb-8">{error}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="btn-primary px-6 py-3"
+            >
+              Try Again
+            </button>
+          </div>
+        ) : (
+          <>
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="heading-1 mb-4 animate-fade-in-up text-primary">
-            {languageName} Level {level}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            {languageName ? `${languageName} ` : ''}Level {level}
           </h1>
-          <p className="body-large max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Choose a skill to start learning. ({skills.length} skills available)
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            {skills.length > 0
+              ? `Master ${skills.length} core skills to build your fluency.`
+              : 'No skills have been published for this level yet.'}
           </p>
         </div>
 
-        {/* Skills Selection */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Skills List */}
+        <div className="space-y-6 max-w-4xl mx-auto">
           {skills.map((skill) => (
-            <Link 
-              key={skill.id} 
-              href={`/skills/${skill.id}/learn`}
-              className="group"
+            <div
+              key={skill.id}
+              className={`bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 ${expandedSkillId === skill.id ? 'shadow-md ring-1 ring-primary-100' : 'hover:shadow-md'
+                }`}
             >
-              <div className="card-hover p-6 hover:shadow-glow-primary">
-                <div className="flex flex-col h-full">
-                  {/* Skill Icon/Position */}
-                  <div className="flex justify-between items-start mb-4">
-                    <div className="badge-emerald text-sm font-bold">
-                      Skill {skill.position}
-                    </div>
-                    <div className="text-3xl">
-                      📚
-                    </div>
-                  </div>
+              <div
+                onClick={() => toggleSkill(skill.id)}
+                className="p-6 cursor-pointer flex items-start gap-4"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center text-2xl">
+                  📚
+                </div>
 
-                  {/* Skill Name */}
-                  <h3 className="text-xl font-bold text-text-primary mb-3 group-hover:text-primary transition-all duration-300">
-                    {skill.name}
-                  </h3>
-
-                  {/* Skill Description */}
-                  <p className="text-gray-600 mb-4 text-sm line-height-relaxed overflow-hidden" style={{
-                    display: '-webkit-box',
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical'
-                  }}>
-                    {skill.description.length > 80 ? skill.description.substring(0, 80) + '...' : skill.description}
-                  </p>
-
-                  {/* Course Name */}
-                  <p className="text-xs text-gray-500 mb-4">
-                    From: {skill.courseName}
-                  </p>
-
-                  {/* Stats */}
-                  <div className="grid grid-cols-2 gap-3 mb-6">
-                    <div className="text-center glass-card">
-                      <div className="text-xl font-bold text-primary mb-1">{skill.totalLessons}</div>
-                      <div className="text-xs text-gray-600 font-medium">
-                        {skill.totalLessons === 1 ? 'Lesson' : 'Lessons'}
+                <div className="flex-1">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-bold text-gray-900">{skill.name}</h3>
+                    <div className="flex items-center space-x-4">
+                      <div className="text-sm text-gray-500 font-medium">
+                        {skill.totalLessons} Lessons • {skill.estimatedHours}h
                       </div>
-                    </div>
-                    <div className="text-center glass-card">
-                      <div className="text-xl font-bold text-primary mb-1">{skill.estimatedHours}h</div>
-                      <div className="text-xs text-gray-600 font-medium">Est. Time</div>
-                    </div>
-                  </div>
-
-                  {/* Action */}
-                  <div className="mt-auto">
-                    <div className="btn-primary w-full flex items-center justify-center text-sm">
-                      Start Learning
-                      <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <svg
+                        className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSkillId === skill.id ? 'rotate-180' : ''
+                          }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </div>
                   </div>
+
+                  <p className="text-gray-600 leading-relaxed mb-2">
+                    {skill.description}
+                  </p>
                 </div>
               </div>
-            </Link>
+
+              {/* Lessons List (Expanded) */}
+              <div
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${expandedSkillId === skill.id ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+              >
+                <div className="p-6 pt-0 bg-gray-50/50">
+                  <div className="h-px bg-gray-100 w-full mb-6"></div>
+
+                  {skill.lessons && skill.lessons.length > 0 ? (
+                    <div className="space-y-3">
+                      {skill.lessons.map((lesson, idx) => (
+                        <LessonSummaryCard
+                          key={lesson.id}
+                          lesson={lesson}
+                          index={idx}
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-center py-8 text-gray-500">
+                      No lessons available for this skill yet.
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
+          </>
+        )}
       </main>
     </div>
   );

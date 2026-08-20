@@ -1,64 +1,86 @@
+import { NextResponse } from 'next/server';
 import { query } from '../../../../../../../../lib/database';
 
 export async function GET(request, { params }) {
+  const { code, level } = await params;
+
   try {
-    const { code: languageCode, level } = await params;
-    const levelNumber = parseInt(level);
-
-    if (isNaN(levelNumber)) {
-      throw new Error(`Invalid level: ${level}`);
-    }
-
-    // Get all skills for courses at this language and level
-    const result = await query(`
-      SELECT 
-        s.id,
-        s.name,
-        s.description,
-        s.position as skill_position,
-        cs.position as course_position,
-        cs.estimated_hours,
-        COUNT(l.id) as total_lessons,
-        c.name as course_name,
-        c.id as course_id
+    // Skills link to courses through the course_skills join table.
+    // There is no skills.course_id column.
+    const skillsResult = await query(
+      `
+      SELECT s.*,
+             c.name AS course_name,
+             l.name AS language_name
       FROM skills s
-      JOIN course_skills cs ON s.id = cs.skill_id
-      JOIN courses c ON cs.course_id = c.id
-      JOIN languages lang ON c.language_id = lang.id
-      LEFT JOIN lessons l ON s.id = l.skill_id
-      WHERE lang.code = $1 AND c.level = $2 AND c.is_active = true AND s.is_active = true
-      GROUP BY s.id, s.name, s.description, s.position, cs.position, cs.estimated_hours, c.name, c.id
-      ORDER BY cs.position ASC
-    `, [languageCode, levelNumber]);
+      JOIN course_skills cs ON cs.skill_id = s.id
+      JOIN courses c ON c.id = cs.course_id
+      JOIN languages l ON l.id = c.language_id
+      WHERE l.code = $1 AND c.level = $2
+      ORDER BY s.position ASC
+      `,
+      [code, parseInt(level, 10)]
+    );
 
-    if (result.rows.length === 0) {
-      throw new Error(`No skills found for ${languageCode} level ${levelNumber}`);
+    const skills = skillsResult.rows;
+
+    // Resolve the display name even when this language has no skills yet,
+    // so the page never renders a heading with a blank language.
+    let languageName = skills[0]?.language_name ?? null;
+    if (!languageName) {
+      const languageResult = await query(
+        `SELECT name FROM languages WHERE code = $1`,
+        [code]
+      );
+      languageName = languageResult.rows[0]?.name ?? null;
     }
 
-    const skills = result.rows.map(row => ({
-      id: row.id,
-      name: row.name,
-      description: row.description,
-      position: row.course_position, // Use course_skills position for ordering
-      totalLessons: parseInt(row.total_lessons) || 0,
-      estimatedHours: row.estimated_hours || 4,
-      courseName: row.course_name,
-      courseId: row.course_id
-    }));
+    // One query for every lesson across all skills, rather than N+1.
+    let lessonsBySkill = new Map();
+    if (skills.length > 0) {
+      const lessonsResult = await query(
+        `
+        SELECT id, skill_id, name, estimated_minutes, difficulty_level, position
+        FROM lessons
+        WHERE skill_id = ANY($1::uuid[])
+        ORDER BY position ASC
+        `,
+        [skills.map((s) => s.id)]
+      );
 
-    return Response.json({
-      success: true,
-      skills,
-      language: languageCode,
-      level: levelNumber,
-      total: skills.length
+      lessonsBySkill = lessonsResult.rows.reduce((acc, lesson) => {
+        const list = acc.get(lesson.skill_id) ?? [];
+        list.push(lesson);
+        acc.set(lesson.skill_id, list);
+        return acc;
+      }, new Map());
+    }
+
+    const skillsWithLessons = skills.map((skill) => {
+      const lessons = lessonsBySkill.get(skill.id) ?? [];
+      const totalMinutes = lessons.reduce(
+        (acc, l) => acc + (l.estimated_minutes || 0),
+        0
+      );
+
+      return {
+        ...skill,
+        lessons,
+        totalLessons: lessons.length,
+        estimatedHours: Math.ceil(totalMinutes / 60)
+      };
     });
 
+    return NextResponse.json({
+      success: true,
+      languageName,
+      skills: skillsWithLessons
+    });
   } catch (error) {
-    console.error('Failed to load skills for level:', error);
-    return Response.json({ 
-      success: false, 
-      error: error.message 
-    }, { status: 500 });
+    console.error('Failed to fetch skills:', error);
+    return NextResponse.json(
+      { success: false, error: 'Failed to fetch skills' },
+      { status: 500 }
+    );
   }
 }
