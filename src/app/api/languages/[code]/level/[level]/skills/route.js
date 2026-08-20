@@ -11,7 +11,10 @@ export async function GET(request, { params }) {
       `
       SELECT s.*,
              c.name AS course_name,
-             l.name AS language_name
+             l.name AS language_name,
+             (SELECT COUNT(*)::int
+                FROM processed_lessons pl
+               WHERE pl.skill_id = s.id) AS processed_lesson_count
       FROM skills s
       JOIN course_skills cs ON cs.skill_id = s.id
       JOIN courses c ON c.id = cs.course_id

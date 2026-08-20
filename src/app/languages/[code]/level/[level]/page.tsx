@@ -24,6 +24,7 @@ interface Skill {
   estimatedHours: number;
   courseName: string;
   courseId: string;
+  processed_lesson_count: number;
   lessons?: Lesson[];
 }
 
@@ -183,6 +184,25 @@ export default function LevelPage() {
                   <p className="text-gray-600 leading-relaxed mb-2">
                     {skill.description}
                   </p>
+
+                  {/* Guided, AI-generated walkthrough of the whole unit.
+                      Only shown when generated lessons actually exist, so
+                      this can never become a dead end. */}
+                  {skill.processed_lesson_count > 0 && (
+                    <Link
+                      href={`/skills/${skill.id}/learn`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center mt-2 text-sm font-semibold text-primary hover:underline"
+                    >
+                      Study this unit
+                      <span className="ml-1.5 text-xs font-normal text-gray-500">
+                        ({skill.processed_lesson_count} guided {skill.processed_lesson_count === 1 ? 'lesson' : 'lessons'})
+                      </span>
+                      <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </Link>
+                  )}
                 </div>
               </div>
 

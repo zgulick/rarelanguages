@@ -14,6 +14,14 @@ export default function SkillLearningPage() {
   const [skillName, setSkillName] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [finished, setFinished] = useState(false);
+
+  // Return to the unit list the learner came from, falling back to the
+  // catalogue if this page was opened directly.
+  const goBack = () => {
+    if (window.history.length > 1) router.back();
+    else router.push('/');
+  };
 
   // Load processed lessons for this skill
   useEffect(() => {
@@ -54,14 +62,12 @@ export default function SkillLearningPage() {
     if (currentLessonIndex < processedLessons.length - 1) {
       setCurrentLessonIndex(currentLessonIndex + 1);
     } else {
-      // All lessons complete
-      alert('🎉 Congratulations! You have completed all lessons in this skill!');
-      router.push('/');
+      setFinished(true);
     }
   };
 
   const handleExit = () => {
-    router.push('/');
+    goBack();
   };
 
   if (loading) {
@@ -83,10 +89,32 @@ export default function SkillLearningPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Unable to Load Lessons</h2>
           <p className="text-gray-700 mb-6">{error}</p>
           <button
-            onClick={() => router.push('/')}
+            onClick={goBack}
             className="px-6 py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700"
           >
-            ← Back to Home
+            ← Go back
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (finished) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-100 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md text-center">
+          <div className="text-6xl mb-4">🎉</div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Unit complete</h2>
+          <p className="text-gray-700 mb-6">
+            You finished all {processedLessons.length} guided{' '}
+            {processedLessons.length === 1 ? 'lesson' : 'lessons'}
+            {skillName ? ` in ${skillName}` : ''}.
+          </p>
+          <button
+            onClick={goBack}
+            className="px-6 py-3 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700"
+          >
+            ← Back to the unit list
           </button>
         </div>
       </div>
@@ -98,15 +126,15 @@ export default function SkillLearningPage() {
       <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-amber-100 flex items-center justify-center p-4">
         <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md text-center">
           <div className="text-6xl mb-4">📚</div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">No Lessons Available</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">No lessons yet</h2>
           <p className="text-gray-700 mb-6">
-            This skill doesn't have any lessons yet. Please generate lessons using the lesson generator.
+            Guided lessons for this unit haven&apos;t been published yet.
           </p>
           <button
-            onClick={() => router.push('/')}
+            onClick={goBack}
             className="px-6 py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700"
           >
-            ← Back to Home
+            ← Go back
           </button>
         </div>
       </div>
