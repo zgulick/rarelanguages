@@ -73,7 +73,10 @@ export default function LanguagePage() {
         }, {});
 
         // Create level groups
-        const levelGroups: LevelGroup[] = Object.entries(coursesByLevel)
+        // Object.entries widens the value type to unknown, so restate it.
+        const levelEntries = Object.entries(coursesByLevel) as [string, Course[]][];
+
+        const levelGroups: LevelGroup[] = levelEntries
           .map(([level, levelCourses]) => ({
             level: parseInt(level),
             courses: levelCourses,

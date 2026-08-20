@@ -33,6 +33,8 @@ const ExerciseSection: React.FC<ExerciseSectionProps> = ({ section, onNext }) =>
   const exercises = (() => {
     // New structure: exercises is an object with categories
     if (section.exercises && typeof section.exercises === 'object' && !Array.isArray(section.exercises)) {
+      // Bind to a local so the narrowing survives inside the callback below.
+      const grouped = section.exercises as Record<string, any>;
       const allExercises: any[] = [];
 
       // Flatten all exercise categories into a single array
@@ -40,8 +42,9 @@ const ExerciseSection: React.FC<ExerciseSectionProps> = ({ section, onNext }) =>
       const categories = ['guided_practice', 'recognition', 'production', 'real_world', 'assessment'];
 
       categories.forEach(category => {
-        if (section.exercises[category] && Array.isArray(section.exercises[category])) {
-          allExercises.push(...section.exercises[category].map((ex: any) => ({
+        const items = grouped[category];
+        if (Array.isArray(items)) {
+          allExercises.push(...items.map((ex: any) => ({
             ...ex,
             category // Add category for context
           })));

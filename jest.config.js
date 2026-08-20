@@ -5,10 +5,16 @@ const createJestConfig = nextJest({
   dir: './',
 })
 
-// Add any custom config to be passed to Jest
 const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jsdom',
+
+  // Without these, jest's file crawler walks the whole project (including
+  // .next and node_modules) and never finishes -- the runner would hang
+  // indefinitely before executing a single test.
+  roots: ['<rootDir>/__tests__'],
+  watchman: false,
+
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^@/components/(.*)$': '<rootDir>/components/$1',
@@ -16,13 +22,15 @@ const customJestConfig = {
   },
   testPathIgnorePatterns: [
     '<rootDir>/.next/',
-    '<rootDir>/node_modules/',
-    '<rootDir>/tests/e2e/'
+    '<rootDir>/node_modules/'
+  ],
+  modulePathIgnorePatterns: [
+    '<rootDir>/.next/'
   ],
   collectCoverageFrom: [
-    'components/**/*.{js,jsx}',
-    'src/**/*.{js,jsx}',
-    'lib/**/*.{js,jsx}',
+    'components/**/*.{js,jsx,ts,tsx}',
+    'src/**/*.{js,jsx,ts,tsx}',
+    'lib/**/*.js',
     '!**/*.d.ts',
     '!**/node_modules/**'
   ]
